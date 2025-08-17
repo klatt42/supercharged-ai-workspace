@@ -1,0 +1,53 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run visual validation
+      run: |
+        chmod +x ./visual-validation.sh
+        ./visual-validation.sh
+    
+    - name: Run health checks
+      run: |
+        chmod +x ./health-check.sh
+        ./health-check.sh
+    
+    - name: Deploy to Netlify
+      uses: nwtgck/actions-netlify@v2.0
+      with:
+        publish-dir: '.'
+        production-branch: main
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        deploy-message: "Deploy from GitHub Actions"
+        enable-pull-request-comment: true
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    
+    - name: Update Archon Project
+      run: |
+        curl -X PATCH "http://localhost:8181/api/projects/7cc5fc3e-bc02-40c8-b085-0b42ab28635a" \
+          -H "Content-Type: application/json" \
+          -d '{"data": {"last_deployment": "'$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)'", "deployment_status": "success"}}'

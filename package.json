@@ -1,0 +1,15 @@
+{
+  "name": "supercharged-ai-workspace",
+  "version": "1.0.0",
+  "main": "playwright-advanced-bridge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}

@@ -1,0 +1,31 @@
+🔍 Analyzing: http://localhost:8080
+✅ Analysis complete for: Directory listing for /
+
+📊 Analysis Results:
+{
+  "title": "Directory listing for /",
+  "url": "http://localhost:8080/",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "elements": {
+    "images": 0,
+    "links": 16,
+    "forms": 0,
+    "buttons": 0,
+    "headings": 1
+  },
+  "accessibility": {
+    "missingAltText": 0,
+    "emptyLinks": 0,
+    "noHeadings": false,
+    "missingLabels": 0
+  },
+  "seo": {
+    "hasTitle": true,
+    "hasMetaDescription": false,
+    "hasH1": true,
+    "h1Count": 1
+  }
+}
