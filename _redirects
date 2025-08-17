@@ -1,0 +1,5 @@
+# Multi-region routing for independent-restoration.com
+/nova/storm-damage/    /nova/storm-damage/index.html    200
+/nova/fire-smoke/      /nova/fire-smoke/index.html      200
+/dc/storm-damage/      /dc/storm-damage/index.html      200
+/maryland/storm-damage/  /maryland/storm-damage/index.html  200
