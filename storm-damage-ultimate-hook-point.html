@@ -185,6 +185,19 @@
             border-bottom: 3px solid #ff0000;
         }
         
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
         @keyframes mortalityPulse {
             0% { opacity: 1; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
             50% { opacity: 0.9; box-shadow: 0 6px 30px rgba(255,0,0,0.4); }
@@ -697,7 +710,7 @@
     </header>
     
     <!-- Ultimate Hook Point Hero Section -->
-    <section class="hero-ultimate-hook">
+    <section class="hero-ultimate-hook" role="banner" aria-label="Main hero section with revolutionary funeral director analogy">
         <div class="container">
             <h1 class="funeral-director-hook">
                 <div class="funeral-director-question">Would you let your funeral director pick your doctor?</div>
@@ -728,31 +741,31 @@
             </div>
             
             <!-- Ultimate Hook Point Variants with Life/Death Psychology -->
-            <div class="hook-variants-ultimate">
+            <div class="hook-variants-ultimate" role="group" aria-label="Psychological variant selection for A/B testing">
                 <div class="hook-variant-ultimate" data-variant="life-death-choice">
                     <div class="variant-label-ultimate">VARIANT A: LIFE/DEATH CHOICE</div>
                     <div class="variant-hook-text">Your home's life is in YOUR hands, not theirs</div>
                     <div class="variant-psychology">Psychology: Personal responsibility for survival</div>
-                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('life-death-choice')">Take Control Now</button>
+                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('life-death-choice')" aria-label="Select Life/Death Choice variant - Take control of your home's survival decision" role="button">Take Control Now</button>
                 </div>
                 <div class="hook-variant-ultimate" data-variant="funeral-director-analogy">
                     <div class="variant-label-ultimate">VARIANT B: FUNERAL DIRECTOR ANALOGY</div>
                     <div class="variant-hook-text">Absurd decisions lead to deadly consequences</div>
                     <div class="variant-psychology">Psychology: Shocking comparison reveals absurdity</div>
-                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('funeral-director-analogy')">Make the Smart Choice</button>
+                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('funeral-director-analogy')" aria-label="Select Funeral Director Analogy variant - Make the smart choice for your home" role="button">Make the Smart Choice</button>
                 </div>
                 <div class="hook-variant-ultimate" data-variant="insurance-betrayal">
                     <div class="variant-label-ultimate">VARIANT C: INSURANCE BETRAYAL</div>
                     <div class="variant-hook-text">They profit when you accept less restoration</div>
                     <div class="variant-psychology">Psychology: Betrayal and conflict of interest</div>
-                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('insurance-betrayal')">Fight for Your Home</button>
+                    <button class="variant-cta-ultimate" onclick="selectUltimateVariant('insurance-betrayal')" aria-label="Select Insurance Betrayal variant - Fight for your home's restoration" role="button">Fight for Your Home</button>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- AI-Optimized Content with Life/Death Framework -->
-    <main class="ultimate-content-section">
+    <main class="ultimate-content-section" role="main" aria-label="Main content about Independent Restoration services">
         <div class="container">
             <div class="content-grid-ultimate">
                 <div class="main-content">
@@ -832,7 +845,7 @@
                 </div>
                 
                 <!-- Ultimate Contact Form with Mortality Psychology -->
-                <div class="ultimate-contact-form" id="survival-contact">
+                <div class="ultimate-contact-form" id="survival-contact" role="region" aria-label="Emergency contact form for home restoration">
                     <div class="form-mortality-header">
                         <h2 class="form-survival-title">SAVE YOUR HOME</h2>
                         <p class="form-choice-subtitle">Make the choice that ensures your home's survival</p>
@@ -844,10 +857,11 @@
                         <div class="timer-survival-display" id="survival-timer">Your Choice Starts Now</div>
                     </div>
                     
-                    <form action="#" method="POST" id="ultimate-survival-form">
+                    <form action="#" method="POST" id="ultimate-survival-form" role="form" aria-label="Emergency restoration contact form">
                         <div class="form-group">
                             <label for="damage-emergency">Storm Damage Emergency <span class="required">*</span></label>
-                            <select id="damage-emergency" name="damage_emergency" required>
+                            <select id="damage-emergency" name="damage_emergency" required aria-label="Select the type of storm damage emergency threatening your home" aria-describedby="damage-help">
+                                <div id="damage-help" class="sr-only">Select the type of emergency damage threatening your home to prioritize our response</div>
                                 <option value="">What's threatening your home?</option>
                                 <option value="active-water-intrusion">🌊 ACTIVE WATER INTRUSION - Immediate threat</option>
                                 <option value="structural-damage">🏠 STRUCTURAL DAMAGE - Home integrity compromised</option>
@@ -860,7 +874,8 @@
                         
                         <div class="form-group">
                             <label for="insurance-involvement">Insurance Company Situation <span class="required">*</span></label>
-                            <select id="insurance-involvement" name="insurance_involvement" required>
+                            <select id="insurance-involvement" name="insurance_involvement" required aria-label="Select your current situation with insurance company recommendations" aria-describedby="insurance-help">
+                                <div id="insurance-help" class="sr-only">Tell us your situation with insurance company recommendations so we can advocate for you</div>
                                 <option value="">Your current situation</option>
                                 <option value="no-insurance-contact">✅ INDEPENDENT CHOICE - I want MY contractor</option>
                                 <option value="insurance-recommended">⚠️ INSURANCE RECOMMENDED - I need independent evaluation</option>
@@ -871,30 +886,35 @@
                         
                         <div class="form-group">
                             <label for="home-survival-details">Describe Your Home's Condition</label>
-                            <textarea id="home-survival-details" name="home_survival_details" rows="4" placeholder="Tell us what your home needs to survive and recover from this storm damage..."></textarea>
+                            <div id="details-help" class="sr-only">Provide details about your home's current damage to help us understand what your property needs for complete recovery</div>
+                            <textarea id="home-survival-details" name="home_survival_details" rows="4" placeholder="Tell us what your home needs to survive and recover from this storm damage..." aria-label="Describe your home's current condition and damage details" aria-describedby="details-help"></textarea>
                         </div>
                         
                         <div class="form-group">
                             <label for="homeowner-name">Homeowner Name <span class="required">*</span></label>
-                            <input type="text" id="homeowner-name" name="homeowner_name" required placeholder="Your full name">
+                            <div id="name-help" class="sr-only">Enter your full name as the property owner for our records</div>
+                            <input type="text" id="homeowner-name" name="homeowner_name" required placeholder="Your full name" aria-label="Enter your full name as the homeowner" aria-describedby="name-help">
                         </div>
                         
                         <div class="form-group">
                             <label for="survival-phone">Emergency Contact Phone <span class="required">*</span></label>
-                            <input type="tel" id="survival-phone" name="survival_phone" required placeholder="(301) 555-0123">
+                            <div id="phone-help" class="sr-only">Enter your best contact number so we can reach you immediately for emergency response</div>
+                            <input type="tel" id="survival-phone" name="survival_phone" required placeholder="(301) 555-0123" aria-label="Enter your emergency contact phone number" aria-describedby="phone-help">
                         </div>
                         
                         <div class="form-group">
                             <label for="survival-email">Email Address <span class="required">*</span></label>
-                            <input type="email" id="survival-email" name="survival_email" required placeholder="your.email@example.com">
+                            <div id="email-help" class="sr-only">Enter your email address to receive updates about your home's restoration progress</div>
+                            <input type="email" id="survival-email" name="survival_email" required placeholder="your.email@example.com" aria-label="Enter your email address for restoration updates" aria-describedby="email-help">
                         </div>
                         
                         <div class="form-group">
                             <label for="home-address">Home Address (Property Location) <span class="required">*</span></label>
-                            <input type="text" id="home-address" name="home_address" required placeholder="123 Your Street, Annapolis, MD 21401">
+                            <div id="address-help" class="sr-only">Enter the complete address of the damaged property so we can locate and assess your home</div>
+                            <input type="text" id="home-address" name="home_address" required placeholder="123 Your Street, Annapolis, MD 21401" aria-label="Enter the full address of the damaged property" aria-describedby="address-help">
                         </div>
                         
-                        <button type="submit" class="ultimate-submit-btn">
+                        <button type="submit" class="ultimate-submit-btn" aria-label="Submit form to save your home - Contact Independent Restoration immediately" role="button">
                             🏠 SAVE MY HOME - CALL NOW
                         </button>
                         
