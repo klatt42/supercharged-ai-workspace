@@ -508,3 +508,53 @@ node playwright-advanced-bridge.js responsive http://localhost:8080
 - `node playwright-advanced-bridge.js analyze [url]`
 - `node playwright-advanced-bridge.js responsive [url]`
 - `./visual-validation.sh`
+## Claude Code Output Styles Integration
+### Optimal Style Usage for BMAD + Archon Workflows
+
+**HTML Style (--style html):**
+- Interactive dashboards and control centers
+- BMAD sprint management interfaces  
+- Business intelligence reports with visualizations
+- Client-facing presentations and deliverables
+- Real-time project status displays
+
+**YAML Style (--style yaml):**
+- Archon knowledge base storage and retrieval
+- Project configuration and settings
+- Structured data for cross-project pattern analysis
+- Agent assignments and workflow definitions
+- Technical documentation and specifications
+
+**Ultra Concise Style (--style concise):**
+- Executive summaries and status updates
+- Rapid decision-making information
+- Quick progress reports for stakeholders
+- Critical alerts and priority actions
+- Meeting briefings and key metrics
+
+**Text-to-Speech Style (--style tts):**
+- Multitasking progress updates
+- Accessibility requirements
+- Background monitoring summaries
+- Voice briefings during development
+- Hands-free status reports
+
+**Table Style (--style table):**
+- Data comparison and analysis
+- Performance metrics tracking
+- Resource allocation planning
+- Timeline and milestone tracking
+- Comparative analysis reports
+
+**Status Lines:**
+- Multi-agent coordination and tracking
+- Real-time workflow monitoring
+- Agent availability and task assignment
+- System health and integration status
+- Progress indicators across projects
+
+### Default Style Rules:
+- Default to HTML for interactive outputs
+- Use YAML for all Archon storage operations
+- Use concise for rapid updates and summaries
+- Always include status line updates for multi-agent workflows
