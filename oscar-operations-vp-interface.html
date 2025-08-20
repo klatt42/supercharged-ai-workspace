@@ -805,6 +805,32 @@
                         </span>
                     </div>
                 </div>
+                
+                <div class="team-member-card">
+                    <div class="reports-to-oscar">REPORTS TO OSCAR</div>
+                    <div class="member-header">
+                        <div>
+                            <div class="member-name">🔬 Victoria Validator</div>
+                            <div class="member-role">Quality Assurance & Testing Specialist</div>
+                        </div>
+                        <div class="performance-indicator performance-excellent"></div>
+                    </div>
+                    <div class="current-assignment">
+                        <div class="assignment-title">Current Assignment:</div>
+                        <div class="assignment-details">Authority Reversal A/B testing and conversion optimization validation</div>
+                    </div>
+                    <div class="member-actions">
+                        <span class="member-action" onclick="contactMember('victoria')">
+                            <i class="fas fa-comments"></i> Contact
+                        </span>
+                        <span class="member-action" onclick="reviewPerformance('victoria')">
+                            <i class="fas fa-chart-bar"></i> Performance
+                        </span>
+                        <span class="member-action" onclick="assignTask('victoria')">
+                            <i class="fas fa-plus"></i> Assign Task
+                        </span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -884,7 +910,7 @@
         class OscarOperationsVP {
             constructor() {
                 this.authorityLevel = "VP_OPERATIONS";
-                this.teamMembers = ['alice', 'john', 'mary', 'marcus', 'sarah', 'alex', 'elena'];
+                this.teamMembers = ['alice', 'john', 'mary', 'marcus', 'sarah', 'alex', 'elena', 'victoria'];
                 this.initializeVPOperations();
             }
             
@@ -939,7 +965,7 @@
         
         function generateOscarVPResponse(message) {
             const responses = {
-                'performance': 'VP Performance Report: Team operating at 94% efficiency. Authority Reversal Framework delivering 18.4% conversion rate. All 7 agents reporting strong performance under VP management. Alice (Excellent), Marcus (Excellent), Dr. Sarah (Excellent), Elena (Excellent), Alex (Good - Analytics completion in progress), John (Good), Mary (Excellent).',
+                'performance': 'VP Performance Report: Team operating at 94% efficiency. Authority Reversal Framework delivering 18.4% conversion rate. All 8 agents reporting strong performance under VP management. Alice (Excellent), Marcus (Excellent), Dr. Sarah (Excellent), Elena (Excellent), Victoria (Excellent - QA Testing), Alex (Good - Analytics completion in progress), John (Good), Mary (Excellent).',
                 'team': 'Team Management Status: Complete VP authority over all BMAD agents established. All team members report directly to Oscar Operations VP. Current assignments optimized for Authority Reversal success. Performance accountability systems active. No escalation to CEO required.',
                 'assign': 'Task Assignment Protocol: Specify team member, task details, priority level, and deadline. Oscar VP will coordinate assignment with complete management authority and ensure delivery with performance accountability.',
                 'report': 'CEO Report Generation: Comprehensive performance reports available covering team metrics, deliverable quality, strategic impact, and ROI analysis. Oscar maintains 100% accountability for all results presented to CEO.',
@@ -990,7 +1016,8 @@
                 'marcus': 'Marcus Strategic',
                 'sarah': 'Dr. Sarah Hook',
                 'alex': 'Alex Analytics',
-                'elena': 'Elena Execution'
+                'elena': 'Elena Execution',
+                'victoria': 'Victoria Validator'
             };
             addOscarMessageToChat('oscar', `🎯 VP TEAM CONTACT: Connecting with ${memberNames[member]} for direct management coordination. Oscar VP authority ensures immediate response and priority handling. Performance expectations and strategic alignment will be reinforced. - Oscar Operations VP`);
         }
@@ -1003,7 +1030,8 @@
                 'marcus': 'Marcus Strategic - Market analysis expertise',
                 'sarah': 'Dr. Sarah Hook - Authority Reversal mastery',
                 'alex': 'Alex Analytics - Pattern analysis development',
-                'elena': 'Elena Execution - Technical implementation excellence'
+                'elena': 'Elena Execution - Technical implementation excellence',
+                'victoria': 'Victoria Validator - QA testing and conversion optimization'
             };
             addOscarMessageToChat('oscar', `🎯 VP PERFORMANCE ASSESSMENT: ${memberNames[member]} evaluation in progress. Comprehensive review of productivity, quality, strategic contribution, and development opportunities. Oscar VP maintains complete accountability for team member success and career advancement. - Oscar Operations VP`);
         }
