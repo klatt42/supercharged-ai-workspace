@@ -11,7 +11,12 @@
       "mcp__playwright__browser_resize",
       "mcp__playwright__browser_evaluate",
       "Bash(claude mcp add:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(claude mcp:*)",
+      "Bash(claude)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
