@@ -49,3 +49,5 @@ tmp/
 # Local development
 localhost-*
 health-check-results.json
+# Local Netlify folder
+.netlify

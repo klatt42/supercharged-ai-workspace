@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ellen Executive Assistant - CEO Direct Interface & Authority Representative for BMAD Operations">
-    <title>Ellen Executive Assistant | CEO Direct Interface</title>
+    <meta name="description" content="Ellen Executive Assistant - CEO Communication Interface & Information Coordinator for BMAD Operations">
+    <title>Ellen Executive Assistant | CEO Communication Interface</title>
     
     <!-- Schema Markup for Ellen Executive Interface -->
     <script type="application/ld+json">
@@ -12,7 +12,7 @@
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "Ellen Executive Assistant Interface",
-        "description": "CEO Direct Interface & Authority Representative for BMAD Operations",
+        "description": "CEO Communication Interface & Information Coordinator for BMAD Operations",
         "applicationCategory": "ExecutiveApplication",
         "operatingSystem": "All"
     }
@@ -137,7 +137,7 @@
         }
         
         .ceo-directive-center::before {
-            content: "🔷 CEO EXECUTIVE COMMAND CENTER";
+            content: "🔷 CEO COMMUNICATION CENTER";
             position: absolute;
             top: -15px;
             left: 30px;
@@ -571,16 +571,16 @@
                 <i class="fas fa-crown ellen-crown"></i>
                 <div>
                     <div class="ellen-title">Ellen Executive Assistant</div>
-                    <div class="ellen-subtitle">CEO Direct Interface & Authority Representative</div>
+                    <div class="ellen-subtitle">CEO Communication Interface & Information Coordinator</div>
                 </div>
             </div>
             <div class="ceo-authority">
                 <div class="authority-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>CEO Executive Authority</span>
+                    <i class="fas fa-comments"></i>
+                    <span>CEO Communication Representative</span>
                 </div>
                 <div style="font-size: 12px; opacity: 0.8; margin-top: 3px;">
-                    Single Point of Contact | BMAD Operations Director
+                    Information Interface | Communication Coordinator
                 </div>
             </div>
         </nav>
@@ -592,26 +592,26 @@
         <section class="ceo-directive-center">
             <div class="directive-header">
                 <h2 class="directive-title">
-                    <i class="fas fa-bullhorn"></i>
-                    Executive Command Center
+                    <i class="fas fa-comments"></i>
+                    Communication Coordination Center
                 </h2>
             </div>
             
             <p style="font-size: 18px; line-height: 1.8; margin-bottom: 25px; text-align: center; font-style: italic;">
-                "Ellen coordinates all BMAD operations with full CEO authority. Every directive, every deadline, every deliverable flows through Ellen's executive oversight to ensure Authority Reversal Framework™ excellence."
+                "Ellen serves as CEO communication interface, gathering information from Oscar VP and coordinating communication flow. All task assignments flow through Oscar Operations VP for Authority Reversal Framework™ excellence."
             </p>
             
             <div class="executive-actions">
-                <div class="action-card" onclick="assignNewTask()">
-                    <div class="action-icon"><i class="fas fa-tasks"></i></div>
-                    <div class="action-title">Assign Task</div>
-                    <div class="action-description">Delegate new directive with CEO authority</div>
+                <div class="action-card" onclick="relayToOscar()">
+                    <div class="action-icon"><i class="fas fa-share"></i></div>
+                    <div class="action-title">Relay to Oscar VP</div>
+                    <div class="action-description">Send CEO directive to Oscar VP for team assignment</div>
                 </div>
                 
                 <div class="action-card" onclick="requestStatusReport()">
                     <div class="action-icon"><i class="fas fa-chart-bar"></i></div>
                     <div class="action-title">Status Report</div>
-                    <div class="action-description">Generate executive summary for CEO</div>
+                    <div class="action-description">Gather status from Oscar VP for CEO briefing</div>
                 </div>
                 
                 <div class="action-card" onclick="escalateIssue()">
@@ -628,18 +628,18 @@
             </div>
         </section>
 
-        <!-- Team Authority Management -->
+        <!-- Team Status Information -->
         <section class="executive-section">
             <div class="section-header">
                 <h3 class="section-title">
-                    <i class="fas fa-sitemap"></i>
-                    Team Authority Management
+                    <i class="fas fa-info-circle"></i>
+                    Team Status Information (Reports to Oscar VP)
                 </h3>
             </div>
             
             <div class="team-hierarchy">
                 <div class="agent-authority-card">
-                    <div class="authority-level">REPORTS TO ELLEN</div>
+                    <div class="authority-level">REPORTS TO OSCAR VP</div>
                     <div class="agent-info">
                         <div>
                             <div class="agent-name">👩‍🔬 Dr. Sarah Hook</div>
@@ -658,14 +658,14 @@
                         <span class="agent-action" onclick="reviewWork('sarah')">
                             <i class="fas fa-eye"></i> Review Work
                         </span>
-                        <span class="agent-action" onclick="assignTask('sarah')">
-                            <i class="fas fa-plus"></i> Assign Task
+                        <span class="agent-action" onclick="requestFromOscar('sarah')">
+                            <i class="fas fa-share"></i> Request via Oscar VP
                         </span>
                     </div>
                 </div>
                 
                 <div class="agent-authority-card">
-                    <div class="authority-level">REPORTS TO ELLEN</div>
+                    <div class="authority-level">REPORTS TO OSCAR VP</div>
                     <div class="agent-info">
                         <div>
                             <div class="agent-name">🎯 Marcus Strategic</div>
@@ -684,14 +684,14 @@
                         <span class="agent-action" onclick="reviewWork('marcus')">
                             <i class="fas fa-eye"></i> Review Work
                         </span>
-                        <span class="agent-action" onclick="assignTask('marcus')">
-                            <i class="fas fa-plus"></i> Assign Task
+                        <span class="agent-action" onclick="requestFromOscar('marcus')">
+                            <i class="fas fa-share"></i> Request via Oscar VP
                         </span>
                     </div>
                 </div>
                 
                 <div class="agent-authority-card">
-                    <div class="authority-level">REPORTS TO ELLEN</div>
+                    <div class="authority-level">REPORTS TO OSCAR VP</div>
                     <div class="agent-info">
                         <div>
                             <div class="agent-name">📊 Alex Analytics</div>
@@ -710,14 +710,14 @@
                         <span class="agent-action" onclick="reviewWork('alex')">
                             <i class="fas fa-eye"></i> Review Work
                         </span>
-                        <span class="agent-action" onclick="assignTask('alex')">
-                            <i class="fas fa-plus"></i> Assign Task
+                        <span class="agent-action" onclick="requestFromOscar('alex')">
+                            <i class="fas fa-share"></i> Request via Oscar VP
                         </span>
                     </div>
                 </div>
                 
                 <div class="agent-authority-card">
-                    <div class="authority-level">REPORTS TO ELLEN</div>
+                    <div class="authority-level">REPORTS TO OSCAR VP</div>
                     <div class="agent-info">
                         <div>
                             <div class="agent-name">🔧 Elena Execution</div>
@@ -736,14 +736,14 @@
                         <span class="agent-action" onclick="reviewWork('elena')">
                             <i class="fas fa-eye"></i> Review Work
                         </span>
-                        <span class="agent-action" onclick="assignTask('elena')">
-                            <i class="fas fa-plus"></i> Assign Task
+                        <span class="agent-action" onclick="requestFromOscar('elena')">
+                            <i class="fas fa-share"></i> Request via Oscar VP
                         </span>
                     </div>
                 </div>
                 
                 <div class="agent-authority-card">
-                    <div class="authority-level">REPORTS TO ELLEN</div>
+                    <div class="authority-level">REPORTS TO OSCAR VP</div>
                     <div class="agent-info">
                         <div>
                             <div class="agent-name">🧠 Alice Intelligence</div>
@@ -762,8 +762,8 @@
                         <span class="agent-action" onclick="reviewWork('alice')">
                             <i class="fas fa-eye"></i> Review Work
                         </span>
-                        <span class="agent-action" onclick="assignTask('alice')">
-                            <i class="fas fa-plus"></i> Assign Task
+                        <span class="agent-action" onclick="requestFromOscar('alice')">
+                            <i class="fas fa-share"></i> Request via Oscar VP
                         </span>
                     </div>
                 </div>
@@ -840,7 +840,7 @@
             </div>
             
             <div class="chat-input-area">
-                <input type="text" class="ellen-input" id="ellen-input" placeholder="Executive directive or coordination request..." onkeypress="handleEllenEnter(event)">
+                <input type="text" class="ellen-input" id="ellen-input" placeholder="CEO communication or information request to relay to Oscar VP..." onkeypress="handleEllenEnter(event)">
                 <button class="ellen-send" onclick="sendEllenMessage()">
                     <i class="fas fa-crown"></i>
                 </button>
@@ -921,34 +921,34 @@
             
             for (const [key, response] of Object.entries(responses)) {
                 if (lowerMessage.includes(key)) {
-                    return `🔷 ${response} - Ellen, CEO Executive Authority`;
+                    return `🔷 ${response} - Ellen, CEO Communication Representative`;
                 }
             }
             
-            return `🔷 Acknowledged: "${message}". Ellen will coordinate this directive with appropriate BMAD specialists using full CEO authority. Expected timeline and resource allocation will be optimized for Authority Reversal Framework success. Shall I proceed with executive coordination? - Ellen, CEO Executive Authority`;
+            return `🔷 Acknowledged: "${message}". Ellen will relay this communication to Oscar Operations VP for team coordination and implementation. Oscar will assign to appropriate BMAD specialists and provide status updates for Authority Reversal Framework success. Communication relay initiated. - Ellen, CEO Communication Representative`;
         }
         
         // Executive Action Functions
-        function assignNewTask() {
-            const taskDescription = prompt("Enter task description for BMAD team assignment:");
-            if (taskDescription) {
-                addEllenMessageToChat('ellen', `🔷 EXECUTIVE DIRECTIVE ISSUED: "${taskDescription}" - Assigning to appropriate BMAD specialist with CEO authority. Timeline and quality standards will be enforced. - Ellen, CEO Executive Authority`);
+        function relayToOscar() {
+            const ceoDirective = prompt("Enter CEO directive to relay to Oscar VP:");
+            if (ceoDirective) {
+                addEllenMessageToChat('ellen', `🔷 CEO DIRECTIVE RELAYED: "${ceoDirective}" - Forwarded to Oscar Operations VP for team assignment and implementation. Oscar will coordinate with appropriate BMAD specialists. Status updates will be provided via Oscar VP. - Ellen, CEO Communication Representative`);
             }
         }
         
         function requestStatusReport() {
-            addEllenMessageToChat('ellen', `🔷 EXECUTIVE STATUS REPORT: All BMAD operations on-track. Authority Reversal Framework performing at 18.4% conversion (500% above baseline). Team productivity at 94% completion rate. Critical items: Analytics configuration completion required. No CEO escalation needed. Full detailed report available upon request. - Ellen, CEO Executive Authority`);
+            addEllenMessageToChat('ellen', `🔷 STATUS REPORT (FROM OSCAR VP): All BMAD operations on-track. Authority Reversal Framework performing at 18.4% conversion (500% above baseline). Team productivity at 94% completion rate. Critical items: Analytics configuration completion required. No CEO escalation needed. Full detailed report from Oscar VP available upon request. - Ellen, CEO Communication Representative`);
         }
         
         function escalateIssue() {
             const issue = prompt("Describe issue requiring CEO escalation:");
             if (issue) {
-                addEllenMessageToChat('ellen', `🔷 CEO ESCALATION INITIATED: "${issue}" - Ellen has flagged this for immediate CEO attention. Executive priority override activated. All necessary resources being coordinated for resolution. - Ellen, CEO Executive Authority`);
+                addEllenMessageToChat('ellen', `🔷 CEO ESCALATION INITIATED: "${issue}" - Ellen has flagged this for immediate CEO attention. Oscar VP has been notified and will coordinate necessary resources for resolution. Communication flow maintained. - Ellen, CEO Communication Representative`);
             }
         }
         
         function coordinateTeam() {
-            addEllenMessageToChat('ellen', `🔷 TEAM COORDINATION ACTIVATED: Optimizing BMAD specialist assignments. Dr. Sarah (Pattern Analysis), Marcus (Strategy), Alex (Analytics Priority), Elena (Technical Implementation), Alice (Monitoring). Resource reallocation complete with CEO authority backing. - Ellen, CEO Executive Authority`);
+            addEllenMessageToChat('ellen', `🔷 TEAM COMMUNICATION COORDINATION: Facilitating information flow between CEO and Oscar VP. Team assignments managed by Oscar VP: Dr. Sarah (Pattern Analysis), Marcus (Strategy), Alex (Analytics Priority), Elena (Technical Implementation), Alice (Monitoring). Communication channels optimized. - Ellen, CEO Communication Representative`);
         }
         
         function contactAgent(agentName) {
@@ -970,13 +970,13 @@
                 'elena': 'Elena Execution - Technical implementations',
                 'alice': 'Alice Intelligence - Dashboard monitoring'
             };
-            addEllenMessageToChat('ellen', `🔷 WORK REVIEW INITIATED: Quality control assessment of ${agentNames[agentName]} deliverables. Ellen's executive standards ensure CEO-level quality before final approval. - Ellen, CEO Executive Authority`);
+            addEllenMessageToChat('ellen', `🔷 WORK REVIEW REQUEST: Quality control assessment request for ${agentNames[agentName]} deliverables sent to Oscar VP. Oscar will review work against CEO quality standards and provide assessment. - Ellen, CEO Communication Representative`);
         }
         
-        function assignTask(agentName) {
-            const taskDescription = prompt(`Enter task for ${agentName.toUpperCase()}:`);
-            if (taskDescription) {
-                addEllenMessageToChat('ellen', `🔷 TASK ASSIGNED: "${taskDescription}" delegated to ${agentName.toUpperCase()} with Ellen's CEO authority. Deadline enforcement and quality standards activated. Progress monitoring initiated. - Ellen, CEO Executive Authority`);
+        function requestFromOscar(agentName) {
+            const requestDescription = prompt(`Enter request for ${agentName.toUpperCase()} (will be routed through Oscar VP):`);
+            if (requestDescription) {
+                addEllenMessageToChat('ellen', `🔷 REQUEST RELAYED TO OSCAR VP: "${requestDescription}" for ${agentName.toUpperCase()} - Forwarded to Oscar Operations VP for team assignment. Oscar will coordinate directly with ${agentName.toUpperCase()} and provide status updates. - Ellen, CEO Communication Representative`);
             }
         }
         
