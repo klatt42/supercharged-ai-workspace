@@ -19,10 +19,15 @@
       "Bash(git push:*)",
       "Bash(npx netlify deploy:*)",
       "mcp__playwright__browser_type",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "Bash(chmod:*)",
+      "Bash(./performance-monitoring/real-time-dashboard-setup.sh:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "/home/klatt42/Developer/projects/personal"
+    ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [

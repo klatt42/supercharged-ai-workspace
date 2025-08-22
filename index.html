@@ -6,6 +6,11 @@
     <meta name="description" content="Northern VA Water Damage Restoration - Choose YOUR expert, not your insurance company's choice. Emergency response that puts YOUR home first.">
     <title>Northern VA Water Damage Restoration - Choose YOUR Expert | Authority Reversal Framework™</title>
     
+    <!-- Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- Schema Markup for Emergency Services -->
     <script type="application/ld+json">
     {
@@ -74,21 +79,81 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.65;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: #fff;
             overflow-x: hidden;
+            font-weight: 400;
+            letter-spacing: -0.011em;
+        }
+        
+        /* Typography System - Website Empire Standards */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: clamp(32px, 6vw, 56px);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+        }
+        
+        h2 {
+            font-size: clamp(24px, 4.5vw, 42px);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: clamp(20px, 3.5vw, 32px);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.25rem;
+        }
+        
+        p {
+            font-size: clamp(16px, 2.2vw, 18px);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        .lead-text {
+            font-size: clamp(18px, 2.5vw, 22px);
+            line-height: 1.6;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.98);
+        }
+        
+        /* Professional Trust Indicators */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 215, 0, 0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffd700;
         }
         
         /* Emergency Header */
         .emergency-header {
             background: #d32f2f;
-            padding: 8px 0;
+            padding: 12px 0;
             text-align: center;
-            font-weight: bold;
-            font-size: 14px;
+            font-weight: 700;
+            font-size: clamp(13px, 2vw, 15px);
             animation: emergencyPulse 2s infinite;
+            letter-spacing: 0.5px;
         }
         
         @keyframes emergencyPulse {
@@ -96,13 +161,15 @@
             50% { background: #f44336; }
         }
         
-        /* Navigation */
+        /* Navigation - Professional Layout */
         .nav {
-            background: rgba(0,0,0,0.9);
-            padding: 15px 0;
+            background: rgba(0,0,0,0.95);
+            padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
         }
         
         .nav-container {
@@ -111,13 +178,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 clamp(20px, 4vw, 40px);
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 800;
             color: #ffd700;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .emergency-call {
@@ -147,24 +218,29 @@
         
         /* Hero Section - Authority Reversal Hook Point */
         .emergency-hero-plumber-medical {
-            padding: 60px 20px;
+            padding: clamp(60px, 10vw, 120px) clamp(20px, 4vw, 40px);
             text-align: center;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23001122" width="1200" height="600"/><circle fill="%23003366" cx="200" cy="150" r="80" opacity="0.3"/><circle fill="%23004488" cx="800" cy="300" r="60" opacity="0.4"/><circle fill="%230066aa" cx="400" cy="450" r="100" opacity="0.2"/></svg>');
             background-size: cover;
             background-position: center;
-            min-height: 600px;
+            min-height: clamp(600px, 90vh, 800px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
+            gap: clamp(20px, 4vw, 40px);
         }
         
         .emergency-hero-plumber-medical h1 {
-            font-size: clamp(28px, 5vw, 48px);
+            font-size: clamp(32px, 6vw, 56px);
             font-weight: 900;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            line-height: 1.2;
+            margin-bottom: clamp(20px, 4vw, 40px);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .hook-connector {
@@ -183,20 +259,26 @@
         .medical-emergency-parallel {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 40px 0;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            gap: clamp(20px, 4vw, 40px);
+            margin: clamp(30px, 6vw, 60px) auto;
+            max-width: 900px;
+            padding: 0 clamp(20px, 4vw, 40px);
         }
         
         .medical-side, .restoration-side {
-            background: rgba(255,255,255,0.1);
-            padding: 25px;
-            border-radius: 15px;
+            background: rgba(255,255,255,0.08);
+            padding: clamp(20px, 4vw, 32px);
+            border-radius: 20px;
             border: 2px solid;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: clamp(16px, 2.5vw, 20px);
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .medical-side:hover, .restoration-side:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
         }
         
         .medical-side {
@@ -235,52 +317,85 @@
         
         /* Authority Reversal Content Section */
         .authority-reversal-content {
-            padding: 80px 20px;
+            padding: clamp(60px, 12vw, 120px) clamp(20px, 4vw, 40px);
             max-width: 1200px;
             margin: 0 auto;
         }
         
         .authority-section {
-            background: rgba(255,255,255,0.05);
-            margin: 40px 0;
-            padding: 40px;
-            border-radius: 20px;
-            border-left: 5px solid #ffd700;
+            background: rgba(255,255,255,0.06);
+            margin: clamp(40px, 8vw, 80px) 0;
+            padding: clamp(30px, 6vw, 60px);
+            border-radius: 24px;
+            border-left: 6px solid #ffd700;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
         }
         
         .authority-section h2 {
             color: #ffd700;
-            font-size: 32px;
-            margin-bottom: 25px;
+            font-size: clamp(24px, 4.5vw, 42px);
+            margin-bottom: clamp(20px, 4vw, 35px);
             text-align: center;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+        
+        .authority-section h3 {
+            color: #ffd700;
+            font-size: clamp(20px, 3.5vw, 32px);
+            margin-bottom: clamp(15px, 3vw, 25px);
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .authority-section p {
+            font-size: clamp(16px, 2.2vw, 20px);
+            line-height: 1.7;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto clamp(20px, 4vw, 30px);
         }
         
         .emergency-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: clamp(20px, 4vw, 40px);
+            margin: clamp(40px, 8vw, 80px) 0;
+            padding: 0 clamp(10px, 2vw, 20px);
         }
         
         .stat-card {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.2));
-            padding: 30px;
-            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(255,215,0,0.12), rgba(255,215,0,0.18));
+            padding: clamp(24px, 5vw, 40px);
+            border-radius: 20px;
             text-align: center;
             border: 1px solid rgba(255,215,0,0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.5);
         }
         
         .stat-number {
-            font-size: 48px;
+            font-size: clamp(36px, 7vw, 56px);
             font-weight: 900;
             color: #ffd700;
             display: block;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
         }
         
         .stat-label {
-            font-size: 16px;
-            margin-top: 10px;
-            opacity: 0.9;
+            font-size: clamp(14px, 2vw, 18px);
+            margin-top: 8px;
+            opacity: 0.95;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
         
         /* Emergency Form */
@@ -444,25 +559,226 @@
             border: 0;
         }
         
-        /* Responsive Design */
+        /* Skip Navigation Excellence */
+        .skip-navigation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 8px;
+            background: #ffd700;
+            color: #000;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 3px solid #333;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+        
+        .skip-link:focus {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            clip: auto;
+            white-space: nowrap;
+            z-index: 10001;
+            transform: scale(1.05);
+            outline: 3px solid #d32f2f;
+            outline-offset: 2px;
+        }
+        
+        .skip-link:hover:focus {
+            background: #ffed4e;
+            transform: scale(1.08);
+        }
+        
+        /* Skip link stacking for multiple links */
+        .skip-link:nth-child(2):focus { top: 60px; }
+        .skip-link:nth-child(3):focus { top: 112px; }
+        .skip-link:nth-child(4):focus { top: 164px; }
+        .skip-link:nth-child(5):focus { top: 216px; }
+        
+        /* Enhanced Focus Management */
+        *:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+        }
+        
+        /* Focus indicators for interactive elements */
+        a:focus,
+        button:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+        
+        .emergency-call:focus,
+        .emergency-call-now:focus,
+        .submit-btn:focus {
+            outline: 3px solid #fff;
+            outline-offset: 3px;
+            box-shadow: 0 0 0 6px rgba(255, 215, 0, 0.5);
+        }
+        
+        .faq-question:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+            background: rgba(255, 215, 0, 0.2);
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Navigation hierarchy validation */
+        [role="navigation"] {
+            position: relative;
+        }
+        
+        [role="main"] {
+            position: relative;
+        }
+        
+        [role="contentinfo"] {
+            position: relative;
+        }
+        
+        /* Keyboard navigation helpers */
+        [tabindex="0"]:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+            background: rgba(255, 215, 0, 0.1);
+        }
+        
+        /* Focus visible for better UX */
+        .focus-visible {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+        }
+        
+        /* Social Proof Section Styling */
+        .social-proof-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-grid {
+            gap: clamp(20px, 4vw, 30px);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+            border-left-color: #ffed4e;
+        }
+        
+        /* Mobile-First Responsive Design */
         @media (max-width: 768px) {
             .medical-emergency-parallel {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: clamp(16px, 4vw, 24px);
+                margin: clamp(24px, 6vw, 40px) auto;
             }
             
             .emergency-stats {
                 grid-template-columns: 1fr;
+                gap: clamp(16px, 4vw, 24px);
             }
             
             .nav-container {
                 flex-direction: column;
-                gap: 15px;
+                gap: 16px;
+                padding: 0 20px;
+            }
+            
+            .nav {
+                padding: 16px 0;
             }
             
             .authority-section {
-                padding: 25px;
+                padding: clamp(20px, 5vw, 32px);
+                margin: clamp(24px, 6vw, 48px) 0;
             }
+            
+            .emergency-hero-plumber-medical {
+                padding: clamp(40px, 8vw, 80px) 20px;
+                min-height: clamp(500px, 80vh, 600px);
+            }
+            
+            .stat-card {
+                padding: clamp(20px, 5vw, 32px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .emergency-header {
+                padding: 8px 0;
+                font-size: 12px;
+            }
+            
+            .medical-side, .restoration-side {
+                padding: clamp(16px, 4vw, 24px);
+                font-size: clamp(14px, 3vw, 16px);
+            }
+            
+            .hero-empowerment {
+                margin-bottom: 20px;
+            }
+            
+            .authority-empowerment {
+                margin: 30px auto;
+                padding: 20px;
+            }
+            
+            .emergency-call-now {
+                padding: 16px 24px;
+                font-size: 16px;
+            }
+        }
+        
+        /* Performance Optimizations */
+        * {
+            will-change: auto;
+        }
+        
+        .emergency-call,
+        .emergency-call-now,
+        .submit-btn,
+        .stat-card,
+        .medical-side,
+        .restoration-side {
+            will-change: transform;
+        }
+        
+        /* Preload critical resources */
+        .emergency-hero-plumber-medical {
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
         
         /* Authority Reversal Animations */
@@ -490,12 +806,12 @@
 </head>
 <body>
     <!-- Emergency Header -->
-    <div class="emergency-header" role="banner">
+    <header class="emergency-header" role="banner" aria-label="Emergency contact banner">
         🚨 EMERGENCY WATER DAMAGE? Don't Let Insurance Choose - Call YOUR Expert: 703-555-WATER 🚨
-    </div>
+    </header>
     
     <!-- Navigation -->
-    <nav class="nav" role="navigation" aria-label="Main navigation">
+    <nav class="nav" role="navigation" aria-label="Main navigation" id="navigation">
         <div class="nav-container">
             <div class="logo" aria-label="Northern VA Water Damage Restoration">
                 💧 NoVA Water Rescue
@@ -508,8 +824,17 @@
         </div>
     </nav>
     
+    <!-- Comprehensive Skip Navigation Links -->
+    <nav class="skip-navigation" role="navigation" aria-label="Skip navigation">
+        <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>
+        <a href="#navigation" class="skip-link sr-only sr-only-focusable">Skip to navigation</a>
+        <a href="#emergency-form-heading" class="skip-link sr-only sr-only-focusable">Skip to emergency form</a>
+        <a href="#faq-main-heading" class="skip-link sr-only sr-only-focusable">Skip to FAQ section</a>
+        <a href="#footer-contact" class="skip-link sr-only sr-only-focusable">Skip to contact information</a>
+    </nav>
+    
     <!-- Hero Section - Authority Reversal Hook Point -->
-    <section class="emergency-hero-plumber-medical" role="main" aria-labelledby="main-hook">
+    <main class="emergency-hero-plumber-medical" id="main-content" aria-labelledby="main-hook">
         <h1 id="main-hook" class="authority-challenge">
             Would you let your plumber diagnose your heart attack?
             <span class="hook-connector mortality-trigger">
@@ -539,20 +864,80 @@
         <div class="sr-only">
             This page demonstrates the Authority Reversal Framework, questioning why insurance companies should choose your emergency contractor when you wouldn't let unqualified professionals make other critical decisions for you.
         </div>
-    </section>
+    </main>
     
     <!-- Authority Reversal Content -->
-    <section class="authority-reversal-content" role="region" aria-labelledby="authority-content">
-        <h2 id="authority-content" class="sr-only">Authority Reversal Framework Content</h2>
+    <section class="authority-reversal-content" role="main" aria-labelledby="why-matters-heading"  aria-describedby="content-description">
+        <div id="content-description" class="sr-only">This section explains the Authority Reversal Framework and why choosing your own water damage contractor is important for your family's protection</div>
+        <h2 id="why-matters-heading">🧠 Why This Matters for Your Home's <span class="mortality-trigger">Survival</span></h2>
         
-        <div class="authority-section">
-            <h2>🧠 Why This Matters for Your Home's <span class="mortality-trigger">Survival</span></h2>
-            <p style="font-size: 18px; line-height: 1.8; text-align: center;">
-                You wouldn't let your plumber diagnose a heart attack because plumbers fix pipes, not hearts. 
-                The same logic applies to your home emergency: insurance companies minimize costs, 
-                not maximize your home's recovery. When your family's shelter and financial security 
-                are at stake, YOU should choose the expert who puts your home's survival first.
-            </p>
+        <div style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
+            <span class="trust-badge">✅ Licensed & Insured</span>
+            <span class="trust-badge">⚡ 24/7 Emergency Response</span>
+            <span class="trust-badge">🏆 A+ BBB Rating</span>
+        </div>
+        
+        <p class="lead-text">
+            You wouldn't let your plumber diagnose a heart attack because plumbers fix pipes, not hearts. 
+            The same logic applies to your home emergency: insurance companies minimize costs, 
+            not maximize your home's recovery. When your family's shelter and financial security 
+            are at stake, YOU should choose the expert who puts your home's survival first.
+        </p>
+    </div>
+        
+        <!-- Social Proof Section - Authority Reversal Psychology -->
+        <div class="social-proof-section" role="region" aria-labelledby="social-proof-heading" aria-describedby="social-proof-description">
+            <div id="social-proof-description" class="sr-only">Client testimonials and social proof demonstrating the effectiveness of choosing your own water damage contractor</div>
+            <h3 id="social-proof-heading" style="color: #ffd700; text-align: center; font-size: clamp(24px, 4vw, 36px); margin-bottom: 40px; font-weight: 800;">🏆 Families Who Chose THEIR Expert (Not Insurance Choice)</h3>
+            
+            <div class="testimonial-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                <div class="testimonial-card" style="background: rgba(255,255,255,0.08); padding: 30px; border-radius: 20px; border-left: 5px solid #ffd700; backdrop-filter: blur(10px);">
+                    <div class="testimonial-text" style="font-style: italic; margin-bottom: 20px; font-size: 16px; line-height: 1.6;">
+                        "When our basement flooded, the insurance company wanted us to wait 3 days for their contractor. We said NO - would you wait 3 days for a heart attack? We called our chosen expert and they were here in 45 minutes. Our home survived because WE made the choice."
+                    </div>
+                    <div class="testimonial-author" style="font-weight: bold; color: #ffd700;">- Sarah M., Arlington Family</div>
+                    <div class="testimonial-details" style="font-size: 14px; opacity: 0.8;">✅ Basement flooding • ✅ 45min response • ✅ $12,000 damage prevented</div>
+                </div>
+                
+                <div class="testimonial-card" style="background: rgba(255,255,255,0.08); padding: 30px; border-radius: 20px; border-left: 5px solid #ffd700; backdrop-filter: blur(10px);">
+                    <div class="testimonial-text" style="font-style: italic; margin-bottom: 20px; font-size: 16px; line-height: 1.6;">
+                        "Insurance company's contractor estimated 3 weeks. Our family couldn't live in hotels that long. We exercised our right to choose OUR expert - job done in 5 days, family back home safe. Sometimes protecting your family means making your own decisions."
+                    </div>
+                    <div class="testimonial-author" style="font-weight: bold; color: #ffd700;">- Mike D., Fairfax Homeowner</div>
+                    <div class="testimonial-details" style="font-size: 14px; opacity: 0.8;">✅ Pipe burst • ✅ 5-day restoration • ✅ Family shelter protected</div>
+                </div>
+                
+                <div class="testimonial-card" style="background: rgba(255,255,255,0.08); padding: 30px; border-radius: 20px; border-left: 5px solid #ffd700; backdrop-filter: blur(10px);">
+                    <div class="testimonial-text" style="font-style: italic; margin-bottom: 20px; font-size: 16px; line-height: 1.6;">
+                        "Would I let my insurance company pick my surgeon? Never. So when water damaged our children's bedrooms, we chose OUR restoration expert. Our kids were back in their safe rooms within a week. Your family's shelter isn't negotiable."
+                    </div>
+                    <div class="testimonial-author" style="font-weight: bold; color: #ffd700;">- Jennifer L., Alexandria Mother</div>
+                    <div class="testimonial-details" style="font-size: 14px; opacity: 0.8;">✅ Children's rooms • ✅ 1-week recovery • ✅ Family safety priority</div>
+                </div>
+            </div>
+            
+            <!-- Authority Reversal Success Metrics -->
+            <div class="authority-success-metrics" style="background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.25)); padding: 40px; border-radius: 20px; border: 2px solid rgba(255,215,0,0.4); text-align: center; margin-bottom: 40px;">
+                <h4 style="color: #ffd700; font-size: clamp(20px, 3vw, 28px); margin-bottom: 30px; font-weight: 800;">👨‍👩‍👧‍👦 Northern VA Families Protected Through Choice</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+                    <div class="metric-item">
+                        <div style="font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: #ffd700; margin-bottom: 8px;">547</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Families Who Chose Their Expert</div>
+                    </div>
+                    <div class="metric-item">
+                        <div style="font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: #ffd700; margin-bottom: 8px;">96%</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Faster Recovery Times</div>
+                    </div>
+                    <div class="metric-item">
+                        <div style="font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: #ffd700; margin-bottom: 8px;">$2.3M</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Additional Damage Prevented</div>
+                    </div>
+                    <div class="metric-item">
+                        <div style="font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: #ffd700; margin-bottom: 8px;">100%</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Family Shelter Security</div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- Emergency Stats -->
@@ -576,7 +961,7 @@
         </div>
         
         <div class="authority-section">
-            <h2>⚡ Emergency Authority: Who Decides Your Home's Fate?</h2>
+            <h3 id="emergency-authority-heading">⚡ Emergency Authority: Who Decides Your Home's Fate?</h3>
             <p style="font-size: 18px; line-height: 1.8;">
                 <strong class="mortality-trigger">Critical Decision Moment:</strong> Water is destroying your family's sanctuary. 
                 Insurance companies want their cheapest option. YOU need the best emergency response. 
@@ -586,8 +971,8 @@
         </div>
         
         <!-- AI Summary Box -->
-        <div class="ai-summary" role="region" aria-label="AI-generated summary for search optimization">
-            <h4>In Summary:</h4>
+        <div class="ai-summary" role="region" aria-labelledby="ai-summary-heading">
+            <h3 id="ai-summary-heading">In Summary:</h3>
             <p>
                 Would you trust your plumber to diagnose a heart attack? Of course not - plumbers fix pipes, not hearts. 
                 The same principle applies to water damage contractors. Your family's home recovery depends on choosing 
@@ -600,9 +985,10 @@
     </section>
     
     <!-- Emergency Form -->
-    <section class="emergency-form-section" role="region" aria-labelledby="emergency-form">
+    <section class="emergency-form-section" role="form" aria-labelledby="emergency-form-heading" aria-describedby="form-description">
+        <div id="form-description" class="sr-only">Complete this form to request emergency water damage restoration service from your chosen expert, not an insurance company selection</div>
         <div class="form-container">
-            <h3 id="emergency-form">🚨 Get YOUR Water Damage Expert - Not Insurance Choice</h3>
+            <h2 id="emergency-form-heading">🚨 Get YOUR Water Damage Expert - Not Insurance Choice</h2>
             <form action="#" method="POST" aria-label="Emergency water damage service request form">
                 <div class="form-group">
                     <label for="emergency-name">Your Name *</label>
@@ -679,8 +1065,9 @@
     </section>
     
     <!-- Authority Reversal FAQ -->
-    <section class="authority-faq" role="region" aria-labelledby="faq-heading">
-        <h2 id="faq-heading" style="text-align: center; color: #ffd700; font-size: 36px; margin-bottom: 40px;">
+    <section class="authority-faq" role="region" aria-labelledby="faq-main-heading" aria-describedby="faq-description">
+        <div id="faq-description" class="sr-only">Frequently asked questions about your legal right to choose your own water damage contractor and the Authority Reversal Framework</div>
+        <h2 id="faq-main-heading" style="text-align: center; color: #ffd700; font-size: 36px; margin-bottom: 40px;">
             Authority Reversal FAQ - Your Right to Choose
         </h2>
         
@@ -736,9 +1123,9 @@
     </section>
     
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" aria-labelledby="footer-contact">
         <div class="footer-content">
-            <div class="emergency-contact mortality-trigger">
+            <div id="footer-contact" class="emergency-contact mortality-trigger" tabindex="0" aria-label="Emergency contact information">
                 🚨 NORTHERN VA WATER EMERGENCY: 703-555-WATER 🚨
             </div>
             <p style="margin: 20px 0;">
@@ -755,29 +1142,128 @@
     
     <!-- Authority Reversal Tracking JavaScript -->
     <script>
-        // FAQ Accordion Functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        // FAQ Accordion Functionality with Keyboard Support
+        function toggleFAQ(question) {
+            const answer = question.nextElementSibling;
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.setAttribute('aria-expanded', 'false');
+                q.nextElementSibling.style.display = 'none';
+            });
+            
+            // Toggle current item
+            if (!isExpanded) {
+                question.setAttribute('aria-expanded', 'true');
+                answer.style.display = 'block';
                 
-                // Close all other FAQ items
-                document.querySelectorAll('.faq-question').forEach(q => {
-                    q.setAttribute('aria-expanded', 'false');
-                    q.nextElementSibling.style.display = 'none';
+                // Track FAQ engagement
+                gtag('event', 'faq_expanded', {
+                    'question': question.textContent,
+                    'framework': 'authority_reversal'
                 });
-                
-                // Toggle current item
-                if (!isExpanded) {
-                    this.setAttribute('aria-expanded', 'true');
-                    answer.style.display = 'block';
-                    
-                    // Track FAQ engagement
-                    gtag('event', 'faq_expanded', {
-                        'question': this.textContent,
-                        'framework': 'authority_reversal'
-                    });
+            }
+        }
+        
+        document.querySelectorAll('.faq-question').forEach(question => {
+            // Click event
+            question.addEventListener('click', function() {
+                toggleFAQ(this);
+            });
+            
+            // Keyboard event
+            question.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(this);
                 }
+            });
+        });
+        
+        // Enhanced Keyboard Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus management for skip links
+            const skipLinks = document.querySelectorAll('.skip-link');
+            skipLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        // Ensure target is focusable
+                        if (targetElement.tabIndex < 0) {
+                            targetElement.tabIndex = 0;
+                        }
+                        // Focus the target element
+                        setTimeout(() => {
+                            targetElement.focus();
+                            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
+                });
+            });
+            
+            // Escape key navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    // Close any open FAQ items
+                    document.querySelectorAll('.faq-question[aria-expanded="true"]').forEach(question => {
+                        question.setAttribute('aria-expanded', 'false');
+                        question.nextElementSibling.style.display = 'none';
+                    });
+                    
+                    // Return focus to main content if needed
+                    const mainContent = document.getElementById('main-content');
+                    if (mainContent && document.activeElement === document.body) {
+                        mainContent.focus();
+                    }
+                }
+            });
+            
+            // Tab navigation enhancement
+            const focusableElements = 'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select, [tabindex]:not([tabindex="-1"])';
+            const firstFocusableElement = document.querySelector(focusableElements);
+            const focusableContent = document.querySelectorAll(focusableElements);
+            const lastFocusableElement = focusableContent[focusableContent.length - 1];
+            
+            // Focus trap for better navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstFocusableElement) {
+                            lastFocusableElement.focus();
+                            e.preventDefault();
+                        }
+                    } else {
+                        if (document.activeElement === lastFocusableElement) {
+                            firstFocusableElement.focus();
+                            e.preventDefault();
+                        }
+                    }
+                }
+            });
+            
+            // Announce navigation changes to screen readers
+            function announceNavigationChange(message) {
+                const announcement = document.createElement('div');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.setAttribute('aria-atomic', 'true');
+                announcement.className = 'sr-only';
+                announcement.textContent = message;
+                document.body.appendChild(announcement);
+                setTimeout(() => {
+                    document.body.removeChild(announcement);
+                }, 1000);
+            }
+            
+            // Track navigation usage for accessibility analytics
+            skipLinks.forEach(link => {
+                link.addEventListener('focus', function() {
+                    gtag('event', 'skip_navigation_accessed', {
+                        'link_target': this.getAttribute('href'),
+                        'accessibility_feature': 'skip_navigation'
+                    });
+                });
             });
         });
         
