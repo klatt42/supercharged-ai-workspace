@@ -33,7 +33,8 @@
     }
     </script>
     
-    <!-- Regional Analytics Integration -->
+    <!-- Alex Analytics: Authority Reversal Framework™ Tracking -->
+    <script src="scripts/regional-analytics-setup.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,12 +42,31 @@
         gtag('js', new Date());
         gtag('config', 'GA_MEASUREMENT_ID');
         
-        // Maryland Authority Reversal Hook Point tracking
-        gtag('event', 'authority_reversal_page_view', {
-            'framework': 'mechanic_child_surgery',
-            'industry': 'water_damage_restoration',
-            'location': 'maryland',
-            'region': 'montgomery_prince_georges_frederick_anne_arundel'
+        // Initialize Maryland Authority Reversal Tracking
+        initializeAuthorityReversalTracking('maryland');
+        
+        // Track Authority Psychology Hook Point Engagement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track mechanic/child surgery hook engagement
+            const hookElement = document.querySelector('#authority-hook-mechanic');
+            if (hookElement) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            trackAuthorityReversalEngagement('maryland', 'mechanic_child_surgery', 'hook_viewed');
+                        }
+                    });
+                });
+                observer.observe(hookElement);
+            }
+            
+            // Track customer authority empowerment response
+            document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
+                phoneLink.addEventListener('click', function() {
+                    trackAuthorityReversalEngagement('maryland', 'mechanic_child_surgery', 'authority_recognized');
+                    trackCompetitiveAdvantage('maryland');
+                });
+            });
         });
     </script>
     

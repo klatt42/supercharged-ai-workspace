@@ -33,7 +33,8 @@
     }
     </script>
     
-    <!-- NOVA Analytics Integration -->
+    <!-- Alex Analytics: Authority Reversal Framework™ Virginia Tracking (PROVEN 53%) -->
+    <script src="scripts/regional-analytics-setup.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,13 +42,32 @@
         gtag('js', new Date());
         gtag('config', 'GA_MEASUREMENT_ID');
         
-        // NOVA Authority Reversal Hook Point tracking (PROVEN 53%)
-        gtag('event', 'authority_reversal_page_view', {
-            'framework': 'plumber_heart_attack_proven',
-            'industry': 'water_damage_restoration',
-            'location': 'northern_virginia',
-            'region': 'nova_premium',
-            'baseline_conversion': '53_percent_proven'
+        // Initialize Virginia Authority Reversal Tracking (PROVEN BASELINE)
+        initializeAuthorityReversalTracking('virginia');
+        
+        // Track Medical Authority Hook Point Engagement (PROVEN 53%)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track plumber/heart attack hook engagement (proven effectiveness)
+            const hookElement = document.querySelector('#authority-hook-plumber');
+            if (hookElement) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            trackAuthorityReversalEngagement('virginia', 'plumber_heart_attack', 'hook_viewed_proven');
+                        }
+                    });
+                });
+                observer.observe(hookElement);
+            }
+            
+            // Track medical authority empowerment response (proven conversion)
+            document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
+                phoneLink.addEventListener('click', function() {
+                    trackAuthorityReversalEngagement('virginia', 'plumber_heart_attack', 'authority_recognized_proven');
+                    trackPremiumPsychologyAcceptance('virginia', 'medical_premium', 'proven_53_percent_baseline');
+                    trackCompetitiveAdvantage('virginia');
+                });
+            });
         });
     </script>
     

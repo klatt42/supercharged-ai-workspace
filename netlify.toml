@@ -1,12 +1,15 @@
-# Netlify configuration for Northern VA Water Damage Authority Reversal Framework™
+# BMAD Empire Multi-Region Authority Reversal Framework™ - Elena Execution Deployment
 [build]
-  # Build configuration for static site deployment
   publish = "."
-  command = "echo 'Static site - no build command needed'"
+  command = "echo 'BMAD Empire Multi-Region Deployment Ready'"
 
 [build.environment]
-  # Node version for any build processes
   NODE_VERSION = "18"
+  BMAD_FRAMEWORK = "Authority Reversal"
+  REGIONS = "Maryland,DC,Virginia"
+  PHONE_MD = "301-900-5171"
+  PHONE_DC = "202-796-7422" 
+  PHONE_VA = "703-844-4204"
 
 [[headers]]
   # Security headers for all pages
@@ -34,35 +37,79 @@
   [headers.values]
     Cache-Control = "public, max-age=3600"
 
-# Redirect rules for clean URLs and SEO
+# BMAD Empire Regional Phone Number Routing
 [[redirects]]
-  # Main landing page
-  from = "/water-damage"
-  to = "/northern-va-water-damage.html"
+  from = "/call-maryland"
+  to = "tel:301-900-5171"
   status = 301
 
 [[redirects]]
-  # Blog section
+  from = "/call-dc"
+  to = "tel:202-796-7422"
+  status = 301
+
+[[redirects]]
+  from = "/call-virginia" 
+  to = "tel:703-844-4204"
+  status = 301
+
+# Emergency Routing
+[[redirects]]
+  from = "/emergency-md"
+  to = "tel:301-900-5171"
+  status = 301
+
+[[redirects]]
+  from = "/emergency-dc"
+  to = "tel:202-796-7422"
+  status = 301
+
+[[redirects]]
+  from = "/emergency-va"
+  to = "tel:703-844-4204"
+  status = 301
+
+# Regional Landing Pages
+[[redirects]]
+  from = "/maryland"
+  to = "/maryland-restoration.html"
+  status = 200
+
+[[redirects]]
+  from = "/dc"
+  to = "/dc-restoration.html"
+  status = 200
+
+[[redirects]]
+  from = "/virginia"
+  to = "/virginia-restoration.html"
+  status = 200
+
+[[redirects]]
+  from = "/nova"
+  to = "/virginia-restoration.html"
+  status = 200
+
+# Legacy redirects
+[[redirects]]
+  from = "/water-damage"
+  to = "/virginia-restoration.html"
+  status = 301
+
+[[redirects]]
   from = "/blog"
   to = "/blog-index.html"
   status = 301
 
 [[redirects]]
-  # FAQ section
   from = "/faq"
   to = "/northern-va-water-damage-faq.html"
   status = 301
 
-[[redirects]]
-  # Emergency contact redirect
-  from = "/emergency"
-  to = "/northern-va-water-damage.html#emergency"
-  status = 301
-
-# 404 fallback to main landing page for emergency situations
+# 404 fallback prioritizes proven Virginia framework
 [[redirects]]
   from = "/*"
-  to = "/northern-va-water-damage.html"
+  to = "/virginia-restoration.html"
   status = 404
 
 [dev]

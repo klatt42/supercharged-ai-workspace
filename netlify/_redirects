@@ -1,0 +1,28 @@
+# BMAD Empire Multi-Region Domain Routing - Elena Execution
+# Authority Reversal Framework™ Custom Domain Configuration
+
+# Primary Domain Routing (when custom domains are configured)
+maryland.yourdomain.com/* /maryland-restoration.html 200
+dc.yourdomain.com/* /dc-restoration.html 200
+virginia.yourdomain.com/* /virginia-restoration.html 200
+nova.yourdomain.com/* /virginia-restoration.html 200
+
+# Subdomain Phone Routing
+maryland.yourdomain.com/call tel:301-900-5171 301
+dc.yourdomain.com/call tel:202-796-7422 301
+virginia.yourdomain.com/call tel:703-844-4204 301
+
+# Emergency Routing by Domain
+maryland.yourdomain.com/emergency tel:301-900-5171 301
+dc.yourdomain.com/emergency tel:202-796-7422 301
+virginia.yourdomain.com/emergency tel:703-844-4204 301
+
+# Regional Authority Psychology Routing
+maryland.yourdomain.com/authority-reversal /maryland-restoration.html#authority-psychology 200
+dc.yourdomain.com/authority-reversal /dc-restoration.html#authority-psychology 200
+virginia.yourdomain.com/authority-reversal /virginia-restoration.html#authority-psychology 200
+
+# Cross-Region Psychology Framework Routing
+/psychology-framework/* /virginia-restoration.html 301
+/authority-reversal/* /virginia-restoration.html 301
+/customer-empowerment/* /virginia-restoration.html 301
