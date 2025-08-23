@@ -21,12 +21,20 @@
       "mcp__playwright__browser_type",
       "mcp__playwright__browser_wait_for",
       "Bash(chmod:*)",
-      "Bash(./performance-monitoring/real-time-dashboard-setup.sh:*)"
+      "Bash(./performance-monitoring/real-time-dashboard-setup.sh:*)",
+      "Bash(claude mcp:*)",
+      "Bash(claude config mcp add:*)",
+      "Bash(claude tools list)",
+      "mcp__archon__manage_project",
+      "mcp__archon__manage_task",
+      "mcp__archon__session_info",
+      "mcp__archon__health_check"
     ],
     "deny": [],
     "ask": [],
     "additionalDirectories": [
-      "/home/klatt42/Developer/projects/personal"
+      "/home/klatt42/Developer/projects/personal",
+      "/home/klatt42"
     ]
   },
   "enableAllProjectMcpServers": true,
