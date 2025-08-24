@@ -34,7 +34,9 @@
       "Bash(cat:*)",
       "Bash(grep:*)",
       "Bash(find:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(echo:*)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": [],
