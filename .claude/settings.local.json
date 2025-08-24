@@ -29,7 +29,12 @@
       "mcp__archon__manage_task",
       "mcp__archon__session_info",
       "mcp__archon__health_check",
-      "mcp__archon__get_available_sources"
+      "mcp__archon__get_available_sources",
+      "Bash(tree:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": [],

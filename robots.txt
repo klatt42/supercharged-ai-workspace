@@ -1,0 +1,56 @@
+# Robots.txt for Authority Reversal Framework Restoration Services
+# Victoria Validator - Cross-Page Navigation & SEO Integration
+
+User-agent: *
+Allow: /
+
+# Exclude administrative and dashboard pages from crawling
+Disallow: /monitoring-dashboard.html
+Disallow: /interactive-project-dashboard.html
+Disallow: /alice-dashboard.html
+Disallow: /ellen-executive-interface.html
+Disallow: /victoria-validator-interface.html
+Disallow: /david-deploy-interface.html
+Disallow: /oscar-operations-vp-interface.html
+Disallow: /REVENUE-TRACKING-DASHBOARD.html
+
+# Exclude test and development pages
+Disallow: /test-interfaces.html
+Disallow: /index-original.html
+Disallow: /index-old-storm-damage.html
+
+# Allow all service and content pages
+Allow: /maryland-restoration.html
+Allow: /dc-restoration.html
+Allow: /virginia-restoration.html
+Allow: /blog-index.html
+Allow: /northern-va-water-damage.html
+Allow: /northern-va-water-damage-faq.html
+
+# Maryland service pages
+Allow: /montgomery-county-*.html
+Allow: /annapolis-*.html
+Allow: /frederick-county-*.html
+Allow: /washington-county-*.html
+
+# DC service pages
+Allow: /georgetown-*.html
+Allow: /capitol-hill-*.html
+Allow: /dupont-circle-*.html
+Allow: /adams-morgan-*.html
+Allow: /foggy-bottom-*.html
+
+# Northern Virginia service pages
+Allow: /fairfax-county-*.html
+Allow: /arlington-county-*.html
+Allow: /loudoun-county-*.html
+Allow: /prince-william-county-*.html
+
+# Blog and content pages
+Allow: /blog-post-*.html
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://example.com/sitemap.xml
