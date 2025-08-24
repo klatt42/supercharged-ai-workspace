@@ -145,7 +145,7 @@
         }
         
         .blog-content h2 {
-            color: #ff5722;
+            color: #d84315;
             font-size: 28px;
             margin: 30px 0 20px 0;
             border-left: 5px solid #ffb74d;
@@ -166,8 +166,8 @@
         
         /* Authority Conflict Callouts */
         .authority-conflict-callout {
-            background: linear-gradient(135deg, rgba(255,183,77,0.1), rgba(255,183,77,0.2));
-            border: 2px solid #ffb74d;
+            background: linear-gradient(135deg, rgba(216,67,21,0.12), rgba(216,67,21,0.18));
+            border: 3px solid #ff9800;
             border-radius: 15px;
             padding: 25px;
             margin: 30px 0;
@@ -183,19 +183,20 @@
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 14px;
-            color: #ff5722;
+            color: #d84315;
             font-weight: bold;
         }
         
         .authority-conflict-callout h4 {
-            color: #ff5722;
+            color: #d84315;
             margin-bottom: 15px;
             font-size: 20px;
+            font-weight: 700;
         }
         
         /* Authority Battle Box */
         .authority-battle-box {
-            background: linear-gradient(135deg, #ff5722, #e65100);
+            background: linear-gradient(135deg, #d84315, #bf360c);
             color: white;
             padding: 30px;
             border-radius: 15px;
@@ -204,9 +205,10 @@
         }
         
         .authority-battle-box h3 {
-            color: #ffb74d;
+            color: #ffea00;
             margin-bottom: 15px;
             font-size: 24px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         
         .authority-battle-box p {
@@ -341,12 +343,12 @@
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 14px;
-            color: #ff5722;
+            color: #d84315;
             font-weight: bold;
         }
         
         .ai-summary h4 {
-            color: #ff5722;
+            color: #d84315;
             margin-bottom: 15px;
             font-size: 20px;
         }
@@ -395,7 +397,7 @@
         }
         
         .nav-link {
-            color: #ff5722;
+            color: #d84315;
             text-decoration: none;
             font-weight: bold;
             margin: 0 15px;
@@ -418,7 +420,7 @@
         }
         
         .conflict-highlight {
-            color: #ff5722;
+            color: #d84315;
             font-weight: bold;
         }
         
@@ -426,6 +428,29 @@
             color: #d32f2f;
             font-weight: bold;
             text-decoration: underline;
+        }
+        
+        /* Mobile Contrast Enhancements */
+        @media (max-width: 768px) {
+            /* Enhanced contrast for bright conditions */
+            .authority-conflict-callout {
+                border-width: 3px;
+                background: rgba(255,255,255,0.95);
+            }
+            
+            .authority-conflict-callout h4 {
+                color: #bf360c !important;
+                font-weight: 800;
+            }
+            
+            .authority-battle-box {
+                background: linear-gradient(135deg, #bf360c, #8d2307) !important;
+            }
+            
+            .authority-battle-box h3 {
+                color: #fff59d !important;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
         }
         
         /* Responsive Design */
