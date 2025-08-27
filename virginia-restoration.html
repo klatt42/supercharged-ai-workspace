@@ -210,6 +210,28 @@
             padding: 0 clamp(20px, 4vw, 40px);
         }
         
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .blog-nav-link {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .blog-nav-link:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
+        }
+        
         .logo {
             font-size: clamp(20px, 3vw, 28px);
             font-weight: 800;
@@ -597,10 +619,20 @@
             <div class="logo">
                 💎 NOVA Premium Water Rescue
             </div>
-            <a href="tel:703-844-4204" class="emergency-call"
-               onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'header', 'region': 'northern_virginia'});">
-                📞 NOVA PREMIUM: 703-844-4204
-            </a>
+            <div class="nav-links">
+                <a href="/blog-index.html" class="blog-nav-link"
+                   onclick="gtag('event', 'blog_navigation_clicked', {'source': 'virginia_hub', 'destination': 'blog_index'});">
+                    📝 Authority Resources
+                </a>
+                <a href="/northern-va-water-damage-faq.html" class="blog-nav-link"
+                   onclick="gtag('event', 'faq_navigation_clicked', {'source': 'virginia_hub', 'destination': 'virginia_faq'});">
+                    ❓ FAQ
+                </a>
+                <a href="tel:703-844-4204" class="emergency-call"
+                   onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'header', 'region': 'northern_virginia'});">
+                    📞 NOVA PREMIUM: 703-844-4204
+                </a>
+            </div>
         </div>
     </nav>
     
@@ -686,6 +718,40 @@
         </div>
     </section>
     
+    <!-- Northern VA Authority Services Section -->
+    <section style="background: linear-gradient(135deg, #374151 0%, #1f2937 100%); padding: 80px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="color: #ffd700; font-size: clamp(28px, 5vw, 42px); margin-bottom: 20px; font-weight: 800;">
+                💎 Complete Northern VA Authority Services
+            </h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: clamp(16px, 2.5vw, 20px); margin-bottom: 50px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Exercise YOUR emergency authority across all restoration services – choose YOUR NOVA experts who put your survival first:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                <a href="/virginia-restoration.html" style="background: rgba(251,191,36,0.15); color: #ffd700; text-decoration: none; padding: 30px; border-radius: 20px; border: 2px solid rgba(251,191,36,0.4); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(251,191,36,0.25)'" onmouseout="this.style.background='rgba(251,191,36,0.15)'" onclick="gtag('event', 'virginia_service_navigation', {'source': 'virginia_hub', 'destination': 'water_damage'});">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 12px;">💧 Water Damage</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Emergency Authority</div>
+                    <div style="font-size: 18px; font-weight: bold;">📞 703-844-4204</div>
+                </a>
+                <a href="/northern-va-fire-damage.html" style="background: rgba(251,191,36,0.15); color: #ffd700; text-decoration: none; padding: 30px; border-radius: 20px; border: 2px solid rgba(251,191,36,0.4); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(251,191,36,0.25)'" onmouseout="this.style.background='rgba(251,191,36,0.15)'" onclick="gtag('event', 'virginia_service_navigation', {'source': 'virginia_hub', 'destination': 'fire_damage'});">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 12px;">🔥 Fire Damage</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Emergency Fire Authority</div>
+                    <div style="font-size: 18px; font-weight: bold;">📞 703-844-4204</div>
+                </a>
+                <a href="/northern-va-storm-damage.html" style="background: rgba(251,191,36,0.15); color: #ffd700; text-decoration: none; padding: 30px; border-radius: 20px; border: 2px solid rgba(251,191,36,0.4); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(251,191,36,0.25)'" onmouseout="this.style.background='rgba(251,191,36,0.15)'" onclick="gtag('event', 'virginia_service_navigation', {'source': 'virginia_hub', 'destination': 'storm_damage'});">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 12px;">⛈️ Storm Damage</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Emergency Storm Authority</div>
+                    <div style="font-size: 18px; font-weight: bold;">📞 703-844-4204</div>
+                </a>
+                <a href="/northern-va-mold-remediation.html" style="background: rgba(251,191,36,0.15); color: #ffd700; text-decoration: none; padding: 30px; border-radius: 20px; border: 2px solid rgba(251,191,36,0.4); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(251,191,36,0.25)'" onmouseout="this.style.background='rgba(251,191,36,0.15)'" onclick="gtag('event', 'virginia_service_navigation', {'source': 'virginia_hub', 'destination': 'mold_remediation'});">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 12px;">🦠 Mold Remediation</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Emergency Health Authority</div>
+                    <div style="font-size: 18px; font-weight: bold;">📞 703-844-4204</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Emergency Form -->
     <section class="emergency-form-section">
         <div class="form-container">

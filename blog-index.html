@@ -71,6 +71,35 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .breadcrumb-nav a {
+            color: #ffd700;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .breadcrumb-nav a:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
+        }
+        
+        .breadcrumb-nav span {
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: bold;
         }
         
         .blog-index-logo {
@@ -384,8 +413,15 @@
     <header class="blog-index-header" role="banner">
         <div class="header-container">
             <div class="blog-index-logo">💧 NoVA Water Authority Blog</div>
-            <a href="../northern-va-water-damage.html" class="emergency-cta"
-               onclick="gtag('event', 'blog_index_to_landing_page', {'source': 'header_cta'});">
+            <div class="breadcrumb-nav">
+                <a href="/virginia-restoration.html" onclick="gtag('event', 'breadcrumb_clicked', {'source': 'blog_index', 'destination': 'virginia_hub'});">🏠 Virginia Hub</a>
+                <span>•</span>
+                <a href="/maryland-restoration.html" onclick="gtag('event', 'breadcrumb_clicked', {'source': 'blog_index', 'destination': 'maryland_hub'});">🏠 Maryland Hub</a>
+                <span>•</span>
+                <a href="/dc-restoration.html" onclick="gtag('event', 'breadcrumb_clicked', {'source': 'blog_index', 'destination': 'dc_hub'});">🏠 DC Hub</a>
+            </div>
+            <a href="/virginia-restoration.html" class="emergency-cta"
+               onclick="gtag('event', 'blog_index_to_landing_page', {'source': 'header_cta', 'destination': 'virginia_restoration'});">
                 🚨 GET YOUR WATER EXPERT
             </a>
         </div>
@@ -591,8 +627,8 @@
             Stop letting insurance companies control your water damage decisions. 
             Learn from our educational content, then choose <span class="authority-highlight">YOUR expert</span> who puts your home's recovery first.
         </p>
-        <a href="../northern-va-water-damage.html" class="main-cta-button"
-           onclick="gtag('event', 'blog_main_cta_clicked', {'source': 'blog_index_bottom'});">
+        <a href="/virginia-restoration.html" class="main-cta-button"
+           onclick="gtag('event', 'blog_main_cta_clicked', {'source': 'blog_index_bottom', 'destination': 'virginia_restoration'});">
            Get Your Independent Water Expert
         </a>
     </section>

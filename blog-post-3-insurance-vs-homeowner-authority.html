@@ -68,6 +68,30 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .service-nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .service-nav a {
+            color: #ffb74d;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 183, 77, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .service-nav a:hover {
+            background: rgba(255, 183, 77, 0.1);
+            border-color: #ffb74d;
         }
         
         .blog-logo {
@@ -475,8 +499,14 @@
     <header class="blog-header" role="banner">
         <div class="header-container">
             <div class="blog-logo">⚖️ NoVA Authority Conflict Blog</div>
-            <a href="../northern-va-water-damage.html" class="authority-blog-cta"
-               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'insurance_vs_homeowner_authority'});">
+            <div class="service-nav">
+                <a href="/blog-index.html" onclick="gtag('event', 'blog_navigation', {'source': 'post3', 'destination': 'blog_index'});">📝 Blog Hub</a>
+                <a href="/virginia-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post3', 'destination': 'virginia'});">🏠 VA Services</a>
+                <a href="/maryland-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post3', 'destination': 'maryland'});">🏠 MD Services</a>
+                <a href="/dc-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post3', 'destination': 'dc'});">🏠 DC Services</a>
+            </div>
+            <a href="/virginia-restoration.html" class="authority-blog-cta"
+               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'insurance_vs_homeowner_authority', 'destination': 'virginia_restoration'});">
                 🚨 Choose YOUR Expert
             </a>
         </div>
@@ -675,8 +705,8 @@
                 Stop letting insurance companies control your restoration decisions. 
                 Exercise your authority to choose YOUR water damage expert.
             </p>
-            <a href="../northern-va-water-damage.html" class="blog-cta-button"
-               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'insurance_vs_homeowner_authority', 'cta_location': 'bottom'});">
+            <a href="/virginia-restoration.html" class="blog-cta-button"
+               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'insurance_vs_homeowner_authority', 'cta_location': 'bottom', 'destination': 'virginia_restoration'});">
                Exercise Your Authority Choice
             </a>
         </section>
@@ -749,5 +779,32 @@
         console.log('⚖️ Insurance vs Homeowner Authority Blog - Authority Reversal Framework™ Active');
         console.log('📊 Authority:', authorityMentions, '| Conflict:', conflictMentions, '| Control:', controlMentions);
     </script>
+    
+    <!-- Service Cross-Link Section -->
+    <section style="background: linear-gradient(135deg, #e65100 0%, #bf360c 100%); padding: 60px 20px; text-align: center;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h3 style="color: #ffb74d; font-size: 28px; margin-bottom: 30px;">Ready to Reclaim YOUR Authority?</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 40px; line-height: 1.7;">
+                You now understand the authority battle. Choose your regional expert who fights for YOUR recovery, not insurance company profits:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="/virginia-restoration.html" style="background: rgba(255,183,77,0.1); color: #ffb74d; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,183,77,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,183,77,0.2)'" onmouseout="this.style.background='rgba(255,183,77,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'authority_conflict', 'destination': 'virginia'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">⚖️ Virginia Authority</div>
+                    <div style="font-size: 16px;">NOVA Independent Choice</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 703-844-4204</div>
+                </a>
+                <a href="/maryland-restoration.html" style="background: rgba(255,183,77,0.1); color: #ffb74d; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,183,77,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,183,77,0.2)'" onmouseout="this.style.background='rgba(255,183,77,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'authority_conflict', 'destination': 'maryland'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">⚖️ Maryland Authority</div>
+                    <div style="font-size: 16px;">Family Control Rights</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 301-900-5171</div>
+                </a>
+                <a href="/dc-restoration.html" style="background: rgba(255,183,77,0.1); color: #ffb74d; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,183,77,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,183,77,0.2)'" onmouseout="this.style.background='rgba(255,183,77,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'authority_conflict', 'destination': 'dc'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">⚖️ DC Authority</div>
+                    <div style="font-size: 16px;">Executive Independence</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 202-796-7422</div>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

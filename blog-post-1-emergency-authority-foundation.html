@@ -69,6 +69,30 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .service-nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .service-nav a {
+            color: #ffd700;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .service-nav a:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
         }
         
         .blog-logo {
@@ -375,8 +399,14 @@
     <header class="blog-header" role="banner">
         <div class="header-container">
             <div class="blog-logo">💧 NoVA Water Authority Blog</div>
-            <a href="../northern-va-water-damage.html" class="emergency-blog-cta"
-               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'emergency_authority_foundation'});">
+            <div class="service-nav">
+                <a href="/blog-index.html" onclick="gtag('event', 'blog_navigation', {'source': 'post1', 'destination': 'blog_index'});">📝 Blog Hub</a>
+                <a href="/virginia-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post1', 'destination': 'virginia'});">🏠 VA Services</a>
+                <a href="/maryland-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post1', 'destination': 'maryland'});">🏠 MD Services</a>
+                <a href="/dc-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post1', 'destination': 'dc'});">🏠 DC Services</a>
+            </div>
+            <a href="/virginia-restoration.html" class="emergency-blog-cta"
+               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'emergency_authority_foundation', 'destination': 'virginia_restoration'});">
                 🚨 Get YOUR Water Expert
             </a>
         </div>
@@ -528,8 +558,8 @@
                 Don't let insurance companies control your emergency response. 
                 Choose YOUR water damage expert who puts your home's recovery first.
             </p>
-            <a href="../northern-va-water-damage.html" class="blog-cta-button"
-               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'emergency_authority_foundation', 'cta_location': 'bottom'});">
+            <a href="/virginia-restoration.html" class="blog-cta-button"
+               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'emergency_authority_foundation', 'cta_location': 'bottom', 'destination': 'virginia_restoration'});">
                Get Your Independent Water Expert
             </a>
         </section>
@@ -538,7 +568,7 @@
         <nav class="blog-navigation" role="navigation">
             <a href="prevention-authority-education.html" class="nav-link">Next: Prevention Authority →</a>
             <a href="../blog/" class="nav-link">All Blog Posts</a>
-            <a href="../northern-va-water-damage.html" class="nav-link">Emergency Service</a>
+            <a href="/virginia-restoration.html" class="nav-link">Emergency Service</a>
         </nav>
     </article>
 
@@ -587,5 +617,32 @@
         console.log('🧠 Emergency Authority Foundation Blog - Authority Reversal Framework™ Active');
         console.log('📊 Authority Mentions:', authorityMentions, '| Emergency Mentions:', emergencyMentions);
     </script>
+    
+    <!-- Service Cross-Link Section -->
+    <section style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h3 style="color: #ffd700; font-size: 28px; margin-bottom: 30px;">Ready to Exercise YOUR Emergency Authority?</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 40px; line-height: 1.7;">
+                You now understand the Authority Reversal Framework™. Choose your regional water damage expert who respects YOUR authority:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="/virginia-restoration.html" style="background: rgba(255,215,0,0.1); color: #ffd700; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,215,0,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,215,0,0.2)'" onmouseout="this.style.background='rgba(255,215,0,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'emergency_foundation', 'destination': 'virginia'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🏠 Virginia Services</div>
+                    <div style="font-size: 16px;">NOVA Premium Authority</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 703-844-4204</div>
+                </a>
+                <a href="/maryland-restoration.html" style="background: rgba(255,215,0,0.1); color: #ffd700; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,215,0,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,215,0,0.2)'" onmouseout="this.style.background='rgba(255,215,0,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'emergency_foundation', 'destination': 'maryland'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🏠 Maryland Services</div>
+                    <div style="font-size: 16px;">Family Authority Control</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 301-900-5171</div>
+                </a>
+                <a href="/dc-restoration.html" style="background: rgba(255,215,0,0.1); color: #ffd700; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(255,215,0,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,215,0,0.2)'" onmouseout="this.style.background='rgba(255,215,0,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'emergency_foundation', 'destination': 'dc'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🏠 DC Services</div>
+                    <div style="font-size: 16px;">Executive Authority</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 202-796-7422</div>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

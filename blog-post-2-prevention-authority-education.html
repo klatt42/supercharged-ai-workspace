@@ -68,6 +68,30 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .service-nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .service-nav a {
+            color: #81c784;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(129, 199, 132, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .service-nav a:hover {
+            background: rgba(129, 199, 132, 0.1);
+            border-color: #81c784;
         }
         
         .blog-logo {
@@ -402,8 +426,14 @@
     <header class="blog-header" role="banner">
         <div class="header-container">
             <div class="blog-logo">🛡️ NoVA Prevention Authority Blog</div>
-            <a href="../northern-va-water-damage.html" class="prevention-blog-cta"
-               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'prevention_authority_education'});">
+            <div class="service-nav">
+                <a href="/blog-index.html" onclick="gtag('event', 'blog_navigation', {'source': 'post2', 'destination': 'blog_index'});">📝 Blog Hub</a>
+                <a href="/virginia-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post2', 'destination': 'virginia'});">🏠 VA Services</a>
+                <a href="/maryland-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post2', 'destination': 'maryland'});">🏠 MD Services</a>
+                <a href="/dc-restoration.html" onclick="gtag('event', 'service_navigation', {'source': 'post2', 'destination': 'dc'});">🏠 DC Services</a>
+            </div>
+            <a href="/virginia-restoration.html" class="prevention-blog-cta"
+               onclick="gtag('event', 'blog_to_landing_page', {'blog_post': 'prevention_authority_education', 'destination': 'virginia_restoration'});">
                 🚨 Get YOUR Water Expert
             </a>
         </div>
@@ -587,8 +617,8 @@
                 Don't rely on generic insurance recommendations. 
                 Get a customized Northern VA water damage prevention plan from YOUR chosen expert.
             </p>
-            <a href="../northern-va-water-damage.html" class="blog-cta-button"
-               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'prevention_authority_education', 'cta_location': 'bottom'});">
+            <a href="/virginia-restoration.html" class="blog-cta-button"
+               onclick="gtag('event', 'blog_cta_clicked', {'blog_post': 'prevention_authority_education', 'cta_location': 'bottom', 'destination': 'virginia_restoration'});">
                Get Your Prevention Expert
             </a>
         </section>
@@ -645,5 +675,32 @@
         console.log('🛡️ Prevention Authority Education Blog - Authority Reversal Framework™ Active');
         console.log('📊 Authority Mentions:', authorityMentions, '| Prevention Mentions:', preventionMentions);
     </script>
+    
+    <!-- Service Cross-Link Section -->
+    <section style="background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); padding: 60px 20px; text-align: center;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h3 style="color: #81c784; font-size: 28px; margin-bottom: 30px;">Ready to Design YOUR Prevention Strategy?</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 40px; line-height: 1.7;">
+                You understand prevention authority principles. Get your customized prevention plan from YOUR chosen regional expert:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="/virginia-restoration.html" style="background: rgba(129,199,132,0.1); color: #81c784; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(129,199,132,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(129,199,132,0.2)'" onmouseout="this.style.background='rgba(129,199,132,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'prevention_education', 'destination': 'virginia'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🛡️ Virginia Prevention</div>
+                    <div style="font-size: 16px;">NOVA Climate Expertise</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 703-844-4204</div>
+                </a>
+                <a href="/maryland-restoration.html" style="background: rgba(129,199,132,0.1); color: #81c784; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(129,199,132,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(129,199,132,0.2)'" onmouseout="this.style.background='rgba(129,199,132,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'prevention_education', 'destination': 'maryland'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🛡️ Maryland Prevention</div>
+                    <div style="font-size: 16px;">Montgomery County Expertise</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 301-900-5171</div>
+                </a>
+                <a href="/dc-restoration.html" style="background: rgba(129,199,132,0.1); color: #81c784; text-decoration: none; padding: 25px; border-radius: 15px; border: 2px solid rgba(129,199,132,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(129,199,132,0.2)'" onmouseout="this.style.background='rgba(129,199,132,0.1)'" onclick="gtag('event', 'blog_to_service_crosslink', {'source': 'prevention_education', 'destination': 'dc'});">
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">🛡️ DC Prevention</div>
+                    <div style="font-size: 16px;">Professional Property Protection</div>
+                    <div style="font-size: 18px; font-weight: bold; margin-top: 10px;">📞 202-796-7422</div>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

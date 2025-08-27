@@ -36,7 +36,9 @@
       "Bash(find:*)",
       "Bash(node:*)",
       "Bash(echo:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_close"
     ],
     "deny": [],
     "ask": [],
