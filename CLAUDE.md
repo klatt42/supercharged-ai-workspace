@@ -107,3 +107,4 @@
 ---
 
 *🚀 This project inherits 18+ months of competitive advantage through emotional psychology marketing - execute with precision to maintain market lead.*
+- 3 Hybrid

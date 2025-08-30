@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Virginia Emergency Restoration | Independent Restoration</title>
+    <meta name="description" content="Northern Virginia's independent restoration experts. Choose professionals who respond to YOUR crisis with urgency. 24/7 emergency: 703-844-4204">
+    
+    <!-- Authority Reversal Framework Integration -->
+    <meta property="og:title" content="Northern Virginia Emergency Restoration | Independent Experts">
+    <meta property="og:description" content="Would you let your plumber handle your heart attack? Choose emergency restoration experts for Northern Virginia families.">
+    
+    <style>
+        /* Mobile-first responsive design */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.6; color: #2c3e50; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Virginia Regional Styling */
+        .virginia-branding { border-color: #28a745; }
+        .virginia-phone { color: #28a745; }
+        .virginia-authority { background: linear-gradient(135deg, #e8f5e8 0%, #c3e6cb 100%); }
+        
+        /* Navigation */
+        .main-navigation {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .logo {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #ffd700;
+        }
+        
+        .emergency-nav-cta {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .emergency-nav-cta:hover {
+            background: #1e7e34;
+            transform: scale(1.05);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+        
+        .authority-reversal-hero h2 {
+            color: #ffd700;
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .hero-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .cta-primary {
+            background: #d32f2f;
+            color: white;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-cta {
+            background: #ffd700;
+            color: #2c3e50;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 15px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .breadcrumb a {
+            color: #28a745;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        /* Services grid */
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .related-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            border-color: #28a745;
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .service-card a {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card a:hover {
+            background: #1e7e34;
+        }
+        
+        /* Form section */
+        .emergency-form-section {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c3e6cb 100%);
+            padding: 80px 0;
+        }
+        
+        .emergency-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #28a745;
+        }
+        
+        .form-submit {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background: #1e7e34;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">🏠 Home</a> >
+            <span>Virginia Regional Hub</span>
+        </div>
+    </nav>
+    
+    <!-- Main Navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">🌲 Eagle2 Northern VA</a>
+                <div class="nav-links">
+                    <a href="../maryland/index.html">🏠 Maryland</a>
+                    <a href="../dc/index.html">🏠 DC</a>
+                    <a href="../blog-index.html">📝 Blog</a>
+                    <a href="../contractor_questions_guide.md">📋 Questions Guide</a>
+                </div>
+                <a href="tel:703-844-4204" class="emergency-nav-cta">🚨 VA Emergency: 703-844-4204</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section virginia-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Northern Virginia Emergency Restoration Services</h1>
+                <div class="authority-reversal-hero">
+                    <h2>"Would you let your plumber handle your heart attack?"</h2>
+                    <p>Choose emergency restoration experts who respond to YOUR crisis with the urgency it deserves. <em>(53% proven effectiveness)</em></p>
+                </div>
+                
+                <div class="hero-cta-buttons">
+                    <a href="#emergency-form" class="cta-primary hero-cta">Get Virginia Emergency Response</a>
+                    <a href="tel:703-844-4204" class="phone-cta va">📞 Virginia Emergency: 703-844-4204</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Northern Virginia Restoration Services</h2>
+            <div class="related-services">
+                <div class="service-card">
+                    <h3>🌊 Water Damage</h3>
+                    <p>Emergency water extraction for Northern Virginia homes. YOUR choice of expert responds with family-first urgency.</p>
+                    <a href="water-damage/">Virginia Water Damage Response</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🔥 Fire Damage</h3>
+                    <p>Complete fire and smoke restoration for Virginia families. Emergency response that prioritizes your family's shelter.</p>
+                    <a href="fire-damage/">Virginia Fire Damage Restoration</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🌪️ Storm Damage</h3>
+                    <p>Storm damage repair for Northern Virginia properties. Choose YOUR contractor for emergency weather response.</p>
+                    <a href="storm-damage/">Virginia Storm Damage Repair</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🦠 Mold Remediation</h3>
+                    <p>Professional mold removal for Virginia homes. Family health protection through YOUR choice of contractor.</p>
+                    <a href="mold-remediation/">Virginia Mold Remediation</a>
+                </div>
+            </div>
+            
+            <!-- Virginia Cities -->
+            <h3 style="text-align: center; margin: 40px 0 30px; color: #28a745;">Northern Virginia Service Areas</h3>
+            <div class="related-services">
+                <div class="service-card">
+                    <h3>📍 Alexandria</h3>
+                    <p>Emergency restoration for Alexandria, VA. YOUR independent contractor choice for family emergencies.</p>
+                    <a href="alexandria/">Alexandria Emergency Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Arlington</h3>
+                    <p>Rapid emergency response for Arlington County. Choose YOUR expert for family-focused restoration.</p>
+                    <a href="arlington/">Arlington Restoration Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Fairfax</h3>
+                    <p>Emergency restoration for Fairfax County. YOUR authority to choose experts who prioritize family safety.</p>
+                    <a href="fairfax/">Fairfax Emergency Response</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Falls Church</h3>
+                    <p>Falls Church emergency restoration experts. Independent contractor choice for urgent family needs.</p>
+                    <a href="falls-church/">Falls Church Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Form Section -->
+    <section class="emergency-form-section virginia-authority" id="emergency-form">
+        <div class="container">
+            <h2>Virginia Emergency Response</h2>
+            <form name="virginia-emergency" method="POST" data-netlify="true" class="emergency-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Emergency Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Northern VA Location *</label>
+                    <input type="text" id="location" name="location" placeholder="City, County" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emergency-type">Emergency Type *</label>
+                    <select id="emergency-type" name="emergency-type" required>
+                        <option value="">Select Emergency Type</option>
+                        <option value="water-damage">Water Damage Emergency</option>
+                        <option value="fire-damage">Fire/Smoke Damage</option>
+                        <option value="storm-damage">Storm Damage</option>
+                        <option value="mold-emergency">Mold Emergency</option>
+                        <option value="other">Other Emergency</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="urgency">Emergency Urgency</label>
+                    <select id="urgency" name="urgency">
+                        <option value="">Select Urgency Level</option>
+                        <option value="immediate">Immediate - Active emergency</option>
+                        <option value="urgent">Urgent - Within 24 hours</option>
+                        <option value="scheduled">Scheduled - Within week</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Emergency Details</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Describe your Northern Virginia emergency"></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">🚨 Exercise MY Authority - Get Virginia Expert - 703-844-4204</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="background: #000; color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <div style="color: #28a745; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                🚨 NORTHERN VIRGINIA EMERGENCY: 703-844-4204 🚨
+            </div>
+            <p><strong>Authority Reversal Framework™:</strong> Choose YOUR expert, not insurance company's choice</p>
+            <p style="margin-top: 20px; opacity: 0.8;">Serving Northern Virginia: Arlington • Fairfax • Alexandria • Falls Church • Annandale • Springfield • Reston • Herndon</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Analytics tracking
+        gtag('event', 'virginia_directory_page_view', {
+            'region': 'northern_virginia',
+            'page_type': 'regional_hub',
+            'authority_framework': 'plumber_heart_attack'
+        });
+        
+        console.log('🌲 Northern Virginia Regional Hub - Authority Reversal Framework™ Active');
+        console.log('📞 Virginia Emergency: 703-844-4204');
+    </script>
+</body>
+</html>

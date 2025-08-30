@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington DC Emergency Restoration Services | Independent Restoration</title>
+    <meta name="description" content="Washington DC's independent restoration experts. Choose professionals who protect YOUR investment, not insurance companies. 24/7 emergency: 202-796-7422">
+    
+    <!-- Authority Reversal Framework Integration -->
+    <meta property="og:title" content="Washington DC Emergency Restoration | Independent Experts">
+    <meta property="og:description" content="Would you let your barista handle your business merger? Choose restoration professionals for DC businesses and residents.">
+    
+    <style>
+        /* Mobile-first responsive design */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.6; color: #2c3e50; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* DC Regional Styling */
+        .dc-branding { border-color: #6f42c1; }
+        .dc-phone { color: #6f42c1; }
+        .dc-authority { background: linear-gradient(135deg, #f3e5ff 0%, #e1bee7 100%); }
+        
+        /* Navigation */
+        .main-navigation {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .logo {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #ffd700;
+        }
+        
+        .emergency-nav-cta {
+            background: #6f42c1;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .emergency-nav-cta:hover {
+            background: #5a3191;
+            transform: scale(1.05);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #6f42c1 0%, #5a3191 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+        
+        .authority-reversal-hero h2 {
+            color: #ffd700;
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .hero-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .cta-primary {
+            background: #d32f2f;
+            color: white;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-cta {
+            background: #ffd700;
+            color: #2c3e50;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 15px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .breadcrumb a {
+            color: #6f42c1;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        /* Services grid */
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .related-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            border-color: #6f42c1;
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: #6f42c1;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .service-card a {
+            background: #6f42c1;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card a:hover {
+            background: #5a3191;
+        }
+        
+        /* Form section */
+        .emergency-form-section {
+            background: linear-gradient(135deg, #f3e5ff 0%, #e1bee7 100%);
+            padding: 80px 0;
+        }
+        
+        .emergency-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #6f42c1;
+        }
+        
+        .form-submit {
+            background: #6f42c1;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background: #5a3191;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">🏠 Home</a> >
+            <a href="../index.html">DC Services</a> >
+            <span>DC Regional Hub</span>
+        </div>
+    </nav>
+    
+    <!-- Main Navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">🏛️ Eagle2 Washington DC</a>
+                <div class="nav-links">
+                    <a href="../maryland/index.html">🏠 Maryland</a>
+                    <a href="../virginia/index.html">🏠 Virginia</a>
+                    <a href="../blog-index.html">📝 Blog</a>
+                    <a href="../contractor_questions_guide.md">📋 Questions Guide</a>
+                </div>
+                <a href="tel:202-796-7422" class="emergency-nav-cta">🚨 DC Emergency: 202-796-7422</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section dc-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Washington DC Emergency Restoration Services</h1>
+                <div class="authority-reversal-hero">
+                    <h2>"Would you let your barista handle your business merger?"</h2>
+                    <p>Choose restoration professionals who protect YOUR investment and reputation, not just insurance company costs.</p>
+                </div>
+                
+                <div class="hero-cta-buttons">
+                    <a href="#emergency-form" class="cta-primary hero-cta">Get DC Emergency Response</a>
+                    <a href="tel:202-796-7422" class="phone-cta dc">📞 DC Emergency: 202-796-7422</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Washington DC Restoration Services</h2>
+            <div class="related-services">
+                <div class="service-card">
+                    <h3>🌊 Water Damage</h3>
+                    <p>Emergency water extraction for DC properties. Professional response that protects your business and residential investments.</p>
+                    <a href="water-damage/">DC Water Damage Response</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🔥 Fire Damage</h3>
+                    <p>Complete fire and smoke restoration for Washington DC. Protect your property value and business reputation.</p>
+                    <a href="fire-damage/">DC Fire Damage Restoration</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🌪️ Storm Damage</h3>
+                    <p>Storm damage repair for DC area properties. Professional response that maintains your investment value.</p>
+                    <a href="storm-damage/">DC Storm Damage Repair</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🦠 Mold Remediation</h3>
+                    <p>Professional mold removal for DC buildings. Comprehensive remediation that protects property values.</p>
+                    <a href="mold-remediation/">DC Mold Remediation</a>
+                </div>
+            </div>
+            
+            <!-- DC Neighborhoods -->
+            <h3 style="text-align: center; margin: 40px 0 30px; color: #6f42c1;">DC Service Areas</h3>
+            <div class="related-services">
+                <div class="service-card">
+                    <h3>📍 Capitol Hill</h3>
+                    <p>Emergency restoration for Capitol Hill properties. Professional service for DC's political district.</p>
+                    <a href="capitol-hill/">Capitol Hill Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Georgetown</h3>
+                    <p>Premium restoration for Georgetown properties. Protecting historic DC investments with expert care.</p>
+                    <a href="georgetown/">Georgetown Restoration</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Dupont Circle</h3>
+                    <p>Professional restoration for Dupont Circle area. YOUR choice of contractor for DC business district emergencies.</p>
+                    <a href="dupont-circle/">Dupont Circle Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📍 Adams Morgan</h3>
+                    <p>Emergency response for Adams Morgan properties. Independent contractor choice for DC residential areas.</p>
+                    <a href="adams-morgan/">Adams Morgan Emergency</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Form Section -->
+    <section class="emergency-form-section dc-authority" id="emergency-form">
+        <div class="container">
+            <h2>DC Emergency Response</h2>
+            <form name="dc-emergency" method="POST" data-netlify="true" class="emergency-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Emergency Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">DC Location *</label>
+                    <input type="text" id="location" name="location" placeholder="Neighborhood, Quadrant" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emergency-type">Emergency Type *</label>
+                    <select id="emergency-type" name="emergency-type" required>
+                        <option value="">Select Emergency Type</option>
+                        <option value="water-damage">Water Damage Emergency</option>
+                        <option value="fire-damage">Fire/Smoke Damage</option>
+                        <option value="storm-damage">Storm Damage</option>
+                        <option value="mold-emergency">Mold Emergency</option>
+                        <option value="other">Other Emergency</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="property-type">
+                        <option value="">Select Property Type</option>
+                        <option value="residential">Residential Property</option>
+                        <option value="commercial">Commercial Property</option>
+                        <option value="government">Government Building</option>
+                        <option value="historic">Historic Property</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Emergency Details</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Describe your DC emergency situation"></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">🚨 Exercise MY Authority - Get DC Expert - 202-796-7422</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="background: #000; color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <div style="color: #6f42c1; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                🚨 WASHINGTON DC EMERGENCY: 202-796-7422 🚨
+            </div>
+            <p><strong>Authority Reversal Framework™:</strong> Choose YOUR expert, not insurance company's choice</p>
+            <p style="margin-top: 20px; opacity: 0.8;">Serving Washington DC: Capitol Hill • Georgetown • Dupont Circle • Adams Morgan • Foggy Bottom</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Analytics tracking
+        gtag('event', 'dc_directory_page_view', {
+            'region': 'washington_dc',
+            'page_type': 'regional_hub',
+            'authority_framework': 'barista_business_merger'
+        });
+        
+        console.log('🏛️ Washington DC Regional Hub - Authority Reversal Framework™ Active');
+        console.log('📞 DC Emergency: 202-796-7422');
+    </script>
+</body>
+</html>
