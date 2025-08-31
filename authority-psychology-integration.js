@@ -25,8 +25,8 @@ const AUTHORITY_PSYCHOLOGY_CONFIG = {
     
     dc: {
         region: 'dc',
-        primaryHook: 'barista_business_merger',
-        hookMessage: 'Would you let your barista handle your business merger?',
+        primaryHook: 'funeral_director_doctor',
+        hookMessage: 'Would you let your funeral director pick your doctor?',
         psychology: 'professional_authority',
         empowermentTrigger: 'executive_decision_control',
         targetDemographic: 'dc_professionals_executives',
@@ -34,8 +34,8 @@ const AUTHORITY_PSYCHOLOGY_CONFIG = {
         targetConversion: 40,
         neighborhoods: ['georgetown', 'capitol-hill', 'dupont-circle', 'adams-morgan', 'foggy-bottom'],
         phones: ['202-796-7422'],
-        authorityExplanation: 'Of course not. You choose your M&A attorney because your business future depends on expert legal counsel. So why let your insurance company choose your water damage restoration expert when your DC property investment and business continuity depend on proper water damage remediation?',
-        empowermentMessage: 'You choose your merger attorney. Choose your restoration expert. Exercise YOUR executive authority to protect your investment - not your insurance company\'s convenience.'
+        authorityExplanation: 'Of course not. You choose your doctor because your health depends on expert medical care. So why let your insurance company choose your water damage restoration expert when your DC property investment and business continuity depend on proper water damage remediation?',
+        empowermentMessage: 'You choose your doctor. Choose your restoration expert. Exercise YOUR executive authority to protect your investment - not your insurance company\'s convenience.'
     },
     
     virginia: {

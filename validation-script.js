@@ -17,7 +17,7 @@ const EXPECTED_PHONES = {
 
 // Expected Authority Reversal psychology hooks
 const EXPECTED_AUTHORITY_HOOKS = [
-    'Would you let your barista handle your business merger?',
+    'Would you let your funeral director pick your doctor?',
     'Would you let your plumber handle your heart attack?'
 ];
 
@@ -184,7 +184,7 @@ function validateAuthorityReversal(htmlContent, filename) {
     if (filename.includes('dc') || filename.includes('georgetown') || 
         filename.includes('capitol') || filename.includes('dupont') || 
         filename.includes('adams') || filename.includes('foggy')) {
-        results.consistentFramework = htmlContent.includes('barista');
+        results.consistentFramework = htmlContent.includes('funeral director');
     } else {
         results.consistentFramework = htmlContent.includes('plumber');
     }
