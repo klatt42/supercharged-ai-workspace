@@ -58,7 +58,7 @@
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            trackAuthorityReversalEngagement('dc', 'barista_merger_negotiation', 'hook_viewed');
+                            trackAuthorityReversalEngagement('dc', 'funeral_director_doctor_negotiation', 'hook_viewed');
                         }
                     });
                 });
@@ -68,7 +68,7 @@
             // Track executive authority empowerment response
             document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
                 phoneLink.addEventListener('click', function() {
-                    trackAuthorityReversalEngagement('dc', 'barista_merger_negotiation', 'authority_recognized');
+                    trackAuthorityReversalEngagement('dc', 'funeral_director_doctor_negotiation', 'authority_recognized');
                     trackPremiumPsychologyAcceptance('dc', 'executive_premium', 'professional_authority_accepted');
                 });
             });
@@ -90,7 +90,7 @@
         
         // DC Professional Authority event
         fbq('trackCustom', 'AuthorityReversalView', {
-            hook_point: 'barista_merger_negotiation',
+            hook_point: 'funeral_director_doctor_negotiation',
             industry: 'water_damage',
             framework: 'authority_reversal',
             region: 'washington_dc'
@@ -266,7 +266,7 @@
         }
         
         /* Hero Section - DC Professional Authority Hook */
-        .emergency-hero-barista-merger {
+        .emergency-hero-funeral-director-doctor {
             padding: clamp(60px, 10vw, 120px) clamp(20px, 4vw, 40px);
             text-align: center;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23001122" width="1200" height="600"/><circle fill="%23003366" cx="200" cy="150" r="80" opacity="0.3"/><circle fill="%23004488" cx="800" cy="300" r="60" opacity="0.4"/><circle fill="%230066aa" cx="400" cy="450" r="100" opacity="0.2"/></svg>');
@@ -280,7 +280,7 @@
             gap: clamp(20px, 4vw, 40px);
         }
         
-        .emergency-hero-barista-merger h1 {
+        .emergency-hero-funeral-director-doctor h1 {
             font-size: clamp(32px, 6vw, 56px);
             font-weight: 900;
             margin-bottom: clamp(20px, 4vw, 40px);
@@ -305,7 +305,7 @@
             to { text-shadow: 0 0 30px #ffd700, 0 0 40px #ffd700, 0 0 50px #ffd700; }
         }
         
-        .barista-merger-parallel {
+        .funeral-director-doctor-parallel {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: clamp(20px, 4vw, 40px);
@@ -567,7 +567,7 @@
         
         /* Mobile-First Responsive Design */
         @media (max-width: 768px) {
-            .barista-merger-parallel {
+            .funeral-director-doctor-parallel {
                 grid-template-columns: 1fr;
                 gap: clamp(16px, 4vw, 24px);
                 margin: clamp(24px, 6vw, 40px) auto;
@@ -586,7 +586,7 @@
         }
         
         /* Performance Optimizations */
-        .emergency-hero-barista-merger {
+        .emergency-hero-funeral-director-doctor {
             transform: translateZ(0);
             backface-visibility: hidden;
         }
@@ -622,7 +622,7 @@
     </nav>
     
     <!-- Hero Section - DC Professional Authority Hook -->
-    <main class="emergency-hero-barista-merger" id="main-content">
+    <main class="emergency-hero-funeral-director-doctor" id="main-content">
         <h1 id="main-hook" class="authority-challenge">
             Would you let your barista negotiate your merger?
             <span class="hook-connector mortality-trigger">
@@ -630,7 +630,7 @@
             </span>
         </h1>
         
-        <div class="barista-merger-parallel">
+        <div class="funeral-director-doctor-parallel">
             <div class="barista-side">
                 ❌ Barista Negotiating Merger = Wrong Professional Authority
             </div>
@@ -641,7 +641,7 @@
         
         <div class="emergency-action">
             <button class="emergency-call-now authority-challenge"
-                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'barista_merger', 'region': 'washington_dc'});">
+                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'funeral_director_doctor', 'region': 'washington_dc'});">
                 📞 EXECUTIVE CHOICE: 202-796-7422
             </button>
         </div>
@@ -788,7 +788,7 @@
                 </div>
                 
                 <button type="submit" class="submit-btn authority-challenge"
-                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'barista_merger', 'region': 'washington_dc'});">
+                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'funeral_director_doctor', 'region': 'washington_dc'});">
                     🚨 EXERCISE EXECUTIVE AUTHORITY - GET MY EXPERT
                 </button>
             </form>
@@ -821,14 +821,14 @@
                 if (entry.isIntersecting && !hookViewed) {
                     hookViewed = true;
                     gtag('event', 'authority_reversal_hook_captured', {
-                        'hook_type': 'barista_merger_dc',
+                        'hook_type': 'funeral_director_doctor_dc',
                         'attention_duration': '3_5_seconds',
                         'framework': 'authority_reversal',
                         'region': 'washington_dc'
                     });
                     
                     fbq('trackCustom', 'AuthorityReversalHookEngagement', {
-                        hook_point: 'barista_merger',
+                        hook_point: 'funeral_director_doctor',
                         industry: 'water_damage',
                         location: 'washington_dc',
                         professional_focus: 'executive_authority'
