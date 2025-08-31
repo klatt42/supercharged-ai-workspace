@@ -200,34 +200,39 @@
         }
         
         .emergency-form {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 50px;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            border: 2px solid #e8f5e8;
         }
         
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 600;
             color: #2c3e50;
+            font-size: 16px;
+            letter-spacing: 0.3px;
         }
         
         .form-group input,
         .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             border: 2px solid #e9ecef;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 16px;
-            transition: border-color 0.3s ease;
+            transition: all 0.3s ease;
+            background: #fafafa;
+            font-family: 'Georgia', serif;
         }
         
         .form-group input:focus,
@@ -235,24 +240,29 @@
         .form-group textarea:focus {
             outline: none;
             border-color: #28a745;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
         }
         
         .form-submit {
-            background: #28a745;
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
             color: white;
-            padding: 15px 30px;
+            padding: 20px 40px;
             border: none;
-            border-radius: 25px;
-            font-size: 18px;
+            border-radius: 30px;
+            font-size: 19px;
             font-weight: bold;
             cursor: pointer;
             width: 100%;
             transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+            letter-spacing: 0.5px;
         }
         
         .form-submit:hover {
-            background: #1e7e34;
-            transform: translateY(-2px);
+            background: linear-gradient(135deg, #1e7e34 0%, #155724 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(40, 167, 69, 0.4);
         }
         
         @media (max-width: 768px) {
@@ -276,7 +286,7 @@
     <nav class="main-navigation">
         <div class="container">
             <div class="nav-container">
-                <a href="../index.html" class="logo">🌲 Eagle2 Northern VA</a>
+                <a href="../index.html" class="logo">🌲 Northern VA</a>
                 <div class="nav-links">
                     <a href="../maryland/index.html">🏠 Maryland</a>
                     <a href="../dc/index.html">🏠 DC</a>
@@ -295,7 +305,7 @@
                 <h1>Northern Virginia Emergency Restoration Services</h1>
                 <div class="authority-reversal-hero">
                     <h2>"Would you let your plumber handle your heart attack?"</h2>
-                    <p>Choose emergency restoration experts who respond to YOUR crisis with the urgency it deserves. <em>(53% proven effectiveness)</em></p>
+                    <p>Choose emergency restoration experts who respond to YOUR crisis with the urgency it deserves.</p>
                 </div>
                 
                 <div class="hero-cta-buttons">
@@ -369,7 +379,8 @@
     <!-- Emergency Form Section -->
     <section class="emergency-form-section virginia-authority" id="emergency-form">
         <div class="container">
-            <h2>Virginia Emergency Response</h2>
+            <h2 style="font-size: 36px; margin-bottom: 15px; color: #2c3e50;">Virginia Emergency Response</h2>
+            <p style="font-size: 18px; color: #5a6c7d; margin-bottom: 40px;">24/7 Emergency Service • Your Choice of Expert • Fast Response</p>
             <form name="virginia-emergency" method="POST" data-netlify="true" class="emergency-form">
                 <div class="form-group">
                     <label for="name">Your Name *</label>
