@@ -69,26 +69,41 @@
   to = "tel:703-844-4204"
   status = 301
 
-# Regional Landing Pages
+# Regional Landing Pages - Wildcard redirects for removed directory structure
+[[redirects]]
+  from = "/maryland/*"
+  to = "/maryland-restoration.html"
+  status = 301
+
 [[redirects]]
   from = "/maryland"
   to = "/maryland-restoration.html"
-  status = 200
+  status = 301
+
+[[redirects]]
+  from = "/dc/*"
+  to = "/dc-restoration.html"
+  status = 301
 
 [[redirects]]
   from = "/dc"
   to = "/dc-restoration.html"
-  status = 200
+  status = 301
+
+[[redirects]]
+  from = "/virginia/*"
+  to = "/virginia-restoration.html"
+  status = 301
 
 [[redirects]]
   from = "/virginia"
   to = "/virginia-restoration.html"
-  status = 200
+  status = 301
 
 [[redirects]]
   from = "/nova"
   to = "/virginia-restoration.html"
-  status = 200
+  status = 301
 
 # Legacy redirects
 [[redirects]]
