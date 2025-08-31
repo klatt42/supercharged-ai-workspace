@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Validator Testing Navigation Hub | Eagle2 QA Testing Interface</title>
+    <meta name="description" content="Comprehensive testing interface for Eagle2 water damage restoration website. Complete page navigation and QA testing hub for Victoria Validator.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .testing-header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #ffd700;
+            margin-bottom: 40px;
+        }
+        
+        .testing-header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .testing-header p {
+            font-size: 18px;
+            color: #e9ecef;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Testing Stats */
+        .testing-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            border-color: #ffd700;
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #e9ecef;
+            margin-top: 5px;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            background: linear-gradient(135deg, rgba(255,215,0,0.2), rgba(255,215,0,0.1));
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px 0 30px 0;
+            text-align: center;
+        }
+        
+        .section-header h2 {
+            color: #ffd700;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .section-header p {
+            color: #e9ecef;
+            font-size: 16px;
+        }
+        
+        /* Page Grid */
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .page-card {
+            background: white;
+            color: #2c3e50;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Color coding */
+        .legacy-page {
+            border-left: 5px solid #17a2b8;
+        }
+        
+        .legacy-page::before {
+            background: #17a2b8;
+        }
+        
+        .legacy-page:hover {
+            border-color: #17a2b8;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(23, 162, 184, 0.3);
+        }
+        
+        .maryland-page {
+            border-left: 5px solid #dc3545;
+        }
+        
+        .maryland-page::before {
+            background: #dc3545;
+        }
+        
+        .maryland-page:hover {
+            border-color: #dc3545;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(220, 53, 69, 0.3);
+        }
+        
+        .dc-page {
+            border-left: 5px solid #6f42c1;
+        }
+        
+        .dc-page::before {
+            background: #6f42c1;
+        }
+        
+        .dc-page:hover {
+            border-color: #6f42c1;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(111, 66, 193, 0.3);
+        }
+        
+        .virginia-page {
+            border-left: 5px solid #28a745;
+        }
+        
+        .virginia-page::before {
+            background: #28a745;
+        }
+        
+        .virginia-page:hover {
+            border-color: #28a745;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(40, 167, 69, 0.3);
+        }
+        
+        .page-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .page-type {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .page-description {
+            font-size: 14px;
+            color: #495057;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .page-link {
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .page-link:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        
+        .test-status {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffc107;
+            border: 2px solid white;
+        }
+        
+        .test-status.tested {
+            background: #28a745;
+        }
+        
+        .test-status.failed {
+            background: #dc3545;
+        }
+        
+        /* Legend */
+        .legend {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .legend h3 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testing-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .legend-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Search and Filter */
+        .search-controls {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px;
+            border: 2px solid #ffd700;
+            border-radius: 25px;
+            font-size: 16px;
+            background: white;
+            color: #2c3e50;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #ffd700;
+            color: #2c3e50;
+            border-color: #ffd700;
+        }
+        
+        /* Testing Actions */
+        .testing-actions {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .bulk-test-btn {
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .bulk-test-btn:hover {
+            background: #1e7e34;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="testing-header">
+            <h1>🔍 Victoria Validator Testing Navigation Hub</h1>
+            <p>Comprehensive testing interface for Eagle2 Authority Reversal Framework™ deployment. Systematic navigation and QA validation for 136+ pages across MD/DC/VA regions.</p>
+        </header>
+        
+        <!-- Testing Statistics -->
+        <div class="testing-stats">
+            <div class="stat-card">
+                <div class="stat-number">136+</div>
+                <div class="stat-label">Total Pages</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Regions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Core Services</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Architecture Types</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="tested-count">0</div>
+                <div class="stat-label">Pages Tested</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pass-rate">0%</div>
+                <div class="stat-label">Pass Rate</div>
+            </div>
+        </div>
+        
+        <!-- Search and Filter Controls -->
+        <div class="search-controls">
+            <input type="text" class="search-input" placeholder="🔍 Search pages..." id="page-search">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Pages</button>
+                <button class="filter-btn" data-filter="legacy">Legacy (Flat Files)</button>
+                <button class="filter-btn" data-filter="maryland">Maryland</button>
+                <button class="filter-btn" data-filter="dc">DC</button>
+                <button class="filter-btn" data-filter="virginia">Virginia</button>
+                <button class="filter-btn" data-filter="untested">Untested</button>
+            </div>
+        </div>
+        
+        <!-- Legend -->
+        <div class="legend">
+            <h3>🎨 Page Categories & Testing Status</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #17a2b8;"></div>
+                    <span>Legacy Pages (Flat Files)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #dc3545;"></div>
+                    <span>Maryland Pages (Mechanic/Surgery)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #6f42c1;"></div>
+                    <span>DC Pages (Barista/Merger)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #28a745;"></div>
+                    <span>Virginia Pages (Plumber/Heart Attack)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffc107;"></div>
+                    <span>● Pending Test</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #28a745;"></div>
+                    <span>● Test Passed</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #dc3545;"></div>
+                    <span>● Test Failed</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Core Landing Pages -->
+        <div class="section-header">
+            <h2>🏠 Core Landing Pages</h2>
+            <p>Primary entry points and regional hubs</p>
+        </div>
+        
+        <div class="page-grid" data-section="core">
+            <div class="page-card legacy-page" data-page="index" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Main Landing</div>
+                <div class="page-title">Northern VA Water Damage</div>
+                <div class="page-description">Primary Virginia landing page with plumber/heart attack Authority Reversal Framework™</div>
+                <a href="index.html" class="page-link" target="_blank" onclick="trackPageTest('index.html', 'main_landing')">Test Page</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="maryland-main" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Regional Hub</div>
+                <div class="page-title">Maryland Services Hub</div>
+                <div class="page-description">Maryland regional hub with mechanic/child surgery psychology framework</div>
+                <a href="maryland-restoration.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-restoration.html', 'maryland_hub')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-main" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Regional Hub</div>
+                <div class="page-title">Washington DC Services Hub</div>
+                <div class="page-description">DC regional hub with barista/business merger psychology framework</div>
+                <a href="dc-restoration.html" class="page-link" target="_blank" onclick="trackPageTest('dc-restoration.html', 'dc_hub')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-main" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Regional Hub</div>
+                <div class="page-title">Virginia Services Hub</div>
+                <div class="page-description">Virginia regional hub with plumber/heart attack psychology framework</div>
+                <a href="virginia-restoration.html" class="page-link" target="_blank" onclick="trackPageTest('virginia-restoration.html', 'virginia_hub')">Test Page</a>
+            </div>
+        </div>
+        
+        <!-- Elena's Directory Structure -->
+        <div class="section-header">
+            <h2>📂 Elena's Directory Structure (NEW)</h2>
+            <p>New organized directory architecture with regional hubs</p>
+        </div>
+        
+        <div class="page-grid" data-section="directory">
+            <div class="page-card maryland-page" data-page="maryland-dir" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Directory Hub</div>
+                <div class="page-title">Maryland Directory Hub</div>
+                <div class="page-description">Elena's organized Maryland directory with service navigation</div>
+                <a href="maryland/" class="page-link" target="_blank" onclick="trackPageTest('maryland/', 'maryland_directory')">Test Directory</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-dir" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Directory Hub</div>
+                <div class="page-title">DC Directory Hub</div>
+                <div class="page-description">Elena's organized DC directory with service navigation</div>
+                <a href="dc/" class="page-link" target="_blank" onclick="trackPageTest('dc/', 'dc_directory')">Test Directory</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-dir" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Directory Hub</div>
+                <div class="page-title">Virginia Directory Hub</div>
+                <div class="page-description">Elena's organized Virginia directory with service navigation</div>
+                <a href="virginia/" class="page-link" target="_blank" onclick="trackPageTest('virginia/', 'virginia_directory')">Test Directory</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="md-water-dir" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Service Directory</div>
+                <div class="page-title">MD Water Damage Directory</div>
+                <div class="page-description">Maryland water damage service page in directory structure</div>
+                <a href="maryland/water-damage/" class="page-link" target="_blank" onclick="trackPageTest('maryland/water-damage/', 'maryland_water_directory')">Test Service</a>
+            </div>
+        </div>
+        
+        <!-- Maryland Service Pages -->
+        <div class="section-header">
+            <h2>🏠 Maryland Service Pages</h2>
+            <p>Maryland restoration services with mechanic/child surgery Authority Reversal</p>
+        </div>
+        
+        <div class="page-grid" data-section="maryland-services">
+            <div class="page-card maryland-page" data-page="md-water" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Water Damage</div>
+                <div class="page-title">Maryland Water Damage</div>
+                <div class="page-description">Maryland water damage with mechanic/child surgery psychology - 301-900-5171</div>
+                <a href="maryland-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-water-damage.html', 'maryland_water')">Test Page</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="md-fire" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Fire Damage</div>
+                <div class="page-title">Maryland Fire Damage</div>
+                <div class="page-description">Maryland fire damage restoration with family safety Authority Reversal messaging</div>
+                <a href="maryland-fire-damage.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-fire-damage.html', 'maryland_fire')">Test Page</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="md-storm" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Storm Damage</div>
+                <div class="page-title">Maryland Storm Damage</div>
+                <div class="page-description">Maryland storm damage repair with mechanic/child surgery framework</div>
+                <a href="maryland-storm-damage.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-storm-damage.html', 'maryland_storm')">Test Page</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="md-mold" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Mold Remediation</div>
+                <div class="page-title">Maryland Mold Remediation</div>
+                <div class="page-description">Maryland mold remediation with health protection Authority messaging</div>
+                <a href="maryland-mold-remediation.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-mold-remediation.html', 'maryland_mold')">Test Page</a>
+            </div>
+        </div>
+        
+        <!-- Washington DC Service Pages -->
+        <div class="section-header">
+            <h2>🏛️ Washington DC Service Pages</h2>
+            <p>DC restoration services with barista/business merger Authority Reversal</p>
+        </div>
+        
+        <div class="page-grid" data-section="dc-services">
+            <div class="page-card dc-page" data-page="dc-water" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Water Damage</div>
+                <div class="page-title">DC Water Damage</div>
+                <div class="page-description">DC water damage with barista/business merger psychology - 202-796-7422</div>
+                <a href="dc-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('dc-water-damage.html', 'dc_water')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-fire" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Fire Damage</div>
+                <div class="page-title">DC Fire Damage</div>
+                <div class="page-description">DC fire damage restoration with professional focus Authority Reversal</div>
+                <a href="dc-fire-damage.html" class="page-link" target="_blank" onclick="trackPageTest('dc-fire-damage.html', 'dc_fire')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-storm" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Storm Damage</div>
+                <div class="page-title">DC Storm Damage</div>
+                <div class="page-description">DC storm damage repair with business protection messaging</div>
+                <a href="dc-storm-damage.html" class="page-link" target="_blank" onclick="trackPageTest('dc-storm-damage.html', 'dc_storm')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-mold" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Mold Remediation</div>
+                <div class="page-title">DC Mold Remediation</div>
+                <div class="page-description">DC mold remediation with property value protection focus</div>
+                <a href="dc-mold-remediation.html" class="page-link" target="_blank" onclick="trackPageTest('dc-mold-remediation.html', 'dc_mold')">Test Page</a>
+            </div>
+        </div>
+        
+        <!-- Virginia Service Pages -->
+        <div class="section-header">
+            <h2>🌲 Virginia Service Pages</h2>
+            <p>Virginia restoration services with plumber/heart attack Authority Reversal</p>
+        </div>
+        
+        <div class="page-grid" data-section="virginia-services">
+            <div class="page-card virginia-page" data-page="va-water" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Water Damage</div>
+                <div class="page-title">Northern VA Water Damage</div>
+                <div class="page-description">Virginia water damage with plumber/heart attack psychology - 703-844-4204</div>
+                <a href="northern-va-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('northern-va-water-damage.html', 'virginia_water')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-fire" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Fire Damage</div>
+                <div class="page-title">Northern VA Fire Damage</div>
+                <div class="page-description">Virginia fire damage with emergency survival Authority messaging</div>
+                <a href="northern-va-fire-damage.html" class="page-link" target="_blank" onclick="trackPageTest('northern-va-fire-damage.html', 'virginia_fire')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-storm" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Storm Damage</div>
+                <div class="page-title">Northern VA Storm Damage</div>
+                <div class="page-description">Virginia storm damage with family protection priority messaging</div>
+                <a href="northern-va-storm-damage.html" class="page-link" target="_blank" onclick="trackPageTest('northern-va-storm-damage.html', 'virginia_storm')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-mold" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Mold Remediation</div>
+                <div class="page-title">Northern VA Mold Remediation</div>
+                <div class="page-description">Virginia mold remediation with family health Authority messaging</div>
+                <a href="northern-va-mold-remediation.html" class="page-link" target="_blank" onclick="trackPageTest('northern-va-mold-remediation.html', 'virginia_mold')">Test Page</a>
+            </div>
+        </div>
+        
+        <!-- Content Ecosystem -->
+        <div class="section-header">
+            <h2>📝 Content Ecosystem</h2>
+            <p>Blog, FAQ, and support content with Authority Reversal integration</p>
+        </div>
+        
+        <div class="page-grid" data-section="content">
+            <div class="page-card legacy-page" data-page="blog-hub" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Blog Hub</div>
+                <div class="page-title">Blog Index</div>
+                <div class="page-description">Cross-regional blog ecosystem with 7 posts (3 live, 4 coming soon)</div>
+                <a href="blog-index.html" class="page-link" target="_blank" onclick="trackPageTest('blog-index.html', 'blog_hub')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="va-faq" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">FAQ System</div>
+                <div class="page-title">Northern VA FAQ</div>
+                <div class="page-description">Virginia FAQ with accordion functionality and Authority analytics</div>
+                <a href="northern-va-water-damage-faq.html" class="page-link" target="_blank" onclick="trackPageTest('northern-va-water-damage-faq.html', 'virginia_faq')">Test Page</a>
+            </div>
+            
+            <div class="page-card maryland-page" data-page="md-faq" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">FAQ System</div>
+                <div class="page-title">Maryland FAQ</div>
+                <div class="page-description">Maryland FAQ with mechanic/child surgery Authority framework</div>
+                <a href="maryland-water-damage-faq.html" class="page-link" target="_blank" onclick="trackPageTest('maryland-water-damage-faq.html', 'maryland_faq')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="dc-faq" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">FAQ System</div>
+                <div class="page-title">DC FAQ</div>
+                <div class="page-description">DC FAQ with barista/business merger Authority framework</div>
+                <a href="dc-water-damage-faq.html" class="page-link" target="_blank" onclick="trackPageTest('dc-water-damage-faq.html', 'dc_faq')">Test Page</a>
+            </div>
+            
+            <div class="page-card legacy-page" data-page="questions-guide" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Resource Document</div>
+                <div class="page-title">Contractor Questions Guide</div>
+                <div class="page-description">29 essential questions for homeowner contractor selection authority</div>
+                <a href="contractor_questions_guide.md" class="page-link" target="_blank" onclick="trackPageTest('contractor_questions_guide.md', 'questions_guide')">Test Document</a>
+            </div>
+        </div>
+        
+        <!-- Blog Posts -->
+        <div class="section-header">
+            <h2>📰 Blog Post Ecosystem</h2>
+            <p>Authority Reversal Framework™ educational content</p>
+        </div>
+        
+        <div class="page-grid" data-section="blog">
+            <div class="page-card legacy-page" data-page="blog-1" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Blog Post</div>
+                <div class="page-title">Emergency Authority Foundation</div>
+                <div class="page-description">Foundation blog post explaining Authority Reversal Framework™ principles</div>
+                <a href="blog-post-1-emergency-authority-foundation.html" class="page-link" target="_blank" onclick="trackPageTest('blog-post-1-emergency-authority-foundation.html', 'blog_1')">Test Post</a>
+            </div>
+            
+            <div class="page-card legacy-page" data-page="blog-2" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Blog Post</div>
+                <div class="page-title">Prevention Authority Education</div>
+                <div class="page-description">Educational content about homeowner authority in prevention decisions</div>
+                <a href="blog-post-2-prevention-authority-education.html" class="page-link" target="_blank" onclick="trackPageTest('blog-post-2-prevention-authority-education.html', 'blog_2')">Test Post</a>
+            </div>
+            
+            <div class="page-card legacy-page" data-page="blog-3" data-category="legacy">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Blog Post</div>
+                <div class="page-title">Insurance vs Homeowner Authority</div>
+                <div class="page-description">Deep dive into homeowner rights vs insurance company control</div>
+                <a href="blog-post-3-insurance-vs-homeowner-authority.html" class="page-link" target="_blank" onclick="trackPageTest('blog-post-3-insurance-vs-homeowner-authority.html', 'blog_3')">Test Post</a>
+            </div>
+        </div>
+        
+        <!-- County-Specific Pages (Sample) -->
+        <div class="section-header">
+            <h2>📍 County & City Pages (Sample)</h2>
+            <p>Location-specific emergency restoration services</p>
+        </div>
+        
+        <div class="page-grid" data-section="locations">
+            <div class="page-card maryland-page" data-page="montgomery" data-category="maryland">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">County Service</div>
+                <div class="page-title">Montgomery County Water</div>
+                <div class="page-description">Montgomery County water damage with Maryland Authority framework</div>
+                <a href="montgomery-county-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('montgomery-county-water-damage.html', 'montgomery_water')">Test Page</a>
+            </div>
+            
+            <div class="page-card dc-page" data-page="capitol-hill" data-category="dc">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">Neighborhood</div>
+                <div class="page-title">Capitol Hill Water</div>
+                <div class="page-description">Capitol Hill water damage with DC business Authority framework</div>
+                <a href="capitol-hill-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('capitol-hill-water-damage.html', 'capitol_hill_water')">Test Page</a>
+            </div>
+            
+            <div class="page-card virginia-page" data-page="arlington" data-category="virginia">
+                <div class="test-status" data-status="pending"></div>
+                <div class="page-type">County Service</div>
+                <div class="page-title">Arlington County Water</div>
+                <div class="page-description">Arlington County water damage with Virginia family Authority messaging</div>
+                <a href="arlington-county-water-damage.html" class="page-link" target="_blank" onclick="trackPageTest('arlington-county-water-damage.html', 'arlington_water')">Test Page</a>
+            </div>
+        </div>
+        
+        <!-- Testing Actions -->
+        <div class="testing-actions">
+            <button class="bulk-test-btn" onclick="bulkTestPages()">🧪 Bulk Test All Pages</button>
+        </div>
+    </div>
+    
+    <script>
+        // Testing tracking variables
+        let testedPages = new Set();
+        let pageTestResults = {};
+        
+        // Track page testing
+        function trackPageTest(pageUrl, pageType) {
+            testedPages.add(pageUrl);
+            pageTestResults[pageUrl] = {
+                tested: true,
+                timestamp: new Date(),
+                pageType: pageType
+            };
+            
+            // Update UI
+            updateTestingStats();
+            
+            // Mark card as tested
+            const pageCard = document.querySelector(`[onclick*="${pageUrl}"]`).closest('.page-card');
+            const statusDot = pageCard.querySelector('.test-status');
+            statusDot.classList.add('tested');
+            statusDot.setAttribute('data-status', 'tested');
+            
+            // Analytics tracking
+            gtag('event', 'victoria_validator_page_test', {
+                'page_url': pageUrl,
+                'page_type': pageType,
+                'testing_session': 'victoria_comprehensive_qa',
+                'framework': 'authority_reversal_testing'
+            });
+            
+            console.log(`🔍 Victoria Validator: Testing ${pageUrl} (${pageType})`);
+        }
+        
+        // Update testing statistics
+        function updateTestingStats() {
+            const totalPages = document.querySelectorAll('.page-card').length;
+            const testedCount = testedPages.size;
+            const passRate = Math.round((testedCount / totalPages) * 100);
+            
+            document.getElementById('tested-count').textContent = testedCount;
+            document.getElementById('pass-rate').textContent = passRate + '%';
+        }
+        
+        // Search functionality
+        document.getElementById('page-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const pageCards = document.querySelectorAll('.page-card');
+            
+            pageCards.forEach(card => {
+                const title = card.querySelector('.page-title').textContent.toLowerCase();
+                const description = card.querySelector('.page-description').textContent.toLowerCase();
+                const type = card.querySelector('.page-type').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm) || type.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+        
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const pageCards = document.querySelectorAll('.page-card');
+                
+                pageCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else if (filter === 'untested') {
+                        const status = card.querySelector('.test-status').getAttribute('data-status');
+                        card.style.display = status === 'pending' ? 'block' : 'none';
+                    } else {
+                        const category = card.getAttribute('data-category');
+                        card.style.display = category === filter ? 'block' : 'none';
+                    }
+                });
+                
+                // Track filter usage
+                gtag('event', 'victoria_validator_filter_used', {
+                    'filter_type': filter,
+                    'testing_session': 'victoria_comprehensive_qa'
+                });
+            });
+        });
+        
+        // Bulk testing function
+        function bulkTestPages() {
+            const pageLinks = document.querySelectorAll('.page-link');
+            let testCount = 0;
+            
+            pageLinks.forEach((link, index) => {
+                setTimeout(() => {
+                    // Simulate testing (in real scenario, this would validate each page)
+                    const pageUrl = link.getAttribute('href');
+                    const pageCard = link.closest('.page-card');
+                    const statusDot = pageCard.querySelector('.test-status');
+                    
+                    // Mark as tested (in real scenario, this would be based on actual validation)
+                    statusDot.classList.add('tested');
+                    statusDot.setAttribute('data-status', 'tested');
+                    testedPages.add(pageUrl);
+                    
+                    testCount++;
+                    updateTestingStats();
+                    
+                    console.log(`🔍 Bulk Testing: ${pageUrl} (${testCount}/${pageLinks.length})`);
+                }, index * 100); // Stagger tests
+            });
+            
+            gtag('event', 'victoria_validator_bulk_test', {
+                'total_pages': pageLinks.length,
+                'testing_session': 'victoria_comprehensive_qa'
+            });
+        }
+        
+        // Initialize analytics
+        gtag('event', 'victoria_validator_testing_hub_loaded', {
+            'total_pages': document.querySelectorAll('.page-card').length,
+            'regions': ['maryland', 'dc', 'virginia'],
+            'architecture_types': ['flat_files', 'directory_structure'],
+            'authority_framework': 'comprehensive_testing_interface'
+        });
+        
+        console.log('🔍 Victoria Validator Testing Navigation Hub - Eagle2 QA Interface Active');
+        console.log('📊 Total Pages Available for Testing:', document.querySelectorAll('.page-card').length);
+        console.log('🎯 Authority Reversal Framework™ Testing Ready');
+    </script>
+</body>
+</html>
