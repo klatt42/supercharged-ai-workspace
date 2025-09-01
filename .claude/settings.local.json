@@ -41,7 +41,8 @@
       "mcp__playwright__browser_close",
       "Bash(rm:*)",
       "Bash(sed:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(netlify:*)"
     ],
     "deny": [],
     "ask": [],

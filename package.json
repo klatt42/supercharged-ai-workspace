@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "netlify-cli": "^21.6.0",
     "playwright": "^1.54.2"
   }
 }
