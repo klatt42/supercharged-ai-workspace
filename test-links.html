@@ -290,7 +290,7 @@
             <p>Systematic navigation and QA validation for 136+ pages across MD/DC/VA regions.</p>
             
             <div class="deployment-status">
-                <strong>🚀 LATEST DEPLOYMENT: Today 6:12 AM - Production-ready updates deployed!</strong>
+                <strong>🚀 LATEST DEPLOYMENT: September 1, 2025 - DC Authority Hook FIXED: Funeral Director/Doctor Framework Complete!</strong>
             </div>
         </div>
 
@@ -334,6 +334,29 @@
         </div>
 
         <!-- REGIONAL HUBS - PRIORITY TESTING -->
+        <!-- REGIONAL RESTORATION PAGES - DIRECT LINKS -->
+        <div class="testing-section">
+            <h2 class="section-title">⚡ Direct Regional Restoration Pages</h2>
+            <p style="margin-bottom: 20px; opacity: 0.9;">Test main restoration pages with current Eagle2 deployment status:</p>
+            <div class="page-grid">
+                <a href="/maryland-restoration.html" class="page-link" data-category="maryland" onclick="markTested(this)">
+                    <div class="page-title">Maryland Restoration (Direct)</div>
+                    <div class="page-description">maryland-restoration.html - Mechanic/Surgery Hook Framework</div>
+                    <div class="page-status status-pending">Pending Test</div>
+                </a>
+                <a href="/dc-restoration.html" class="page-link tested" data-category="dc" onclick="markTested(this)">
+                    <div class="page-title">DC Restoration (Direct)</div>
+                    <div class="page-description">dc-restoration.html - FIXED: Funeral Director/Doctor Hook</div>
+                    <div class="page-status status-tested">FIXED: Authority Hook Updated</div>
+                </a>
+                <a href="/virginia-restoration.html" class="page-link" data-category="virginia" onclick="markTested(this)">
+                    <div class="page-title">Virginia Restoration (Direct)</div>
+                    <div class="page-description">virginia-restoration.html - Plumber/Heart Attack Hook Framework</div>
+                    <div class="page-status status-pending">Pending Test</div>
+                </a>
+            </div>
+        </div>
+
         <div class="testing-section">
             <h2 class="section-title">🎯 Regional Hubs - Priority Testing</h2>
             <p style="margin-bottom: 20px; opacity: 0.9;">Test these main hubs first to verify deployment changes:</p>
@@ -588,7 +611,7 @@
     </div>
 
     <script>
-        let testedCount = 0;
+        let testedCount = 1; // DC restoration page already fixed
         let totalPages = document.querySelectorAll('.page-link').length;
 
         function markTested(element) {
