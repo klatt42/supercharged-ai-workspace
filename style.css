@@ -1,0 +1,5 @@
+a[href^="tel:"] {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
