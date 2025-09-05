@@ -42,7 +42,12 @@
       "Bash(rm:*)",
       "Bash(sed:*)",
       "Bash(git stash:*)",
-      "Bash(netlify:*)"
+      "Bash(netlify:*)",
+      "Bash(if [ ! -f \"maryland-restoration.html\" ])",
+      "Bash(then)",
+      "Bash(fi)",
+      "Bash(if [ ! -f \"dc-restoration.html\" ])",
+      "Bash(if [ ! -f \"virginia-restoration.html\" ])"
     ],
     "deny": [],
     "ask": [],
