@@ -1,7 +1,6 @@
 # BMAD Empire Multi-Region Authority Reversal Framework™ - Elena Execution Deployment
 [build]
   publish = "."
-  command = "echo 'BMAD Empire Multi-Region Deployment Ready'"
 
 [build.environment]
   NODE_VERSION = "18"
