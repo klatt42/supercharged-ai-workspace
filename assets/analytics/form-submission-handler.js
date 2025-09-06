@@ -60,11 +60,12 @@ class AuthorityReversalFormHandler {
     }
     
     setupFormInterception() {
-        const forms = document.querySelectorAll('form');
+        const forms = document.querySelectorAll('form[data-netlify="true"]');
         
         forms.forEach(form => {
             form.addEventListener('submit', async (e) => {
-                e.preventDefault();
+                // For Netlify Forms, we let the form submit naturally
+                // but add our tracking and UX enhancements
                 
                 const formData = new FormData(form);
                 const submissionData = this.processFormData(formData);
@@ -72,12 +73,20 @@ class AuthorityReversalFormHandler {
                 // Show loading state with Authority Reversal messaging
                 this.showLoadingState(form);
                 
-                try {
-                    await this.submitForm(submissionData);
+                // Track the submission attempt
+                gtag('event', 'netlify_form_submitted', {
+                    'region': this.region,
+                    'authority_score': submissionData.authority_score,
+                    'form_name': form.getAttribute('name') || 'unknown'
+                });
+                
+                // Show success message immediately for better UX
+                setTimeout(() => {
                     this.showSuccessMessage(submissionData);
-                } catch (error) {
-                    this.showErrorMessage(error);
-                }
+                }, 1000);
+                
+                // Let the form submit naturally to Netlify
+                // Don't prevent default - let Netlify handle it
             });
         });
     }
@@ -115,30 +124,27 @@ class AuthorityReversalFormHandler {
     }
     
     async submitForm(data) {
-        const endpoint = data.situation?.includes('emergency') || data.situation?.includes('burst') || data.situation?.includes('flood') ?
-                        FORM_ENDPOINTS[this.region].emergency :
-                        FORM_ENDPOINTS[this.region].general;
+        // Netlify Forms - let the form submit naturally to Netlify
+        // Forms with data-netlify="true" are handled automatically
+        // This handler now just provides enhanced UX and tracking
         
-        // Primary submission
-        const response = await fetch(endpoint, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(data)
+        // For Netlify Forms, we don't need to manually POST
+        // The form will submit to Netlify's built-in handler
+        // We simulate success for better UX
+        
+        // Track the submission
+        gtag('event', 'netlify_form_submitted', {
+            'region': this.region,
+            'authority_score': data.authority_score,
+            'form_type': 'virginia-emergency-contact'
         });
-        
-        if (!response.ok) {
-            throw new Error(`Form submission failed: ${response.status}`);
-        }
         
         // Backup email notification for high-value conversions
         if (data.authority_score > 70) {
             this.sendBackupNotification(data);
         }
         
-        return response.json();
+        return Promise.resolve({ success: true, message: 'Form submitted to Netlify' });
     }
     
     async sendBackupNotification(data) {

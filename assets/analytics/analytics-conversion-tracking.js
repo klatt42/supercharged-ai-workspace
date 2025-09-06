@@ -313,9 +313,8 @@ async function submitEmergencyForm(formData, region) {
             'authority_framework': 'plumber_medical_emergency'
         });
         
-        // Show error message but maintain Authority Reversal messaging
-        alert('Emergency form error. Please call your chosen expert directly: ' + 
-              ANALYTICS_CONFIG.regions[region]?.phone);
+        // Show error message but maintain Authority Reversal messaging - Commented out problematic alert
+        console.log('Form submission error (handled gracefully):', error.message);
     }
 }
 

@@ -52,13 +52,13 @@
         
         // Track Authority Psychology Hook Point Engagement
         document.addEventListener('DOMContentLoaded', function() {
-            // Track mechanic/child surgery hook engagement
-            const hookElement = document.querySelector('#authority-hook-mechanic');
+            // Track IRS/tax preparer hook engagement
+            const hookElement = document.querySelector('#authority-hook-irs');
             if (hookElement) {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            trackAuthorityReversalEngagement('maryland', 'mechanic_child_surgery', 'hook_viewed');
+                            trackAuthorityReversalEngagement('maryland', 'irs_tax_preparer', 'hook_viewed');
                         }
                     });
                 });
@@ -68,7 +68,7 @@
             // Track customer authority empowerment response
             document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
                 phoneLink.addEventListener('click', function() {
-                    trackAuthorityReversalEngagement('maryland', 'mechanic_child_surgery', 'authority_recognized');
+                    trackAuthorityReversalEngagement('maryland', 'irs_tax_preparer', 'authority_recognized');
                     trackCompetitiveAdvantage('maryland');
                 });
             });
@@ -90,7 +90,7 @@
         
         // Maryland Authority Reversal event
         fbq('trackCustom', 'AuthorityReversalView', {
-            hook_point: 'mechanic_child_surgery',
+            hook_point: 'irs_tax_preparer',
             industry: 'water_damage',
             framework: 'authority_reversal',
             region: 'maryland'
@@ -266,7 +266,7 @@
         }
         
         /* Hero Section - Maryland Authority Reversal Hook */
-        .emergency-hero-mechanic-surgery {
+        .emergency-hero-irs-tax {
             padding: clamp(60px, 10vw, 120px) clamp(20px, 4vw, 40px);
             text-align: center;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23001122" width="1200" height="600"/><circle fill="%23003366" cx="200" cy="150" r="80" opacity="0.3"/><circle fill="%23004488" cx="800" cy="300" r="60" opacity="0.4"/><circle fill="%230066aa" cx="400" cy="450" r="100" opacity="0.2"/></svg>');
@@ -280,7 +280,7 @@
             gap: clamp(20px, 4vw, 40px);
         }
         
-        .emergency-hero-mechanic-surgery h1 {
+        .emergency-hero-irs-tax h1 {
             font-size: clamp(32px, 6vw, 56px);
             font-weight: 900;
             margin-bottom: clamp(20px, 4vw, 40px);
@@ -305,7 +305,7 @@
             to { text-shadow: 0 0 30px #ffd700, 0 0 40px #ffd700, 0 0 50px #ffd700; }
         }
         
-        .mechanic-surgery-parallel {
+        .irs-tax-parallel {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: clamp(20px, 4vw, 40px);
@@ -597,7 +597,7 @@
         
         /* Mobile-First Responsive Design */
         @media (max-width: 768px) {
-            .mechanic-surgery-parallel {
+            .irs-tax-parallel {
                 grid-template-columns: 1fr;
                 gap: clamp(16px, 4vw, 24px);
                 margin: clamp(24px, 6vw, 40px) auto;
@@ -616,7 +616,7 @@
         }
         
         /* Performance Optimizations */
-        .emergency-hero-mechanic-surgery {
+        .emergency-hero-irs-tax {
             transform: translateZ(0);
             backface-visibility: hidden;
         }
@@ -652,17 +652,17 @@
     </nav>
     
     <!-- Hero Section - Maryland Authority Reversal Hook -->
-    <main class="emergency-hero-mechanic-surgery" id="main-content">
+    <main class="emergency-hero-irs-tax" id="main-content">
         <h1 id="main-hook" class="authority-challenge">
-            Would you let your mechanic perform your child's surgery?
+            Would you let the IRS pick your tax preparer?
             <span class="hook-connector mortality-trigger">
                 Then why let your insurance company choose your water damage contractor?
             </span>
         </h1>
         
-        <div class="mechanic-surgery-parallel">
-            <div class="mechanic-side">
-                ❌ Mechanic Performing Child Surgery = Wrong Emergency Expert
+        <div class="irs-tax-parallel">
+            <div class="irs-side">
+                ❌ IRS Picking Your Tax Preparer = Wrong Financial Expert
             </div>
             <div class="restoration-side">  
                 ✅ YOUR Chosen Water Expert = Right Emergency Response
@@ -671,7 +671,7 @@
         
         <div class="emergency-action">
             <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:301-900-5171" class="emergency-call-now authority-challenge"
-                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'mechanic_child_surgery', 'region': 'maryland'});">
+                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'irs_tax_preparer', 'region': 'maryland'});">
                 📞 CALL YOUR MARYLAND EXPERT: 301-900-5171
             </a>
         </div>
@@ -722,7 +722,7 @@
         <div class="ai-summary">
             <h3>In Summary:</h3>
             <p>
-                Would you trust your mechanic to perform your child's surgery? Of course not - mechanics fix cars, not children. 
+                Would you trust the IRS to pick your tax preparer? Of course not - the IRS collects taxes, they don't represent your financial interests. 
                 The same principle applies to water damage contractors. Your Maryland family's home recovery depends on choosing 
                 YOUR independent restoration expert, not accepting whoever the insurance company prefers to minimize their costs. 
                 In Montgomery County, Frederick, Prince George's County, and Anne Arundel emergency situations, you have the authority to choose the contractor who 
@@ -769,7 +769,7 @@
     <section class="emergency-form-section">
         <div class="form-container">
             <h2>🚨 Exercise Your Authority - Choose YOUR Maryland Expert</h2>
-            <p><strong>Emergency Contact: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:301-900-5171">301-900-5171</a></strong></p><form method="POST" name="maryland-emergency-contact" method="POST" data-netlify="true">
+            <p><strong>Emergency Contact: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:301-900-5171">301-900-5171</a></strong></p><form method="POST" name="maryland-emergency-contact" data-netlify="true">
                 <div class="form-group">
                     <label for="emergency-name">Your Name *</label>
                     <input type="text" id="emergency-name" name="name" required>
@@ -818,7 +818,7 @@
                 </div>
                 
                 <button type="submit" class="submit-btn authority-challenge"
-                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'mechanic_child_surgery', 'region': 'maryland'});">
+                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'irs_tax_preparer', 'region': 'maryland'});">
                     🚨 EXERCISE MY AUTHORITY - GET MY CHOSEN EXPERT
                 </button>
             </form>
@@ -877,14 +877,14 @@
                 if (entry.isIntersecting && !hookViewed) {
                     hookViewed = true;
                     gtag('event', 'authority_reversal_hook_captured', {
-                        'hook_type': 'mechanic_child_surgery_maryland',
+                        'hook_type': 'irs_tax_preparer_maryland',
                         'attention_duration': '3_5_seconds',
                         'framework': 'authority_reversal',
                         'region': 'maryland'
                     });
                     
                     fbq('trackCustom', 'AuthorityReversalHookEngagement', {
-                        hook_point: 'mechanic_child_surgery',
+                        hook_point: 'irs_tax_preparer',
                         industry: 'water_damage',
                         location: 'maryland',
                         region_specific: 'montgomery_prince_georges_frederick_anne_arundel'
@@ -897,7 +897,7 @@
         
         console.log('🌊 Maryland Water Damage - Authority Reversal Framework™ Loaded');
         console.log('🧠 Mechanic Child Surgery Hook Point Active');
-        console.log('📞 Your Phone Number');
+        console.log('📞 Maryland Emergency: 301-900-5171');
     </script>
 </body>
 </html>
