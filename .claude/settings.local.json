@@ -47,7 +47,9 @@
       "Bash(then)",
       "Bash(fi)",
       "Bash(if [ ! -f \"dc-restoration.html\" ])",
-      "Bash(if [ ! -f \"virginia-restoration.html\" ])"
+      "Bash(if [ ! -f \"virginia-restoration.html\" ])",
+      "mcp__playwright__browser_select_option",
+      "mcp__playwright__browser_handle_dialog"
     ],
     "deny": [],
     "ask": [],
