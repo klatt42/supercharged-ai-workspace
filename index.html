@@ -821,9 +821,8 @@
             <div class="logo" aria-label="Northern VA Water Damage Restoration">
                 💧 NoVA Water Rescue
             </div>
-            <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204" class="emergency-call" 
-               aria-label="Call for emergency water damage service in Northern Virginia"
-               onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'header'});">
+            <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204" class="emergency-call"
+               onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'header', 'region': 'northern_virginia'});">
                 📞 EMERGENCY: 703-844-4204
             </a>
         </div>
@@ -859,11 +858,10 @@
         </div>
         
         <div class="emergency-action">
-            <button class="emergency-call-now authority-challenge" 
-                    aria-label="Call YOUR chosen water damage expert now for emergency service"
-                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'plumber_medical'});">
+            <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204" class="emergency-call-now authority-challenge"
+                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'plumber_heart_attack_proven', 'region': 'northern_virginia'});">
                 📞 CALL YOUR EXPERT: 703-844-4204
-            </button>
+            </a>
         </div>
         
         <div class="sr-only">
@@ -988,7 +986,8 @@
         <div id="form-description" class="sr-only">Complete this form to request emergency water damage restoration service from your chosen expert, not an insurance company selection</div>
         <div class="form-container">
             <h2 id="emergency-form-heading">🚨 Exercise Your Authority - Choose YOUR Recovery Expert</h2>
-            <form method="POST" action="https://formspree.io/f/va-emergency-water" method="POST" aria-label="Emergency water damage service request form">
+            <p><strong>Emergency Contact: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204">703-844-4204</a></strong></p>
+            <form method="POST" name="virginia-emergency-contact" data-netlify="true" aria-label="Emergency water damage service request form">
                 <div class="form-group">
                     <label for="emergency-name">Your Name *</label>
                     <input type="text" id="emergency-name" name="name" required 
@@ -998,7 +997,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="emergency-phone">Emergency Phone *</label>
+                    <label for="emergency-phone">Your Phone Number *</label>
                     <input type="tel" id="emergency-phone" name="phone" required 
                            aria-describedby="phone-help"
                            aria-label="Enter your phone number for immediate emergency contact">
@@ -1125,7 +1124,7 @@
     <footer class="footer" role="contentinfo" aria-labelledby="footer-contact">
         <div class="footer-content">
             <div id="footer-contact" class="emergency-contact mortality-trigger" tabindex="0" aria-label="Emergency contact information">
-                🚨 NORTHERN VA WATER EMERGENCY: 703-844-4204 🚨
+                🚨 NORTHERN VA WATER EMERGENCY: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204">703-844-4204</a> 🚨
             </div>
             <p style="margin: 20px 0;">
                 <strong>Authority Reversal Framework™:</strong> Your right to choose YOUR expert, not insurance company's choice
