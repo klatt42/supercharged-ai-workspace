@@ -1315,16 +1315,6 @@
         });
         
         // Form Submission Enhanced Tracking
-        document.querySelector('form').addEventListener('submit', function(e) {
-            const insuranceChoice = document.getElementById('insurance-status').value;
-            const emergencyType = document.getElementById('emergency-situation').value;
-            
-            gtag('event', 'authority_reversal_form_completed', {
-                'emergency_type': emergencyType,
-                'insurance_choice': insuranceChoice,
-                'authority_framework': 'plumber_medical_emergency',
-                'conversion_trigger': insuranceChoice.includes('independent') ? 'authority_empowerment' : 'emergency_urgency'
-            });
             
             fbq('track', 'Lead', {
                 content_name: 'Water Damage Emergency Lead',
