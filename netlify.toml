@@ -120,11 +120,11 @@
   to = "/northern-va-water-damage-faq.html"
   status = 301
 
-# 404 fallback prioritizes proven Virginia framework
-[[redirects]]
-  from = "/*"
-  to = "/virginia-restoration.html"
-  status = 404
+# 404 fallback removed - Allow direct access to regional HTML files
+# [[redirects]]
+#   from = "/*"
+#   to = "/virginia-restoration.html"
+#   status = 404
 
 [dev]
   # Local development settings
