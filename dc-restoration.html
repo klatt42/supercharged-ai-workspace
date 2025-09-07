@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="Washington DC Water Damage Restoration - Executive control over your emergency response. Choose YOUR restoration expert, not insurance company's choice. Professional authority - 202-796-7422">
     <title>DC Water Damage Restoration - Executive Choice Authority | Authority Reversal Framework™</title>
     
@@ -106,8 +106,10 @@
         }
         
         body {
+            margin: 0;
+            padding: 0;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.65;
+            line-height: 1.4;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: #fff;
             overflow-x: hidden;
@@ -591,45 +593,46 @@
             backface-visibility: hidden;
         }
         
-        /* Premium Phone CTA Styling */
+        /* Premium Phone CTA Styling - Mobile-First Responsive */
         .emergency-contact-section {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
+            padding: 20px 15px;
             border-radius: 15px;
             color: white;
             text-align: center;
-            margin: 30px 0;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin: 20px 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .emergency-header h2 {
             color: #FFD700;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 8px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
         }
 
         .urgent-text {
-            font-size: 1.3em;
+            font-size: 1.1em;
             color: #FFD700;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: bold;
+            line-height: 1.3;
         }
 
         .phone-cta-primary {
             background: linear-gradient(45deg, #FF6B35, #F7931E);
-            padding: 25px;
-            border-radius: 50px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
-            transform: scale(1.05);
+            padding: 20px 15px;
+            border-radius: 25px;
+            margin: 20px 0;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
         }
 
         .emergency-phone-link {
             color: white;
             text-decoration: none;
             display: block;
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
             transition: all 0.3s ease;
         }
@@ -641,39 +644,146 @@
 
         .phone-label {
             display: block;
-            font-size: 0.7em;
+            font-size: 0.8em;
             margin-bottom: 5px;
+            opacity: 0.9;
         }
 
         .phone-number {
-            font-size: 1.2em;
-            letter-spacing: 2px;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            display: block;
         }
 
+        /* Tablet responsive */
+        @media (min-width: 768px) {
+            .emergency-contact-section {
+                padding: 30px 25px;
+                margin: 30px 20px;
+            }
+            
+            .emergency-header h2 {
+                font-size: 2.2em;
+            }
+            
+            .urgent-text {
+                font-size: 1.2em;
+            }
+            
+            .emergency-phone-link {
+                font-size: 1.8em;
+            }
+            
+            .phone-number {
+                font-size: 1.4em;
+                letter-spacing: 2px;
+            }
+        }
+
+        /* Desktop responsive */
+        @media (min-width: 1024px) {
+            .emergency-contact-section {
+                padding: 40px;
+                margin: 30px 0;
+            }
+            
+            .emergency-header h2 {
+                font-size: 2.5em;
+            }
+            
+            .urgent-text {
+                font-size: 1.3em;
+            }
+            
+            .emergency-phone-link {
+                font-size: 2em;
+            }
+            
+            .phone-number {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Mobile-First Authority Message Styling */
         .authority-message {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin: 25px 0;
+            margin: 20px 0;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .authority-message p {
+            margin: 8px 0;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .authority-message strong {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        /* Tablet and larger */
+        @media (min-width: 768px) {
+            .authority-message {
+                padding: 20px;
+                margin: 25px 0;
+            }
+            
+            .authority-message p {
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
         }
 
         .response-guarantee {
             background: rgba(255, 215, 0, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             border: 2px solid #FFD700;
+            margin: 20px 0;
+        }
+
+        .response-guarantee h3 {
+            color: #FFD700;
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
 
         .response-guarantee ul {
             text-align: left;
-            max-width: 400px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 0;
+            padding-left: 20px;
         }
 
         .response-guarantee li {
-            margin: 10px 0;
-            font-size: 1.1em;
+            margin: 8px 0;
+            font-size: 0.95em;
+            line-height: 1.3;
+        }
+
+        /* Tablet and larger */
+        @media (min-width: 768px) {
+            .response-guarantee {
+                padding: 20px;
+            }
+            
+            .response-guarantee h3 {
+                font-size: 1.3em;
+            }
+            
+            .response-guarantee li {
+                font-size: 1.1em;
+                margin: 10px 0;
+            }
+            
+            .response-guarantee ul {
+                max-width: 400px;
+                margin: 0 auto;
+            }
         }
 
         .multi-region-phones {
@@ -695,13 +805,95 @@
             color: #FFD700;
             margin-bottom: 10px;
         }
+        
+        /* Mobile-optimized emergency banner */
+        .top-emergency-banner {
+            background: linear-gradient(45deg, #FF4444, #CC0000);
+            color: white;
+            text-align: center;
+            padding: 8px 5px;
+            font-weight: bold;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .top-emergency-banner .banner-text {
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .top-emergency-banner .banner-phone {
+            font-size: 16px;
+            font-weight: 900;
+            color: #FFD700;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2px 0;
+        }
+
+        /* Tablet and larger screens */
+        @media (min-width: 768px) {
+            .top-emergency-banner .banner-text {
+                font-size: 16px;
+            }
+            .top-emergency-banner .banner-phone {
+                font-size: 18px;
+            }
+        }
+
+        /* Desktop screens */
+        @media (min-width: 1024px) {
+            .top-emergency-banner .banner-text {
+                font-size: 18px;
+            }
+            .top-emergency-banner .banner-phone {
+                font-size: 20px;
+            }
+        }
+        
+        /* Mobile-Optimized Phone Links */
+        a[href^="tel:"] {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color: rgba(255, 215, 0, 0.3);
+        }
+
+        a[href^="tel:"]:hover,
+        a[href^="tel:"]:active {
+            background: rgba(255, 215, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Prevent horizontal scroll on mobile */
+        .container,
+        .main-content {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Improve touch targets for mobile */
+        button,
+        .emergency-phone-link,
+        a[href^="tel:"] {
+            min-height: 44px;
+            min-width: 44px;
+        }
     </style>
 </head>
 <body>
     <!-- Emergency Header -->
-    <header class="emergency-header" role="banner">
-        🚨 DC WATER EMERGENCY? Executive Control - Choose YOUR Expert: 202-796-7422 🚨
-    </header>
+    <div class="top-emergency-banner">
+        <div class="banner-text">
+            🚨 DC WATER EMERGENCY?<br>
+            Executive Control - Choose YOUR Expert:
+        </div>
+        <a href="tel:202-796-7422" class="banner-phone">202-796-7422</a>
+    </div>
     
     <!-- Navigation -->
     <nav class="nav" role="navigation">

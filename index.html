@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="Take control of your water emergency in Northern VA. Exercise your authority to choose restoration experts who work for YOUR recovery, not insurance profits. 60-minute response."
     <title>Northern VA Water Damage Restoration - Choose YOUR Expert | Authority Reversal Framework™</title>
     
@@ -71,7 +71,7 @@
     </script>
 
     <style>
-        /* Authority Reversal Emergency Framework CSS */
+        /* General Mobile Optimizations */
         * {
             margin: 0;
             padding: 0;
@@ -79,8 +79,10 @@
         }
         
         body {
+            margin: 0;
+            padding: 0;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.65;
+            line-height: 1.4;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: #fff;
             overflow-x: hidden;
@@ -808,15 +810,34 @@
             animation: authorityChallenge 0.6s ease-in-out;
         }
         
-        /* Premium Phone CTA Styling */
+        /* Premium Phone CTA Styling - Mobile-First Responsive Design */
         .emergency-contact-section {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
-            border-radius: 15px;
+            padding: 20px 15px;
+            border-radius: 12px;
             color: white;
             text-align: center;
-            margin: 30px 0;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin: 20px 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        /* Tablet breakpoint */
+        @media (min-width: 768px) {
+            .emergency-contact-section {
+                padding: 30px 25px;
+                border-radius: 15px;
+                margin: 25px 20px;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            }
+        }
+        
+        /* Desktop breakpoint */
+        @media (min-width: 1024px) {
+            .emergency-contact-section {
+                padding: 40px;
+                margin: 30px 0;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            }
         }
 
         .emergency-header h2 {
@@ -867,58 +888,241 @@
             letter-spacing: 2px;
         }
 
+        /* Mobile-First Authority Message Styling */
         .authority-message {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin: 25px 0;
+            margin: 20px 0;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .authority-message p {
+            margin: 8px 0;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .authority-message strong {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        /* Tablet and larger */
+        @media (min-width: 768px) {
+            .authority-message {
+                padding: 20px;
+                margin: 25px 0;
+            }
+            
+            .authority-message p {
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
         }
 
         .response-guarantee {
             background: rgba(255, 215, 0, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             border: 2px solid #FFD700;
+            margin: 20px 0;
+        }
+
+        .response-guarantee h3 {
+            color: #FFD700;
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
 
         .response-guarantee ul {
             text-align: left;
-            max-width: 400px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 0;
+            padding-left: 20px;
         }
 
         .response-guarantee li {
-            margin: 10px 0;
-            font-size: 1.1em;
+            margin: 8px 0;
+            font-size: 0.95em;
+            line-height: 1.3;
         }
 
+        /* Tablet and larger */
+        @media (min-width: 768px) {
+            .response-guarantee {
+                padding: 20px;
+            }
+            
+            .response-guarantee h3 {
+                font-size: 1.3em;
+            }
+            
+            .response-guarantee li {
+                font-size: 1.1em;
+                margin: 10px 0;
+            }
+            
+            .response-guarantee ul {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        /* Mobile-First Multi-Region Phone Layout */
         .multi-region-phones {
             display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
         }
 
         .region-phone {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 15px;
-            margin: 10px;
-            min-width: 200px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
         }
 
         .region-phone h3 {
             color: #FFD700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .region-phone .emergency-phone-link {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        /* Tablet - 2 columns */
+        @media (min-width: 768px) {
+            .multi-region-phones {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            
+            .region-phone {
+                padding: 20px;
+                min-width: 200px;
+                flex: 1;
+                max-width: 300px;
+            }
+            
+            .region-phone h3 {
+                font-size: 1.2em;
+            }
+            
+            .region-phone .emergency-phone-link {
+                font-size: 1.4em;
+            }
+        }
+
+        /* Desktop - 3 columns */
+        @media (min-width: 1024px) {
+            .multi-region-phones {
+                justify-content: space-between;
+            }
+            
+            .region-phone {
+                flex: 0 1 30%;
+            }
+        }
+        
+        /* Mobile-optimized emergency banner */
+        .top-emergency-banner {
+            background: linear-gradient(45deg, #FF4444, #CC0000);
+            color: white;
+            text-align: center;
+            padding: 8px 5px;
+            font-weight: bold;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .top-emergency-banner .banner-text {
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .top-emergency-banner .banner-phone {
+            font-size: 16px;
+            font-weight: 900;
+            color: #FFD700;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2px 0;
+        }
+
+        /* Tablet and larger screens */
+        @media (min-width: 768px) {
+            .top-emergency-banner .banner-text {
+                font-size: 16px;
+            }
+            .top-emergency-banner .banner-phone {
+                font-size: 18px;
+            }
+        }
+
+        /* Desktop screens */
+        @media (min-width: 1024px) {
+            .top-emergency-banner .banner-text {
+                font-size: 18px;
+            }
+            .top-emergency-banner .banner-phone {
+                font-size: 20px;
+            }
+        }
+        
+        /* Mobile-Optimized Phone Links */
+        a[href^="tel:"] {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color: rgba(255, 215, 0, 0.3);
+        }
+
+        a[href^="tel:"]:hover,
+        a[href^="tel:"]:active {
+            background: rgba(255, 215, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Prevent horizontal scroll on mobile */
+        .container,
+        .main-content {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Improve touch targets for mobile */
+        button,
+        .emergency-phone-link,
+        a[href^="tel:"] {
+            min-height: 44px;
+            min-width: 44px;
         }
     </style>
 </head>
 <body>
     <!-- Emergency Header -->
-    <header class="emergency-header" role="banner" aria-label="Emergency contact banner">
-        🚨 EMERGENCY WATER DAMAGE? Don't Let Insurance Choose - Call YOUR Expert: 703-844-4204 🚨
-    </header>
+    <div class="top-emergency-banner">
+        <div class="banner-text">
+            🚨 EMERGENCY WATER DAMAGE?<br>
+            Don't Let Insurance Choose - Call YOUR Expert:
+        </div>
+        <a href="tel:703-844-4204" class="banner-phone">703-844-4204</a>
+    </div>
     
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Main navigation" id="navigation">
