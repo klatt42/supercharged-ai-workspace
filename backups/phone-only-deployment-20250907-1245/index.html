@@ -807,111 +807,6 @@
         .authority-challenge:hover {
             animation: authorityChallenge 0.6s ease-in-out;
         }
-        
-        /* Premium Phone CTA Styling */
-        .emergency-contact-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
-            border-radius: 15px;
-            color: white;
-            text-align: center;
-            margin: 30px 0;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .emergency-header h2 {
-            color: #FFD700;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .urgent-text {
-            font-size: 1.3em;
-            color: #FFD700;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-
-        .phone-cta-primary {
-            background: linear-gradient(45deg, #FF6B35, #F7931E);
-            padding: 25px;
-            border-radius: 50px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
-            transform: scale(1.05);
-        }
-
-        .emergency-phone-link {
-            color: white;
-            text-decoration: none;
-            display: block;
-            font-size: 2em;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .emergency-phone-link:hover {
-            transform: scale(1.1);
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-        }
-
-        .phone-label {
-            display: block;
-            font-size: 0.7em;
-            margin-bottom: 5px;
-        }
-
-        .phone-number {
-            font-size: 1.2em;
-            letter-spacing: 2px;
-        }
-
-        .authority-message {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 25px 0;
-            backdrop-filter: blur(10px);
-        }
-
-        .response-guarantee {
-            background: rgba(255, 215, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid #FFD700;
-        }
-
-        .response-guarantee ul {
-            text-align: left;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .response-guarantee li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        .multi-region-phones {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-
-        .region-phone {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 10px;
-            min-width: 200px;
-        }
-
-        .region-phone h3 {
-            color: #FFD700;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
@@ -1089,33 +984,81 @@
     <!-- Emergency Form -->
     <section class="emergency-form-section" role="form" aria-labelledby="emergency-form-heading" aria-describedby="form-description">
         <div id="form-description" class="sr-only">Complete this form to request emergency water damage restoration service from your chosen expert, not an insurance company selection</div>
-        <!-- REPLACE ENTIRE FORM SECTION WITH THIS -->
-        <div class="emergency-contact-section">
-            <div class="emergency-header">
-                <h2>🚨 Multi-Regional Emergency Response</h2>
-                <p class="urgent-text">Choose your region for immediate expert response</p>
-            </div>
-            
-            <div class="multi-region-phones">
-                <div class="region-phone">
-                    <h3>Maryland</h3>
-                    <a href="tel:301-900-5171" class="emergency-phone-link">301-900-5171</a>
+        <div class="form-container">
+            <h2 id="emergency-form-heading">🚨 Exercise Your Authority - Choose YOUR Recovery Expert</h2>
+            <p><strong>Emergency Contact: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:703-844-4204">703-844-4204</a></strong></p>
+            <form method="POST" name="virginia-emergency-contact" data-netlify="true" aria-label="Emergency water damage service request form">
+                <div class="form-group">
+                    <label for="emergency-name">Your Name *</label>
+                    <input type="text" id="emergency-name" name="name" required 
+                           aria-describedby="name-help"
+                           aria-label="Enter your full name for emergency contact">
+                    <div id="name-help" class="sr-only">We need your name to coordinate your emergency response</div>
                 </div>
-                <div class="region-phone">
-                    <h3>Washington DC</h3>
-                    <a href="tel:202-796-7422" class="emergency-phone-link">202-796-7422</a>
+                
+                <div class="form-group">
+                    <label for="emergency-phone">Your Phone Number *</label>
+                    <input type="tel" id="emergency-phone" name="phone" required 
+                           aria-describedby="phone-help"
+                           aria-label="Enter your phone number for immediate emergency contact">
+                    <div id="phone-help" class="sr-only">We'll call you within 5 minutes to coordinate emergency response</div>
                 </div>
-                <div class="region-phone">
-                    <h3>Virginia</h3>
-                    <a href="tel:703-844-4204" class="emergency-phone-link">703-844-4204</a>
+                
+                <div class="form-group">
+                    <label for="emergency-location">Northern VA Location *</label>
+                    <input type="text" id="emergency-location" name="location" required 
+                           placeholder="City, ZIP (Arlington, Fairfax, Alexandria...)"
+                           aria-describedby="location-help"
+                           aria-label="Enter your Northern Virginia location for emergency dispatch">
+                    <div id="location-help" class="sr-only">We need your location to dispatch the nearest emergency team</div>
                 </div>
-            </div>
-            
-            <div class="authority-message">
-                <p><strong>Your Choice Matters:</strong> Would you let your funeral director pick your doctor?</p>
-                <p>Then why let your insurance company choose your restoration contractor?</p>
-                <p><strong>Choose independent restoration expertise.</strong></p>
-            </div>
+                
+                <div class="form-group">
+                    <label for="emergency-situation">Water Damage Emergency *</label>
+                    <select id="emergency-situation" name="situation" required 
+                            aria-describedby="situation-help"
+                            aria-label="Select the type of water damage emergency">
+                        <option value="">Select Emergency Type</option>
+                        <option value="burst-pipe">Burst Pipe - Home Flooding</option>
+                        <option value="roof-leak">Roof Leak - Water Coming In</option>
+                        <option value="basement-flood">Basement Flooding</option>
+                        <option value="appliance-leak">Appliance Leak/Overflow</option>
+                        <option value="storm-damage">Storm Water Damage</option>
+                        <option value="sewage-backup">Sewage Backup Emergency</option>
+                        <option value="other">Other Water Emergency</option>
+                    </select>
+                    <div id="situation-help" class="sr-only">Help us understand your emergency to bring the right equipment</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="insurance-status">Insurance Authority Status</label>
+                    <select id="insurance-status" name="insurance" 
+                            aria-describedby="insurance-help"
+                            aria-label="Select your insurance company involvement status">
+                        <option value="">Your Choice - Independent or Insurance?</option>
+                        <option value="independent">I CONTROL my contractor choice (Recommended)</option>
+                        <option value="insurance-later">I'll exercise my authority with insurance later</option>
+                        <option value="insurance-involved">Insurance involved but I choose contractor</option>
+                        <option value="no-insurance">Direct pay - Complete control</option>
+                    </select>
+                    <div id="insurance-help" class="sr-only">You have the right to choose your own contractor regardless of insurance preferences</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emergency-details">Emergency Details</label>
+                    <textarea id="emergency-details" name="details" 
+                              placeholder="Describe your water damage emergency - how long, how much water, what areas affected..."
+                              aria-describedby="details-help"
+                              aria-label="Provide additional details about your water damage emergency"></textarea>
+                    <div id="details-help" class="sr-only">Any additional details help us prepare for your specific emergency</div>
+                </div>
+                
+                <button type="submit" class="submit-btn authority-challenge"
+                        aria-label="Submit emergency request for YOUR chosen water damage expert"
+                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'plumber_medical'});">
+                    🚨 EXERCISE MY AUTHORITY - GET MY CHOSEN EXPERT
+                </button>
+            </form>
         </div>
     </section>
     

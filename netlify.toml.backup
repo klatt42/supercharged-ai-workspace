@@ -1,0 +1,133 @@
+# BMAD Empire Multi-Region Authority Reversal Framework™ - Elena Execution Deployment
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+  BMAD_FRAMEWORK = "Authority Reversal"
+  REGIONS = "Maryland,DC,Virginia"
+  PHONE_MD = "301-900-5171"
+  PHONE_DC = "202-796-7422" 
+  PHONE_VA = "703-844-4204"
+
+[[headers]]
+  # Security headers for all pages
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src https://www.google.com;"
+
+[[headers]]
+  # Cache control for static assets
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# BMAD Empire Regional Phone Number Routing
+[[redirects]]
+  from = "/call-maryland"
+  to = "tel:301-900-5171"
+  status = 301
+
+[[redirects]]
+  from = "/call-dc"
+  to = "tel:202-796-7422"
+  status = 301
+
+[[redirects]]
+  from = "/call-virginia" 
+  to = "tel:703-844-4204"
+  status = 301
+
+# Emergency Routing
+[[redirects]]
+  from = "/emergency-md"
+  to = "tel:301-900-5171"
+  status = 301
+
+[[redirects]]
+  from = "/emergency-dc"
+  to = "tel:202-796-7422"
+  status = 301
+
+[[redirects]]
+  from = "/emergency-va"
+  to = "tel:703-844-4204"
+  status = 301
+
+# Regional Landing Pages - Wildcard redirects for removed directory structure
+[[redirects]]
+  from = "/maryland/*"
+  to = "/maryland-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/maryland"
+  to = "/maryland-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/dc/*"
+  to = "/dc-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/dc"
+  to = "/dc-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/virginia/*"
+  to = "/virginia-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/virginia"
+  to = "/virginia-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/nova"
+  to = "/virginia-restoration.html"
+  status = 301
+
+# Legacy redirects
+[[redirects]]
+  from = "/water-damage"
+  to = "/virginia-restoration.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog-index.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/northern-va-water-damage-faq.html"
+  status = 301
+
+# 404 fallback prioritizes proven Virginia framework
+[[redirects]]
+  from = "/*"
+  to = "/virginia-restoration.html"
+  status = 404
+
+[dev]
+  # Local development settings
+  port = 8888
+  targetPort = 8888
+  autoLaunch = false

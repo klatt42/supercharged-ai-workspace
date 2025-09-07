@@ -590,6 +590,111 @@
             transform: translateZ(0);
             backface-visibility: hidden;
         }
+        
+        /* Premium Phone CTA Styling */
+        .emergency-contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .emergency-header h2 {
+            color: #FFD700;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .urgent-text {
+            font-size: 1.3em;
+            color: #FFD700;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .phone-cta-primary {
+            background: linear-gradient(45deg, #FF6B35, #F7931E);
+            padding: 25px;
+            border-radius: 50px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            transform: scale(1.05);
+        }
+
+        .emergency-phone-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-phone-link:hover {
+            transform: scale(1.1);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .phone-label {
+            display: block;
+            font-size: 0.7em;
+            margin-bottom: 5px;
+        }
+
+        .phone-number {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+
+        .authority-message {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .response-guarantee {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #FFD700;
+        }
+
+        .response-guarantee ul {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .response-guarantee li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .multi-region-phones {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .region-phone {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .region-phone h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -737,61 +842,35 @@
 
     <!-- Emergency Form -->
     <section class="emergency-form-section">
-        <div class="form-container">
-            <h2>🚨 Executive Authority - Choose YOUR DC Expert</h2>
-            <p><strong>Emergency Contact: <a style="color: #0066cc; text-decoration: underline; font-weight: bold;" href="tel:202-796-7422">202-796-7422</a></strong></p><form method="POST" name="dc-emergency-contact" data-netlify="true">
-                <div class="form-group">
-                    <label for="emergency-name">Your Name *</label>
-                    <input type="text" id="emergency-name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="emergency-phone">Your Phone Number *</label>
-                    <input type="tel" id="emergency-phone" name="phone" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="emergency-location">DC Location *</label>
-                    <input type="text" id="emergency-location" name="location" required 
-                           placeholder="District, Quadrant (Georgetown, Capitol Hill, Dupont...)">
-                </div>
-                
-                <div class="form-group">
-                    <label for="emergency-situation">Water Damage Emergency *</label>
-                    <select id="emergency-situation" name="situation" required>
-                        <option value="">Select Emergency Type</option>
-                        <option value="burst-pipe">Burst Pipe - Property Flooding</option>
-                        <option value="roof-leak">Roof Leak - Water Intrusion</option>
-                        <option value="basement-flood">Basement/Lower Level Flooding</option>
-                        <option value="appliance-leak">Appliance Leak/Overflow</option>
-                        <option value="storm-damage">Storm Water Damage</option>
-                        <option value="sewage-backup">Sewage Backup Emergency</option>
-                        <option value="other">Other Water Emergency</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="insurance-status">Professional Decision Status</label>
-                    <select id="insurance-status" name="insurance">
-                        <option value="">Your Executive Choice - Independent or Insurance?</option>
-                        <option value="independent">I CONTROL my contractor selection (Executive Recommended)</option>
-                        <option value="insurance-later">I'll exercise my professional authority with insurance later</option>
-                        <option value="insurance-involved">Insurance involved but I maintain decision control</option>
-                        <option value="no-insurance">Direct professional engagement - Complete control</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="emergency-details">Emergency Details</label>
-                    <textarea id="emergency-details" name="details" 
-                              placeholder="Describe your DC water damage emergency..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn authority-challenge"
-                        onclick="gtag('event', 'emergency_form_submitted', {'form_type': 'authority_reversal', 'hook_point': 'funeral_director_doctor', 'region': 'washington_dc'});">
-                    🚨 EXERCISE EXECUTIVE AUTHORITY - GET MY EXPERT
-                </button>
-            </form>
+        <!-- REPLACE ENTIRE FORM SECTION WITH THIS -->
+        <div class="emergency-contact-section">
+            <div class="emergency-header">
+                <h2>🚨 Washington DC Executive Emergency Response</h2>
+                <p class="urgent-text">Executive-level restoration for DC professionals</p>
+            </div>
+            
+            <div class="phone-cta-primary">
+                <a href="tel:202-796-7422" class="emergency-phone-link">
+                    <span class="phone-label">DC Executive Emergency:</span>
+                    <span class="phone-number">202-796-7422</span>
+                </a>
+            </div>
+            
+            <div class="authority-message">
+                <p><strong>Executive Decision:</strong> Would you let your funeral director pick your doctor?</p>
+                <p>Then why let your insurance company choose your restoration contractor?</p>
+                <p><strong>Choose independent restoration authority.</strong></p>
+            </div>
+            
+            <div class="response-guarantee">
+                <h3>✅ Executive Response Protocol</h3>
+                <ul>
+                    <li>📞 Direct executive line access</li>
+                    <li>🚗 Priority 45-minute response</li>
+                    <li>💼 Independent damage assessment</li>
+                    <li>🏛️ Government & commercial expertise</li>
+                </ul>
+            </div>
         </div>
     </section>
     

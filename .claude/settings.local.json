@@ -50,7 +50,10 @@
       "Bash(if [ ! -f \"virginia-restoration.html\" ])",
       "mcp__playwright__browser_select_option",
       "mcp__playwright__browser_handle_dialog",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "Bash(for file in index.html maryland-restoration.html dc-restoration.html virginia-restoration.html)",
+      "Bash(do)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": [],
