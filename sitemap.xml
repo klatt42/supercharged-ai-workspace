@@ -3,7 +3,7 @@
   
   <!-- Main Landing Page -->
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://independent-restoration.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <lastmod>2024-08-24</lastmod>
@@ -11,21 +11,21 @@
   
   <!-- Regional Hub Pages -->
   <url>
-    <loc>https://example.com/maryland-restoration.html</loc>
+    <loc>https://independent-restoration.com/maryland-restoration.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/dc-restoration.html</loc>
+    <loc>https://independent-restoration.com/dc-restoration.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/virginia-restoration.html</loc>
+    <loc>https://independent-restoration.com/virginia-restoration.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2024-08-24</lastmod>
@@ -34,28 +34,28 @@
   <!-- Maryland Service Pages -->
   <!-- Montgomery County -->
   <url>
-    <loc>https://example.com/montgomery-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/montgomery-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/montgomery-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/montgomery-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/montgomery-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/montgomery-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/montgomery-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/montgomery-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -63,28 +63,28 @@
   
   <!-- Annapolis -->
   <url>
-    <loc>https://example.com/annapolis-water-damage.html</loc>
+    <loc>https://independent-restoration.com/annapolis-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/annapolis-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/annapolis-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/annapolis-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/annapolis-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/annapolis-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/annapolis-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -92,28 +92,28 @@
   
   <!-- Frederick County -->
   <url>
-    <loc>https://example.com/frederick-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/frederick-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/frederick-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/frederick-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/frederick-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/frederick-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/frederick-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/frederick-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -121,28 +121,28 @@
   
   <!-- Washington County -->
   <url>
-    <loc>https://example.com/washington-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/washington-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/washington-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/washington-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/washington-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/washington-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/washington-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/washington-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -151,28 +151,28 @@
   <!-- Washington DC Service Pages -->
   <!-- Georgetown -->
   <url>
-    <loc>https://example.com/georgetown-water-damage.html</loc>
+    <loc>https://independent-restoration.com/georgetown-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/georgetown-fire-restoration.html</loc>
+    <loc>https://independent-restoration.com/georgetown-fire-restoration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/georgetown-mold-removal.html</loc>
+    <loc>https://independent-restoration.com/georgetown-mold-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/georgetown-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/georgetown-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -180,28 +180,28 @@
   
   <!-- Capitol Hill -->
   <url>
-    <loc>https://example.com/capitol-hill-water-damage.html</loc>
+    <loc>https://independent-restoration.com/capitol-hill-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/capitol-hill-fire-restoration.html</loc>
+    <loc>https://independent-restoration.com/capitol-hill-fire-restoration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/capitol-hill-mold-removal.html</loc>
+    <loc>https://independent-restoration.com/capitol-hill-mold-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/capitol-hill-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/capitol-hill-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -209,28 +209,28 @@
   
   <!-- Dupont Circle -->
   <url>
-    <loc>https://example.com/dupont-circle-water-damage.html</loc>
+    <loc>https://independent-restoration.com/dupont-circle-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/dupont-circle-fire-restoration.html</loc>
+    <loc>https://independent-restoration.com/dupont-circle-fire-restoration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/dupont-circle-mold-removal.html</loc>
+    <loc>https://independent-restoration.com/dupont-circle-mold-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/dupont-circle-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/dupont-circle-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -238,28 +238,28 @@
   
   <!-- Adams Morgan -->
   <url>
-    <loc>https://example.com/adams-morgan-water-damage.html</loc>
+    <loc>https://independent-restoration.com/adams-morgan-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/adams-morgan-fire-restoration.html</loc>
+    <loc>https://independent-restoration.com/adams-morgan-fire-restoration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/adams-morgan-mold-removal.html</loc>
+    <loc>https://independent-restoration.com/adams-morgan-mold-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/adams-morgan-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/adams-morgan-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -267,28 +267,28 @@
   
   <!-- Foggy Bottom -->
   <url>
-    <loc>https://example.com/foggy-bottom-water-damage.html</loc>
+    <loc>https://independent-restoration.com/foggy-bottom-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/foggy-bottom-fire-restoration.html</loc>
+    <loc>https://independent-restoration.com/foggy-bottom-fire-restoration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/foggy-bottom-mold-removal.html</loc>
+    <loc>https://independent-restoration.com/foggy-bottom-mold-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/foggy-bottom-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/foggy-bottom-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -297,28 +297,28 @@
   <!-- Northern Virginia Service Pages -->
   <!-- Fairfax County -->
   <url>
-    <loc>https://example.com/fairfax-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/fairfax-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/fairfax-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/fairfax-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/fairfax-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/fairfax-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/fairfax-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/fairfax-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -326,28 +326,28 @@
   
   <!-- Arlington County -->
   <url>
-    <loc>https://example.com/arlington-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/arlington-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/arlington-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/arlington-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -355,28 +355,28 @@
   
   <!-- Loudoun County -->
   <url>
-    <loc>https://example.com/loudoun-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/loudoun-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/loudoun-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/loudoun-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/loudoun-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/loudoun-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/loudoun-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/loudoun-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -384,28 +384,28 @@
   
   <!-- Prince William County -->
   <url>
-    <loc>https://example.com/prince-william-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/prince-william-county-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/prince-william-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/prince-william-county-fire-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/prince-william-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/prince-william-county-mold-remediation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/prince-william-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/prince-william-county-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2024-08-24</lastmod>
@@ -413,28 +413,28 @@
   
   <!-- Blog Pages -->
   <url>
-    <loc>https://example.com/blog-index.html</loc>
+    <loc>https://independent-restoration.com/blog-index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog-post-1-emergency-authority-foundation.html</loc>
+    <loc>https://independent-restoration.com/blog-post-1-emergency-authority-foundation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog-post-2-prevention-authority-education.html</loc>
+    <loc>https://independent-restoration.com/blog-post-2-prevention-authority-education.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog-post-3-insurance-vs-homeowner-authority.html</loc>
+    <loc>https://independent-restoration.com/blog-post-3-insurance-vs-homeowner-authority.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-08-24</lastmod>
@@ -442,28 +442,28 @@
   
   <!-- Additional Content Pages -->
   <url>
-    <loc>https://example.com/northern-va-water-damage.html</loc>
+    <loc>https://independent-restoration.com/northern-va-water-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/northern-va-water-damage-faq.html</loc>
+    <loc>https://independent-restoration.com/northern-va-water-damage-faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/independent-restoration-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/independent-restoration-storm-damage.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/independent-restoration-geo-seo-hook-optimized.html</loc>
+    <loc>https://independent-restoration.com/independent-restoration-geo-seo-hook-optimized.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2024-08-24</lastmod>
