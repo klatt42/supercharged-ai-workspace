@@ -160,3 +160,65 @@ a[href^="tel:"] {
   font-size: 20px !important;
   font-weight: 800 !important;
 }
+/* Emergency Services Section Styling */
+.emergency-services-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.emergency-services-section h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.emergency-services-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.emergency-service-btn {
+  color: #ffffff !important;
+  background: #dc3545 !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  border: 2px solid #dc3545 !important;
+  display: inline-block !important;
+  margin: 5px !important;
+  text-shadow: none !important;
+  font-size: 16px !important;
+  min-width: 140px !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.emergency-service-btn:hover {
+  color: #ffffff !important;
+  background: #ff4500 !important;
+  border-color: #ff4500 !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 6px 12px rgba(255, 69, 0, 0.4) !important;
+}
+
+/* Mobile responsive for emergency services */
+@media (max-width: 768px) {
+  .emergency-services-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emergency-service-btn {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* Hidden class for regional switching */
+.emergency-services-links.hidden {
+  display: none !important;
+}
