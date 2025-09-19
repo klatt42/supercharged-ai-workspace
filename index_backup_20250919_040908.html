@@ -1141,7 +1141,6 @@
 }
 </script>
   <link rel="stylesheet" href="seo_styles.css">
-<link rel="stylesheet" href="contrast_navigation.css">
 </head>
 <body>
 <nav class="main-navigation">
@@ -1227,158 +1226,26 @@
         <div class="sr-only">
             This page demonstrates the Authority Reversal Framework, questioning why insurance companies should choose your emergency contractor when you wouldn't let unqualified professionals make other critical decisions for you.
         </div>
-<!-- Replace existing service blocks with regional routing -->
-<section class="service-highlights" id="service-blocks">
-
-  <!-- Region Selector (Add at top of service section) -->
-  <div class="region-selector">
-    <h3>Select Your Service Area:</h3>
-    <div class="region-buttons">
-      <button onclick="showRegionalServices('virginia')" class="region-btn active" id="va-btn">
-        Virginia (703-844-4204)
-      </button>
-      <button onclick="showRegionalServices('maryland')" class="region-btn" id="md-btn">
-        Maryland (301-900-5171)
-      </button>
-      <button onclick="showRegionalServices('dc')" class="region-btn" id="dc-btn">
-        Washington DC (202-796-7422)
-      </button>
-    </div>
+<section class="service-highlights">
+  <div class="service-block">
+    <h2>Emergency Water Damage Restoration</h2>
+    <p>24/7 response for <a href="/maryland-water-damage-faq.html">water damage emergencies</a> across Maryland, DC, and Virginia. Your family's safety is our priority.</p>
+    <a href="/virginia-restoration.html" class="cta-button">Virginia Services</a>
   </div>
-
-  <!-- Virginia Services (Default/Active) -->
-  <div class="regional-services" id="virginia-services">
-    <div class="service-block">
-      <h2>Emergency Water Damage</h2>
-      <p>24/7 <a href="/virginia-restoration.html">Virginia water damage restoration</a>.
-         Choose your own restoration contractor.</p>
-      <a href="/virginia-restoration.html" class="cta-button">Virginia Water Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Fire & Smoke Damage</h2>
-      <p>Professional <a href="/virginia-fire-damage.html">Virginia fire damage restoration</a>
-         with family-safe practices.</p>
-      <a href="/virginia-fire-damage.html" class="cta-button">Virginia Fire Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Mold Remediation</h2>
-      <p>Safe <a href="/virginia-mold-remediation.html">Virginia mold removal</a>
-         protecting your family's health.</p>
-      <a href="/virginia-mold-remediation.html" class="cta-button">Virginia Mold Services</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Storm Damage</h2>
-      <p>Comprehensive <a href="/virginia-storm-damage.html">Virginia storm damage restoration</a>
-         after severe weather.</p>
-      <a href="/virginia-storm-damage.html" class="cta-button">Virginia Storm Services</a>
-    </div>
+  
+  <div class="service-block">
+    <h2>Fire & Smoke Damage Cleanup</h2>
+    <p>Professional <a href="/maryland-fire-damage.html">fire damage restoration</a> with family-safe practices. Choose your own restoration contractor.</p>
+    <a href="/maryland-restoration.html" class="cta-button">Maryland Services</a>
   </div>
-
-  <!-- Maryland Services (Hidden by default) -->
-  <div class="regional-services hidden" id="maryland-services">
-    <div class="service-block">
-      <h2>Emergency Water Damage</h2>
-      <p>24/7 <a href="/maryland-restoration.html">Maryland water damage restoration</a>.
-         Choose your own restoration contractor.</p>
-      <a href="/maryland-restoration.html" class="cta-button">Maryland Water Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Fire & Smoke Damage</h2>
-      <p>Professional <a href="/maryland-fire-damage.html">Maryland fire damage restoration</a>
-         with family-safe practices.</p>
-      <a href="/maryland-fire-damage.html" class="cta-button">Maryland Fire Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Mold Remediation</h2>
-      <p>Safe <a href="/maryland-mold-remediation.html">Maryland mold removal</a>
-         protecting your family's health.</p>
-      <a href="/maryland-mold-remediation.html" class="cta-button">Maryland Mold Services</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Storm Damage</h2>
-      <p>Comprehensive <a href="/maryland-storm-damage.html">Maryland storm damage restoration</a>
-         after severe weather.</p>
-      <a href="/maryland-storm-damage.html" class="cta-button">Maryland Storm Services</a>
-    </div>
+  
+  <div class="service-block">
+    <h2>Mold Remediation Services</h2>
+    <p>Safe <a href="/maryland-mold-remediation.html">mold removal</a> protecting your family's health. Authority Reversal Framework approach.</p>
+    <a href="/dc-restoration.html" class="cta-button">DC Services</a>
   </div>
-
-  <!-- DC Services (Hidden by default) -->
-  <div class="regional-services hidden" id="dc-services">
-    <div class="service-block">
-      <h2>Emergency Water Damage</h2>
-      <p>24/7 <a href="/dc-restoration.html">Washington DC water damage restoration</a>.
-         Choose your own restoration contractor.</p>
-      <a href="/dc-restoration.html" class="cta-button">DC Water Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Fire & Smoke Damage</h2>
-      <p>Professional <a href="/dc-fire-damage.html">DC fire damage restoration</a>
-         with family-safe practices.</p>
-      <a href="/dc-fire-damage.html" class="cta-button">DC Fire Damage</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Mold Remediation</h2>
-      <p>Safe <a href="/dc-mold-remediation.html">DC mold removal</a>
-         protecting your family's health.</p>
-      <a href="/dc-mold-remediation.html" class="cta-button">DC Mold Services</a>
-    </div>
-
-    <div class="service-block">
-      <h2>Storm Damage</h2>
-      <p>Comprehensive <a href="/dc-storm-damage.html">DC storm damage restoration</a>
-         after severe weather.</p>
-      <a href="/dc-storm-damage.html" class="cta-button">DC Storm Services</a>
-    </div>
-  </div>
-
 </section>
 
-<!-- Regional Switching JavaScript -->
-<script>
-function showRegionalServices(region) {
-  // Hide all regional services
-  document.getElementById('virginia-services').classList.add('hidden');
-  document.getElementById('maryland-services').classList.add('hidden');
-  document.getElementById('dc-services').classList.add('hidden');
-
-  // Remove active state from all buttons
-  document.getElementById('va-btn').classList.remove('active');
-  document.getElementById('md-btn').classList.remove('active');
-  document.getElementById('dc-btn').classList.remove('active');
-
-  // Show selected region services
-  document.getElementById(region + '-services').classList.remove('hidden');
-
-  // Add active state to selected button
-  if (region === 'virginia') {
-    document.getElementById('va-btn').classList.add('active');
-  } else if (region === 'maryland') {
-    document.getElementById('md-btn').classList.add('active');
-  } else if (region === 'dc') {
-    document.getElementById('dc-btn').classList.add('active');
-  }
-
-  // Update phone number in emergency banner
-  const emergencyPhone = document.querySelector('.emergency-cta .phone-number');
-  if (emergencyPhone) {
-    if (region === 'virginia') {
-      emergencyPhone.textContent = '703-844-4204';
-    } else if (region === 'maryland') {
-      emergencyPhone.textContent = '301-900-5171';
-    } else if (region === 'dc') {
-      emergencyPhone.textContent = '202-796-7422';
-    }
-  }
-}
-</script>
 <section class="recent-posts">
   <h2>Authority Resources</h2>
   <div class="blog-previews">
