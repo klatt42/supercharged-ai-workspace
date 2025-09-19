@@ -222,3 +222,159 @@ a[href^="tel:"] {
 .emergency-services-links.hidden {
   display: none !important;
 }
+
+/* FIX YELLOW TEXT VISIBILITY ISSUES */
+.small-text,
+.disclaimer-text,
+.update-text,
+*[style*="color: yellow"],
+*[style*="color: #ffeb3b"],
+.text-yellow {
+  color: #ffffff !important;
+  background: rgba(255, 193, 7, 0.2) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-size: 16px !important; /* Increase from small text */
+  font-weight: 600 !important;
+  border: 1px solid rgba(255, 193, 7, 0.5) !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+/* Specifically target any yellow informational text */
+p[style*="color: yellow"],
+span[style*="color: yellow"],
+div[style*="color: yellow"] {
+  color: #ffffff !important;
+  background: #ffc107 !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: inline-block !important;
+  margin: 4px 0 !important;
+  border: 2px solid #ffc107 !important;
+}
+
+/* Emergency text should be highly visible */
+.emergency-text,
+.important-notice {
+  color: #ffffff !important;
+  background: #dc3545 !important;
+  padding: 10px 15px !important;
+  border-radius: 8px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  border: 3px solid #dc3545 !important;
+  margin: 15px 0 !important;
+}
+
+/* COMPACT BANNER OPTIMIZATION */
+
+/* Reduce top emergency call banner height */
+.emergency-call-banner,
+.top-emergency-banner {
+  padding: 8px 20px !important; /* Reduced from larger padding */
+  margin: 0 !important;
+  font-size: 18px !important; /* Reduced from larger text */
+  line-height: 1.3 !important;
+}
+
+/* Compact region selector */
+.region-selector {
+  padding: 15px !important; /* Reduced from 20px */
+  margin-bottom: 20px !important; /* Reduced from 30px */
+}
+
+.region-selector h3 {
+  margin-bottom: 10px !important; /* Reduced from 15px */
+  font-size: 24px !important; /* Slightly smaller */
+}
+
+.region-buttons {
+  gap: 10px !important; /* Reduced from 15px */
+}
+
+.region-btn {
+  padding: 10px 20px !important; /* Reduced from 12px 24px */
+  font-size: 14px !important; /* Slightly smaller */
+}
+
+/* Compact service sections */
+.service-highlights,
+.emergency-services-section {
+  margin: 20px 0 !important; /* Reduced from 30px */
+  padding: 15px !important; /* Reduced padding */
+}
+
+.emergency-services-section h2 {
+  font-size: 28px !important; /* Reduced from 32px */
+  margin-bottom: 15px !important; /* Reduced from 20px */
+}
+
+/* More compact emergency services links */
+.emergency-services-links {
+  gap: 10px !important; /* Reduced from 15px */
+  margin: 15px 0 !important; /* Reduced from 20px */
+}
+
+.emergency-service-btn {
+  padding: 10px 20px !important; /* Reduced from 12px 24px */
+  font-size: 15px !important; /* Slightly smaller */
+  min-width: 130px !important; /* Reduced from 140px */
+}
+
+/* Compact main service blocks */
+.service-block {
+  margin: 15px 0 !important; /* Reduced spacing */
+  padding: 20px !important; /* Reduced padding */
+}
+
+.service-block h2 {
+  font-size: 28px !important; /* Reduced title size */
+  margin-bottom: 10px !important;
+}
+
+/* Compact bottom emergency banner */
+.bottom-emergency-banner {
+  padding: 15px 20px !important; /* Reduced from larger padding */
+  font-size: 16px !important; /* Slightly smaller */
+}
+
+.bottom-emergency-banner .phone-number {
+  font-size: 22px !important; /* Reduced from larger size */
+  padding: 8px 16px !important;
+}
+
+/* Overall page spacing optimization */
+body {
+  line-height: 1.4 !important; /* Tighter line spacing */
+}
+
+section {
+  margin: 15px 0 !important; /* Reduced section margins */
+}
+
+h1, h2, h3 {
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Mobile spacing optimization */
+@media (max-width: 768px) {
+  .region-selector {
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .emergency-services-section,
+  .service-highlights {
+    margin: 15px 0 !important;
+    padding: 10px !important;
+  }
+  
+  .service-block {
+    margin: 10px 0 !important;
+    padding: 15px !important;
+  }
+}
