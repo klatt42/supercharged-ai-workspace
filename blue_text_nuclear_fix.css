@@ -1,0 +1,162 @@
+/* NUCLEAR BLUE TEXT FIX - Maximum CSS Specificity Override */
+
+/* Target ALL links on dark backgrounds with extreme specificity */
+html body * a,
+html body * a:link,
+html body * a:visited,
+html body div a,
+html body section a,
+html body main a,
+html body p a,
+html body span a,
+html body .service-block a,
+html body .authority-resources a,
+html body .recent-posts a {
+  color: #ffffff !important;
+  background: rgba(220, 53, 69, 0.8) !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  border: 2px solid transparent !important;
+  display: inline-block !important;
+  margin: 4px 2px !important;
+  transition: all 0.3s ease !important;
+  text-shadow: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+/* Hover states with maximum visibility */
+html body * a:hover,
+html body * a:focus,
+html body div a:hover,
+html body section a:hover,
+html body main a:hover,
+html body p a:hover,
+html body span a:hover,
+html body .service-block a:hover,
+html body .authority-resources a:hover,
+html body .recent-posts a:hover {
+  color: #ffffff !important;
+  background: #ff6b35 !important;
+  border-color: #ff6b35 !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.4) !important;
+}
+
+/* Specific targeting for service links that appear blue */
+a[href*="virginia-water"],
+a[href*="virginia-fire"],
+a[href*="virginia-mold"],
+a[href*="virginia-storm"],
+a[href*="maryland-water"],
+a[href*="maryland-fire"],
+a[href*="maryland-mold"],
+a[href*="dc-water"],
+a[href*="dc-fire"],
+a[href*="dc-mold"],
+a[href*="water-damage"],
+a[href*="fire-damage"],
+a[href*="mold-remediation"],
+a[href*="storm-damage"],
+a[href*="restoration"] {
+  color: #ffffff !important;
+  background: #dc3545 !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  border: 3px solid #dc3545 !important;
+  display: inline-block !important;
+  margin: 8px 4px !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  min-width: 120px !important;
+  text-align: center !important;
+}
+
+/* Emergency hover with enhanced visibility */
+a[href*="virginia-water"]:hover,
+a[href*="virginia-fire"]:hover,
+a[href*="virginia-mold"]:hover,
+a[href*="virginia-storm"]:hover,
+a[href*="maryland-water"]:hover,
+a[href*="maryland-fire"]:hover,
+a[href*="maryland-mold"]:hover,
+a[href*="dc-water"]:hover,
+a[href*="dc-fire"]:hover,
+a[href*="dc-mold"]:hover,
+a[href*="water-damage"]:hover,
+a[href*="fire-damage"]:hover,
+a[href*="mold-remediation"]:hover,
+a[href*="storm-damage"]:hover,
+a[href*="restoration"]:hover {
+  color: #ffffff !important;
+  background: #ff4500 !important; /* Bright red-orange */
+  border-color: #ff4500 !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 16px rgba(255, 69, 0, 0.6) !important;
+}
+
+/* Override any existing blue/cyan colors */
+* {
+  color: inherit;
+}
+
+*[style*="color: blue"],
+*[style*="color: #0000ff"],
+*[style*="color: #00d4ff"],
+*[style*="color: cyan"] {
+  color: #ffffff !important;
+}
+
+/* Target specific text content that might be blue */
+body *:contains("water damage restoration"),
+body *:contains("fire damage restoration"),
+body *:contains("mold removal"),
+body *:contains("storm damage") {
+  color: #ffffff !important;
+}
+
+/* Additional safeguards for common blue text scenarios */
+.text-blue,
+.blue,
+.text-primary,
+.link-blue,
+[class*="blue"],
+[class*="primary"] {
+  color: #ffffff !important;
+}
+
+/* Make sure region selector buttons stay visible */
+.region-btn {
+  color: #000000 !important;
+  background: #00d4ff !important;
+  border-color: #00d4ff !important;
+}
+
+.region-btn:hover {
+  color: #000000 !important;
+  background: #00b8cc !important;
+}
+
+/* Phone number visibility */
+.phone-number,
+a[href^="tel:"] {
+  color: #ffeb3b !important;
+  background: rgba(0,0,0,0.3) !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+/* Emergency banner phone number */
+.emergency-cta .phone-number,
+.emergency-banner a[href^="tel:"] {
+  color: #ffffff !important;
+  background: rgba(0,0,0,0.4) !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
