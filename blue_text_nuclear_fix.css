@@ -378,3 +378,34 @@ h1, h2, h3 {
     padding: 15px !important;
   }
 }
+
+/* HIGHLY VISIBLE NOTIFICATION STYLING */
+.regional-notification,
+.update-notice,
+div[style*="background: lightyellow"],
+p[style*="background: lightyellow"],
+.notification-banner {
+  color: #000000 !important; /* Black text for maximum contrast */
+  background: #ffc107 !important; /* Bright yellow background */
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; /* Bold text */
+  border: 3px solid #ff9800 !important; /* Orange border for definition */
+  margin: 10px 0 !important;
+  text-shadow: none !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* Additional notification text patterns */
+*[style*="color: lightyellow"],
+*[style*="background-color: lightyellow"],
+.light-yellow-bg,
+.yellow-notice {
+  color: #000000 !important;
+  background: #ffc107 !important;
+  padding: 10px 15px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  border: 2px solid #ff9800 !important;
+}
