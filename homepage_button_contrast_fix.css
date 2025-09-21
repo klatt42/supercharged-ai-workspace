@@ -1,0 +1,192 @@
+/* HOMEPAGE BUTTON CONTRAST FIXES */
+/* Fix hover visibility issues and enhance regional notification */
+
+/* EMERGENCY SERVICE AREAS - Better hover contrast */
+.service-areas a {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.15) !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  border: 2px solid rgba(0, 212, 255, 0.3) !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  margin: 5px 8px !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+}
+
+.service-areas a:hover {
+  color: #000000 !important; /* Black text for maximum contrast */
+  background: #00d4ff !important; /* Bright cyan background */
+  border-color: #00bcd4 !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4) !important;
+  text-shadow: none !important;
+}
+
+/* EMERGENCY SERVICES MENU - Enhanced visibility */
+.services-menu h3 {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* REGIONAL NOTIFICATION - Make it bold and prominent */
+.regional-notification,
+.services-menu p {
+  color: #000000 !important; /* Black text for maximum readability */
+  background: linear-gradient(135deg, #ffc107, #ffeb3b) !important; /* Bright yellow gradient */
+  padding: 15px 25px !important;
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important; /* Extra bold */
+  text-align: center !important;
+  margin: 15px 0 !important;
+  border: 3px solid #ff9800 !important; /* Orange border for definition */
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4) !important;
+  text-shadow: none !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  animation: pulse-notification 3s infinite !important;
+}
+
+@keyframes pulse-notification {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+  }
+}
+
+/* AUTHORITY RESOURCES - Better hover contrast */
+.resources-menu a {
+  color: #4caf50 !important;
+  background: rgba(76, 175, 80, 0.15) !important;
+  padding: 10px 16px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  border: 2px solid rgba(76, 175, 80, 0.3) !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  margin: 3px 8px !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6) !important;
+}
+
+.resources-menu a:hover {
+  color: #ffffff !important; /* White text for better contrast */
+  background: #4caf50 !important; /* Solid green background */
+  border-color: #388e3c !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4) !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+}
+
+/* MAIN NAVIGATION STYLING */
+.main-navigation {
+  background: rgba(0,0,0,0.3) !important;
+  padding: 20px !important;
+  border-radius: 15px !important;
+  margin: 20px 0 !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.service-areas h2 {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+.resources-menu h3 {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin: 20px 0 10px 0 !important;
+  text-align: center !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* OVERRIDE ANY CONFLICTING STYLES */
+nav a {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+}
+
+nav a:hover {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+/* MOBILE RESPONSIVE IMPROVEMENTS */
+@media (max-width: 768px) {
+  .service-areas a,
+  .resources-menu a {
+    display: block !important;
+    margin: 8px auto !important;
+    max-width: 280px !important;
+    text-align: center !important;
+  }
+
+  .regional-notification,
+  .services-menu p {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    margin: 10px 0 !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .main-navigation {
+    padding: 15px !important;
+    margin: 15px 5px !important;
+  }
+
+  .service-areas h2 {
+    font-size: 20px !important;
+  }
+
+  .resources-menu h3 {
+    font-size: 18px !important;
+  }
+}
+
+/* ACCESSIBILITY FOCUS STATES */
+.service-areas a:focus,
+.resources-menu a:focus {
+  outline: 3px solid #ffd700 !important;
+  outline-offset: 2px !important;
+}
+
+/* ENHANCED VISUAL HIERARCHY */
+.service-areas {
+  margin-bottom: 25px !important;
+  text-align: center !important;
+}
+
+.services-menu {
+  margin: 25px 0 !important;
+  text-align: center !important;
+}
+
+.resources-menu {
+  margin-top: 25px !important;
+  text-align: center !important;
+}
+
+/* ENSURE PROPER SPACING BETWEEN ELEMENTS */
+.service-areas a + .service-areas a::before {
+  content: ' ';
+  margin: 0 5px;
+}
+
+.resources-menu a + .resources-menu a::before {
+  content: ' ';
+  margin: 0 5px;
+}
