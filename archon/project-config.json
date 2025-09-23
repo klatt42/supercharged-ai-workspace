@@ -1,0 +1,25 @@
+{
+  "project_id": "independent-restoration-expansion",
+  "name": "Independent Restoration Expansion",
+  "description": "Landing page optimization and business expansion for Independent Restoration",
+  "type": "website_optimization",
+  "priority": "high",
+  "status": "active",
+  "created": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)",
+  "team": [
+    "Victoria Validator",
+    "Elena Execution",
+    "Dr. Sarah Hook",
+    "Alex Analytics",
+    "David Deploy",
+    "Marcus Strategic",
+    "Mary Enhanced",
+    "Alice Intelligence"
+  ],
+  "goals": [
+    "Achieve 25-53% conversion improvement",
+    "Optimize accessibility to 95+ score",
+    "Maintain <542ms load times",
+    "Implement psychological authority framework"
+  ]
+}

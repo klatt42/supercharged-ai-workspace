@@ -1,0 +1,64 @@
+{
+  "critical_accessibility": [
+    {
+      "id": "acc-001",
+      "title": "Fix Accessibility Issues - Heading Structure",
+      "assignee": "Victoria Validator",
+      "priority": "critical",
+      "status": "pending",
+      "description": "Add proper IDs to all headings for screen reader navigation"
+    },
+    {
+      "id": "acc-002",
+      "title": "Add Skip Navigation Links",
+      "assignee": "Victoria Validator",
+      "priority": "critical",
+      "status": "pending",
+      "description": "Implement skip-to-content links for keyboard navigation"
+    },
+    {
+      "id": "acc-003",
+      "title": "Add Focus Management",
+      "assignee": "Victoria Validator",
+      "priority": "critical",
+      "status": "pending",
+      "description": "Implement proper focus indicators and keyboard navigation"
+    }
+  ],
+  "performance_technical": [
+    {
+      "id": "perf-001",
+      "title": "Optimize Mobile Responsive Design",
+      "assignee": "Elena Execution",
+      "priority": "high",
+      "status": "pending",
+      "description": "Enhance mobile experience for 375px width analysis"
+    },
+    {
+      "id": "perf-002",
+      "title": "Performance Optimization",
+      "assignee": "Elena Execution",
+      "priority": "high",
+      "status": "pending",
+      "description": "Optimize current 280ms load time further"
+    }
+  ],
+  "content_conversion": [
+    {
+      "id": "conv-001",
+      "title": "Add Social Proof Section",
+      "assignee": "Dr. Sarah Hook",
+      "priority": "high",
+      "status": "pending",
+      "description": "Implement testimonials and trust indicators"
+    },
+    {
+      "id": "conv-002",
+      "title": "Rewrite Content: Features to Benefits",
+      "assignee": "Dr. Sarah Hook",
+      "priority": "high",
+      "status": "pending",
+      "description": "Transform to benefit-focused messaging"
+    }
+  ]
+}

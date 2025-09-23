@@ -1,0 +1,226 @@
+/* 🎯 ACCESSIBLE FOCUS MANAGEMENT STYLES */
+/* WCAG 2.1 Level AA Compliant Focus Indicators */
+/* Emergency Services Website - Government Standards */
+
+/* ✅ ENHANCED FOCUS INDICATORS */
+/* Meeting WCAG 2.4.7 Focus Visible requirements */
+
+/* High contrast focus for all interactive elements */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus,
+[tabindex]:focus {
+    /* WCAG AA compliant 3:1 contrast ratio */
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+    /* Emergency services yellow highlight */
+    box-shadow: 0 0 0 5px rgba(255, 237, 78, 0.4);
+    /* Ensure visibility on dark backgrounds */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ SKIP NAVIGATION ENHANCED FOCUS */
+.skip-link:focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    padding: 12px 16px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #ffed4e;
+    border-radius: 4px;
+    /* High contrast for emergency visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Multiple skip links stacking */
+.skip-link:nth-child(2):focus { top: 60px; }
+.skip-link:nth-child(3):focus { top: 112px; }
+.skip-link:nth-child(4):focus { top: 164px; }
+.skip-link:nth-child(5):focus { top: 216px; }
+
+/* ✅ EMERGENCY FORM FOCUS MANAGEMENT */
+/* Critical for emergency service forms */
+
+/* Emergency contact forms - high visibility focus */
+.emergency-form input:focus,
+.emergency-form select:focus,
+.emergency-form textarea:focus {
+    outline: 4px solid #ff0000;
+    outline-offset: 2px;
+    background-color: #fff8dc;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 0 0 6px rgba(255, 0, 0, 0.2);
+}
+
+/* Emergency phone number links - critical focus */
+a[href^="tel"]:focus {
+    outline: 4px solid #00ff00;
+    outline-offset: 3px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    box-shadow: 0 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+/* ✅ HEADING FOCUS FOR SCREEN READERS */
+/* Allow headings to be focusable for navigation */
+
+h1[tabindex="-1"]:focus,
+h2[tabindex="-1"]:focus,
+h3[tabindex="-1"]:focus,
+h4[tabindex="-1"]:focus,
+h5[tabindex="-1"]:focus,
+h6[tabindex="-1"]:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 4px;
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+/* ✅ AUTHORITY HOOK SECTION FOCUS */
+/* Preserve psychology framework accessibility */
+
+#authority-hook:focus {
+    outline: 3px solid #ffed4e;
+    outline-offset: 4px;
+    background-color: rgba(255, 237, 78, 0.1);
+    box-shadow: 0 0 0 6px rgba(255, 237, 78, 0.2);
+}
+
+/* ✅ REGIONAL SELECTION FOCUS */
+/* Enhanced focus for location-critical elements */
+
+.region-selector:focus,
+.service-area-link:focus {
+    outline: 3px solid #00a8cc;
+    outline-offset: 3px;
+    background-color: rgba(0, 168, 204, 0.1);
+    border: 2px solid #00a8cc;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* ✅ EMERGENCY BUTTON FOCUS */
+/* Critical emergency action buttons */
+
+.emergency-button:focus,
+.cta-button:focus {
+    outline: 4px solid #ff4757;
+    outline-offset: 3px;
+    background-color: #ff6b6b;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(255, 71, 87, 0.3);
+    font-weight: 700;
+}
+
+/* ✅ KEYBOARD NAVIGATION HELPERS */
+/* Visual cues for keyboard-only users */
+
+/* Tab order indicator for complex layouts */
+.tab-order-helper:focus {
+    position: relative;
+}
+
+.tab-order-helper:focus::before {
+    content: "Tab " counter(tab-counter);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    z-index: 1000;
+}
+
+/* ✅ HIGH CONTRAST MODE SUPPORT */
+/* Windows High Contrast Mode compatibility */
+
+@media (prefers-contrast: high) {
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    a:focus {
+        outline: 4px solid currentColor;
+        outline-offset: 2px;
+    }
+
+    .skip-link:focus {
+        background: ButtonText;
+        color: ButtonFace;
+        border: 3px solid currentColor;
+    }
+}
+
+/* ✅ REDUCED MOTION SUPPORT */
+/* Respect user motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    a:focus {
+        transition: none;
+        transform: none;
+    }
+
+    .emergency-button:focus,
+    .cta-button:focus {
+        transform: none;
+    }
+}
+
+/* ✅ FOCUS MANAGEMENT JAVASCRIPT HELPERS */
+/* Classes for programmatic focus management */
+
+.focus-trap-container {
+    /* Container for focus trapping in modals */
+}
+
+.focus-first {
+    /* Mark element as first focusable in section */
+}
+
+.focus-last {
+    /* Mark element as last focusable in section */
+}
+
+/* ✅ SCREEN READER ONLY HELPERS */
+/* Additional context for assistive technology */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}

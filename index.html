@@ -1141,9 +1141,13 @@
 }
 </script>
 
+<!-- Main Content Start with Proper H1 -->
+<main id="main-content">
+    <h1 id="page-title" class="page-main-title">Emergency Restoration Services - Maryland, DC, Virginia</h1>
+
 <!-- Dynamic Emergency Services Section -->
-<section class="emergency-services-section">
-  <h2>Emergency Services</h2>
+<section class="emergency-services-section" aria-labelledby="emergency-services">
+  <h2 id="emergency-services">Emergency Services</h2>
 
   <!-- Virginia Emergency Services (Default/Active for VA landing page) -->
   <div class="emergency-services-links" id="virginia-emergency">
@@ -1179,17 +1183,17 @@
 <body>
 <nav class="main-navigation">
   <div class="service-areas">
-    <h2>Emergency Service Areas</h2>
+    <h2 id="service-areas">Emergency Service Areas</h2>
     <a href="/virginia-restoration.html">Virginia (703-844-4204)</a> |
     <a href="/maryland-restoration.html">Maryland (301-900-5171)</a> |
     <a href="/dc-restoration.html">Washington DC (202-796-7422)</a>
   </div>
   <div class="services-menu">
-    <h3>Emergency Services (Select Region Above)</h3>
+    <h3 id="region-selector">Emergency Services (Select Region Above)</h3>
     <p class="regional-notification">Emergency services will update based on your regional selection</p>
   </div>
   <div class="resources-menu">
-    <h3>Authority Resources</h3>
+    <h3 id="authority-resources">Authority Resources</h3>
     <a href="/blog-index-va.html">Virginia Blog</a> |
     <a href="/blog-index-md.html">Maryland Blog</a> |
     <a href="/blog-index-dc.html">DC Blog</a> |
@@ -1228,8 +1232,8 @@
     </nav>
     
     <!-- Hero Section - Authority Reversal Hook Point -->
-    <main class="emergency-hero-plumber-medical" id="main-content" aria-labelledby="main-hook">
-        <h1 id="main-hook" class="authority-challenge">
+    <section class="emergency-hero-plumber-medical" aria-labelledby="authority-hook">
+        <h2 id="authority-hook" class="authority-challenge">
             Would you let your plumber diagnose your heart attack?
             <span class="hook-connector mortality-trigger">
                 Then why let your insurance company choose your water damage contractor?
@@ -1262,7 +1266,7 @@
 
   <!-- Region Selector (Add at top of service section) -->
   <div class="region-selector">
-    <h3>Select Your Service Area:</h3>
+    <h3 id="area-selection">Select Your Service Area:</h3>
     <div class="region-buttons">
       <button onclick="showRegionalServices('virginia')" class="region-btn active" id="va-btn">
         Virginia (703-844-4204)
@@ -1279,28 +1283,28 @@
   <!-- Virginia Services (Default/Active) -->
   <div class="regional-services" id="virginia-services">
     <div class="service-block">
-      <h2>Emergency Water Damage</h2>
+      <h2 id="va-water-damage">Emergency Water Damage</h2>
       <p>24/7 <a href="/virginia-restoration.html">Virginia water damage restoration</a>.
          Choose your own restoration contractor.</p>
       <a href="/virginia-restoration.html" class="cta-button">Virginia Water Damage</a>
     </div>
 
     <div class="service-block">
-      <h2>Fire & Smoke Damage</h2>
+      <h2 id="va-fire-damage">Fire & Smoke Damage</h2>
       <p>Professional <a href="/virginia-fire-damage.html">Virginia fire damage restoration</a>
          with family-safe practices.</p>
       <a href="/virginia-fire-damage.html" class="cta-button">Virginia Fire Damage</a>
     </div>
 
     <div class="service-block">
-      <h2>Mold Remediation</h2>
+      <h2 id="va-mold-remediation">Mold Remediation</h2>
       <p>Safe <a href="/virginia-mold-remediation.html">Virginia mold removal</a>
          protecting your family's health.</p>
       <a href="/virginia-mold-remediation.html" class="cta-button">Virginia Mold Services</a>
     </div>
 
     <div class="service-block">
-      <h2>Storm Damage</h2>
+      <h2 id="va-storm-damage">Storm Damage</h2>
       <p>Comprehensive <a href="/virginia-storm-damage.html">Virginia storm damage restoration</a>
          after severe weather.</p>
       <a href="/virginia-storm-damage.html" class="cta-button">Virginia Storm Services</a>
