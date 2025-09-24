@@ -1,0 +1,903 @@
+/* Elena Execution Mobile Performance CSS - Sub-1 Second Load Priority */
+
+/* Mobile-First Emergency Banner */
+.top-emergency-banner {
+    background: linear-gradient(45deg, #0066cc, #0052a3);
+    color: white;
+    text-align: center;
+    padding: 12px 8px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top-emergency-banner .banner-text {
+    font-size: clamp(13px, 3.5vw, 16px);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.top-emergency-banner .banner-phone {
+    font-size: clamp(16px, 4vw, 20px);
+    font-weight: 900;
+    color: #FFD700;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 0;
+}
+
+/* Mobile-First Navigation */
+.nav {
+    background: rgba(0,0,0,0.95);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 102, 204, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(16px, 4vw, 32px);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: clamp(18px, 3.5vw, 26px);
+    font-weight: 800;
+    color: #0066cc;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.emergency-call {
+    background: #0066cc;
+    color: white;
+    padding: clamp(10px, 2.5vw, 16px) clamp(16px, 4vw, 24px);
+    border: none;
+    border-radius: 25px;
+    font-size: clamp(14px, 3.5vw, 18px);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    animation: callPulse 3s infinite;
+}
+
+@keyframes callPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.7); }
+    50% { transform: scale(1.03); box-shadow: 0 0 0 8px rgba(0, 102, 204, 0); }
+}
+
+.emergency-call:hover {
+    background: #0052a3;
+    transform: scale(1.05);
+}
+
+/* Mobile-Optimized Hero Section */
+.emergency-hero-arlington {
+    padding: clamp(24px, 6vw, 60px) clamp(16px, 4vw, 32px);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),
+                radial-gradient(circle at 30% 50%, rgba(0, 102, 204, 0.2), transparent 50%),
+                linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background-size: cover;
+    background-position: center;
+    min-height: clamp(400px, 60vh, 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: clamp(16px, 4vw, 32px);
+}
+
+.emergency-hero-arlington h2 {
+    font-size: clamp(24px, 5.5vw, 48px);
+    font-weight: 900;
+    margin-bottom: clamp(16px, 4vw, 32px);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hook-connector {
+    display: block;
+    margin-top: clamp(12px, 3vw, 20px);
+    font-size: 0.85em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.medical-emergency-parallel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 4vw, 32px);
+    margin: clamp(20px, 5vw, 40px) auto;
+    max-width: 800px;
+    padding: 0 clamp(16px, 4vw, 32px);
+}
+
+.medical-side, .restoration-side {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ff6b6b;
+    border-radius: 12px;
+    padding: clamp(20px, 4vw, 32px);
+    text-align: center;
+    font-size: clamp(14px, 3.5vw, 18px);
+    font-weight: 600;
+    line-height: 1.4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.restoration-side {
+    border-color: #0066cc;
+}
+
+.medical-side:hover, .restoration-side:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+}
+
+.emergency-action {
+    margin-top: clamp(20px, 5vw, 40px);
+}
+
+.emergency-call-mobile {
+    background: linear-gradient(45deg, #0066cc, #0052a3);
+    color: white;
+    padding: clamp(14px, 3.5vw, 20px) clamp(24px, 6vw, 40px);
+    border: none;
+    border-radius: 30px;
+    font-size: clamp(16px, 4vw, 20px);
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+    animation: mobilePulse 2s infinite;
+}
+
+.emergency-call-mobile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.6);
+}
+
+/* Mobile-Optimized Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 4vw, 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 32px);
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: clamp(24px, 5vw, 32px);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 102, 204, 0.3);
+    border-left: 4px solid #3b82f6;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #1f2937;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.service-card h3 {
+    color: #1e40af !important;
+    margin-bottom: 12px;
+    font-size: clamp(18px, 4vw, 24px);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: #4b5563 !important;
+    line-height: 1.6;
+}
+
+.service-card ul {
+    text-align: left;
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 6px;
+    color: #374151 !important;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.service-card strong {
+    color: #dc2626;
+}
+
+/* Mobile-Optimized Coverage Grid */
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: clamp(16px, 4vw, 24px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: clamp(32px, 6vw, 60px) clamp(16px, 4vw, 32px);
+}
+
+.coverage-area {
+    background: rgba(0, 102, 204, 0.1);
+    border-radius: 8px;
+    padding: clamp(16px, 4vw, 24px);
+    text-align: center;
+    border: 1px solid #0066cc;
+}
+
+.coverage-area h3 {
+    color: #0066cc;
+    margin-bottom: 8px;
+    font-size: clamp(16px, 3.5vw, 20px);
+}
+
+.coverage-area p {
+    font-size: clamp(13px, 3vw, 15px);
+    line-height: 1.4;
+}
+
+/* Mobile-First Social Proof */
+.social-proof-section {
+    padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 32px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-proof-section h2 {
+    text-align: center;
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: clamp(32px, 6vw, 50px);
+    color: #0066cc;
+}
+
+.trust-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: clamp(16px, 4vw, 24px);
+    margin-bottom: clamp(40px, 8vw, 60px);
+}
+
+.trust-stat {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: clamp(20px, 4vw, 32px) clamp(16px, 3vw, 24px);
+    border-radius: 12px;
+    border: 2px solid #0066cc;
+}
+
+.trust-number {
+    display: block;
+    font-size: clamp(28px, 6vw, 40px);
+    font-weight: 900;
+    color: #0066cc;
+    margin-bottom: 8px;
+}
+
+.trust-label {
+    font-size: clamp(13px, 3vw, 16px);
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(20px, 4vw, 30px);
+    margin-top: clamp(32px, 6vw, 48px);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: clamp(20px, 4vw, 32px);
+    text-align: center;
+    margin: clamp(12px, 3vw, 20px) 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    border-left: 4px solid #fbbf24;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #f0f0f0;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.testimonial-author {
+    margin-bottom: 8px;
+}
+
+.testimonial-author strong {
+    color: #0066cc;
+    display: block;
+    margin-bottom: 4px;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.testimonial-author span {
+    color: #ccc;
+    font-size: clamp(12px, 3vw, 14px);
+}
+
+.testimonial-rating {
+    color: #ffed4e;
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+/* Mobile-Optimized Emergency Form */
+.emergency-form-section {
+    padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 32px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    padding: clamp(24px, 5vw, 40px);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 102, 204, 0.3);
+}
+
+.form-container h3 {
+    text-align: center;
+    font-size: clamp(20px, 4.5vw, 28px);
+    margin-bottom: 16px;
+    color: #0066cc;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #e0e0e0;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.emergency-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    width: 100%;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: clamp(12px, 3vw, 16px);
+    border: 2px solid rgba(0, 102, 204, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: clamp(14px, 3.5vw, 16px);
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Fix dropdown options visibility */
+.form-row select {
+    appearance: auto;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+}
+
+.form-row select option {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+}
+
+.form-row select option:hover {
+    background: #f0f0f0 !important;
+    color: #000000 !important;
+}
+
+.form-row select option:checked,
+.form-row select option:selected {
+    background: #0066cc !important;
+    color: #ffffff !important;
+}
+
+/* Enhanced form styling compatibility */
+.form-row input:required,
+.form-row select:required {
+    border-left: 4px solid #dc2626;
+}
+
+.form-row textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.submit-btn,
+.call-now-btn {
+    padding: clamp(14px, 3.5vw, 18px);
+    border: none;
+    border-radius: 25px;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #0066cc, #0052a3);
+    color: white;
+}
+
+.call-now-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: white;
+}
+
+.submit-btn:hover,
+.call-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Credentials Section */
+.credentials-section {
+    margin-bottom: clamp(32px, 6vw, 48px);
+    text-align: center;
+    padding: clamp(32px, 6vw, 48px) clamp(16px, 4vw, 32px);
+}
+
+#credentials-heading {
+    font-size: clamp(20px, 4.5vw, 28px);
+    color: #0066cc;
+    margin-bottom: clamp(24px, 5vw, 32px);
+}
+
+.credentials-grid {
+    display: flex;
+    justify-content: center;
+    gap: clamp(16px, 4vw, 24px);
+    flex-wrap: wrap;
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: clamp(16px, 4vw, 24px);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 102, 204, 0.3);
+    min-width: 180px;
+}
+
+.credential-icon {
+    font-size: clamp(24px, 5vw, 32px);
+}
+
+.credential-text strong {
+    color: #0066cc;
+    display: block;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.credential-text span {
+    color: #e0e0e0;
+    font-size: clamp(12px, 3vw, 14px);
+}
+
+/* Guarantee Section */
+.guarantee-section {
+    padding: clamp(32px, 6vw, 48px) clamp(16px, 4vw, 32px);
+    text-align: center;
+}
+
+.guarantee-badge {
+    background: linear-gradient(135deg, #0066cc, #0052a3);
+    padding: clamp(32px, 6vw, 48px);
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 3px solid #4da6ff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.guarantee-badge h3 {
+    color: #fff;
+    font-size: clamp(18px, 4vw, 24px);
+    margin-bottom: 12px;
+}
+
+.guarantee-badge p {
+    color: #e6f3ff;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.guarantee-signature {
+    font-style: italic;
+    color: #b3d9ff;
+    font-size: clamp(13px, 3vw, 15px);
+}
+
+/* Contact Section */
+.contact-action {
+    text-align: center;
+    padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 32px);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-action h3 {
+    font-size: clamp(22px, 5vw, 32px);
+    color: #0066cc;
+    margin-bottom: 16px;
+}
+
+.contact-action p {
+    font-size: clamp(16px, 4vw, 18px);
+    margin-bottom: 24px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.primary-cta {
+    background: linear-gradient(45deg, #0066cc, #0052a3);
+    color: white;
+    padding: clamp(16px, 4vw, 24px) clamp(32px, 8vw, 48px);
+    border: none;
+    border-radius: 30px;
+    font-size: clamp(18px, 4.5vw, 24px);
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+}
+
+.primary-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 102, 204, 0.6);
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: clamp(32px, 6vw, 48px) clamp(16px, 4vw, 32px) clamp(16px, 4vw, 24px);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: #ccc;
+    margin-bottom: 8px;
+    font-size: clamp(13px, 3vw, 15px);
+    line-height: 1.4;
+}
+
+/* Screen Reader Only Content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Elena Execution Mobile Performance Optimizations */
+@media (max-width: 480px) {
+    /* Ultra-mobile optimization for sub-400px devices */
+    .nav-container {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 12px;
+    }
+
+    .medical-emergency-parallel {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 16px 8px;
+    }
+
+    .medical-side, .restoration-side {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 32px 12px;
+    }
+
+    .coverage-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 24px 12px;
+    }
+
+    .trust-indicators {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-actions {
+        gap: 8px;
+    }
+}
+
+/* Focus Management for Accessibility */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus,
+[tabindex]:focus {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px rgba(0, 102, 204, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skip-link:focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    padding: 12px 16px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #0066cc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    a:focus {
+        outline: 4px solid currentColor;
+        outline-offset: 2px;
+    }
+
+    .service-card {
+        border: 2px solid #000;
+    }
+
+    .emergency-call-mobile,
+    .primary-cta {
+        border: 2px solid #000;
+    }
+
+    .form-row input:focus,
+    .form-row select:focus,
+    .form-row textarea:focus {
+        border-color: #000;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .service-card,
+    .emergency-call-mobile,
+    .primary-cta {
+        transition: none;
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .emergency-hero-arlington,
+    .nav,
+    .emergency-form-section,
+    .footer {
+        color: black !important;
+        background: white !important;
+    }
+
+    .emergency-call-mobile,
+    .primary-cta {
+        border: 2px solid black;
+        background: white;
+        color: black;
+    }
+
+    .social-proof-section {
+        background: white;
+        color: black;
+    }
+
+    .testimonial-card {
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Enhanced Focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #fbbf24;
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: "Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Animation for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Elena Execution Performance Enhancements */
+.emergency-hero-arlington {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.service-card,
+.testimonial-card,
+.coverage-area {
+    will-change: transform;
+}
+
+.service-card:hover,
+.emergency-call-mobile:hover,
+.primary-cta:hover {
+    will-change: auto;
+}
+
+/* Mobile touch target optimization */
+@media (max-width: 768px) {
+    a[href^="tel:"] {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        font-size: 16px;
+        border-radius: 25px;
+        background: linear-gradient(45deg, #0066cc, #0052a3);
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    a[href^="tel:"]:active {
+        transform: scale(0.98);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Ensure all interactive elements meet 44px minimum */
+    button,
+    .submit-btn,
+    .call-now-btn,
+    .emergency-call-mobile,
+    .primary-cta {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
