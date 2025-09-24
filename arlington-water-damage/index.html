@@ -26,6 +26,17 @@
         .skip-link:focus{top:8px}
         .emergency-call-mobile{background:linear-gradient(45deg,#ff6b6b,#ff4757);color:#fff;padding:14px 20px;border:none;border-radius:25px;font-size:16px;font-weight:800;text-decoration:none;display:inline-block;margin:8px 0;box-shadow:0 4px 12px rgba(255,107,107,0.4);animation:mobilePulse 2s infinite}
         @keyframes mobilePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+
+        /* Specialist Network - Critical CSS */
+        .specialist-network{padding:clamp(40px,8vw,80px) clamp(16px,4vw,32px);max-width:1200px;margin:0 auto;text-align:center}
+        .specialist-network h2{font-size:clamp(24px,5vw,36px);margin-bottom:clamp(20px,4vw,30px);color:#0066cc}
+        .specialist-network p{font-size:clamp(16px,4vw,18px);margin-bottom:clamp(30px,6vw,40px);color:#fff}
+        .specialist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,4vw,30px)}
+        .specialist-card{background:rgba(255,255,255,0.95);padding:clamp(20px,4vw,30px);border-radius:12px;text-decoration:none;color:#333;transition:transform 0.3s ease;border:2px solid rgba(0,102,204,0.3);display:block;text-align:center}
+        .specialist-card:hover{transform:translateY(-5px);box-shadow:0 8px 30px rgba(0,0,0,0.15);color:#333;text-decoration:none}
+        .specialist-icon{font-size:clamp(24px,6vw,32px);margin-bottom:12px;display:block;color:#333}
+        .specialist-title{font-size:clamp(16px,4vw,20px);font-weight:bold;color:#0066cc!important;margin-bottom:8px;display:block}
+        .specialist-subtitle{font-size:clamp(14px,3vw,16px);color:#666!important;display:block}
     </style>
 
     <!-- Schema Markup for Arlington Water Damage Services -->
@@ -420,6 +431,30 @@
                 <a href="tel:703-844-4204" class="primary-cta mobile-large"
                    onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'bottom_cta', 'region': 'arlington'});">
                     📞 CALL NOW: 703-844-4204
+                </a>
+            </div>
+        </section>
+
+        <!-- Northern Virginia Specialist Network -->
+        <section class="specialist-network" aria-labelledby="nova-specialists">
+            <h2 id="nova-specialists">Northern Virginia Specialist Network</h2>
+            <p>Part of the comprehensive Northern Virginia restoration authority network:</p>
+
+            <div class="specialist-grid">
+                <a href="/alexandria/" class="specialist-card">
+                    <div class="specialist-icon">🏛️</div>
+                    <div class="specialist-title">Alexandria Emergency</div>
+                    <div class="specialist-subtitle">Historic Area Specialists</div>
+                </a>
+                <a href="/fairfax-mold-remediation/" class="specialist-card">
+                    <div class="specialist-icon">🦠</div>
+                    <div class="specialist-title">Fairfax Mold Remediation</div>
+                    <div class="specialist-subtitle">Mold Elimination Specialists</div>
+                </a>
+                <a href="/virginia-restoration.html" class="specialist-card">
+                    <div class="specialist-icon">🏠</div>
+                    <div class="specialist-title">Virginia Hub</div>
+                    <div class="specialist-subtitle">Comprehensive Regional Services</div>
                 </a>
             </div>
         </section>
