@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🏘️ Howard County Storm Damage - Columbia, Ellicott City, Clarksville. 24/7 emergency storm restoration, roof repairs & debris removal. Licensed specialists. 301-900-5171">
+    <title>🏘️ Howard County Storm Damage | Columbia Emergency Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .emergency-banner .phone {
+            color: #fef3c7;
+            text-decoration: none;
+            margin-left: 20px;
+            border: 2px solid #fef3c7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-banner .phone:hover {
+            background: #fef3c7;
+            color: #6b7280;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #6b7280;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "🏘️";
+            font-size: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .phone-number {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(107, 114, 128, 0.3);
+        }
+
+        .phone-number:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(107, 114, 128, 0.4);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M30 5l5 10h10l-8 6 3 10-10-7-10 7 3-10-8-6h10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            animation: storm 15s ease-in-out infinite;
+        }
+
+        @keyframes storm {
+            0%, 100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+            25% { transform: translateX(5px) translateY(-3px) rotate(1deg); }
+            50% { transform: translateX(-3px) translateY(5px) rotate(-1deg); }
+            75% { transform: translateX(-5px) translateY(-3px) rotate(1deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .authority-challenge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .authority-challenge h2 {
+            color: #fef3c7;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .authority-challenge p {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-primary, .cta-secondary {
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .cta-primary {
+            background: linear-gradient(45deg, #dc2626, #b91c1c);
+            color: white;
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.4);
+        }
+
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .services-grid {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .coverage-area {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 80px 0;
+        }
+
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .coverage-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .coverage-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .coverage-card h3 {
+            color: #6b7280;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .coverage-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        .county-network {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .network-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .network-link {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .network-link:hover {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(107, 114, 128, 0.3);
+        }
+
+        .emergency-cta {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .emergency-cta h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .emergency-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .emergency-cta .cta-primary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .emergency-cta .cta-primary:hover {
+            background: white;
+            color: #dc2626;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: #6b7280;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #9ca3af;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: #6b7280;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 30px;
+            text-align: center;
+            color: #6b7280;
+        }
+
+        .schema-org {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .authority-challenge {
+                padding: 25px;
+                margin: 20px 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-info {
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        <strong>🏘️ Howard County Storm Emergency</strong>
+        <a href="tel:301-900-5171" class="phone">📞 301-900-5171</a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="howard-county-restoration.html" class="logo">Howard County Restoration</a>
+                <div class="contact-info">
+                    <a href="tel:301-900-5171" class="phone-number">⛈️ Emergency: 301-900-5171</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🏘️ Howard County Storm Damage</h1>
+                <p class="hero-subtitle">Columbia • Ellicott City • Clarksville • 24/7 Emergency Response</p>
+
+                <div class="authority-challenge">
+                    <h2>⛈️ Would you let your mechanic repair your roof after a tornado?</h2>
+                    <p><strong>Then why let your insurance company choose your Howard County storm restoration specialist?</strong></p>
+                    <p>When severe weather damages your family's home in Columbia, Ellicott City, or Clarksville - YOU choose the certified expert. Not them.</p>
+                    <p><strong>Take control. Exercise YOUR authority to protect what matters most.</strong></p>
+
+                    <div class="cta-buttons">
+                        <a href="tel:301-900-5171" class="cta-primary">⛈️ Emergency: 301-900-5171</a>
+                        <a href="#services" class="cta-secondary">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2>⛈️ Emergency Storm Services</h2>
+                <p>Comprehensive storm damage restoration services for Howard County families. Licensed, certified, and available 24/7 for weather emergencies.</p>
+            </div>
+
+            <div class="grid">
+                <div class="service-card">
+                    <div class="icon">🚨</div>
+                    <h3>Emergency Response</h3>
+                    <p>24/7 emergency storm response throughout Howard County. When severe weather strikes, immediate action prevents further damage. Our certified specialists respond within 60 minutes to secure your property.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🏠</div>
+                    <h3>Roof Repairs</h3>
+                    <p>Emergency roof repair and replacement services for storm-damaged homes. We handle everything from minor leaks to complete roof reconstruction with quality materials and expert craftsmanship.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🌊</div>
+                    <h3>Water Extraction</h3>
+                    <p>Rapid water removal and drying services for storm-damaged properties. We prevent secondary water damage and mold growth through immediate extraction and professional drying techniques.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🌳</div>
+                    <h3>Debris Removal</h3>
+                    <p>Complete storm debris removal and property cleanup. We safely remove fallen trees, damaged structures, and debris while protecting undamaged areas of your property.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🔧</div>
+                    <h3>Structural Repairs</h3>
+                    <p>Professional structural restoration for storm-damaged buildings. From foundation repairs to complete reconstruction, we restore your property to pre-storm condition.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">📋</div>
+                    <h3>Insurance Claims</h3>
+                    <p>Complete insurance claim assistance including damage documentation, scope preparation, and direct insurance company coordination. We maximize your coverage and minimize your stress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coverage-area">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏘️ Howard County Coverage Areas</h2>
+                <p>Serving all Howard County communities with 24/7 emergency storm damage restoration services</p>
+            </div>
+
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3>Columbia</h3>
+                    <p>Central Howard County emergency storm services. Complete coverage for all Columbia neighborhoods and surrounding communities.</p>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Ellicott City</h3>
+                    <p>Historic district storm damage specialists. Expert services for both historic and modern properties in Ellicott City.</p>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Clarksville</h3>
+                    <p>Northern Howard County emergency response. Comprehensive storm damage services for residential and commercial properties.</p>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Laurel</h3>
+                    <p>Eastern Howard County coverage. Full-service storm damage restoration for communities along the Baltimore-Washington corridor.</p>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Savage</h3>
+                    <p>Southern Howard County emergency services. Complete storm restoration services for historic mill town and surrounding areas.</p>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Jessup</h3>
+                    <p>Eastern Howard County specialists. Industrial and residential storm damage restoration services for Jessup and nearby communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="county-network">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏔️ Maryland Specialist Network</h2>
+                <p>Connected network of restoration specialists serving Maryland communities</p>
+            </div>
+
+            <div class="network-grid">
+                <a href="montgomery-county-restoration.html" class="network-link">
+                    🏛️ Montgomery County
+                </a>
+                <a href="prince-georges-county-restoration.html" class="network-link">
+                    🌳 Prince George's County
+                </a>
+                <a href="anne-arundel-county-restoration.html" class="network-link">
+                    ⚓ Anne Arundel County
+                </a>
+                <a href="charles-county-restoration.html" class="network-link">
+                    🌾 Charles County
+                </a>
+                <a href="carroll-county-restoration.html" class="network-link">
+                    ⛰️ Carroll County
+                </a>
+                <a href="frederick-county-restoration.html" class="network-link">
+                    🌄 Frederick County
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency-cta">
+        <div class="container">
+            <h2>⛈️ Howard County Storm Emergency?</h2>
+            <p>Don't let storm damage threaten your family's safety. Call Howard County's trusted storm restoration specialists now.</p>
+            <a href="tel:301-900-5171" class="cta-primary">Emergency: 301-900-5171</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏘️ Howard County Restoration</h3>
+                    <p>Licensed storm damage restoration specialists serving Columbia, Ellicott City, Clarksville and all Howard County communities.</p>
+                    <p><strong>24/7 Emergency: 301-900-5171</strong></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="howard-county-restoration.html">Emergency Restoration</a></p>
+                    <p><a href="howard-county-water-damage.html">Water Damage</a></p>
+                    <p><a href="howard-county-fire-damage.html">Fire Damage</a></p>
+                    <p><a href="howard-county-mold-remediation.html">Mold Remediation</a></p>
+                    <p><a href="howard-county-storm-damage.html">Storm Damage</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Coverage Areas</h3>
+                    <p>Columbia, MD</p>
+                    <p>Ellicott City, MD</p>
+                    <p>Clarksville, MD</p>
+                    <p>Laurel, MD</p>
+                    <p>Savage, MD</p>
+                    <p>Jessup, MD</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Emergency Contact</h3>
+                    <p><strong>📞 301-900-5171</strong></p>
+                    <p>24/7 Emergency Response</p>
+                    <p>Licensed & Insured</p>
+                    <p>Storm Certified</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Howard County Restoration. Licensed storm damage restoration specialists serving Maryland families.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json" class="schema-org">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Howard County Storm Damage",
+        "image": "https://howardcountyrestoration.com/images/storm-damage.jpg",
+        "@id": "https://howardcountyrestoration.com/storm-damage",
+        "url": "https://howardcountyrestoration.com/storm-damage",
+        "telephone": "301-900-5171",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Howard County",
+            "addressLocality": "Columbia",
+            "addressRegion": "MD",
+            "postalCode": "21044",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.2037,
+            "longitude": -76.8610
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.2037,
+                "longitude": -76.8610
+            },
+            "geoRadius": "30000"
+        },
+        "priceRange": "$$",
+        "description": "24/7 emergency storm damage restoration services in Howard County, MD. Licensed specialists serving Columbia, Ellicott City, Clarksville and surrounding communities."
+    }
+    </script>
+</body>
+</html>

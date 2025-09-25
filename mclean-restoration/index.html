@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <meta name="description" content="24/7 exclusive restoration services in McLean, VA. Ultra-premium estate protection, concierge-level service, and emergency response. Don't let insurance choose - call 703-844-4204.">
+    <meta name="keywords" content="McLean restoration, luxury estate restoration McLean VA, Great Falls restoration, Potomac restoration, ultra-premium restoration McLean">
+    <title>McLean Restoration | Ultra-Premium Estate Services | 703-844-4204</title>
+
+    <!-- Performance Optimized Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+    <!-- Critical CSS for Above-the-Fold Content - Elena Execution Mobile Optimization -->
+    <style>
+        /* Critical CSS - Mobile-first optimization */
+        body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-size:16px;font-display:swap}
+        .page-main-title{font-size:clamp(26px,5.5vw,40px);font-weight:800;text-align:center;padding:16px;margin:0;color:#fff;line-height:1.2}
+        .emergency-hero-mclean{padding:clamp(16px,4vw,32px);margin:0;width:100%;min-height:clamp(400px,60vh,500px);contain:layout style}
+        .authority-challenge{font-size:clamp(22px,4.5vw,34px);font-weight:700;line-height:1.25;color:#ffed4e;text-align:center}
+        .skip-link{position:absolute;top:-100px;left:8px;background:#ffd700;color:#000;padding:8px 12px;text-decoration:none;z-index:10000;border-radius:4px;font-size:14px}
+        .skip-link:focus{top:8px}
+        .emergency-call-mobile{background:linear-gradient(45deg,#b8860b,#daa520);color:#fff;padding:14px 20px;border:none;border-radius:25px;font-size:16px;font-weight:800;text-decoration:none;display:inline-block;margin:8px 0;box-shadow:0 4px 12px rgba(184,134,11,0.4);animation:mobilePulse 2s infinite}
+        @keyframes mobilePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+
+        /* Top Emergency Banner */
+        .top-emergency-banner{background:linear-gradient(45deg,#2c1810,#b8860b);color:#fff;padding:12px 0;position:fixed;top:0;width:100%;z-index:9999;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.2);font-size:14px;font-weight:bold}
+        .banner-text{display:inline-block;margin-right:10px}
+        .banner-phone{color:#fff;text-decoration:none;background:rgba(255,255,255,0.2);padding:6px 12px;border-radius:15px;border:1px solid rgba(255,255,255,0.3);font-weight:bold;font-size:15px}
+        .banner-phone:hover{background:rgba(255,255,255,0.3)}
+
+        /* Navigation */
+        .nav{background:rgba(0,0,0,0.9);padding:16px 0;position:sticky;top:50px;z-index:1000;backdrop-filter:blur(10px)}
+        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+        .logo{color:#b8860b;font-size:20px;font-weight:bold}
+        .emergency-call{background:#b8860b;color:#fff;padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:bold;font-size:14px;transition:background 0.3s}
+        .emergency-call:hover{background:#daa520}
+
+        /* Main content spacing fix */
+        main{margin-top:60px;padding-top:20px}
+
+        /* Medical Emergency Parallel */
+        .medical-emergency-parallel{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:30px 0;padding:20px;background:rgba(255,255,255,0.1);border-radius:15px;backdrop-filter:blur(10px)}
+        .medical-side,.restoration-side{text-align:center;padding:20px;border-radius:10px;font-weight:600;font-size:16px}
+        .medical-side{background:rgba(255,0,0,0.2);border:2px solid rgba(255,0,0,0.5)}
+        .restoration-side{background:rgba(0,255,0,0.2);border:2px solid rgba(0,255,0,0.5)}
+        .hook-connector{display:block;margin-top:20px;font-size:18px;color:#b8860b;font-weight:700}
+        .emergency-action{text-align:center;margin-top:30px}
+
+        /* Services responsive grid */
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:40px 20px;max-width:1200px;margin-left:auto;margin-right:auto}
+        .service-card{background:rgba(255,255,255,0.95);padding:25px;border-radius:15px;color:#333;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:transform 0.3s ease;border-left:4px solid #2c1810}
+        .service-card:hover{transform:translateY(-5px)}
+        .service-card h3{color:#2c1810;margin-bottom:15px;font-size:18px}
+        .service-card p{color:#666;line-height:1.6;font-size:14px}
+
+        /* Specialist Network - Critical CSS */
+        .specialist-network{padding:clamp(40px,8vw,80px) clamp(16px,4vw,32px);max-width:1200px;margin:0 auto;text-align:center}
+        .specialist-network h2{font-size:clamp(24px,5vw,36px);margin-bottom:clamp(20px,4vw,30px);color:#b8860b}
+        .specialist-network p{font-size:clamp(16px,4vw,18px);margin-bottom:clamp(30px,6vw,40px);color:#fff}
+        .specialist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,4vw,30px)}
+        .specialist-card{background:rgba(255,255,255,0.95);padding:clamp(20px,4vw,30px);border-radius:12px;text-decoration:none;color:#333;transition:transform 0.3s ease;border:2px solid rgba(44,24,16,0.3);display:block;text-align:center}
+        .specialist-card:hover{transform:translateY(-5px);box-shadow:0 8px 30px rgba(0,0,0,0.15);color:#333;text-decoration:none}
+        .specialist-icon{font-size:clamp(24px,6vw,32px);margin-bottom:12px;display:block;color:#333}
+        .specialist-title{font-size:clamp(16px,4vw,20px);font-weight:bold;color:#2c1810!important;margin-bottom:8px;display:block}
+        .specialist-subtitle{font-size:clamp(14px,3vw,16px);color:#666!important;display:block}
+        .specialist-card.fire-damage{border-color:rgba(220,20,60,0.4)}
+        .specialist-card.mold-remediation{border-color:rgba(139,69,19,0.4)}
+        .specialist-card.emergency-services{border-color:rgba(0,206,209,0.4)}
+        .specialist-card.general-water{border-color:rgba(25,118,210,0.4)}
+        .specialist-card.vienna-water{border-color:rgba(30,58,138,0.4)}
+
+        /* Mobile Responsiveness */
+        @media(max-width:768px){
+            .medical-emergency-parallel{grid-template-columns:1fr;gap:15px}
+            .top-emergency-banner{font-size:12px}
+            .banner-text{display:block;margin-bottom:5px;margin-right:0}
+            .nav-container{flex-direction:column;gap:10px}
+            .services-grid{grid-template-columns:1fr;margin:20px 10px}
+            .specialist-grid{grid-template-columns:1fr}
+        }
+        @media(max-width:480px){
+            .authority-challenge{font-size:20px}
+            .medical-side,.restoration-side{font-size:14px;padding:15px}
+        }
+    </style>
+
+    <!-- Schema Markup for McLean Restoration -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Independent McLean Restoration Services",
+      "image": "https://www.independent-restoration.com/logo.png",
+      "telephone": "703-844-4204",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "McLean Service Area",
+        "addressLocality": "McLean",
+        "addressRegion": "VA",
+        "postalCode": "22102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.9338,
+        "longitude": -77.1772
+      },
+      "url": "https://www.independent-restoration.com/mclean-restoration",
+      "sameAs": [
+        "https://www.facebook.com/IndependentRestoration",
+        "https://www.linkedin.com/company/independent-restoration"
+      ],
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.9338,
+          "longitude": -77.1772
+        },
+        "geoRadius": "15"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "McLean Ultra-Premium Restoration Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Estate Water Damage McLean",
+              "description": "Ultra-premium restoration for McLean's most exclusive properties"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "McLean Fire Damage Estate Services",
+              "description": "Exclusive fire damage restoration for luxury estates"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concierge Restoration McLean",
+              "description": "White-glove concierge-level restoration services"
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        "McLean, VA",
+        "Great Falls",
+        "Potomac",
+        "Chain Bridge",
+        "Langley",
+        "Pimmit Hills",
+        "West Falls Church",
+        "East Falls Church"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip Navigation for Screen Readers -->
+    <nav aria-label="Skip navigation links">
+        <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>
+        <a href="#navigation" class="skip-link sr-only sr-only-focusable">Skip to navigation</a>
+        <a href="#emergency-form" class="skip-link sr-only sr-only-focusable">Skip to emergency form</a>
+        <a href="#contact-info" class="skip-link sr-only sr-only-focusable">Skip to contact information</a>
+    </nav>
+
+    <!-- Mobile-Optimized Emergency Banner -->
+    <div class="top-emergency-banner">
+        <div class="banner-text">
+            🏰 MCLEAN ESTATE EMERGENCY?<br>
+            Exclusive Concierge Response:
+        </div>
+        <a href="tel:703-844-4204" class="banner-phone">703-844-4204</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation" id="navigation">
+        <div class="nav-container">
+            <div class="logo" aria-label="McLean Ultra-Premium Restoration Specialists">
+                🏰 McLean Estate Restoration
+            </div>
+            <a href="tel:703-844-4204" class="emergency-call"
+               onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'header', 'region': 'mclean'});">
+                📞 EMERGENCY: 703-844-4204
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Title H1 -->
+        <h1 id="page-title" class="page-main-title">
+            McLean Restoration - Ultra-Premium Estate Services
+        </h1>
+
+        <!-- Hero Section - Authority Reversal Hook Point -->
+        <section class="emergency-hero-mclean" aria-labelledby="authority-hook">
+            <h2 id="authority-hook" class="authority-challenge">
+                Would you let your plumber diagnose your heart attack?
+                <span class="hook-connector mortality-trigger">
+                    Then why let your insurance company choose your McLean estate restoration contractor?
+                </span>
+            </h2>
+
+            <div class="medical-emergency-parallel" role="region" aria-label="Authority comparison demonstration">
+                <div class="medical-side" aria-label="Inappropriate medical authority example">
+                    ❌ Plumber Diagnosing Heart Attack = Wrong Estate Expert
+                    <div class="sr-only">This demonstrates the absurdity of having an unqualified professional make critical decisions about your health</div>
+                </div>
+                <div class="restoration-side" aria-label="Appropriate restoration authority choice">
+                    ✅ YOU Choose Your McLean Estate Expert = Right Exclusive Response
+                    <div class="sr-only">This shows the importance of choosing your own qualified McLean ultra-premium restoration professional</div>
+                </div>
+            </div>
+
+            <!-- Mobile-Optimized Emergency Action -->
+            <div class="emergency-action">
+                <a href="tel:703-844-4204" class="emergency-call-mobile authority-challenge"
+                        onclick="gtag('event', 'emergency_call_clicked', {'call_location': 'hero', 'hook_point_exposure': 'plumber_heart_attack_mclean', 'region': 'mclean'});">
+                    📞 CALL YOUR MCLEAN EXPERT: 703-844-4204
+                </a>
+            </div>
+        </section>
+
+        <!-- McLean Ultra-Premium Restoration Services Section -->
+        <section aria-labelledby="estate-services">
+            <h2 id="estate-services">McLean Ultra-Premium Estate Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card estate-water-damage">
+                    <div class="service-icon">🏰</div>
+                    <h3 id="estate-water-damage-mclean">Estate Water Damage McLean</h3>
+                    <p>Ultra-premium water damage restoration for McLean's most exclusive multi-million dollar estates. Specialized care for rare materials, custom installations, and priceless collections.</p>
+                    <ul>
+                        <li>Multi-million dollar estate expertise</li>
+                        <li>Rare material restoration (exotic woods, stones)</li>
+                        <li>Art and collectibles protection protocols</li>
+                        <li>Concierge-level service coordination</li>
+                    </ul>
+                </div>
+
+                <div class="service-card estate-fire-damage">
+                    <div class="service-icon">🔥</div>
+                    <h3 id="estate-fire-damage-mclean">McLean Fire Damage Estate Services</h3>
+                    <p>Exclusive fire damage restoration for luxury estates in McLean, Great Falls, and Potomac. Expert reconstruction of custom architecture and irreplaceable features.</p>
+                    <ul>
+                        <li>Custom architecture reconstruction</li>
+                        <li>Historic estate fire restoration</li>
+                        <li>Smoke damage removal from luxury materials</li>
+                        <li>Estate security and privacy protocols</li>
+                    </ul>
+                </div>
+
+                <div class="service-card concierge-restoration">
+                    <div class="service-icon">🎩</div>
+                    <h3 id="concierge-restoration-mclean">Concierge Restoration McLean</h3>
+                    <p>White-glove concierge-level restoration services exclusively for McLean's most discerning property owners. Complete project management and family liaison coordination.</p>
+                    <ul>
+                        <li>Dedicated concierge project management</li>
+                        <li>Family liaison and communication coordination</li>
+                        <li>Vendor and contractor network management</li>
+                        <li>Temporary housing and logistics support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card emergency-estate-response">
+                    <div class="service-icon">⚡</div>
+                    <h3 id="emergency-estate-response">Emergency Estate Response</h3>
+                    <p>Immediate 24/7 response for McLean estate emergencies. Priority access with sub-30 minute response times for the most exclusive properties.</p>
+                    <ul>
+                        <li>Sub-30 minute estate emergency response</li>
+                        <li>Priority access for exclusive properties</li>
+                        <li>Estate staff coordination and communication</li>
+                        <li>Discretion and privacy protection protocols</li>
+                    </ul>
+                </div>
+
+                <div class="service-card luxury-mold-remediation">
+                    <div class="service-icon">🔬</div>
+                    <h3 id="luxury-mold-remediation">Luxury Mold Remediation</h3>
+                    <p>Advanced mold remediation designed for McLean's luxury environments. Protecting health and property value in high-end estates with precision protocols.</p>
+                    <ul>
+                        <li>Luxury environment mold assessment</li>
+                        <li>Advanced air filtration systems</li>
+                        <li>High-end material mold removal</li>
+                        <li>Estate health and safety protocols</li>
+                    </ul>
+                </div>
+
+                <div class="service-card insurance-advocacy">
+                    <div class="service-icon">🛡️</div>
+                    <h3 id="insurance-advocacy-mclean">Insurance Advocacy McLean</h3>
+                    <p>Expert insurance advocacy for ultra-high-value property claims. Maximizing coverage for McLean's most exclusive estates with specialized claim handling.</p>
+                    <ul>
+                        <li>Ultra-high-value property claim expertise</li>
+                        <li>Insurance company negotiation on your behalf</li>
+                        <li>Comprehensive damage documentation</li>
+                        <li>Maximum coverage recovery strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- McLean Emergency Response Triage -->
+        <section aria-labelledby="emergency-triage">
+            <h2 id="emergency-triage">McLean Estate Emergency Triage</h2>
+            <p style="text-align:center;color:#fff;margin-bottom:30px;font-size:18px;">
+                Ultra-premium emergency classification system for McLean, Great Falls, and Potomac estates
+            </p>
+
+            <div class="triage-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px;max-width:1000px;margin-left:auto;margin-right:auto;">
+                <div style="background:rgba(255,0,0,0.2);border:2px solid rgba(255,0,0,0.5);padding:25px;border-radius:15px;color:#fff;">
+                    <h3 style="color:#ff6b6b;margin-bottom:15px;">🚨 IMMEDIATE (Call Now)</h3>
+                    <ul style="color:#fff;font-size:14px;">
+                        <li>Estate flooding McLean/Great Falls</li>
+                        <li>Fire damage to custom architecture</li>
+                        <li>Water damage to art collections</li>
+                        <li>Structural damage to luxury features</li>
+                        <li>Wine cellar or vault flooding</li>
+                    </ul>
+                </div>
+
+                <div style="background:rgba(255,193,7,0.2);border:2px solid rgba(255,193,7,0.5);padding:25px;border-radius:15px;color:#fff;">
+                    <h3 style="color:#ffc107;margin-bottom:15px;">⚠️ URGENT (Same Day)</h3>
+                    <ul style="color:#fff;font-size:14px;">
+                        <li>Luxury kitchen water damage</li>
+                        <li>Master suite bathroom issues</li>
+                        <li>HVAC system problems</li>
+                        <li>Pool house or guest house damage</li>
+                        <li>Exotic hardwood exposure</li>
+                    </ul>
+                </div>
+
+                <div style="background:rgba(0,123,255,0.2);border:2px solid rgba(0,123,255,0.5);padding:25px;border-radius:15px;color:#fff;">
+                    <h3 style="color:#007bff;margin-bottom:15px;">📅 STANDARD (24-48 Hours)</h3>
+                    <ul style="color:#fff;font-size:14px;">
+                        <li>Estate moisture assessment</li>
+                        <li>High-value property insurance claims</li>
+                        <li>Preventive estate maintenance</li>
+                        <li>Post-restoration quality assurance</li>
+                        <li>Concierge service consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Specialist Network Integration -->
+    <section class="specialist-network">
+        <h2>Northern Virginia Specialist Network</h2>
+        <p>Connected expertise across NOVA's premier emergency restoration specialists</p>
+
+        <div class="specialist-grid">
+            <a href="../fairfax-county-restoration.html" class="specialist-card general-water">
+                <div class="specialist-icon">🏘️</div>
+                <div class="specialist-title">Fairfax County Hub</div>
+                <div class="specialist-subtitle">NOVA parent county services</div>
+            </a>
+
+            <a href="../alexandria/" class="specialist-card general-water">
+                <div class="specialist-icon">🏛️</div>
+                <div class="specialist-title">Alexandria Emergency</div>
+                <div class="specialist-subtitle">Historic district restoration and emergency response</div>
+            </a>
+
+            <a href="../arlington-water-damage/" class="specialist-card general-water">
+                <div class="specialist-icon">🏢</div>
+                <div class="specialist-title">Arlington Water Damage</div>
+                <div class="specialist-subtitle">Urban water damage for high-density properties</div>
+            </a>
+
+            <a href="../fairfax-mold-remediation/" class="specialist-card mold-remediation">
+                <div class="specialist-icon">🔬</div>
+                <div class="specialist-title">Fairfax Mold Remediation</div>
+                <div class="specialist-subtitle">Advanced mold remediation specialists</div>
+            </a>
+
+            <a href="../tysons-fire-damage/" class="specialist-card fire-damage">
+                <div class="specialist-icon">🔥</div>
+                <div class="specialist-title">Tysons Fire Damage</div>
+                <div class="specialist-subtitle">Commercial fire damage restoration</div>
+            </a>
+
+            <a href="../reston-emergency-services/" class="specialist-card emergency-services">
+                <div class="specialist-icon">💻</div>
+                <div class="specialist-title">Reston Emergency Services</div>
+                <div class="specialist-subtitle">Tech corridor emergency response</div>
+            </a>
+
+            <a href="../vienna-water-damage/" class="specialist-card vienna-water">
+                <div class="specialist-icon">🏛️</div>
+                <div class="specialist-title">Vienna Water Damage</div>
+                <div class="specialist-subtitle">Premium luxury specialists</div>
+            </a>
+        </div>
+
+        <p style="font-size:14px;color:#ccc;text-align:center;margin-top:30px;">
+            <strong>Network Coordination:</strong> All NOVA specialists maintain 24/7 cross-referral capabilities and coordinated emergency response protocols.
+        </p>
+    </section>
+
+    <!-- Emergency Call to Action -->
+    <section style="background:rgba(44,24,16,0.9);padding:50px 20px;text-align:center;color:#fff;">
+        <h2 style="color:#b8860b;margin-bottom:20px;font-size:28px;">McLean Estate Emergency?</h2>
+        <p style="font-size:18px;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto;">
+            Don't let insurance companies compromise your estate's value. Our McLean specialists provide exclusive concierge-level restoration services with complete discretion and white-glove care.
+        </p>
+        <a href="tel:703-844-4204" class="emergency-call-mobile" style="font-size:20px;padding:15px 30px;">
+            📞 CALL NOW: 703-844-4204
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#1a1a2e;color:#ccc;padding:40px 20px;text-align:center;">
+        <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;text-align:left;">
+            <div>
+                <h3 style="color:#b8860b;margin-bottom:15px;">McLean Restoration</h3>
+                <p>Ultra-premium restoration for McLean's most exclusive estates. Concierge-level service with complete discretion for multi-million dollar properties in McLean, Great Falls, and Potomac.</p>
+                <p><strong>Emergency:</strong> <a href="tel:703-844-4204" style="color:#b8860b;">703-844-4204</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#b8860b;margin-bottom:15px;">Exclusive Service Areas</h3>
+                <p>• McLean Luxury Estates</p>
+                <p>• Great Falls Waterfront Properties</p>
+                <p>• Potomac Ultra-Premium Homes</p>
+                <p>• Chain Bridge Exclusive Residences</p>
+            </div>
+
+            <div>
+                <h3 style="color:#b8860b;margin-bottom:15px;">NOVA Specialists</h3>
+                <p><a href="../fairfax-county-restoration.html" style="color:#ccc;">Fairfax County Hub</a></p>
+                <p><a href="../alexandria/" style="color:#ccc;">Alexandria Emergency</a></p>
+                <p><a href="../arlington-water-damage/" style="color:#ccc;">Arlington Water Damage</a></p>
+                <p><a href="../fairfax-mold-remediation/" style="color:#ccc;">Fairfax Mold Remediation</a></p>
+                <p><a href="../tysons-fire-damage/" style="color:#ccc;">Tysons Fire Damage</a></p>
+                <p><a href="../reston-emergency-services/" style="color:#ccc;">Reston Emergency</a></p>
+                <p><a href="../vienna-water-damage/" style="color:#ccc;">Vienna Water Damage</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#b8860b;margin-bottom:15px;">Resources</h3>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">Virginia Hub</a></p>
+                <p><a href="/northern-va-water-damage-faq.html" style="color:#ccc;">NOVA FAQ</a></p>
+                <p><a href="/blog-index-va.html" style="color:#ccc;">Virginia Blog</a></p>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">All Virginia Services</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top:30px;padding-top:20px;border-top:1px solid #333;text-align:center;">
+            <p>&copy; 2024 Independent Restoration - McLean Estate Specialists | Ultra-premium restoration for McLean's most exclusive properties</p>
+        </div>
+    </footer>
+
+    <!-- Comprehensive NOVA Tracking System -->
+    <script src="../comprehensive-tracking.js"></script>
+    <script>
+        // McLean-specific tracking configuration
+        window.novaPageLoadTime = performance.now();
+
+        // Legacy support for existing onclick handlers
+        function gtag() {
+            if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                // Redirect to new tracking system
+                const args = Array.from(arguments);
+                if (args[0] === 'event' && args[1] === 'emergency_call_clicked') {
+                    const callData = args[2] || {};
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('emergency_call_clicked', {
+                            ...callData,
+                            legacy_handler: true
+                        });
+                    }
+                }
+            }
+            // Fallback to dataLayer if gtag not yet available
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
+        }
+
+        // Initialize McLean ultra-premium tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track McLean Authority Reversal Framework
+            setTimeout(() => {
+                if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                    window.novaTracking.trackEvent('mclean_authority_framework_loaded', {
+                        hook_type: 'plumber_heart_attack_mclean_estate',
+                        region: 'mclean',
+                        service_type: 'ultra_premium_restoration',
+                        ultra_high_net_worth_focus: true,
+                        estate_specialization: true,
+                        concierge_level_service: true,
+                        multi_million_dollar_properties: true
+                    });
+                }
+            }, 1000);
+
+            // Track McLean-specific ultra-premium service engagement
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                const serviceType = card.className.includes('estate-water-damage') ? 'estate_water_damage' :
+                                 card.className.includes('estate-fire-damage') ? 'estate_fire_damage' :
+                                 card.className.includes('concierge-restoration') ? 'concierge_restoration' :
+                                 card.className.includes('emergency-estate-response') ? 'emergency_estate_response' :
+                                 card.className.includes('luxury-mold-remediation') ? 'luxury_mold_remediation' :
+                                 card.className.includes('insurance-advocacy') ? 'insurance_advocacy' : 'unknown';
+
+                card.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_ultra_premium_service_engagement', {
+                            service_type: serviceType,
+                            service_index: index + 1,
+                            region: 'mclean',
+                            ultra_premium_focus: true,
+                            concierge_service: serviceType === 'concierge_restoration',
+                            estate_level: serviceType.includes('estate'),
+                            multi_million_property_focus: true
+                        });
+                    }
+                });
+            });
+
+            // Track McLean estate emergency triage with ultra-premium focus
+            const triageOptions = document.querySelectorAll('.triage-grid > div');
+            triageOptions.forEach((option, index) => {
+                option.addEventListener('click', function() {
+                    const urgencyLevel = option.textContent.includes('IMMEDIATE') ? 'immediate' :
+                                       option.textContent.includes('URGENT') ? 'urgent' : 'standard';
+                    const estateEmergency = option.textContent.includes('estate') ||
+                                          option.textContent.includes('art collections') ||
+                                          option.textContent.includes('custom architecture') ||
+                                          option.textContent.includes('vault');
+
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_estate_triage_selected', {
+                            triage_level: urgencyLevel,
+                            triage_index: index + 1,
+                            region: 'mclean',
+                            estate_emergency: estateEmergency,
+                            ultra_premium_concern: true,
+                            high_value_property: true
+                        });
+                    }
+                });
+            });
+
+            // Track McLean estate area coverage (McLean, Great Falls, Potomac)
+            const mcleanAreas = ['mclean luxury estates', 'great falls waterfront properties', 'potomac ultra-premium homes', 'chain bridge exclusive residences'];
+            mcleanAreas.forEach(area => {
+                const areaElements = document.querySelectorAll(`[id*="${area.replace(/\s+/g, '-')}"], [class*="${area.replace(/\s+/g, '-')}"]`);
+                areaElements.forEach(element => {
+                    element.addEventListener('click', function() {
+                        if (window.novaTracking) {
+                            window.novaTracking.trackEvent('mclean_estate_area_engagement', {
+                                area_name: area.replace(/\s+/g, '_'),
+                                region: 'mclean',
+                                waterfront_property: area.includes('great falls'),
+                                ultra_premium_market: area.includes('potomac') || area.includes('chain bridge'),
+                                estate_level_focus: true
+                            });
+                        }
+                    });
+                });
+            });
+
+            // Track ultra-premium pricing tolerance and concierge service acceptance
+            const premiumIndicators = document.querySelectorAll('[class*="ultra"], [class*="premium"], [class*="estate"], [class*="concierge"]');
+            premiumIndicators.forEach((element, index) => {
+                element.addEventListener('mouseenter', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_ultra_premium_service_interest', {
+                            element_type: element.tagName.toLowerCase(),
+                            element_index: index + 1,
+                            region: 'mclean',
+                            ultra_premium_exposure: true,
+                            concierge_level_interest: element.className.includes('concierge'),
+                            estate_service_targeting: true
+                        });
+                    }
+                });
+            });
+
+            // Track ultra-high-net-worth behavioral patterns
+            const currentTime = new Date();
+            const isWeekend = currentTime.getDay() === 0 || currentTime.getDay() === 6;
+            const isEveningWeekend = isWeekend && (currentTime.getHours() >= 18 || currentTime.getHours() <= 10);
+            const browserLanguages = navigator.languages || [navigator.language];
+
+            if (window.novaTracking) {
+                setTimeout(() => {
+                    if (window.novaTracking.trackingInitialized) {
+                        window.novaTracking.trackEvent('mclean_uhnw_visit_pattern', {
+                            visit_weekend_evening: isEveningWeekend,
+                            primary_language: browserLanguages[0],
+                            region: 'mclean',
+                            ultra_high_net_worth_behavior: true,
+                            estate_owner_pattern: isEveningWeekend,
+                            concierge_service_timing: true
+                        });
+                    }
+                }, 2000);
+            }
+
+            // Track detailed scroll engagement for ultra-premium content
+            let maxScrollDepth = 0;
+            let scrollEngagementTime = 0;
+            let scrollStartTime = Date.now();
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const currentDepth = Math.round((scrollTop / docHeight) * 100);
+
+                if (currentDepth > maxScrollDepth) {
+                    maxScrollDepth = currentDepth;
+                    scrollEngagementTime = Date.now() - scrollStartTime;
+
+                    // Track premium content engagement milestones
+                    if ([25, 50, 75, 90].includes(currentDepth) && window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_estate_content_engagement', {
+                            scroll_depth: currentDepth,
+                            engagement_time_seconds: Math.round(scrollEngagementTime / 1000),
+                            region: 'mclean',
+                            ultra_premium_content_engagement: true,
+                            concierge_service_interest: currentDepth >= 50,
+                            estate_level_consideration: currentDepth >= 75
+                        });
+                    }
+                }
+            });
+
+            // Track specialist network engagement from ultra-premium perspective
+            const specialistLinks = document.querySelectorAll('.specialist-card');
+            specialistLinks.forEach((link, index) => {
+                link.addEventListener('click', function() {
+                    const targetRegion = link.href.includes('vienna') ? 'vienna_premium' :
+                                       link.href.includes('tysons') ? 'tysons_commercial' :
+                                       link.href.includes('alexandria') ? 'alexandria_historic' :
+                                       link.href.includes('great-falls') ? 'great_falls_luxury' : 'other_nova';
+
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_estate_specialist_referral', {
+                            target_region: targetRegion,
+                            referral_index: index + 1,
+                            source_region: 'mclean',
+                            ultra_premium_to_premium: targetRegion === 'vienna_premium',
+                            estate_network_navigation: true,
+                            concierge_level_referral: true
+                        });
+                    }
+                });
+            });
+
+            // Track discretion and privacy concerns
+            const privacyElements = document.querySelectorAll('[class*="discretion"], [class*="privacy"], [id*="confidential"]');
+            privacyElements.forEach((element, index) => {
+                element.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('mclean_privacy_discretion_focus', {
+                            element_index: index + 1,
+                            region: 'mclean',
+                            discretion_priority: true,
+                            ultra_high_net_worth_concern: true,
+                            estate_privacy_focus: true
+                        });
+                    }
+                });
+            });
+
+            // Track device and connection quality (UHNW typically have high-end devices)
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            const deviceMemory = navigator.deviceMemory || 'unknown';
+            const hardwareConcurrency = navigator.hardwareConcurrency || 'unknown';
+
+            if (window.novaTracking) {
+                setTimeout(() => {
+                    if (window.novaTracking.trackingInitialized) {
+                        window.novaTracking.trackEvent('mclean_device_profile', {
+                            device_memory_gb: deviceMemory,
+                            cpu_cores: hardwareConcurrency,
+                            connection_type: connection ? connection.effectiveType : 'unknown',
+                            region: 'mclean',
+                            likely_premium_device: deviceMemory >= 8 || hardwareConcurrency >= 8,
+                            uhnw_device_profile: true
+                        });
+                    }
+                }, 3000);
+            }
+        });
+
+        console.log('🏰 McLean Restoration - Enhanced Ultra-Premium Estate Tracking Active');
+        console.log('📞 Emergency: 703-844-4204 | Authority Reversal Framework™ | Ultra-High-Net-Worth Focus');
+    </script>
+</body>
+</html>

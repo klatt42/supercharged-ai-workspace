@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <meta name="description" content="24/7 emergency water damage restoration in Arlington, VA. Mobile-optimized response, sub-1 second load times, and immediate emergency services. Don't let insurance choose - call 703-844-4204.">
     <meta name="keywords" content="emergency water damage Arlington VA, water damage restoration Arlington, flood damage Arlington, burst pipe Arlington, water extraction Arlington">
     <title>Emergency Water Damage Arlington VA | Fast Mobile Response | 703-844-4204</title>
@@ -10,17 +14,19 @@
     <!-- Performance Optimized Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
     <!-- Critical CSS for Above-the-Fold Content - Elena Execution Mobile Optimization -->
     <style>
         /* Critical CSS - Mobile-first optimization */
-        body{margin:0;padding:0;font-family:'Inter',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-size:16px}
+        body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-size:16px;font-display:swap}
         .page-main-title{font-size:clamp(26px,5.5vw,40px);font-weight:800;text-align:center;padding:16px;margin:0;color:#fff;line-height:1.2}
-        .emergency-hero-arlington{padding:clamp(16px,4vw,32px);margin:0;width:100%;min-height:clamp(400px,60vh,500px)}
+        .emergency-hero-arlington{padding:clamp(16px,4vw,32px);margin:0;width:100%;min-height:clamp(400px,60vh,500px);contain:layout style}
         .authority-challenge{font-size:clamp(22px,4.5vw,34px);font-weight:700;line-height:1.25;color:#ffed4e;text-align:center}
         .skip-link{position:absolute;top:-100px;left:8px;background:#ffd700;color:#000;padding:8px 12px;text-decoration:none;z-index:10000;border-radius:4px;font-size:14px}
         .skip-link:focus{top:8px}
@@ -37,6 +43,7 @@
         .specialist-icon{font-size:clamp(24px,6vw,32px);margin-bottom:12px;display:block;color:#333}
         .specialist-title{font-size:clamp(16px,4vw,20px);font-weight:bold;color:#0066cc!important;margin-bottom:8px;display:block}
         .specialist-subtitle{font-size:clamp(14px,3vw,16px);color:#666!important;display:block}
+        .specialist-card.vienna-water{border-left-color:#1e3a8a}
     </style>
 
     <!-- Schema Markup for Arlington Water Damage Services -->
@@ -451,6 +458,26 @@
                     <div class="specialist-title">Fairfax Mold Remediation</div>
                     <div class="specialist-subtitle">Mold Elimination Specialists</div>
                 </a>
+                <a href="/tysons-fire-damage/" class="specialist-card">
+                    <div class="specialist-icon">🔥</div>
+                    <div class="specialist-title">Tysons Fire Damage</div>
+                    <div class="specialist-subtitle">Commercial Fire Specialists</div>
+                </a>
+                <a href="/reston-emergency-services/" class="specialist-card">
+                    <div class="specialist-icon">💻</div>
+                    <div class="specialist-title">Reston Emergency Services</div>
+                    <div class="specialist-subtitle">Tech Corridor Specialists</div>
+                </a>
+                <a href="/mclean-restoration/" class="specialist-card mclean-restoration">
+                    <div class="specialist-icon">🏰</div>
+                    <div class="specialist-title">McLean Restoration</div>
+                    <div class="specialist-subtitle">Ultra-Premium Estate Specialists</div>
+                </a>
+                <a href="/vienna-water-damage/" class="specialist-card vienna-water">
+                    <div class="specialist-icon">🏛️</div>
+                    <div class="specialist-title">Vienna Water Damage</div>
+                    <div class="specialist-subtitle">Premium Luxury Specialists</div>
+                </a>
                 <a href="/virginia-restoration.html" class="specialist-card">
                     <div class="specialist-icon">🏠</div>
                     <div class="specialist-title">Virginia Hub</div>
@@ -461,86 +488,107 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="footer-contact">
-        <div class="footer-content">
-            <p>&copy; 2025 Arlington Water Damage Experts. Professional emergency water damage restoration for Arlington, Ballston, Clarendon, Rosslyn, Crystal City, and surrounding areas.</p>
-            <p>📞 Emergency: 703-844-4204 | Mobile-Optimized Response 24/7/365</p>
+    <footer style="background:#1a1a2e;color:#ccc;padding:40px 20px;text-align:center;">
+        <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;text-align:left;">
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Arlington Water Damage</h3>
+                <p>Urban water damage specialists serving Arlington's high-density properties. 24/7 emergency response with mobile-optimized service for condos, townhomes, and apartments.</p>
+                <p><strong>Emergency:</strong> <a href="tel:703-844-4204" style="color:#f59e0b;">703-844-4204</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Arlington Service Areas</h3>
+                <p>• Ballston Corridor</p>
+                <p>• Clarendon Metro Area</p>
+                <p>• Rosslyn Business District</p>
+                <p>• Crystal City & Pentagon City</p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">NOVA Specialists</h3>
+                <p><a href="/alexandria/" style="color:#ccc;">Alexandria Emergency</a></p>
+                <p><a href="/fairfax-mold-remediation/" style="color:#ccc;">Fairfax Mold Remediation</a></p>
+                <p><a href="/tysons-fire-damage/" style="color:#ccc;">Tysons Fire Damage</a></p>
+                <p><a href="/reston-emergency-services/" style="color:#ccc;">Reston Emergency</a></p>
+                <p><a href="/mclean-restoration/" style="color:#ccc;">McLean Restoration</a></p>
+                <p><a href="/vienna-water-damage/" style="color:#ccc;">Vienna Water Damage</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Resources</h3>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">Virginia Hub</a></p>
+                <p><a href="/northern-va-water-damage-faq.html" style="color:#ccc;">NOVA FAQ</a></p>
+                <p><a href="/blog-index-va.html" style="color:#ccc;">Virginia Blog</a></p>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">All Virginia Services</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top:30px;padding-top:20px;border-top:1px solid #333;text-align:center;">
+            <p>&copy; 2024 Independent Restoration - Arlington Water Damage Specialists | Urban water damage experts for Arlington's high-density properties</p>
         </div>
     </footer>
 
-    <!-- Elena Execution Performance and Analytics -->
+    <!-- Comprehensive NOVA Tracking System -->
+    <script src="../comprehensive-tracking.js"></script>
     <script>
-        // Enhanced Performance Monitoring - Core Web Vitals
-        window.addEventListener('load', function() {
-            // Lazy load non-critical resources
-            const images = document.querySelectorAll('img[data-src]');
-            images.forEach(img => {
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-            });
+        // Arlington-specific tracking configuration
+        window.novaPageLoadTime = performance.now();
 
-            // Core Web Vitals monitoring
-            function measureCoreWebVitals() {
-                // Largest Contentful Paint (LCP)
-                if ('PerformanceObserver' in window) {
-                    new PerformanceObserver((entryList) => {
-                        for (const entry of entryList.getEntries()) {
-                            if (typeof gtag !== 'undefined') {
-                                gtag('event', 'core_web_vitals', {
-                                    'metric': 'LCP',
-                                    'value': Math.round(entry.startTime),
-                                    'page_type': 'arlington_water_damage'
-                                });
-                            }
-                        }
-                    }).observe({ entryTypes: ['largest-contentful-paint'] });
-
-                    // Cumulative Layout Shift (CLS)
-                    new PerformanceObserver((entryList) => {
-                        let clsValue = 0;
-                        for (const entry of entryList.getEntries()) {
-                            if (!entry.hadRecentInput) {
-                                clsValue += entry.value;
-                            }
-                        }
-                        if (typeof gtag !== 'undefined') {
-                            gtag('event', 'core_web_vitals', {
-                                'metric': 'CLS',
-                                'value': Math.round(clsValue * 1000),
-                                'page_type': 'arlington_water_damage'
-                            });
-                        }
-                    }).observe({ entryTypes: ['layout-shift'] });
+        // Legacy support for existing onclick handlers
+        function gtag() {
+            if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                // Redirect to new tracking system
+                const args = Array.from(arguments);
+                if (args[0] === 'event' && args[1] === 'emergency_call_clicked') {
+                    const callData = args[2] || {};
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('emergency_call_clicked', {
+                            ...callData,
+                            legacy_handler: true
+                        });
+                    }
                 }
             }
-
-            measureCoreWebVitals();
-
-            // Performance tracking
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'page_load_complete', {
-                    'page_type': 'arlington_water_damage',
-                    'load_time': performance.now(),
-                    'mobile_optimized': true,
-                    'performance_enhanced': true
-                });
-            }
-        });
-
-        // Mobile-optimized emergency call tracking
-        function trackEmergencyCall(location) {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'emergency_call_clicked', {
-                    'call_location': location,
-                    'region': 'arlington',
-                    'page_type': 'water_damage_landing',
-                    'mobile_optimized': true
-                });
-            }
+            // Fallback to dataLayer if gtag not yet available
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
         }
 
-        // Enhanced Form submission with urgency tracking
-        document.addEventListener('DOMContentLoaded', function() {
+        // Enhanced mobile-optimized performance monitoring
+        const arlingtonPerformanceMonitoring = () => {
+            // Lazy load with Intersection Observer - Enhanced for mobile
+            const images = document.querySelectorAll('img[data-src]');
+            if (images.length > 0 && 'IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                }, { rootMargin: '50px' });
+                images.forEach(img => imageObserver.observe(img));
+            }
+
+            // Track Arlington-specific performance metrics
+            if (window.novaTracking) {
+                setTimeout(() => {
+                    if (window.novaTracking.trackingInitialized) {
+                        window.novaTracking.trackEvent('arlington_performance_enhanced', {
+                            mobile_optimized: true,
+                            water_damage_specialist: true,
+                            metro_area_focus: true,
+                            load_time: Math.round(performance.now())
+                        });
+                    }
+                }, 500);
+            }
+        };
+
+        // Enhanced Form submission with Arlington-specific tracking
+        const initializeArlingtonFormHandling = () => {
             const form = document.querySelector('.emergency-form');
             const urgencySelect = document.getElementById('emergency-urgency');
 
@@ -548,52 +596,119 @@
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
 
-                    // Get urgency level for prioritized response
-                    const urgencyLevel = urgencySelect ? urgencySelect.value : 'standard';
+                    const urgencyLevel = urgencySelect?.value || 'standard';
 
-                    // Track form submission with urgency
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'emergency_form_submit', {
-                            'region': 'arlington',
-                            'service_type': 'water_damage',
-                            'urgency_level': urgencyLevel,
-                            'mobile_optimized': true,
-                            'enhanced_form': true
+                    // Track with new system
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('arlington_emergency_form_submit', {
+                            region: 'arlington',
+                            service_type: 'water_damage',
+                            urgency_level: urgencyLevel,
+                            mobile_optimized: true,
+                            urban_metro: true,
+                            form_type: 'emergency_triage'
                         });
                     }
 
-                    // Different response based on urgency
-                    if (urgencyLevel === 'immediate') {
-                        alert('🚨 IMMEDIATE response initiated! Calling now for fastest dispatch.');
-                    } else if (urgencyLevel === 'urgent') {
-                        alert('⚡ URGENT request submitted! You will receive a priority callback.');
+                    // User feedback with Arlington-specific messaging
+                    const messages = {
+                        'immediate': '🚨 IMMEDIATE Arlington response initiated! Calling now for fastest metro area dispatch.',
+                        'urgent': '⚡ URGENT Arlington request submitted! Priority callback for urban water damage.',
+                        'standard': 'Arlington water damage request submitted! We will contact you shortly.'
+                    };
+
+                    const message = messages[urgencyLevel] || messages['standard'];
+
+                    // Use modern notification API if available
+                    if ('Notification' in window && Notification.permission === 'granted') {
+                        new Notification('Arlington Emergency Request', { body: message });
+                    } else {
+                        alert(message);
                     }
 
-                    // Trigger phone call after form submission
-                    window.location.href = 'tel:703-844-4204';
+                    // Trigger phone call
+                    setTimeout(() => {
+                        window.location.href = 'tel:703-844-4204';
+                    }, 500);
                 });
             }
 
-            // Live urgency feedback
-            if (urgencySelect) {
-                urgencySelect.addEventListener('change', function() {
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'urgency_level_selected', {
-                            'urgency_level': this.value,
-                            'region': 'arlington'
+            // Enhanced urgency selection tracking
+            urgencySelect?.addEventListener('change', function() {
+                if (window.novaTracking) {
+                    window.novaTracking.trackEvent('arlington_urgency_selected', {
+                        urgency_level: this.value,
+                        region: 'arlington',
+                        service_type: 'water_damage',
+                        urban_focus: true
+                    });
+                }
+            });
+        };
+
+        // Initialize Arlington-specific tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enhanced performance monitoring
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(arlingtonPerformanceMonitoring, { timeout: 2000 });
+            } else {
+                setTimeout(arlingtonPerformanceMonitoring, 100);
+            }
+
+            // Initialize form handling
+            initializeArlingtonFormHandling();
+
+            // Track Arlington Authority Reversal Framework
+            setTimeout(() => {
+                if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                    window.novaTracking.trackEvent('arlington_authority_framework_loaded', {
+                        hook_type: 'plumber_heart_attack_arlington',
+                        region: 'arlington',
+                        service_type: 'water_damage',
+                        urban_metro_focus: true,
+                        high_density_properties: true
+                    });
+                }
+            }, 1000);
+
+            // Track Arlington-specific service area engagement
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                const serviceType = card.className.includes('water-emergency') ? 'water_extraction' :
+                                 card.className.includes('flood-emergency') ? 'flood_damage' :
+                                 card.className.includes('pipe-emergency') ? 'burst_pipe' : 'unknown';
+
+                card.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('arlington_service_engagement', {
+                            service_type: serviceType,
+                            service_index: index + 1,
+                            region: 'arlington',
+                            metro_specialization: true
                         });
                     }
                 });
-            }
+            });
+
+            // Track Arlington area coverage engagement (Ballston, Clarendon, etc.)
+            const coverageAreas = document.querySelectorAll('.coverage-area');
+            coverageAreas.forEach(area => {
+                const areaName = area.querySelector('h3')?.textContent || 'unknown';
+                area.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('arlington_area_engagement', {
+                            area_name: areaName.toLowerCase().replace(/\s+/g, '_'),
+                            region: 'arlington',
+                            metro_area: areaName.includes('Ballston') || areaName.includes('Rosslyn'),
+                            high_rise_focus: areaName.includes('Crystal City') || areaName.includes('Pentagon')
+                        });
+                    }
+                });
+            });
         });
 
-        // Mobile performance monitoring
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                // Placeholder for service worker registration
-                // Can be implemented for offline support
-            });
-        }
+        console.log('💧 Arlington Water Damage - Enhanced Mobile Tracking Active');
+        console.log('📞 Emergency: 703-844-4204 | Authority Reversal Framework™ | Urban Metro Focus');
     </script>
 </body>
 </html>

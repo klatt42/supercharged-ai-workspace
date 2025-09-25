@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <meta name="description" content="24/7 emergency water damage, fire damage, and mold remediation in Alexandria, VA. Choose your own restoration contractor - don't let insurance decide. Call 703-844-4204 for 45-minute response.">
     <meta name="keywords" content="emergency restoration Alexandria VA, water damage Alexandria, fire damage Alexandria, mold remediation Alexandria, independent contractor Alexandria">
     <title>Emergency Restoration Alexandria VA | Independent Choice | 703-844-4204</title>
@@ -10,17 +14,18 @@
     <!-- Performance Optimized Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <!-- Critical CSS for Above-the-Fold Content -->
     <style>
         /* Critical CSS - Above the fold optimization */
-        body{margin:0;padding:0;font-family:'Inter',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden}
+        body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-display:swap}
         .page-main-title{font-size:clamp(28px,6vw,42px);font-weight:800;text-align:center;padding:20px;margin:0;color:#fff}
-        .emergency-hero-alexandria{padding:clamp(20px,5vw,40px);margin:0;width:100%}
+        .emergency-hero-alexandria{padding:clamp(20px,5vw,40px);margin:0;width:100%;contain:layout style}
         .authority-challenge{font-size:clamp(24px,5vw,36px);font-weight:700;line-height:1.3;color:#ffed4e;text-align:center}
         .skip-link{position:absolute;top:-100px;left:8px;background:#ffd700;color:#000;padding:8px 12px;text-decoration:none;z-index:10000;border-radius:4px}
-        .skip-link:focus{top:8px}
+        .skip-link:focus{top:8px;z-index:10001}
     </style>
 
     <!-- Schema Markup for Alexandria Emergency Services -->
@@ -345,17 +350,37 @@
             <p>Part of the comprehensive Northern Virginia restoration authority network:</p>
 
             <div class="specialist-grid">
-                <a href="/arlington-water-damage/" class="specialist-card">
-                    <div class="specialist-icon">💧</div>
-                    <div class="specialist-title">Arlington Water Damage</div>
-                    <div class="specialist-subtitle">Metro Area Water Specialists</div>
+                <a href="../arlington-county-restoration.html" class="specialist-card">
+                    <div class="specialist-icon">🏛️</div>
+                    <div class="specialist-title">Arlington County Hub</div>
+                    <div class="specialist-subtitle">NOVA Premium Services</div>
                 </a>
-                <a href="/fairfax-mold-remediation/" class="specialist-card">
-                    <div class="specialist-icon">🦠</div>
-                    <div class="specialist-title">Fairfax Mold Remediation</div>
-                    <div class="specialist-subtitle">Mold Elimination Specialists</div>
+                <a href="../fairfax-county-restoration.html" class="specialist-card">
+                    <div class="specialist-icon">🏘️</div>
+                    <div class="specialist-title">Fairfax County Hub</div>
+                    <div class="specialist-subtitle">NOVA Neighboring County Services</div>
                 </a>
-                <a href="/virginia-restoration.html" class="specialist-card">
+                <a href="../loudoun-county-restoration.html" class="specialist-card">
+                    <div class="specialist-icon">🌾</div>
+                    <div class="specialist-title">Loudoun County Hub</div>
+                    <div class="specialist-subtitle">NOVA Wine Country Coverage</div>
+                </a>
+                <a href="../mclean-restoration/" class="specialist-card mclean-restoration">
+                    <div class="specialist-icon">🏰</div>
+                    <div class="specialist-title">McLean Restoration</div>
+                    <div class="specialist-subtitle">Ultra-Premium Estate Specialists</div>
+                </a>
+                <a href="../reston-emergency-services/" class="specialist-card">
+                    <div class="specialist-icon">💻</div>
+                    <div class="specialist-title">Reston Emergency Services</div>
+                    <div class="specialist-subtitle">Tech Corridor Specialists</div>
+                </a>
+                <a href="../vienna-water-damage/" class="specialist-card vienna-water">
+                    <div class="specialist-icon">🏛️</div>
+                    <div class="specialist-title">Vienna Water Damage</div>
+                    <div class="specialist-subtitle">Premium Luxury Specialists</div>
+                </a>
+                <a href="../virginia-restoration.html" class="specialist-card">
                     <div class="specialist-icon">🏠</div>
                     <div class="specialist-title">Virginia Hub</div>
                     <div class="specialist-subtitle">Comprehensive Regional Services</div>
@@ -365,10 +390,43 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="footer-contact">
-        <div class="footer-content">
-            <p>&copy; 2025 Independent Restoration Alexandria. Professional emergency restoration services for Alexandria, Old Town, Del Ray, Rosemont, and surrounding areas.</p>
-            <p>📞 Emergency: 703-844-4204 | Available 24/7/365</p>
+    <footer style="background:#1a1a2e;color:#ccc;padding:40px 20px;text-align:center;">
+        <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;text-align:left;">
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Alexandria Emergency Services</h3>
+                <p>Historic district emergency restoration with 24/7 response throughout Alexandria, Old Town, and Del Ray. Professional restoration protecting your property's heritage value.</p>
+                <p><strong>Emergency:</strong> <a href="tel:703-844-4204" style="color:#f59e0b;">703-844-4204</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Alexandria Service Areas</h3>
+                <p>• Old Town Historic District</p>
+                <p>• Del Ray Neighborhood</p>
+                <p>• Rosemont Community</p>
+                <p>• Potomac Yard Area</p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">NOVA Specialists</h3>
+                <p><a href="../arlington-county-restoration.html" style="color:#ccc;">Arlington County Hub</a></p>
+                <p><a href="../fairfax-county-restoration.html" style="color:#ccc;">Fairfax County Hub</a></p>
+                <p><a href="/tysons-fire-damage/" style="color:#ccc;">Tysons Fire Damage</a></p>
+                <p><a href="/reston-emergency-services/" style="color:#ccc;">Reston Emergency</a></p>
+                <p><a href="/mclean-restoration/" style="color:#ccc;">McLean Restoration</a></p>
+                <p><a href="/vienna-water-damage/" style="color:#ccc;">Vienna Water Damage</a></p>
+            </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Resources</h3>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">Virginia Hub</a></p>
+                <p><a href="/northern-va-water-damage-faq.html" style="color:#ccc;">NOVA FAQ</a></p>
+                <p><a href="/blog-index-va.html" style="color:#ccc;">Virginia Blog</a></p>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">All Virginia Services</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top:30px;padding-top:20px;border-top:1px solid #333;text-align:center;">
+            <p>&copy; 2024 Independent Restoration - Alexandria Emergency Specialists | Professional restoration for Alexandria's historic district</p>
         </div>
     </footer>
 
@@ -871,6 +929,25 @@
             white-space: normal;
         }
 
+        /* Touch Target Optimization */
+        .emergency-call,
+        .emergency-call-now,
+        .primary-cta,
+        a[href^="tel:"] {
+            min-height: 44px;
+            min-width: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+
+        /* Improved Tap Targets */
+        .specialist-card {
+            min-height: 88px;
+            touch-action: manipulation;
+        }
+
         /* Mobile-First Responsive Design */
         @media (max-width: 768px) {
             .medical-emergency-parallel {
@@ -1105,30 +1182,122 @@
             font-size: clamp(14px, 3vw, 16px);
             color: #666;
         }
+
+        .specialist-card.vienna-water {
+            border-left-color: #1e3a8a;
+        }
     </style>
 
-    <!-- Performance and Analytics -->
+    <!-- Comprehensive NOVA Tracking System -->
+    <script src="../comprehensive-tracking.js"></script>
     <script>
-        // Performance optimization
-        window.addEventListener('load', function() {
+        // Alexandria-specific tracking configuration
+        window.novaPageLoadTime = performance.now();
+
+        // Legacy support for existing onclick handlers
+        function gtag() {
+            if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                // Redirect to new tracking system
+                const args = Array.from(arguments);
+                if (args[0] === 'event' && args[1] === 'emergency_call_clicked') {
+                    const callData = args[2] || {};
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('emergency_call_clicked', {
+                            ...callData,
+                            legacy_handler: true
+                        });
+                    }
+                }
+            }
+            // Fallback to dataLayer if gtag not yet available
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
+        }
+
+        // Enhanced performance monitoring (compatible with new system)
+        const enhancedLoadHandler = () => {
             // Lazy load non-critical resources
             const images = document.querySelectorAll('img[data-src]');
-            images.forEach(img => {
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
+            if (images.length > 0 && 'IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                images.forEach(img => imageObserver.observe(img));
+            }
+
+            // Preload critical resources
+            const link = document.createElement('link');
+            link.rel = 'dns-prefetch';
+            link.href = '//www.googletagmanager.com';
+            if (!document.querySelector('link[href="//www.googletagmanager.com"]')) {
+                document.head.appendChild(link);
+            }
+        };
+
+        // Initialize enhanced performance tracking
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(enhancedLoadHandler);
+        } else {
+            setTimeout(enhancedLoadHandler, 100);
+        }
+
+        // Page-specific Authority Reversal tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track Authority Challenge visibility specifically for Alexandria
+            const authorityElement = document.querySelector('#authority-hook');
+            if (authorityElement && window.novaTracking) {
+                // Setup specific Alexandria Authority Reversal tracking
+                setTimeout(() => {
+                    if (window.novaTracking.trackingInitialized) {
+                        window.novaTracking.trackEvent('alexandria_authority_framework_loaded', {
+                            hook_type: 'plumber_surgeon_alexandria',
+                            region: 'alexandria',
+                            page_type: 'general_emergency',
+                            historic_district: true
+                        });
+                    }
+                }, 1000);
+            }
+
+            // Track Alexandria-specific social proof engagement
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            testimonials.forEach((testimonial, index) => {
+                testimonial.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('testimonial_engagement', {
+                            testimonial_index: index + 1,
+                            region: 'alexandria',
+                            engagement_type: 'click'
+                        });
+                    }
+                });
+            });
+
+            // Track Old Town Alexandria specific area engagement
+            const coverageAreas = document.querySelectorAll('.coverage-area');
+            coverageAreas.forEach(area => {
+                const areaName = area.querySelector('h3')?.textContent || 'unknown';
+                area.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('alexandria_area_engagement', {
+                            area_name: areaName.toLowerCase().replace(/\s+/g, '_'),
+                            region: 'alexandria',
+                            historic_district: areaName.includes('Old Town')
+                        });
+                    }
+                });
             });
         });
 
-        // Emergency call tracking
-        function trackEmergencyCall(location) {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'emergency_call_clicked', {
-                    'call_location': location,
-                    'region': 'alexandria',
-                    'page_type': 'landing_page'
-                });
-            }
-        }
+        console.log('🏛️ Alexandria Emergency Services - Enhanced Tracking Active');
+        console.log('📞 Emergency: 703-844-4204 | Authority Reversal Framework™ | Historic District Focus');
     </script>
 </body>
 </html>

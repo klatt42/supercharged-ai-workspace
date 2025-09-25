@@ -10,22 +10,25 @@
     <!-- Performance Optimized Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
     <!-- Critical CSS for Above-the-Fold Content - Elena Execution Mobile Optimization -->
     <style>
         /* Critical CSS - Mobile-first optimization */
-        body{margin:0;padding:0;font-family:'Inter',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-size:16px}
+        body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;overflow-x:hidden;font-size:16px;font-display:swap}
         .page-main-title{font-size:clamp(26px,5.5vw,40px);font-weight:800;text-align:center;padding:16px;margin:0;color:#fff;line-height:1.2}
-        .emergency-hero-fairfax{padding:clamp(16px,4vw,32px);margin:0;width:100%;min-height:clamp(400px,60vh,500px)}
+        .emergency-hero-fairfax{padding:clamp(16px,4vw,32px);margin:0;width:100%;min-height:clamp(400px,60vh,500px);contain:layout style}
         .authority-challenge{font-size:clamp(22px,4.5vw,34px);font-weight:700;line-height:1.25;color:#ffed4e;text-align:center}
         .skip-link{position:absolute;top:-100px;left:8px;background:#ffd700;color:#000;padding:8px 12px;text-decoration:none;z-index:10000;border-radius:4px;font-size:14px}
         .skip-link:focus{top:8px}
         .emergency-call-mobile{background:linear-gradient(45deg,#ff6b6b,#ff4757);color:#fff;padding:14px 20px;border:none;border-radius:25px;font-size:16px;font-weight:800;text-decoration:none;display:inline-block;margin:8px 0;box-shadow:0 4px 12px rgba(255,107,107,0.4);animation:mobilePulse 2s infinite}
         @keyframes mobilePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+        .specialist-card.vienna-water{border-left-color:#1e3a8a}
     </style>
 
     <!-- Schema Markup for Fairfax Mold Remediation Services -->
@@ -268,6 +271,26 @@
                     <div class="specialist-title">Arlington Water Damage</div>
                     <div class="specialist-subtitle">Metro Area Water Specialists</div>
                 </a>
+                <a href="/tysons-fire-damage/" class="specialist-card">
+                    <div class="specialist-icon">🔥</div>
+                    <div class="specialist-title">Tysons Fire Damage</div>
+                    <div class="specialist-subtitle">Commercial Fire Specialists</div>
+                </a>
+                <a href="/reston-emergency-services/" class="specialist-card">
+                    <div class="specialist-icon">💻</div>
+                    <div class="specialist-title">Reston Emergency Services</div>
+                    <div class="specialist-subtitle">Tech Corridor Specialists</div>
+                </a>
+                <a href="/mclean-restoration/" class="specialist-card mclean-restoration">
+                    <div class="specialist-icon">🏰</div>
+                    <div class="specialist-title">McLean Restoration</div>
+                    <div class="specialist-subtitle">Ultra-Premium Estate Specialists</div>
+                </a>
+                <a href="/vienna-water-damage/" class="specialist-card vienna-water">
+                    <div class="specialist-icon">🏛️</div>
+                    <div class="specialist-title">Vienna Water Damage</div>
+                    <div class="specialist-subtitle">Premium Luxury Specialists</div>
+                </a>
                 <a href="/virginia-restoration.html" class="specialist-card">
                     <div class="specialist-icon">🏠</div>
                     <div class="specialist-title">Virginia Hub</div>
@@ -317,53 +340,177 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo" id="contact-info">
-        <div class="footer-content">
-            <div class="emergency-contact">
-                <h3>🚨 Fairfax Mold Emergency</h3>
-                <p><strong>Call Now: <a href="tel:703-844-4204">703-844-4204</a></strong></p>
-                <p>24/7 Emergency Response | Mobile-Optimized Service</p>
+    <footer style="background:#1a1a2e;color:#ccc;padding:40px 20px;text-align:center;">
+        <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;text-align:left;">
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Fairfax Mold Remediation</h3>
+                <p>Advanced mold remediation specialists with comprehensive testing and removal services. Protecting Fairfax County families with professional-grade containment and air filtration systems.</p>
+                <p><strong>Emergency:</strong> <a href="tel:703-844-4204" style="color:#f59e0b;">703-844-4204</a></p>
             </div>
 
-            <div class="service-areas">
-                <h4>Fairfax Service Areas</h4>
-                <p>Fairfax City • Burke • Annandale • Springfield • Centreville • Chantilly • Oakton • Fair Oaks</p>
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Fairfax Service Areas</h3>
+                <p>• Fairfax City Center</p>
+                <p>• Burke & Annandale</p>
+                <p>• Springfield & Centreville</p>
+                <p>• Chantilly & Fair Oaks</p>
             </div>
 
-            <div class="authority-footer">
-                <p><strong>Authority Reversal Framework™:</strong> Choose YOUR mold expert, not insurance company's choice</p>
-                <p>© 2025 Independent Fairfax Mold Remediation | Your Health, YOUR Authority</p>
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">NOVA Specialists</h3>
+                <p><a href="/alexandria/" style="color:#ccc;">Alexandria Emergency</a></p>
+                <p><a href="/arlington-water-damage/" style="color:#ccc;">Arlington Water Damage</a></p>
+                <p><a href="/tysons-fire-damage/" style="color:#ccc;">Tysons Fire Damage</a></p>
+                <p><a href="/reston-emergency-services/" style="color:#ccc;">Reston Emergency</a></p>
+                <p><a href="/mclean-restoration/" style="color:#ccc;">McLean Restoration</a></p>
+                <p><a href="/vienna-water-damage/" style="color:#ccc;">Vienna Water Damage</a></p>
             </div>
+
+            <div>
+                <h3 style="color:#f59e0b;margin-bottom:15px;">Resources</h3>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">Virginia Hub</a></p>
+                <p><a href="/northern-va-water-damage-faq.html" style="color:#ccc;">NOVA FAQ</a></p>
+                <p><a href="/blog-index-va.html" style="color:#ccc;">Virginia Blog</a></p>
+                <p><a href="/virginia-restoration.html" style="color:#ccc;">All Virginia Services</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top:30px;padding-top:20px;border-top:1px solid #333;text-align:center;">
+            <p>&copy; 2024 Independent Restoration - Fairfax Mold Remediation Specialists | Advanced mold testing and remediation for Fairfax County families</p>
         </div>
     </footer>
 
-    <!-- Analytics and Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <!-- Comprehensive NOVA Tracking System -->
+    <script src="../comprehensive-tracking.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        // Fairfax-specific tracking configuration
+        window.novaPageLoadTime = performance.now();
 
-        // Fairfax mold page specific tracking
-        gtag('event', 'fairfax_mold_page_loaded', {
-            'authority_framework': 'plumber_heart_attack_fairfax_mold',
-            'service_type': 'mold_remediation',
-            'region': 'fairfax',
-            'phone_number': '703-844-4204'
-        });
+        // Legacy support for existing onclick handlers
+        function gtag() {
+            if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                // Redirect to new tracking system
+                const args = Array.from(arguments);
+                if (args[0] === 'event' && args[1] === 'emergency_call_clicked') {
+                    const callData = args[2] || {};
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('emergency_call_clicked', {
+                            ...callData,
+                            legacy_handler: true
+                        });
+                    }
+                }
+            }
+            // Fallback to dataLayer if gtag not yet available
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
+        }
 
-        // Emergency triage tracking
-        document.getElementById('emergency-level').addEventListener('change', function() {
-            gtag('event', 'mold_emergency_triage_selected', {
-                'emergency_level': this.value,
-                'region': 'fairfax',
-                'service_type': 'mold_remediation'
+        // Initialize Fairfax-specific tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track Fairfax Authority Reversal Framework
+            setTimeout(() => {
+                if (window.novaTracking && window.novaTracking.trackingInitialized) {
+                    window.novaTracking.trackEvent('fairfax_authority_framework_loaded', {
+                        hook_type: 'plumber_heart_attack_fairfax_mold',
+                        region: 'fairfax',
+                        service_type: 'mold_remediation',
+                        suburban_families_focus: true,
+                        health_safety_priority: true
+                    });
+                }
+            }, 1000);
+
+            // Enhanced Emergency triage tracking
+            const emergencyLevelSelect = document.getElementById('emergency-level');
+            if (emergencyLevelSelect) {
+                emergencyLevelSelect.addEventListener('change', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('fairfax_mold_triage_selected', {
+                            emergency_level: this.value,
+                            region: 'fairfax',
+                            service_type: 'mold_remediation',
+                            health_concern: this.value === 'immediate',
+                            family_safety_focus: true
+                        });
+                    }
+                });
+            }
+
+            // Track Fairfax-specific mold service engagement
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                const serviceType = card.className.includes('mold-emergency') ? 'mold_inspection' :
+                                 card.className.includes('black-mold-emergency') ? 'black_mold_removal' :
+                                 card.className.includes('toxic-mold-emergency') ? 'toxic_mold_remediation' :
+                                 card.className.includes('prevention-emergency') ? 'mold_prevention' : 'unknown';
+
+                card.addEventListener('click', function() {
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('fairfax_mold_service_engagement', {
+                            service_type: serviceType,
+                            service_index: index + 1,
+                            region: 'fairfax',
+                            health_priority: serviceType.includes('toxic') || serviceType.includes('black'),
+                            family_protection_focus: true
+                        });
+                    }
+                });
+            });
+
+            // Track Authority Reversal education engagement
+            const authorityPoints = document.querySelectorAll('.authority-point');
+            authorityPoints.forEach((point, index) => {
+                point.addEventListener('click', function() {
+                    const pointText = point.querySelector('h3')?.textContent || 'unknown';
+                    if (window.novaTracking) {
+                        window.novaTracking.trackEvent('fairfax_authority_education_engagement', {
+                            authority_point: pointText.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '_'),
+                            point_index: index + 1,
+                            region: 'fairfax',
+                            education_type: 'authority_reversal_principle'
+                        });
+                    }
+                });
+            });
+
+            // Track Fairfax area coverage (Burke, Annandale, Springfield, etc.)
+            const fairfaxAreas = ['burke', 'annandale', 'springfield', 'centreville', 'chantilly', 'oakton'];
+            fairfaxAreas.forEach(area => {
+                const areaElements = document.querySelectorAll(`[id*="${area}"], [class*="${area}"]`);
+                areaElements.forEach(element => {
+                    element.addEventListener('click', function() {
+                        if (window.novaTracking) {
+                            window.novaTracking.trackEvent('fairfax_area_engagement', {
+                                area_name: area,
+                                region: 'fairfax',
+                                suburban_community: true,
+                                family_focused: true
+                            });
+                        }
+                    });
+                });
+            });
+
+            // Track CTA engagement with family safety messaging
+            const ctaButtons = document.querySelectorAll('.primary-cta, .secondary-cta');
+            ctaButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    const isFAQ = button.textContent.toLowerCase().includes('faq');
+                    if (window.novaTracking && !button.getAttribute('href')?.startsWith('tel:')) {
+                        window.novaTracking.trackEvent('fairfax_cta_engagement', {
+                            cta_type: isFAQ ? 'faq_link' : 'primary_action',
+                            cta_index: index + 1,
+                            region: 'fairfax',
+                            family_health_focus: true
+                        });
+                    }
+                });
             });
         });
 
-        console.log('🦠 Fairfax Mold Remediation - Authority Reversal Framework™ Active');
-        console.log('📞 Emergency: 703-844-4204 | Plumber Heart Attack Hook Point | BMAD Optimized');
+        console.log('🦠 Fairfax Mold Remediation - Enhanced Family Safety Tracking Active');
+        console.log('📞 Emergency: 703-844-4204 | Authority Reversal Framework™ | Suburban Family Focus');
     </script>
 </body>
 </html>
