@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Northern Virginia Restoration Forum - Data collection, GHL integration, emergency contact protocols, and user information protection.">
+    <title>Privacy Policy | Northern Virginia Restoration Forum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .emergency-banner .phone {
+            color: #fef3c7;
+            text-decoration: none;
+            margin-left: 20px;
+            border: 2px solid #fef3c7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-banner .phone:hover {
+            background: #fef3c7;
+            color: #dc2626;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #7c3aed;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "🔒";
+            font-size: 2rem;
+        }
+
+        .breadcrumbs {
+            background: #f1f5f9;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumbs a {
+            color: #64748b;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: #7c3aed;
+        }
+
+        main {
+            background: white;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .privacy-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .privacy-header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.5rem;
+        }
+
+        .privacy-header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .privacy-content {
+            padding: 40px;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .info-box h2 {
+            color: #0ea5e9;
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-box p {
+            color: #0c4a6e;
+            margin: 0 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .warning-box h2 {
+            color: #92400e;
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .warning-box p {
+            color: #92400e;
+            margin: 0 0 15px 0;
+            font-weight: 500;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            color: #7c3aed;
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+        }
+
+        .section h3 {
+            color: #374151;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+        }
+
+        .section p {
+            margin: 0 0 15px 0;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .section ul, .section ol {
+            margin: 15px 0 15px 30px;
+            color: #4b5563;
+        }
+
+        .section li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .data-table th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .contact-section {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #047857;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-section p {
+            color: #047857;
+            margin: 0 0 20px 0;
+        }
+
+        .contact-link {
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: #047857;
+        }
+
+        .last-updated {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .back-to-forum {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .back-to-forum a {
+            background: #7c3aed;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-forum a:hover {
+            background: #6366f1;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-header {
+                padding: 25px 20px;
+            }
+
+            .privacy-content {
+                padding: 25px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .data-table {
+                font-size: 14px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        <strong>🚨 EMERGENCY RESTORATION - Available 24/7</strong>
+        <a href="tel:703-844-4204" class="phone">📞 (703) 844-4204</a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="privacy-policy.html" class="logo">Privacy Policy</a>
+                <div class="contact-info">
+                    <a href="tel:703-844-4204" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 700;">🚨 Emergency: (703) 844-4204</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> ›
+            <a href="restoration-forum.html">Forum</a> ›
+            Privacy Policy
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="privacy-header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Northern Virginia Restoration Forum - Data Protection and Information Handling Practices</p>
+        </div>
+
+        <div class="privacy-content">
+            <div class="info-box">
+                <h2>ℹ️ INFORMATION COLLECTION OVERVIEW</h2>
+                <p><strong>Educational Purpose:</strong> We collect information to provide educational resources, facilitate forum discussions, and coordinate emergency response notifications when requested.</p>
+                <p><strong>GHL Integration:</strong> Forum submissions are processed through GoHighLevel (GHL) systems for contact management and educational resource delivery.</p>
+                <p><strong>Emergency Protocols:</strong> Contact information for emergency-classified submissions may be used for immediate response coordination and follow-up educational resources.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. Information We Collect</h2>
+
+                <h3>1.1 Forum Submission Data</h3>
+                <p>When you submit questions through our Forum, we collect:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Name, email address, phone number (optional)</li>
+                    <li><strong>Location Information:</strong> City and state for regional educational purposes</li>
+                    <li><strong>Question Content:</strong> Category, urgency level, question title, and detailed description</li>
+                    <li><strong>Technical Data:</strong> IP address, user agent, submission timestamp</li>
+                </ul>
+
+                <h3>1.2 Automatically Collected Information</h3>
+                <p>Our website automatically collects:</p>
+                <ul>
+                    <li>IP address and general location information</li>
+                    <li>Browser type and operating system</li>
+                    <li>Pages visited and time spent on site</li>
+                    <li>Referral source and exit pages</li>
+                    <li>Device type and screen resolution</li>
+                </ul>
+
+                <h3>1.3 GoHighLevel (GHL) Integration Data</h3>
+                <p>Forum submissions are processed through GHL systems, which collect and store:</p>
+                <ul>
+                    <li>Contact information for CRM management</li>
+                    <li>Forum interaction history and preferences</li>
+                    <li>Communication preferences and opt-in status</li>
+                    <li>Educational resource delivery tracking</li>
+                </ul>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Collection Method</th>
+                            <th>Purpose</th>
+                            <th>Retention Period</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contact Information</td>
+                            <td>Forum Submission</td>
+                            <td>Educational Resources, Emergency Notification</td>
+                            <td>5 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Question Content</td>
+                            <td>Forum Submission</td>
+                            <td>Educational Discussions, Expert Responses</td>
+                            <td>Permanent (Educational Archive)</td>
+                        </tr>
+                        <tr>
+                            <td>Website Analytics</td>
+                            <td>Automatic Collection</td>
+                            <td>Site Improvement, User Experience</td>
+                            <td>2 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Contact Data</td>
+                            <td>Emergency Form Submissions</td>
+                            <td>Immediate Response Coordination</td>
+                            <td>7 Years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>2. How We Use Your Information</h2>
+
+                <h3>2.1 Educational Purposes</h3>
+                <ul>
+                    <li>Providing expert responses to forum questions</li>
+                    <li>Creating educational content and resources</li>
+                    <li>Facilitating Authority Reversal Framework™ education</li>
+                    <li>Building educational archives for future reference</li>
+                </ul>
+
+                <h3>2.2 Emergency Response Coordination</h3>
+                <p>For submissions marked as "Emergency" urgency:</p>
+                <ul>
+                    <li>Immediate SMS and email notifications to restoration professionals</li>
+                    <li>Emergency response coordination and follow-up</li>
+                    <li>Professional referral and assessment scheduling</li>
+                    <li>Safety follow-up and educational resource delivery</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h2>⚠️ EMERGENCY DATA USAGE</h2>
+                    <p><strong>Immediate Response:</strong> Emergency-classified submissions trigger immediate notification workflows to professional restoration teams.</p>
+                    <p><strong>Extended Retention:</strong> Emergency contact information is retained for 7 years for follow-up safety verification and educational resource delivery.</p>
+                </div>
+
+                <h3>2.3 Communication and Follow-Up</h3>
+                <ul>
+                    <li>Expert response delivery and notification</li>
+                    <li>Educational newsletter and resource sharing</li>
+                    <li>Follow-up surveys and feedback collection</li>
+                    <li>Regional educational event notifications</li>
+                </ul>
+
+                <h3>2.4 Website Improvement</h3>
+                <ul>
+                    <li>Analytics for user experience optimization</li>
+                    <li>Content performance measurement</li>
+                    <li>Technical performance monitoring</li>
+                    <li>Security monitoring and threat detection</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. Information Sharing and Disclosure</h2>
+
+                <h3>3.1 Emergency Response Sharing</h3>
+                <p>For emergency-classified submissions, we may share contact information with:</p>
+                <ul>
+                    <li>Licensed restoration professionals for immediate response</li>
+                    <li>Emergency response coordinators and dispatchers</li>
+                    <li>Professional assessment specialists</li>
+                    <li>Insurance claim coordinators when appropriate</li>
+                </ul>
+
+                <h3>3.2 Service Provider Sharing</h3>
+                <p>We share information with trusted service providers:</p>
+                <ul>
+                    <li><strong>GoHighLevel (GHL):</strong> CRM management and communication automation</li>
+                    <li><strong>Netlify:</strong> Website hosting and form processing</li>
+                    <li><strong>Analytics Providers:</strong> Website performance and user experience analysis</li>
+                    <li><strong>Email Services:</strong> Educational resource delivery and notifications</li>
+                </ul>
+
+                <h3>3.3 Legal Disclosure Requirements</h3>
+                <p>We may disclose information when required by:</p>
+                <ul>
+                    <li>Legal process, court orders, or government requests</li>
+                    <li>Law enforcement investigations</li>
+                    <li>Protection of rights, property, or safety</li>
+                    <li>Compliance with applicable laws and regulations</li>
+                </ul>
+
+                <h3>3.4 What We Don't Share</h3>
+                <p>We do not sell, rent, or trade personal information to third parties for marketing purposes. We do not share information for commercial purposes unrelated to restoration education and emergency response.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Security and Protection</h2>
+
+                <h3>4.1 Security Measures</h3>
+                <ul>
+                    <li>SSL encryption for all data transmission</li>
+                    <li>Secure server infrastructure with access controls</li>
+                    <li>Regular security monitoring and vulnerability assessments</li>
+                    <li>Employee access restrictions and security training</li>
+                    <li>Regular data backup and recovery procedures</li>
+                </ul>
+
+                <h3>4.2 GHL Security Integration</h3>
+                <p>GoHighLevel provides enterprise-level security including:</p>
+                <ul>
+                    <li>SOC 2 Type II compliance</li>
+                    <li>Advanced encryption and data protection</li>
+                    <li>Regular security audits and penetration testing</li>
+                    <li>GDPR and privacy regulation compliance</li>
+                </ul>
+
+                <h3>4.3 Data Breach Response</h3>
+                <p>In the event of a data security incident:</p>
+                <ul>
+                    <li>Immediate assessment and containment procedures</li>
+                    <li>Notification to affected users within 72 hours</li>
+                    <li>Coordination with law enforcement when appropriate</li>
+                    <li>Transparent communication about impact and remediation steps</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Your Privacy Rights and Choices</h2>
+
+                <h3>5.1 Access and Correction</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access personal information we have collected</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Update contact preferences and communication settings</li>
+                    <li>Review forum submission history and expert responses</li>
+                </ul>
+
+                <h3>5.2 Data Deletion and Portability</h3>
+                <p>You may request to:</p>
+                <ul>
+                    <li>Delete personal information (subject to legal and educational archive requirements)</li>
+                    <li>Export your data in commonly used formats</li>
+                    <li>Restrict processing for specific purposes</li>
+                    <li>Withdraw consent for non-essential communications</li>
+                </ul>
+
+                <div class="info-box">
+                    <h2>🔄 EDUCATIONAL ARCHIVE RETENTION</h2>
+                    <p><strong>Historical Forum Content:</strong> Questions and expert responses may be retained in our educational archives even after personal information deletion to maintain educational resource value for future users.</p>
+                    <p><strong>Anonymization Process:</strong> Personal identifying information is removed while preserving educational content value.</p>
+                </div>
+
+                <h3>5.3 Communication Preferences</h3>
+                <p>You can control communications by:</p>
+                <ul>
+                    <li>Unsubscribing from educational newsletters</li>
+                    <li>Opting out of non-emergency communications</li>
+                    <li>Updating notification preferences in your profile</li>
+                    <li>Requesting removal from follow-up campaigns</li>
+                </ul>
+
+                <p><strong>Note:</strong> Emergency response notifications cannot be opted out of for emergency-classified submissions, as these serve safety purposes.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Cookies and Tracking Technologies</h2>
+
+                <h3>6.1 Cookie Usage</h3>
+                <p>We use cookies and similar technologies for:</p>
+                <ul>
+                    <li>Essential website functionality and security</li>
+                    <li>User preference storage and session management</li>
+                    <li>Analytics and performance measurement</li>
+                    <li>Content personalization and user experience improvement</li>
+                </ul>
+
+                <h3>6.2 Third-Party Analytics</h3>
+                <p>We use analytics services that may collect information through cookies:</p>
+                <ul>
+                    <li>Google Analytics for website performance analysis</li>
+                    <li>Netlify Analytics for hosting and form performance</li>
+                    <li>GHL tracking for communication effectiveness</li>
+                </ul>
+
+                <h3>6.3 Cookie Management</h3>
+                <p>You can manage cookies through your browser settings, but note that disabling certain cookies may limit website functionality.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Children's Privacy</h2>
+
+                <h3>7.1 Age Restrictions</h3>
+                <p>The Northern Virginia Restoration Forum is intended for adult users (18+ years) dealing with property restoration issues. We do not knowingly collect information from children under 18.</p>
+
+                <h3>7.2 Parental Rights</h3>
+                <p>If we become aware that we have collected information from a child under 18, we will:</p>
+                <ul>
+                    <li>Delete the information immediately</li>
+                    <li>Not use the information for any purpose</li>
+                    <li>Not share the information with third parties</li>
+                    <li>Notify parents or guardians when possible</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. International Users and Data Transfers</h2>
+
+                <h3>8.1 Geographic Scope</h3>
+                <p>This Forum primarily serves Virginia residents, but we welcome educational participation from users in other locations. All data is processed and stored in the United States.</p>
+
+                <h3>8.2 International Data Protection</h3>
+                <p>For international users, we provide privacy protections consistent with:</p>
+                <ul>
+                    <li>Virginia Consumer Data Protection Act (VCDPA)</li>
+                    <li>General Data Protection Regulation (GDPR) principles</li>
+                    <li>California Consumer Privacy Act (CCPA) standards</li>
+                    <li>Other applicable international privacy regulations</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Privacy Policy Updates</h2>
+
+                <h3>9.1 Policy Modifications</h3>
+                <p>We may update this Privacy Policy to reflect:</p>
+                <ul>
+                    <li>Changes in legal requirements</li>
+                    <li>New features or services</li>
+                    <li>Improved data protection practices</li>
+                    <li>User feedback and privacy enhancement requests</li>
+                </ul>
+
+                <h3>9.2 Update Notifications</h3>
+                <p>When we make significant changes:</p>
+                <ul>
+                    <li>Updated policy will be posted on this page</li>
+                    <li>Email notification to active forum users</li>
+                    <li>30-day advance notice for material changes</li>
+                    <li>Continued use constitutes acceptance of updated terms</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h3>Privacy Questions and Requests</h3>
+                <p>For privacy-related questions, data access requests, or concerns:</p>
+                <a href="mailto:info@bizinsiderpro.com" class="contact-link">📧 Privacy Officer</a>
+                <p style="margin-top: 15px;">For emergency restoration situations:</p>
+                <a href="tel:703-844-4204" class="contact-link">📞 (703) 844-4204</a>
+                <p style="margin-top: 15px; font-size: 14px; color: #6b7280;">Response time for privacy requests: 30 days or as required by applicable law</p>
+            </div>
+
+            <div class="last-updated">
+                <p><strong>Last Updated:</strong> September 25, 2024</p>
+                <p><strong>Effective Date:</strong> September 25, 2024</p>
+                <p><strong>Next Review Date:</strong> March 25, 2025</p>
+            </div>
+
+            <div class="back-to-forum">
+                <a href="restoration-forum.html">← Back to Forum</a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1a1a1a; color: white; padding: 40px 0; margin-top: 40px;">
+        <div class="container">
+            <div style="text-align: center;">
+                <p style="color: #9ca3af; margin: 0;">&copy; 2024 Northern Virginia Restoration Forum. Privacy Policy for educational resource protection.</p>
+                <p style="color: #dc2626; font-weight: 700; margin: 10px 0 0 0;">24/7 Emergency: (703) 844-4204</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

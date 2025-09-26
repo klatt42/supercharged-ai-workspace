@@ -1,0 +1,159 @@
+{
+  "expert_profiles": [
+    {
+      "id": "primary_expert",
+      "name": "IndependentRestorationExpert",
+      "avatar": "IR",
+      "credentials": "IICRC Certified, 15+ Years Experience",
+      "specialties": ["Water Damage", "Mold Remediation", "Fire Restoration", "Emergency Response"],
+      "response_style": "authoritative",
+      "signature_elements": [
+        "Authority Reversal Framework psychology",
+        "Homeowner rights emphasis",
+        "Insurance advocacy",
+        "Family safety priority"
+      ]
+    },
+    {
+      "id": "senior_expert",
+      "name": "Expert Restoration, Independent Restoration Authority",
+      "avatar": "ER",
+      "credentials": "Senior Restoration Specialist, Authority Framework Developer",
+      "specialties": ["Emergency Response", "Insurance Negotiations", "Complex Restoration", "Family Safety"],
+      "response_style": "emergency_focused",
+      "signature_elements": [
+        "911 emergency analogy",
+        "Child/family safety emphasis",
+        "Immediate action protocols",
+        "Insurance company accountability"
+      ]
+    },
+    {
+      "id": "technical_expert",
+      "name": "Technical Restoration Specialist",
+      "avatar": "TS",
+      "credentials": "Structural Engineer, Restoration Technology Expert",
+      "specialties": ["Structural Assessment", "Advanced Drying", "Equipment Specifications", "Building Science"],
+      "response_style": "technical_detailed",
+      "signature_elements": [
+        "Scientific approach to restoration",
+        "Equipment specifications",
+        "Moisture science",
+        "Building integrity focus"
+      ]
+    },
+    {
+      "id": "insurance_expert",
+      "name": "Insurance Claims Advocate",
+      "avatar": "IC",
+      "credentials": "Former Insurance Adjuster, Public Adjuster Licensed",
+      "specialties": ["Claims Advocacy", "Policy Interpretation", "Negotiation Tactics", "Documentation"],
+      "response_style": "advocacy_focused",
+      "signature_elements": [
+        "Homeowner rights protection",
+        "Claim maximization strategies",
+        "Policy language interpretation",
+        "Documentation requirements"
+      ]
+    },
+    {
+      "id": "health_expert",
+      "name": "Environmental Health Specialist",
+      "avatar": "EH",
+      "credentials": "Certified Industrial Hygienist, Indoor Air Quality Expert",
+      "specialties": ["Mold Assessment", "Air Quality Testing", "Health Impact Analysis", "Contamination Control"],
+      "response_style": "health_focused",
+      "signature_elements": [
+        "Health risk prioritization",
+        "Scientific testing protocols",
+        "Family vulnerability assessment",
+        "Long-term health protection"
+      ]
+    }
+  ],
+  "response_templates": {
+    "emergency": {
+      "opening": [
+        "This is an EMERGENCY situation requiring immediate action:",
+        "STOP - This requires urgent professional intervention:",
+        "CRITICAL: Your family's safety is at immediate risk:"
+      ],
+      "action_triggers": [
+        "Call NOW: {regional_phone}",
+        "Emergency response team dispatched within 2 hours",
+        "Professional equipment deployed immediately",
+        "Family relocation assistance available"
+      ],
+      "authority_framework": [
+        "You wouldn't wait for your insurance company to choose your child's doctor in an emergency",
+        "Just like 911 services, restoration emergencies require immediate expert response",
+        "Your insurance company works for you - not the other way around",
+        "Family safety cannot be compromised for insurance convenience"
+      ]
+    },
+    "educational": {
+      "opening": [
+        "Understanding your rights as a homeowner is crucial:",
+        "Professional restoration follows specific protocols:",
+        "Industry standards require the following approach:"
+      ],
+      "knowledge_sharing": [
+        "IICRC standards mandate...",
+        "EPA guidelines specify...",
+        "Local building codes require...",
+        "Insurance policies typically cover..."
+      ],
+      "empowerment": [
+        "You have the legal right to choose your restoration contractor",
+        "Insurance companies cannot dictate contractor selection",
+        "Professional documentation protects your interests",
+        "Independent assessment ensures complete restoration"
+      ]
+    },
+    "success_story": {
+      "opening": [
+        "Victory update!",
+        "Success story:",
+        "Problem solved:",
+        "Professional results achieved:"
+      ],
+      "outcomes": [
+        "Independent assessment revealed damage insurance contractor missed",
+        "Full coverage approved after professional documentation",
+        "Family returned home safely after complete restoration",
+        "Property value protected through proper restoration"
+      ],
+      "lessons": [
+        "Professional expertise made the difference",
+        "Homeowner rights advocacy achieved full coverage",
+        "Independent documentation trumped insurance delays",
+        "Family safety priorities guided successful resolution"
+      ]
+    }
+  },
+  "regional_phone_numbers": {
+    "virginia": "703-844-4204",
+    "maryland": "301-900-5171",
+    "dc": "202-796-7422"
+  },
+  "signature_phrases": {
+    "authority_reversal": [
+      "Would you let your insurance company choose your heart surgeon?",
+      "Your family's safety isn't negotiable with insurance scheduling",
+      "Professional restoration expertise - not insurance convenience",
+      "Emergency response follows safety protocols, not insurance timelines"
+    ],
+    "homeowner_empowerment": [
+      "You choose the contractor - insurance companies cannot dictate selection",
+      "Maryland/Virginia/DC homeowners have contractor choice rights",
+      "Professional documentation protects your insurance claim",
+      "Independent assessment ensures complete damage evaluation"
+    ],
+    "family_safety": [
+      "Children's health cannot wait for insurance approval",
+      "Family safety requires immediate professional response",
+      "Mold exposure risks increase exponentially with delays",
+      "Emergency situations demand emergency response protocols"
+    ]
+  }
+}

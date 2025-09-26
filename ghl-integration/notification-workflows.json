@@ -1,0 +1,117 @@
+{
+  "ghl_workflow_config": {
+    "base_url": "https://services.leadconnectorhq.com/hooks/",
+    "workflows": {
+      "emergency_response": {
+        "trigger_keywords": ["emergency", "urgent", "flooding", "fire", "mold emergency", "water damage now", "immediate help"],
+        "response_time": "immediate",
+        "expert_assignment": "senior_expert",
+        "notification_channels": ["sms", "email", "phone"],
+        "escalation_level": "critical",
+        "authority_framework": "911_emergency_analogy"
+      },
+      "standard_inquiry": {
+        "trigger_keywords": ["water damage", "mold", "restoration", "insurance claim", "contractor"],
+        "response_time": "2_hours",
+        "expert_assignment": "primary_expert",
+        "notification_channels": ["email", "forum_response"],
+        "escalation_level": "standard",
+        "authority_framework": "homeowner_rights"
+      },
+      "technical_assessment": {
+        "trigger_keywords": ["structural", "engineering", "moisture", "equipment", "testing", "assessment"],
+        "response_time": "4_hours",
+        "expert_assignment": "technical_expert",
+        "notification_channels": ["email", "scheduled_call"],
+        "escalation_level": "technical",
+        "authority_framework": "professional_standards"
+      },
+      "insurance_dispute": {
+        "trigger_keywords": ["insurance denied", "claim rejected", "adjuster", "coverage", "policy"],
+        "response_time": "1_hour",
+        "expert_assignment": "insurance_expert",
+        "notification_channels": ["phone", "email", "forum_response"],
+        "escalation_level": "urgent",
+        "authority_framework": "contractor_choice_rights"
+      },
+      "health_concerns": {
+        "trigger_keywords": ["children sick", "family health", "mold symptoms", "breathing problems", "allergies"],
+        "response_time": "immediate",
+        "expert_assignment": "health_expert",
+        "notification_channels": ["phone", "sms", "email"],
+        "escalation_level": "critical",
+        "authority_framework": "family_safety_priority"
+      }
+    },
+    "regional_routing": {
+      "virginia": {
+        "phone": "703-844-4204",
+        "expert_pool": ["primary_expert", "senior_expert", "technical_expert"],
+        "response_hours": "24/7",
+        "emergency_escalation": "immediate"
+      },
+      "maryland": {
+        "phone": "301-900-5171",
+        "expert_pool": ["primary_expert", "health_expert", "insurance_expert"],
+        "response_hours": "24/7",
+        "emergency_escalation": "immediate"
+      },
+      "dc": {
+        "phone": "202-796-7422",
+        "expert_pool": ["senior_expert", "technical_expert", "insurance_expert"],
+        "response_hours": "24/7",
+        "emergency_escalation": "immediate"
+      }
+    }
+  },
+  "automation_triggers": {
+    "forum_form_submissions": {
+      "webhook_endpoint": "/forum-submission",
+      "processing_steps": [
+        "extract_keywords",
+        "determine_urgency",
+        "assign_expert",
+        "generate_response",
+        "notify_team",
+        "schedule_follow_up"
+      ]
+    },
+    "emergency_contact_forms": {
+      "webhook_endpoint": "/emergency-contact",
+      "processing_steps": [
+        "immediate_notification",
+        "expert_assignment",
+        "response_generation",
+        "phone_call_trigger",
+        "sms_confirmation"
+      ]
+    },
+    "consultation_requests": {
+      "webhook_endpoint": "/consultation-request",
+      "processing_steps": [
+        "calendar_integration",
+        "expert_availability",
+        "confirmation_email",
+        "pre_call_materials",
+        "follow_up_sequence"
+      ]
+    }
+  },
+  "response_templates": {
+    "immediate_sms": "EMERGENCY RESTORATION: We received your urgent request. A restoration expert will call you within 15 minutes at {phone_number}. Do NOT wait for insurance approval. Your family's safety is priority #1.",
+    "emergency_email": "Your emergency restoration request has been received and assigned to our senior expert team. Professional response within 2 hours guaranteed. Authority Reversal Framework: Just like 911 services, restoration emergencies require immediate expert response.",
+    "standard_notification": "Thank you for contacting Independent Restoration. Your restoration inquiry has been assigned to our expert team. You'll receive a comprehensive response within 2 hours with professional guidance and homeowner rights information.",
+    "technical_follow_up": "Professional assessment scheduled. Our technical specialist will provide detailed analysis including moisture mapping, structural evaluation, and IICRC protocol recommendations.",
+    "insurance_advocacy": "Insurance claim support initiated. Our former adjuster specialist will review your policy, document all damage, and ensure maximum coverage entitlement. Remember: YOU choose your contractor, not your insurance company."
+  },
+  "expert_availability": {
+    "business_hours": "6:00 AM - 10:00 PM EST",
+    "emergency_hours": "24/7",
+    "response_targets": {
+      "critical": "15 minutes",
+      "urgent": "1 hour",
+      "standard": "2 hours",
+      "technical": "4 hours"
+    }
+  }
+}

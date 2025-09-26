@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independent Restoration Forum - Educational discussions about water damage, mold remediation, fire restoration. Expert Q&A with Authority Reversal Framework. VA, MD, DC specialists.">
+    <title>Independent Restoration Forum | Expert Q&A + Educational Discussions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .emergency-banner .phone {
+            color: #fef3c7;
+            text-decoration: none;
+            margin-left: 20px;
+            border: 2px solid #fef3c7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-banner .phone:hover {
+            background: #fef3c7;
+            color: #dc2626;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #dc2626;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "💬";
+            font-size: 2rem;
+        }
+
+        .breadcrumbs {
+            background: #f1f5f9;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumbs a {
+            color: #64748b;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: #dc2626;
+        }
+
+        /* Legal Disclaimer Framework */
+        .legal-disclaimer-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.1);
+        }
+
+        .legal-disclaimer-box h4 {
+            color: #856404;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legal-disclaimer-box p {
+            color: #856404;
+            margin: 0 0 15px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .legal-disclaimer-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .terms-acceptance {
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+
+        .terms-acceptance label {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .terms-acceptance input[type="checkbox"] {
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+
+        /* Forum Navigation */
+        .forum-nav {
+            background: white;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .forum-nav-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .forum-nav-header h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+        }
+
+        .forum-nav-header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .forum-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 0;
+        }
+
+        .forum-category {
+            padding: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+            transition: background-color 0.3s ease;
+        }
+
+        .forum-category:hover {
+            background: #f8fafc;
+        }
+
+        .forum-category h3 {
+            color: #1e40af;
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .forum-category p {
+            color: #64748b;
+            margin: 0 0 15px 0;
+        }
+
+        .category-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .category-link {
+            color: #dc2626;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .category-link:hover {
+            color: #b91c1c;
+        }
+
+        /* Expert Q&A Section */
+        .expert-section {
+            background: white;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .expert-header {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .expert-content {
+            padding: 30px;
+        }
+
+        .expert-response-header {
+            background: #f0fdf4;
+            padding: 20px;
+            border-left: 4px solid #10b981;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .expert-avatar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .expert-avatar-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin-right: 15px;
+            border: 3px solid #10b981;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .expert-credentials {
+            font-size: 12px;
+            color: #059669;
+            margin-top: 10px;
+        }
+
+        /* Question Submission Form */
+        .question-form-section {
+            background: white;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .form-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .form-content {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #7c3aed;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .urgency-emergency {
+            background: #fee2e2;
+            border-color: #dc2626;
+        }
+
+        .urgency-urgent {
+            background: #fef3c7;
+            border-color: #f59e0b;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+        }
+
+        /* Authority Framework Integration */
+        .authority-framework {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .authority-framework h3 {
+            color: #92400e;
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+        }
+
+        .authority-framework p {
+            color: #92400e;
+            margin: 0 0 10px 0;
+            font-weight: 500;
+        }
+
+        /* Navigation Links */
+        .site-navigation {
+            background: white;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .forum-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .expert-avatar-circle {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                font-size: 16px;
+                margin-right: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        <strong>🚨 EMERGENCY RESTORATION - Available 24/7</strong>
+        <a href="tel:703-844-4204" class="phone">📞 (703) 844-4204</a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="restoration-forum.html" class="logo">Independent Restoration Forum</a>
+                <div class="contact-info">
+                    <a href="tel:703-844-4204" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 700;">🚨 Emergency: (703) 844-4204</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> ›
+            <a href="restoration-forum.html">Restoration Forum</a> ›
+            Expert Q&A + Educational Discussions
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Comprehensive Legal Disclaimer -->
+        <div class="legal-disclaimer-box">
+            <h4>⚠️ IMPORTANT LEGAL NOTICE</h4>
+            <p><strong>Emergency Disclaimer:</strong> The information provided in this forum is for educational purposes only and does not constitute professional advice. In emergency situations involving water damage, fire damage, or mold, contact licensed professionals immediately. Do not delay emergency response based on forum discussions.</p>
+
+            <p><strong>Professional Consultation Required:</strong> All restoration decisions should be made in consultation with licensed contractors and your insurance company. Independent Restoration provides this forum as an educational resource but does not assume liability for decisions made based on forum content.</p>
+
+            <p><strong>No Warranty:</strong> Information accuracy is not guaranteed. Users participate at their own risk. Emergency situations require immediate professional assessment.</p>
+
+            <p><strong>Insurance Advice Limitation:</strong> Forum discussions about insurance are educational only and do not constitute legal representation or insurance advice.</p>
+        </div>
+
+        <!-- Authority Reversal Framework -->
+        <div class="authority-framework">
+            <h3>🎯 Authority Reversal Framework™</h3>
+            <p><strong>Would you let your insurance company choose your heart surgeon?</strong></p>
+            <p>Just like you choose your own doctor, YOU should choose your restoration contractor. Insurance companies recommend contractors who work for THEM, not you. This forum educates Virginia homeowners about exercising YOUR authority in restoration decisions across the DMV region.</p>
+        </div>
+
+        <!-- Forum Navigation Categories -->
+        <div class="forum-nav">
+            <div class="forum-nav-header">
+                <h2>💬 Northern Virginia Restoration Forum</h2>
+                <p>Educational discussions for Virginia homeowners with DMV-wide restoration expertise</p>
+            </div>
+
+            <div class="forum-categories">
+                <div class="forum-category">
+                    <h3>💧 Water Damage Emergency</h3>
+                    <p>Emergency response, hidden damage detection, insurance battles, and Authority Reversal education for water damage situations.</p>
+                    <div class="category-stats">
+                        <span>📝 25 Discussions</span>
+                        <span>💬 127 Responses</span>
+                    </div>
+                    <a href="#water-damage-forum" class="category-link">View Discussions →</a>
+                </div>
+
+                <div class="forum-category">
+                    <h3>🦠 Mold Remediation</h3>
+                    <p>Health impacts, proper containment vs. quick fixes, EPA protocols, and independent testing discussions.</p>
+                    <div class="category-stats">
+                        <span>📝 18 Discussions</span>
+                        <span>💬 89 Responses</span>
+                    </div>
+                    <a href="#mold-forum" class="category-link">View Discussions →</a>
+                </div>
+
+                <div class="forum-category">
+                    <h3>🔥 Fire & Smoke Damage</h3>
+                    <p>Smoke vs. soot damage, structural assessments, contents restoration, and insurance coverage education.</p>
+                    <div class="category-stats">
+                        <span>📝 15 Discussions</span>
+                        <span>💬 73 Responses</span>
+                    </div>
+                    <a href="#fire-damage-forum" class="category-link">View Discussions →</a>
+                </div>
+
+                <div class="forum-category">
+                    <h3>📋 Insurance Claims</h3>
+                    <p>Authority Reversal education, contractor selection rights, claim disputes, and homeowner advocacy.</p>
+                    <div class="category-stats">
+                        <span>📝 22 Discussions</span>
+                        <span>💬 156 Responses</span>
+                    </div>
+                    <a href="#insurance-forum" class="category-link">View Discussions →</a>
+                </div>
+
+                <div class="forum-category">
+                    <h3>🏘️ Choosing Independent Contractors</h3>
+                    <p>Why independence matters, vetting contractors, avoiding insurance company conflicts of interest.</p>
+                    <div class="category-stats">
+                        <span>📝 20 Discussions</span>
+                        <span>💬 98 Responses</span>
+                    </div>
+                    <a href="#contractor-selection-forum" class="category-link">View Discussions →</a>
+                </div>
+
+                <div class="forum-category">
+                    <h3>🗺️ Virginia Regional Questions</h3>
+                    <p>NOVA regulations, county-specific issues, Virginia contractor experiences, and DMV market insights.</p>
+                    <div class="category-stats">
+                        <span>📝 30 Discussions</span>
+                        <span>💬 178 Responses</span>
+                    </div>
+                    <a href="#regional-forum" class="category-link">View Discussions →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expert Q&A Section -->
+        <div class="expert-section">
+            <div class="expert-header">
+                <h2>🎓 Ask the Independent Restoration Expert</h2>
+                <p>Get professional guidance with Authority Reversal Framework integration</p>
+            </div>
+
+            <div class="expert-content">
+                <div class="expert-response-header">
+                    <div class="expert-avatar">
+                        <div class="expert-avatar-circle">RE</div>
+                        <div>
+                            <h4 style="margin: 0; color: #059669;">Independent Restoration Expert</h4>
+                            <p style="margin: 0; color: #6b7280; font-size: 14px;">IICRC Certified • 15+ Years Experience • DMV Region Specialist</p>
+                            <div class="expert-credentials">
+                                ✓ Water Damage Restoration Certified
+                                ✓ Mold Remediation Specialist
+                                ✓ Fire & Smoke Damage Expert
+                                ✓ Insurance Claims Advocate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-bottom: 20px;">Submit your restoration question for expert analysis with Authority Reversal Framework guidance. Emergency situations receive priority response.</p>
+
+                <a href="#question-form" style="background: #059669; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600;">Ask Expert Question</a>
+            </div>
+        </div>
+
+        <!-- Question Submission Form -->
+        <div id="question-form" class="question-form-section">
+            <div class="form-header">
+                <h2>📝 Submit Your Restoration Question</h2>
+                <p>Get expert analysis with Authority Reversal Framework guidance</p>
+            </div>
+
+            <div class="form-content">
+                <form name="forum-question" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <!-- Hidden fields for GHL integration -->
+                    <input type="hidden" name="form-name" value="forum-question" />
+                    <input type="hidden" name="source" value="Forum Question Submission" />
+                    <input type="hidden" name="priority" value="forum-inquiry" />
+
+                    <!-- User information -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-name">Name (Display Name):</label>
+                            <input type="text" id="user-name" name="userName" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-email">Email (Private - for notifications):</label>
+                            <input type="email" id="user-email" name="email" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-phone">Phone (Optional):</label>
+                            <input type="tel" id="user-phone" name="phone" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Location (City, State):</label>
+                            <input type="text" id="location" name="location" placeholder="Arlington, VA" />
+                        </div>
+                    </div>
+
+                    <!-- Question details -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="question-category">Category:</label>
+                            <select id="question-category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="water-damage">Water Damage Emergency</option>
+                                <option value="mold-remediation">Mold Remediation</option>
+                                <option value="fire-damage">Fire Damage Restoration</option>
+                                <option value="insurance-claims">Insurance Claims</option>
+                                <option value="contractor-selection">Choosing Contractors</option>
+                                <option value="regional-specific">Virginia Regional Questions</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency-level">Urgency Level:</label>
+                            <select id="urgency-level" name="urgency" required>
+                                <option value="">Select Urgency</option>
+                                <option value="emergency">🚨 Emergency - Immediate Response Needed</option>
+                                <option value="urgent">⏰ Urgent - Within 24 Hours</option>
+                                <option value="standard">📝 Standard - General Question</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question-title">Question Title:</label>
+                        <input type="text" id="question-title" name="questionTitle" required
+                               placeholder="Brief description of your situation" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question-details">Question Details:</label>
+                        <textarea id="question-details" name="questionDetails" rows="6" required
+                                  placeholder="Please describe your situation in detail. Include any relevant timeline, damage extent, or specific concerns."></textarea>
+                    </div>
+
+                    <!-- Legal acknowledgment -->
+                    <div class="terms-acceptance">
+                        <label>
+                            <input type="checkbox" name="disclaimer-accepted" required />
+                            <span>I understand this forum is for educational purposes only. Emergency situations require immediate professional consultation. I agree to the <a href="/terms-of-use" target="_blank">Terms of Use</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</span>
+                        </label>
+                    </div>
+
+                    <!-- reCAPTCHA -->
+                    <div data-netlify-recaptcha="true"></div>
+
+                    <button type="submit" class="submit-btn">Submit Question for Expert Review</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Forum Historical Archives -->
+        <div class="site-navigation">
+            <h2>📚 Historical Forum Archives</h2>
+            <p>Browse real restoration conversations and expert guidance from Virginia and Maryland homeowners</p>
+            <div class="nav-grid">
+                <a href="virginia-forum-content.html" class="nav-link">
+                    🏛️ Virginia Forum Archives
+                    <small style="display: block; margin-top: 8px; color: #6b7280;">5 detailed conversations covering Arlington, Fairfax, Loudoun, Prince William, and Alexandria restoration scenarios</small>
+                </a>
+                <a href="maryland-forum-content.html" class="nav-link">
+                    🏔️ Maryland Forum Archives
+                    <small style="display: block; margin-top: 8px; color: #6b7280;">6 comprehensive discussions from Montgomery, Frederick, Prince George's, Howard, Anne Arundel, and Charles counties</small>
+                </a>
+                <a href="dc-forum-content.html" class="nav-link">
+                    🏛️ Washington DC Forum Archives
+                    <small style="display: block; margin-top: 8px; color: #6b7280;">Historic discussions covering Capitol Hill, Georgetown, Dupont Circle, Adams Morgan, and Foggy Bottom</small>
+                </a>
+            </div>
+        </div>
+
+        <!-- Site Navigation -->
+        <div class="site-navigation">
+            <h2>🌐 Independent Restoration Network</h2>
+            <p>Access our complete network of restoration specialists across Virginia, Maryland, and Washington DC</p>
+
+            <div class="nav-grid">
+                <a href="virginia-restoration.html" class="nav-link">
+                    🏛️ Virginia Services Hub
+                </a>
+                <a href="arlington-county-restoration.html" class="nav-link">
+                    🏛️ Arlington County
+                </a>
+                <a href="fairfax-county-restoration.html" class="nav-link">
+                    🏘️ Fairfax County
+                </a>
+                <a href="loudoun-county-restoration.html" class="nav-link">
+                    🏘️ Loudoun County
+                </a>
+                <a href="prince-william-county-restoration.html" class="nav-link">
+                    🏘️ Prince William County
+                </a>
+                <a href="alexandria/index.html" class="nav-link">
+                    🏛️ Alexandria City
+                </a>
+                <a href="maryland-restoration.html" class="nav-link">
+                    🏔️ Maryland Network
+                </a>
+                <a href="dc-restoration.html" class="nav-link">
+                    🏛️ Washington DC Network
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1a1a1a; color: white; padding: 60px 0 30px; margin-top: 40px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="color: #dc2626; margin-bottom: 20px;">💬 Northern Virginia Restoration Forum</h3>
+                    <p style="color: #9ca3af; line-height: 1.8;">Educational forum for Virginia homeowners with Authority Reversal Framework integration. Professional guidance across the DMV region.</p>
+                    <p style="color: #dc2626; font-weight: 700; margin-top: 15px;">24/7 Emergency: (703) 844-4204</p>
+                </div>
+
+                <div>
+                    <h3 style="color: #dc2626; margin-bottom: 20px;">Forum Categories</h3>
+                    <p><a href="#water-damage-forum" style="color: #9ca3af; text-decoration: none;">Water Damage Emergency</a></p>
+                    <p><a href="#mold-forum" style="color: #9ca3af; text-decoration: none;">Mold Remediation</a></p>
+                    <p><a href="#fire-damage-forum" style="color: #9ca3af; text-decoration: none;">Fire & Smoke Damage</a></p>
+                    <p><a href="#insurance-forum" style="color: #9ca3af; text-decoration: none;">Insurance Claims</a></p>
+                    <p><a href="#contractor-selection-forum" style="color: #9ca3af; text-decoration: none;">Contractor Selection</a></p>
+                </div>
+
+                <div>
+                    <h3 style="color: #dc2626; margin-bottom: 20px;">Service Areas</h3>
+                    <p style="color: #9ca3af;">Arlington County, VA</p>
+                    <p style="color: #9ca3af;">Fairfax County, VA</p>
+                    <p style="color: #9ca3af;">Loudoun County, VA</p>
+                    <p style="color: #9ca3af;">Prince William County, VA</p>
+                    <p style="color: #9ca3af;">+ DMV Regional Network</p>
+                </div>
+
+                <div>
+                    <h3 style="color: #dc2626; margin-bottom: 20px;">Expert Contact</h3>
+                    <p style="color: #dc2626; font-weight: 700; font-size: 20px;">📞 (703) 844-4204</p>
+                    <p style="color: #9ca3af;">24/7 Emergency Response</p>
+                    <p style="color: #9ca3af;">Licensed & Insured</p>
+                    <p style="color: #9ca3af;">IICRC Certified Specialists</p>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid #374151; padding-top: 30px; text-align: center; color: #6b7280;">
+                <p>&copy; 2024 Northern Virginia Restoration Forum. Educational resource for Virginia homeowners with Authority Reversal Framework™ integration.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Post Disclaimer for all expert responses -->
+    <div style="display: none;">
+        <div class="post-disclaimer" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-left: 3px solid #6c757d; font-size: 12px;">
+            <em>This response is provided for educational purposes only. Emergency situations require immediate professional assessment. Contact Independent Restoration at (703) 844-4204 for professional evaluation of your specific situation.</em>
+        </div>
+    </div>
+
+    <!-- GHL Forum Integration JavaScript -->
+    <script src="js/ghl-forum-integration.js"></script>
+
+    <!-- Form Enhancement Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dynamic urgency detection and form enhancements
+            const urgencySelect = document.getElementById('urgency-level');
+            const phoneInput = document.getElementById('user-phone');
+            const emailInput = document.getElementById('user-email');
+
+            // Phone formatting
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    if (value.length >= 6) {
+                        value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+                    } else if (value.length >= 3) {
+                        value = value.replace(/(\d{3})(\d{1,3})/, '($1) $2');
+                    }
+                    e.target.value = value;
+                });
+            }
+
+            // Real-time form validation
+            const form = document.querySelector('form[name="forum-question"]');
+            if (form) {
+                const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', function() {
+                        if (!this.value.trim()) {
+                            this.style.borderColor = '#dc2626';
+                        } else {
+                            this.style.borderColor = '#10b981';
+                        }
+                    });
+                });
+            }
+
+            // Emergency contact display
+            urgencySelect.addEventListener('change', function() {
+                const existingContact = document.querySelector('.emergency-contact-display');
+                if (existingContact) existingContact.remove();
+
+                if (this.value === 'emergency') {
+                    const contactDisplay = document.createElement('div');
+                    contactDisplay.className = 'emergency-contact-display';
+                    contactDisplay.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: #dc2626;
+                        color: white;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+                        z-index: 10000;
+                        animation: slideIn 0.3s ease;
+                        max-width: 300px;
+                    `;
+                    contactDisplay.innerHTML = `
+                        <div style="font-weight: bold; margin-bottom: 8px;">🚨 EMERGENCY DETECTED</div>
+                        <div style="margin-bottom: 10px;">For immediate assistance:</div>
+                        <a href="tel:703-844-4204" style="color: #fef3c7; font-weight: bold; text-decoration: none; display: block; margin-bottom: 8px;">📞 (703) 844-4204</a>
+                        <div style="font-size: 12px; opacity: 0.9;">Form will also trigger emergency notifications</div>
+                        <button onclick="this.parentElement.remove()" style="position: absolute; top: 5px; right: 8px; background: none; border: none; color: white; font-size: 16px; cursor: pointer;">×</button>
+                    `;
+                    document.body.appendChild(contactDisplay);
+                }
+            });
+        });
+
+        // Add animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                border-color: #7c3aed;
+                box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+            }
+
+            .emergency-contact-message {
+                animation: pulse 2s ease-in-out infinite;
+            }
+
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.8; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+    <!-- Netlify Forms Configuration -->
+    <script>
+        // Ensure Netlify form handling works with GHL integration
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form[name="forum-question"]');
+            if (form && !window.ghlForumIntegration) {
+                // Fallback to standard Netlify submission if GHL integration fails
+                console.log('Using standard Netlify form submission as fallback');
+            }
+        });
+    </script>
+</body>
+</html>

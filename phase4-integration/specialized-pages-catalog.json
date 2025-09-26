@@ -1,0 +1,249 @@
+{
+  "phase4_specialized_pages": {
+    "virginia_pages": {
+      "county_services": {
+        "arlington_county": [
+          "arlington-county-fire-damage.html",
+          "arlington-county-mold-remediation.html",
+          "arlington-county-storm-damage.html",
+          "arlington-county-water-damage.html"
+        ],
+        "fairfax_county": [
+          "fairfax-county-fire-damage.html",
+          "fairfax-county-mold-remediation.html",
+          "fairfax-county-storm-damage.html",
+          "fairfax-county-water-damage.html"
+        ],
+        "loudoun_county": [
+          "loudoun-county-fire-damage.html",
+          "loudoun-county-mold-remediation.html",
+          "loudoun-county-storm-damage.html",
+          "loudoun-county-water-damage.html"
+        ],
+        "prince_william_county": [
+          "prince-william-county-fire-damage.html",
+          "prince-william-county-mold-remediation.html",
+          "prince-william-county-storm-damage.html",
+          "prince-william-county-water-damage.html"
+        ]
+      },
+      "regional_services": [
+        "virginia-fire-damage.html",
+        "virginia-mold-remediation.html",
+        "virginia-storm-damage.html",
+        "virginia-water-damage.html",
+        "northern-va-fire-damage.html",
+        "northern-va-mold-remediation.html",
+        "northern-va-storm-damage.html",
+        "northern-va-water-damage.html"
+      ],
+      "specialized_pages": [
+        "northern-va-water-damage-faq.html"
+      ]
+    },
+    "maryland_pages": {
+      "county_services": {
+        "anne_arundel_county": [
+          "anne-arundel-county-fire-damage.html",
+          "anne-arundel-county-mold-remediation.html",
+          "anne-arundel-county-storm-damage.html",
+          "anne-arundel-county-water-damage.html"
+        ],
+        "calvert_county": [
+          "calvert-county-fire-damage.html",
+          "calvert-county-mold-remediation.html",
+          "calvert-county-storm-damage.html",
+          "calvert-county-water-damage.html"
+        ],
+        "carroll_county": [
+          "carroll-county-fire-damage.html",
+          "carroll-county-mold-remediation.html",
+          "carroll-county-storm-damage.html",
+          "carroll-county-water-damage.html"
+        ],
+        "charles_county": [
+          "charles-county-fire-damage.html",
+          "charles-county-mold-remediation.html",
+          "charles-county-storm-damage.html",
+          "charles-county-water-damage.html"
+        ],
+        "frederick_county": [
+          "frederick-county-fire-damage.html",
+          "frederick-county-mold-remediation.html",
+          "frederick-county-storm-damage.html",
+          "frederick-county-water-damage.html"
+        ],
+        "howard_county": [
+          "howard-county-fire-damage.html",
+          "howard-county-mold-remediation.html",
+          "howard-county-storm-damage.html",
+          "howard-county-water-damage.html"
+        ],
+        "montgomery_county": [
+          "montgomery-county-fire-damage.html",
+          "montgomery-county-mold-remediation.html",
+          "montgomery-county-storm-damage.html",
+          "montgomery-county-water-damage.html"
+        ],
+        "prince_georges_county": [
+          "prince-georges-county-fire-damage.html",
+          "prince-georges-county-mold-remediation.html",
+          "prince-georges-county-storm-damage.html",
+          "prince-georges-county-water-damage.html",
+          "prince-georges-county-emergency-services.html"
+        ],
+        "st_marys_county": [
+          "st-marys-county-fire-damage.html",
+          "st-marys-county-mold-remediation.html",
+          "st-marys-county-storm-damage.html",
+          "st-marys-county-water-damage.html"
+        ],
+        "washington_county": [
+          "washington-county-fire-damage.html",
+          "washington-county-mold-remediation.html",
+          "washington-county-storm-damage.html",
+          "washington-county-water-damage.html"
+        ]
+      },
+      "city_services": {
+        "annapolis": [
+          "annapolis-fire-damage.html",
+          "annapolis-mold-remediation.html",
+          "annapolis-storm-damage.html",
+          "annapolis-water-damage.html"
+        ]
+      },
+      "regional_services": [
+        "maryland-fire-damage.html",
+        "maryland-mold-remediation.html",
+        "maryland-storm-damage.html",
+        "maryland-water-damage.html"
+      ],
+      "specialized_pages": [
+        "maryland-water-damage-faq.html"
+      ],
+      "blog_posts": [
+        "maryland-water-damage-blog-post-1.html",
+        "maryland-water-damage-blog-post-2.html",
+        "maryland-water-damage-blog-post-3.html"
+      ]
+    },
+    "dc_pages": {
+      "neighborhood_services": {
+        "adams_morgan": [
+          "adams-morgan-fire-restoration.html",
+          "adams-morgan-mold-removal.html",
+          "adams-morgan-storm-damage.html",
+          "adams-morgan-water-damage.html",
+          "adams-morgan-services.html"
+        ],
+        "capitol_hill": [
+          "capitol-hill-fire-restoration.html",
+          "capitol-hill-mold-removal.html",
+          "capitol-hill-storm-damage.html",
+          "capitol-hill-water-damage.html",
+          "capitol-hill-restoration.html"
+        ],
+        "dupont_circle": [
+          "dupont-circle-fire-restoration.html",
+          "dupont-circle-mold-removal.html",
+          "dupont-circle-storm-damage.html",
+          "dupont-circle-water-damage.html",
+          "dupont-circle-emergency.html"
+        ],
+        "foggy_bottom": [
+          "foggy-bottom-fire-restoration.html",
+          "foggy-bottom-mold-removal.html",
+          "foggy-bottom-storm-damage.html",
+          "foggy-bottom-water-damage.html",
+          "foggy-bottom-emergency.html"
+        ],
+        "georgetown": [
+          "georgetown-fire-restoration.html",
+          "georgetown-mold-removal.html",
+          "georgetown-storm-damage.html",
+          "georgetown-water-damage.html",
+          "georgetown-restoration.html"
+        ],
+        "logan_circle": [
+          "logan-circle-services.html"
+        ],
+        "shaw_u_street": [
+          "shaw-u-street-services.html"
+        ]
+      },
+      "regional_services": [
+        "dc-fire-damage.html",
+        "dc-mold-remediation.html",
+        "dc-storm-damage.html",
+        "dc-water-damage.html"
+      ],
+      "specialized_pages": [
+        "dc-water-damage-faq.html"
+      ],
+      "blog_posts": [
+        "dc-water-damage-blog-post-1.html",
+        "dc-water-damage-blog-post-2.html",
+        "dc-water-damage-blog-post-3.html"
+      ]
+    },
+    "blog_pages": [
+      "blog-index.html",
+      "blog-index-va.html",
+      "blog-index-md.html",
+      "blog-index-dc.html",
+      "blog-post-1-emergency-authority-foundation.html",
+      "blog-post-2-prevention-authority-education.html",
+      "blog-post-3-insurance-vs-homeowner-authority.html"
+    ],
+    "specialized_content": [
+      "independent-restoration-storm-damage.html",
+      "independent-restoration-geo-seo-hook-optimized.html"
+    ]
+  },
+  "integration_summary": {
+    "total_pages_to_integrate": 156,
+    "virginia_services": 20,
+    "maryland_services": 44,
+    "dc_services": 32,
+    "blog_content": 10,
+    "specialized_content": 2,
+    "already_integrated": 18,
+    "remaining_integration": 138
+  },
+  "service_categories": {
+    "fire_damage": 32,
+    "mold_remediation": 32,
+    "storm_damage": 32,
+    "water_damage": 35,
+    "emergency_services": 3,
+    "general_restoration": 7,
+    "blog_posts": 10,
+    "faq_pages": 3,
+    "specialized": 2
+  },
+  "regional_breakdown": {
+    "virginia": {
+      "counties": 4,
+      "service_pages_per_county": 4,
+      "regional_pages": 8,
+      "specialized": 1,
+      "total": 25
+    },
+    "maryland": {
+      "counties": 10,
+      "service_pages_per_county": 4,
+      "cities": 1,
+      "regional_pages": 4,
+      "specialized": 4,
+      "total": 49
+    },
+    "dc": {
+      "neighborhoods": 7,
+      "service_pages_varies": "1-5 per neighborhood",
+      "regional_pages": 4,
+      "specialized": 4,
+      "total": 39
+    }
+  }
+}

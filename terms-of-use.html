@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Use for Northern Virginia Restoration Forum - Educational purposes, liability limitations, emergency disclaimers, and professional consultation requirements.">
+    <title>Terms of Use | Northern Virginia Restoration Forum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .emergency-banner .phone {
+            color: #fef3c7;
+            text-decoration: none;
+            margin-left: 20px;
+            border: 2px solid #fef3c7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-banner .phone:hover {
+            background: #fef3c7;
+            color: #dc2626;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #dc2626;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "⚖️";
+            font-size: 2rem;
+        }
+
+        .breadcrumbs {
+            background: #f1f5f9;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumbs a {
+            color: #64748b;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .breadcrumbs a:hover {
+            color: #dc2626;
+        }
+
+        main {
+            background: white;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .legal-header {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .legal-header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.5rem;
+        }
+
+        .legal-header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .legal-content {
+            padding: 40px;
+        }
+
+        .warning-box {
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .warning-box h2 {
+            color: #dc2626;
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-box p {
+            color: #dc2626;
+            margin: 0 0 15px 0;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            color: #1e40af;
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+        }
+
+        .section h3 {
+            color: #374151;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+        }
+
+        .section p {
+            margin: 0 0 15px 0;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .section ul, .section ol {
+            margin: 15px 0 15px 30px;
+            color: #4b5563;
+        }
+
+        .section li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h3 {
+            color: #92400e;
+            margin: 0 0 10px 0;
+        }
+
+        .highlight-box p {
+            color: #92400e;
+            margin: 0;
+        }
+
+        .contact-section {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #047857;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-section p {
+            color: #047857;
+            margin: 0 0 20px 0;
+        }
+
+        .contact-link {
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: #047857;
+        }
+
+        .last-updated {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .back-to-forum {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .back-to-forum a {
+            background: #dc2626;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-forum a:hover {
+            background: #b91c1c;
+        }
+
+        @media (max-width: 768px) {
+            .legal-header {
+                padding: 25px 20px;
+            }
+
+            .legal-content {
+                padding: 25px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        <strong>🚨 EMERGENCY RESTORATION - Available 24/7</strong>
+        <a href="tel:703-844-4204" class="phone">📞 (703) 844-4204</a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="terms-of-use.html" class="logo">Terms of Use</a>
+                <div class="contact-info">
+                    <a href="tel:703-844-4204" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 700;">🚨 Emergency: (703) 844-4204</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> ›
+            <a href="restoration-forum.html">Forum</a> ›
+            Terms of Use
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="legal-header">
+            <h1>⚖️ Terms of Use</h1>
+            <p>Northern Virginia Restoration Forum - Legal Terms and Educational Purpose Guidelines</p>
+        </div>
+
+        <div class="legal-content">
+            <div class="warning-box">
+                <h2>🚨 CRITICAL EMERGENCY NOTICE</h2>
+                <p><strong>EMERGENCY SITUATIONS:</strong> If you are experiencing an active water damage, fire damage, or mold emergency, DO NOT rely solely on forum information. Call (703) 844-4204 immediately for professional emergency response.</p>
+                <p><strong>NO EMERGENCY INSTRUCTION:</strong> This forum provides educational information only and does not provide emergency response instructions. Professional assessment and immediate action by licensed contractors is required for all emergency restoration situations.</p>
+                <p><strong>TIME-SENSITIVE DAMAGES:</strong> Water damage, fire damage, and mold situations worsen rapidly. Forum discussions cannot replace immediate professional intervention.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. Educational Purpose and Scope</h2>
+
+                <h3>1.1 Educational Resource Only</h3>
+                <p>The Northern Virginia Restoration Forum ("Forum") is provided as an educational resource for Virginia homeowners to learn about restoration topics, contractor selection, and insurance claim processes. All content is for informational and educational purposes only.</p>
+
+                <h3>1.2 No Professional Services</h3>
+                <p>This Forum does not provide professional restoration services, emergency response, insurance advice, legal counsel, or contractor recommendations. All information shared is educational in nature.</p>
+
+                <div class="highlight-box">
+                    <h3>Authority Reversal Framework™</h3>
+                    <p>Our educational content includes the Authority Reversal Framework™, which teaches homeowners about exercising their right to choose restoration contractors independently, rather than accepting insurance company preferred contractors. This framework is educational and does not constitute professional advice.</p>
+                </div>
+
+                <h3>1.3 Professional Consultation Required</h3>
+                <p>All restoration decisions must be made in consultation with:</p>
+                <ul>
+                    <li>Licensed restoration contractors</li>
+                    <li>Your insurance company and claims representatives</li>
+                    <li>Qualified professionals appropriate to your specific situation</li>
+                    <li>Legal counsel when insurance disputes arise</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>2. Liability Limitations and Disclaimers</h2>
+
+                <h3>2.1 No Warranty of Information</h3>
+                <p>Independent Restoration provides no warranty, express or implied, regarding the accuracy, completeness, or reliability of information shared in this Forum. Information accuracy is not guaranteed, and users participate at their own risk.</p>
+
+                <h3>2.2 No Professional Relationship</h3>
+                <p>Participation in this Forum does not create any professional relationship between users and Independent Restoration. Forum participation does not constitute:</p>
+                <ul>
+                    <li>A contractor-client relationship</li>
+                    <li>Professional consultation or advice</li>
+                    <li>Insurance representation or advocacy services</li>
+                    <li>Legal attorney-client privilege</li>
+                    <li>Emergency response services or obligations</li>
+                </ul>
+
+                <h3>2.3 Limitation of Liability</h3>
+                <p>Independent Restoration, its owners, employees, and agents shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from:</p>
+                <ul>
+                    <li>Use of or reliance on Forum information</li>
+                    <li>Decisions made based on Forum discussions</li>
+                    <li>Delays in emergency response due to Forum consultation</li>
+                    <li>Contractor selection decisions influenced by Forum content</li>
+                    <li>Insurance claim outcomes related to Forum guidance</li>
+                    <li>Property damage resulting from Forum-influenced decisions</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h2>⚠️ EMERGENCY RESPONSE LIMITATION</h2>
+                    <p><strong>NO EMERGENCY RESPONSE OBLIGATION:</strong> Independent Restoration has no obligation to provide emergency response services through this Forum. Emergency situations require immediate professional intervention.</p>
+                    <p><strong>RESPONSE TIME DISCLAIMER:</strong> Any response time estimates provided are educational only and do not constitute service guarantees or professional response commitments.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. User Responsibilities and Obligations</h2>
+
+                <h3>3.1 Emergency Situations</h3>
+                <p>Users experiencing emergency restoration situations must:</p>
+                <ul>
+                    <li>Contact licensed professionals immediately: (703) 844-4204</li>
+                    <li>Not delay emergency response based on Forum discussions</li>
+                    <li>Prioritize safety and professional assessment over Forum advice</li>
+                    <li>Understand that Forum discussions cannot replace immediate professional action</li>
+                </ul>
+
+                <h3>3.2 Independent Verification</h3>
+                <p>Users are responsible for independently verifying all information obtained through the Forum, including:</p>
+                <ul>
+                    <li>Contractor licensing and insurance requirements</li>
+                    <li>Local building codes and regulations</li>
+                    <li>Insurance policy terms and coverage details</li>
+                    <li>Professional qualification requirements</li>
+                    <li>Emergency response protocols</li>
+                </ul>
+
+                <h3>3.3 Appropriate Use</h3>
+                <p>Users agree to use the Forum appropriately by:</p>
+                <ul>
+                    <li>Providing accurate information in submissions</li>
+                    <li>Respecting the educational nature of discussions</li>
+                    <li>Not seeking emergency response through Forum channels</li>
+                    <li>Understanding liability limitations before participation</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Insurance and Legal Disclaimers</h2>
+
+                <h3>4.1 Insurance Advice Limitations</h3>
+                <p>Forum discussions about insurance topics are educational only and do not constitute:</p>
+                <ul>
+                    <li>Insurance advice or representation</li>
+                    <li>Policy interpretation or coverage analysis</li>
+                    <li>Claims advocacy or professional representation</li>
+                    <li>Legal advice regarding insurance disputes</li>
+                </ul>
+
+                <p>Insurance matters require consultation with qualified insurance professionals and legal counsel when disputes arise.</p>
+
+                <h3>4.2 Legal Representation Disclaimer</h3>
+                <p>No content in this Forum constitutes legal advice or creates an attorney-client relationship. Legal matters require consultation with qualified legal counsel.</p>
+
+                <h3>4.3 Regulatory Compliance</h3>
+                <p>Users are responsible for compliance with all local, state, and federal regulations applicable to their restoration situations. Forum information does not substitute for professional regulatory guidance.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Expert Response System</h2>
+
+                <h3>5.1 Educational Expert Responses</h3>
+                <p>Expert responses provided through the Forum are educational in nature and do not constitute professional consultation, service recommendations, or emergency response services.</p>
+
+                <h3>5.2 Response Time Expectations</h3>
+                <p>Response time categories (Emergency, Urgent, Standard) are for educational prioritization only and do not constitute service level agreements or professional response commitments.</p>
+
+                <div class="highlight-box">
+                    <h3>Emergency Response Protocol</h3>
+                    <p>Forum questions marked as "Emergency" will trigger notification protocols, but users experiencing actual emergencies must contact professional services directly: (703) 844-4204.</p>
+                </div>
+
+                <h3>5.3 Expert Qualification Disclaimer</h3>
+                <p>Expert responses are provided for educational purposes. Users must independently verify expert qualifications and seek appropriate professional consultation for their specific situations.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Privacy and Data Collection</h2>
+
+                <h3>6.1 Information Collection</h3>
+                <p>The Forum collects user information for educational purposes and emergency notification protocols. See our <a href="privacy-policy.html" style="color: #1e40af; text-decoration: underline;">Privacy Policy</a> for detailed information handling practices.</p>
+
+                <h3>6.2 GoHighLevel Integration</h3>
+                <p>Forum submissions are processed through GoHighLevel (GHL) systems for contact management and notification workflows. Users consent to this processing by using the Forum.</p>
+
+                <h3>6.3 Emergency Contact Information</h3>
+                <p>Contact information provided for emergency-classified submissions may be used for immediate response coordination and follow-up educational resources.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Content and Intellectual Property</h2>
+
+                <h3>7.1 User-Generated Content</h3>
+                <p>Users retain ownership of their submitted questions but grant Independent Restoration license to use submissions for educational purposes and Forum operation.</p>
+
+                <h3>7.2 Authority Reversal Framework™</h3>
+                <p>The Authority Reversal Framework™ is proprietary educational content. Users may reference framework concepts for personal education but may not reproduce framework materials without permission.</p>
+
+                <h3>7.3 Forum Content Usage</h3>
+                <p>Forum content may be used for personal educational purposes. Commercial use or reproduction requires written permission.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Modification and Termination</h2>
+
+                <h3>8.1 Terms Modification</h3>
+                <p>These Terms may be modified at any time. Continued use of the Forum constitutes acceptance of modified Terms. Users are responsible for reviewing Terms periodically.</p>
+
+                <h3>8.2 Service Modification</h3>
+                <p>Independent Restoration reserves the right to modify, suspend, or discontinue Forum services at any time without notice.</p>
+
+                <h3>8.3 User Access Termination</h3>
+                <p>Independent Restoration may restrict or terminate user access for inappropriate use, emergency misuse, or Terms violations.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Governing Law and Jurisdiction</h2>
+
+                <h3>9.1 Virginia Law</h3>
+                <p>These Terms are governed by Virginia state law without regard to conflict of law principles.</p>
+
+                <h3>9.2 Jurisdiction</h3>
+                <p>Any disputes arising from Forum use shall be resolved in Virginia state courts with jurisdiction over Northern Virginia.</p>
+
+                <h3>9.3 Severability</h3>
+                <p>If any provision of these Terms is deemed invalid, the remaining provisions remain in full force and effect.</p>
+            </div>
+
+            <div class="contact-section">
+                <h3>Emergency Contact Information</h3>
+                <p>For emergency restoration situations requiring immediate professional response:</p>
+                <a href="tel:703-844-4204" class="contact-link">📞 (703) 844-4204</a>
+                <p style="margin-top: 15px;">For non-emergency questions about these Terms:</p>
+                <a href="mailto:info@bizinsiderpro.com" class="contact-link">📧 info@bizinsiderpro.com</a>
+            </div>
+
+            <div class="last-updated">
+                <p><strong>Last Updated:</strong> September 25, 2024</p>
+                <p><strong>Effective Date:</strong> September 25, 2024</p>
+            </div>
+
+            <div class="back-to-forum">
+                <a href="restoration-forum.html">← Back to Forum</a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1a1a1a; color: white; padding: 40px 0; margin-top: 40px;">
+        <div class="container">
+            <div style="text-align: center;">
+                <p style="color: #9ca3af; margin: 0;">&copy; 2024 Northern Virginia Restoration Forum. Terms of Use for educational resource.</p>
+                <p style="color: #dc2626; font-weight: 700; margin: 10px 0 0 0;">24/7 Emergency: (703) 844-4204</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,266 @@
+{
+  "ghl_forum_workflows": {
+    "emergency_workflow": {
+      "trigger": {
+        "type": "contact_created",
+        "conditions": {
+          "tags": ["urgency-emergency"],
+          "source": "Forum Question Submission"
+        }
+      },
+      "actions": [
+        {
+          "type": "send_sms",
+          "delay": "0 minutes",
+          "recipient": "+17038444204",
+          "message": "🚨 EMERGENCY FORUM QUESTION: {{contact.customFields.question_title}} from {{contact.customFields.location}}. Requires immediate response. Contact: {{contact.phone}} {{contact.email}}"
+        },
+        {
+          "type": "send_email",
+          "delay": "0 minutes",
+          "recipient": "info@bizinsiderpro.com",
+          "subject": "EMERGENCY FORUM QUESTION - Immediate Response Required",
+          "template": "emergency_forum_email",
+          "data": {
+            "question_title": "{{contact.customFields.question_title}}",
+            "location": "{{contact.customFields.location}}",
+            "category": "{{contact.customFields.category}}",
+            "user_name": "{{contact.firstName}} {{contact.lastName}}",
+            "email": "{{contact.email}}",
+            "phone": "{{contact.phone}}",
+            "question_details": "{{contact.customFields.question_details}}",
+            "submitted_date": "{{contact.customFields.submitted_date}}"
+          }
+        },
+        {
+          "type": "create_task",
+          "delay": "0 minutes",
+          "assignee": "restoration-expert-user-id",
+          "title": "EMERGENCY: Respond to forum question within 2 hours",
+          "description": "{{contact.customFields.question_title}} - {{contact.customFields.location}}",
+          "due_date": "+2 hours",
+          "priority": "urgent"
+        },
+        {
+          "type": "create_opportunity",
+          "delay": "0 minutes",
+          "pipeline": "forum-inquiries-pipeline",
+          "stage": "emergency-response",
+          "value": 7500,
+          "name": "EMERGENCY Forum: {{contact.customFields.question_title}}",
+          "source": "Forum Emergency Question"
+        },
+        {
+          "type": "add_tags",
+          "tags": ["emergency-notified", "priority-response", "forum-emergency"]
+        }
+      ]
+    },
+    "urgent_workflow": {
+      "trigger": {
+        "type": "contact_created",
+        "conditions": {
+          "tags": ["urgency-urgent"],
+          "source": "Forum Question Submission"
+        }
+      },
+      "actions": [
+        {
+          "type": "send_sms",
+          "delay": "15 minutes",
+          "recipient": "+17038444204",
+          "message": "⏰ URGENT FORUM QUESTION: {{contact.customFields.question_title}} from {{contact.customFields.location}}. Response needed within 24 hours. Contact: {{contact.phone}} {{contact.email}}"
+        },
+        {
+          "type": "send_email",
+          "delay": "0 minutes",
+          "recipient": "info@bizinsiderpro.com",
+          "subject": "URGENT FORUM QUESTION - 24 Hour Response Window",
+          "template": "urgent_forum_email",
+          "data": {
+            "question_title": "{{contact.customFields.question_title}}",
+            "location": "{{contact.customFields.location}}",
+            "category": "{{contact.customFields.category}}",
+            "user_name": "{{contact.firstName}} {{contact.lastName}}",
+            "email": "{{contact.email}}",
+            "phone": "{{contact.phone}}",
+            "question_details": "{{contact.customFields.question_details}}",
+            "submitted_date": "{{contact.customFields.submitted_date}}"
+          }
+        },
+        {
+          "type": "create_task",
+          "delay": "0 minutes",
+          "assignee": "restoration-expert-user-id",
+          "title": "URGENT: Respond to forum question within 24 hours",
+          "description": "{{contact.customFields.question_title}} - {{contact.customFields.location}}",
+          "due_date": "+24 hours",
+          "priority": "normal"
+        },
+        {
+          "type": "create_opportunity",
+          "delay": "0 minutes",
+          "pipeline": "forum-inquiries-pipeline",
+          "stage": "urgent-response",
+          "value": 5000,
+          "name": "URGENT Forum: {{contact.customFields.question_title}}",
+          "source": "Forum Urgent Question"
+        },
+        {
+          "type": "add_tags",
+          "tags": ["urgent-notified", "24hr-response", "forum-urgent"]
+        }
+      ]
+    },
+    "standard_workflow": {
+      "trigger": {
+        "type": "contact_created",
+        "conditions": {
+          "tags": ["urgency-standard"],
+          "source": "Forum Question Submission"
+        }
+      },
+      "actions": [
+        {
+          "type": "add_to_digest",
+          "digest_type": "daily_forum_questions",
+          "recipient": "ron@bizinsiderpro.com"
+        },
+        {
+          "type": "create_task",
+          "delay": "0 minutes",
+          "assignee": "restoration-expert-user-id",
+          "title": "Review and respond to standard forum questions",
+          "description": "Weekly forum question review - {{contact.customFields.question_title}}",
+          "due_date": "+1 business_day",
+          "priority": "low"
+        },
+        {
+          "type": "create_opportunity",
+          "delay": "0 minutes",
+          "pipeline": "forum-inquiries-pipeline",
+          "stage": "standard-response",
+          "value": 3000,
+          "name": "Standard Forum: {{contact.customFields.question_title}}",
+          "source": "Forum Standard Question"
+        },
+        {
+          "type": "add_tags",
+          "tags": ["standard-response", "weekly-review", "forum-standard"]
+        }
+      ]
+    },
+    "follow_up_workflows": {
+      "emergency_follow_up": {
+        "trigger": {
+          "type": "task_overdue",
+          "conditions": {
+            "task_title_contains": "EMERGENCY: Respond to forum question"
+          }
+        },
+        "actions": [
+          {
+            "type": "send_sms",
+            "delay": "0 minutes",
+            "recipient": "+17038444204",
+            "message": "🚨 OVERDUE EMERGENCY FORUM RESPONSE: {{contact.customFields.question_title}} - Response was due 2 hours ago!"
+          },
+          {
+            "type": "create_task",
+            "assignee": "backup-expert-user-id",
+            "title": "ESCALATED EMERGENCY: Forum response overdue",
+            "priority": "critical"
+          }
+        ]
+      },
+      "response_tracking": {
+        "trigger": {
+          "type": "email_replied",
+          "conditions": {
+            "email_subject_contains": "FORUM QUESTION"
+          }
+        },
+        "actions": [
+          {
+            "type": "update_opportunity",
+            "stage": "responded",
+            "add_note": "Expert response sent to forum question"
+          },
+          {
+            "type": "add_tags",
+            "tags": ["response-sent", "expert-responded"]
+          }
+        ]
+      }
+    }
+  },
+  "email_templates": {
+    "emergency_forum_email": {
+      "subject": "EMERGENCY FORUM QUESTION - Immediate Response Required",
+      "html_body": "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Emergency Forum Question</title></head><body style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'><div style='max-width: 600px; margin: 0 auto; padding: 20px;'><div style='background: #dc2626; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;'><h1 style='margin: 0; font-size: 24px;'>🚨 EMERGENCY FORUM QUESTION</h1><p style='margin: 10px 0 0 0; font-size: 16px;'>IMMEDIATE RESPONSE REQUIRED</p></div><div style='background: #f8f9fa; padding: 30px; border-radius: 0 0 8px 8px; border: 2px solid #dc2626; border-top: none;'><h2 style='color: #dc2626; margin: 0 0 20px 0;'>{{question_title}}</h2><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><strong>Location:</strong> {{location}}<br><strong>Category:</strong> {{category}}<br><strong>Submitted:</strong> {{submitted_date}}</div><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><h3>Contact Information:</h3><strong>Name:</strong> {{user_name}}<br><strong>Email:</strong> {{email}}<br><strong>Phone:</strong> {{phone}}</div><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><h3>Question Details:</h3><p>{{question_details}}</p></div><div style='background: #fee2e2; border: 2px solid #dc2626; padding: 15px; border-radius: 4px; margin: 20px 0; text-align: center;'><h3 style='color: #dc2626; margin: 0 0 10px 0;'>REQUIRED ACTION</h3><p style='margin: 0; font-weight: bold;'>Response needed within 2 hours</p><p style='margin: 5px 0 0 0;'>This is marked as an EMERGENCY restoration inquiry</p></div><div style='text-align: center; margin: 20px 0;'><a href='tel:{{phone}}' style='background: #dc2626; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;'>📞 Call {{phone}}</a></div></div></div></body></html>",
+      "text_body": "EMERGENCY FORUM QUESTION - IMMEDIATE RESPONSE REQUIRED\n\nQuestion: {{question_title}}\nLocation: {{location}}\nCategory: {{category}}\nSubmitted: {{submitted_date}}\n\nContact Information:\nName: {{user_name}}\nEmail: {{email}}\nPhone: {{phone}}\n\nQuestion Details:\n{{question_details}}\n\nREQUIRED ACTION: Response needed within 2 hours\nThis is marked as an EMERGENCY restoration inquiry.\n\nDirect Contact: Call {{phone}}"
+    },
+    "urgent_forum_email": {
+      "subject": "URGENT FORUM QUESTION - 24 Hour Response Window",
+      "html_body": "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Urgent Forum Question</title></head><body style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'><div style='max-width: 600px; margin: 0 auto; padding: 20px;'><div style='background: #f59e0b; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;'><h1 style='margin: 0; font-size: 24px;'>⏰ URGENT FORUM QUESTION</h1><p style='margin: 10px 0 0 0; font-size: 16px;'>24 Hour Response Window</p></div><div style='background: #f8f9fa; padding: 30px; border-radius: 0 0 8px 8px; border: 2px solid #f59e0b; border-top: none;'><h2 style='color: #f59e0b; margin: 0 0 20px 0;'>{{question_title}}</h2><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><strong>Location:</strong> {{location}}<br><strong>Category:</strong> {{category}}<br><strong>Submitted:</strong> {{submitted_date}}</div><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><h3>Contact Information:</h3><strong>Name:</strong> {{user_name}}<br><strong>Email:</strong> {{email}}<br><strong>Phone:</strong> {{phone}}</div><div style='background: white; padding: 15px; border-radius: 4px; margin: 15px 0;'><h3>Question Details:</h3><p>{{question_details}}</p></div><div style='background: #fef3c7; border: 2px solid #f59e0b; padding: 15px; border-radius: 4px; margin: 20px 0; text-align: center;'><h3 style='color: #f59e0b; margin: 0 0 10px 0;'>RESPONSE TIMELINE</h3><p style='margin: 0; font-weight: bold;'>Response needed within 24 hours</p><p style='margin: 5px 0 0 0;'>Urgent restoration inquiry requiring priority attention</p></div></div></div></body></html>",
+      "text_body": "URGENT FORUM QUESTION - 24 Hour Response Window\n\nQuestion: {{question_title}}\nLocation: {{location}}\nCategory: {{category}}\nSubmitted: {{submitted_date}}\n\nContact Information:\nName: {{user_name}}\nEmail: {{email}}\nPhone: {{phone}}\n\nQuestion Details:\n{{question_details}}\n\nRESPONSE TIMELINE: Response needed within 24 hours\nUrgent restoration inquiry requiring priority attention."
+    }
+  },
+  "webhook_configuration": {
+    "endpoint": "https://hooks.gohighlevel.com/YOUR_WEBHOOK_ID",
+    "authentication": {
+      "type": "api_key",
+      "header": "Authorization",
+      "value": "Bearer YOUR_GHL_API_KEY"
+    },
+    "payload_mapping": {
+      "contact_data": {
+        "firstName": "{{form.userName.split(' ')[0]}}",
+        "lastName": "{{form.userName.split(' ').slice(1).join(' ')}}",
+        "email": "{{form.email}}",
+        "phone": "{{form.phone}}",
+        "source": "Forum Question Submission",
+        "tags": [
+          "forum-user",
+          "forum-{{form.category}}",
+          "urgency-{{form.urgency}}",
+          "location-{{form.location.toLowerCase().replace(/[^a-z]/g, '-')}}"
+        ],
+        "customFields": {
+          "question_title": "{{form.questionTitle}}",
+          "question_details": "{{form.questionDetails}}",
+          "category": "{{form.category}}",
+          "urgency_level": "{{form.urgency}}",
+          "location": "{{form.location}}",
+          "submitted_date": "{{timestamp}}",
+          "form_source": "restoration-forum"
+        }
+      }
+    }
+  },
+  "analytics_tracking": {
+    "form_submission_events": [
+      {
+        "event": "forum_question_submitted",
+        "properties": {
+          "category": "{{form.category}}",
+          "urgency": "{{form.urgency}}",
+          "location": "{{form.location}}",
+          "question_length": "{{form.questionDetails.length}}"
+        }
+      }
+    ],
+    "conversion_tracking": {
+      "emergency_to_call": {
+        "event": "emergency_call_conversion",
+        "trigger": "phone_number_clicked",
+        "context": "emergency_form_submission"
+      },
+      "form_to_assessment": {
+        "event": "assessment_scheduled",
+        "trigger": "opportunity_created",
+        "pipeline": "forum-inquiries-pipeline"
+      }
+    }
+  }
+}
