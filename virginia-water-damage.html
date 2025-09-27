@@ -14,7 +14,31 @@
 
   <!-- Emergency Page Styling -->
   <link rel="stylesheet" href="emergency_page_modern.css">
-  <link rel="stylesheet" href="blue_text_nuclear_fix.css">
+  <link rel="stylesheet" href="blue_text_nuclear_fix.css?v=20250927">
+
+  <!-- EMERGENCY CONTRAST FIX - Inline backup to force immediate visibility -->
+  <style>
+    /* Force dark text on all light backgrounds - IMMEDIATE FIX */
+    .community-knowledge-hub *,
+    .expert-insight *,
+    .homeowner-stories *,
+    .expert-insight ul li,
+    .expert-insight ul li *,
+    div[style*="background: white"] *,
+    div[style*="background: #ffffff"] *,
+    div[style*="background: #fef3c7"] *,
+    ul[style*="color: #1f2937"] li,
+    ul[style*="color: #1f2937"] li * {
+      color: #1f2937 !important;
+    }
+
+    .community-knowledge-hub h2,
+    .community-knowledge-hub h3,
+    .expert-insight h3,
+    .homeowner-stories h3 {
+      color: #dc2626 !important;
+    }
+  </style>
 
   <!-- Schema Markup for Emergency Services -->
   <script type="application/ld+json">

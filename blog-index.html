@@ -408,7 +408,20 @@
         }
     </style>
   <link rel="stylesheet" href="seo_styles.css">
-<link rel="stylesheet" href="blue_text_nuclear_fix.css">
+<link rel="stylesheet" href="blue_text_nuclear_fix.css?v=20250927">
+
+  <!-- EMERGENCY CONTRAST FIX - Inline backup to force immediate visibility -->
+  <style>
+    /* Force dark text on all light backgrounds - IMMEDIATE FIX */
+    div[style*="background: #fef3c7"],
+    div[style*="background: #fef3c7"] *,
+    .blog-post *,
+    .blog-content *,
+    .authority-framework *,
+    section * {
+      color: #1f2937 !important;
+    }
+  </style>
 </head>
 <body>
     <!-- Header -->
