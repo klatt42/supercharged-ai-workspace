@@ -111,6 +111,27 @@ a[href*="restoration"]:hover {
   color: #ffffff !important;
 }
 
+/* COMPREHENSIVE TEXT CONTRAST OVERRIDES */
+/* Force dark text on all white/light backgrounds */
+div[style*="background: white"],
+div[style*="background: white"] *,
+div[style*="background: #ffffff"],
+div[style*="background: #ffffff"] *,
+div[style*="background: #f8fafc"],
+div[style*="background: #f8fafc"] *,
+section[style*="background: rgba(255,255,255"],
+section[style*="background: rgba(255,255,255"] *,
+.expert-insight,
+.expert-insight *,
+.homeowner-stories,
+.homeowner-stories *,
+ul li,
+ul li *,
+ol li,
+ol li * {
+  color: #1f2937 !important; /* Force dark text everywhere on light backgrounds */
+}
+
 /* Target specific text content that might be blue */
 body *:contains("water damage restoration"),
 body *:contains("fire damage restoration"),
@@ -387,7 +408,11 @@ h1, h2, h3 {
 .homeowner-stories,
 .homeowner-stories *,
 .knowledge-content,
-.knowledge-content * {
+.knowledge-content *,
+.expert-insight ul,
+.expert-insight ul *,
+.expert-insight li,
+.expert-insight li * {
   color: #1f2937 !important; /* Dark text for light backgrounds */
 }
 
@@ -400,8 +425,17 @@ h1, h2, h3 {
 
 .community-knowledge-hub strong,
 .expert-insight strong,
-.homeowner-stories strong {
+.homeowner-stories strong,
+.expert-insight li strong {
   color: #1f2937 !important; /* Dark text for strong elements */
+}
+
+/* Specific fix for list items in expert insights */
+.expert-insight ul li,
+.expert-insight ul li strong,
+ul[style*="color: #1f2937"] li,
+ul[style*="color: #1f2937"] li strong {
+  color: #1f2937 !important; /* Ensure all list content is dark */
 }
 
 .story-highlight {
@@ -409,8 +443,24 @@ h1, h2, h3 {
 }
 
 .authority-message strong,
+div[style*="background: #fef3c7"],
+div[style*="background: #fef3c7"] *,
 div[style*="background: #fef3c7"] strong {
   color: #1f2937 !important; /* Dark text in yellow boxes */
+}
+
+/* BLOG INDEX PAGE FIXES */
+.blog-post,
+.blog-post *,
+.blog-content,
+.blog-content *,
+.authority-framework,
+.authority-framework *,
+html body div[style*="background: #fef3c7"],
+html body div[style*="background: #fef3c7"] *,
+html body section div[style*="background: #fef3c7"],
+html body section div[style*="background: #fef3c7"] * {
+  color: #1f2937 !important; /* Dark text for blog content and yellow boxes */
 }
 
 /* EMERGENCY CHAT WIDGET CONTRAST FIXES */
