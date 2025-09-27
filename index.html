@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Exercise YOUR authority to choose restoration experts across Virginia (703-844-4204), Maryland (301-900-5171), Washington DC (202-796-7422). Complete tri-state network with 176+ pages, forums, and 24/7 emergency response."
+    <meta name="description" content="Exercise YOUR authority to choose restoration experts across Virginia (703-844-4204), Maryland (301-900-5171), Washington DC (202-796-7422). Complete tri-state network with 24/7 emergency response."
 <meta name="keywords" content="restoration authority, emergency restoration, water damage, fire damage, mold remediation, Virginia, Maryland, Washington DC, Authority Reversal Framework, independent contractor choice">
     <title>🎯 Choose YOUR Restoration Expert | Don't Let Insurance Decide | VA MD DC</title>
     
@@ -1740,7 +1740,7 @@
                     🎯 TAKE CONTROL OF YOUR EMERGENCY
                 </h2>
                 <p style="color: #ffffff; font-size: clamp(18px, 4vw, 24px); margin: 0; font-weight: 600; line-height: 1.4; text-align: center;">
-                    <strong style="color: #ffd700;">176+ Specialized Pages</strong> • <strong style="color: #ffd700;">3 Regional Forums</strong> • <strong style="color: #ffd700;">24/7 Emergency Response</strong><br>
+                    <strong style="color: #ffd700;">24/7 Emergency Response</strong> • <strong style="color: #ffd700;">Tri-State Coverage</strong> • <strong style="color: #ffd700;">Expert Authority</strong><br>
                     <span style="opacity: 0.9;">Don't let insurance companies choose for you — choose YOUR restoration expert.</span>
                 </p>
             </div>
@@ -2612,7 +2612,116 @@
     </div>
   </div>
 </footer>
-<script src="blue_text_js_fix.js"></script>
-<script src="corrected_emergency_services.js"></script>
+<!-- Disabled old custom chatbot -->
+<!-- <script src="blue_text_js_fix.js"></script> -->
+<!-- <script src="corrected_emergency_services.js"></script> -->
+
+<!-- Real CopilotKit Emergency Restoration Chatbot -->
+<script src="copilotkit-dist/copilotkit-chat.js"></script>
+<script>
+document.body.dataset.copilotApiKey = "ck_pub_1dd96dab101515b083d2be2404c23bb0";
+// Using CopilotKit Cloud - no local backend needed
+// document.body.dataset.copilotBackend = "http://localhost:8007";
+</script>
+
+<!-- Custom chatbot replaced with CopilotKit -->
+    // Override chatbot tracking to integrate with existing GA
+    if (window.restorationChatbot) {
+        const originalTrackEvent = window.restorationChatbot.trackEvent;
+        window.restorationChatbot.trackEvent = function(eventName, data = {}) {
+            // Call original tracking
+            originalTrackEvent.call(this, eventName, data);
+
+            // Enhanced tracking for restoration business
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'restoration_chatbot_' + eventName, {
+                    'event_category': 'emergency_response',
+                    'event_label': 'lead_generation',
+                    'custom_map.framework': 'authority_reversal_framework',
+                    'custom_map.industry': 'water_damage_restoration',
+                    'value': eventName === 'lead_captured' ? 100 : 1,
+                    ...data
+                });
+            }
+
+            // Enhanced Facebook Pixel tracking
+            if (typeof fbq !== 'undefined') {
+                if (eventName === 'lead_captured') {
+                    fbq('track', 'Lead');
+                } else if (eventName === 'chat_opened') {
+                    fbq('track', 'InitiateCheckout');
+                }
+
+                fbq('trackCustom', 'RestorationChatbot' + eventName, {
+                    content_category: 'emergency_restoration',
+                    content_name: 'authority_reversal_lead_capture',
+                    ...data
+                });
+            }
+        };
+    }
+});
+
+// Auto-open chatbot for emergency URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const emergencyTriggers = ['emergency', 'urgent', 'flood', 'fire', 'water', 'mold', 'damage'];
+
+for (const trigger of emergencyTriggers) {
+    if (urlParams.has(trigger) || window.location.hash.includes(trigger)) {
+        setTimeout(() => {
+            if (window.openRestorationChat) {
+                window.openRestorationChat();
+            }
+        }, 3000); // Delay to ensure page load
+        break;
+    }
+}
+
+// Add chatbot trigger buttons to existing content
+document.addEventListener('DOMContentLoaded', function() {
+    // Add "Chat Now" buttons to emergency phone number sections
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+        if (link.textContent.includes('703-844-4204') ||
+            link.textContent.includes('301-900-5171') ||
+            link.textContent.includes('202-796-7422')) {
+
+            const chatButton = document.createElement('button');
+            chatButton.textContent = '💬 Chat Now';
+            chatButton.style.cssText = `
+                background: #dc2626;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 6px;
+                font-size: 12px;
+                font-weight: 600;
+                margin-left: 8px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            `;
+
+            chatButton.onmouseover = () => {
+                chatButton.style.background = '#b91c1c';
+                chatButton.style.transform = 'scale(1.05)';
+            };
+
+            chatButton.onmouseout = () => {
+                chatButton.style.background = '#dc2626';
+                chatButton.style.transform = 'scale(1)';
+            };
+
+            chatButton.onclick = () => {
+                if (window.openRestorationChat) {
+                    window.openRestorationChat();
+                }
+            };
+
+            link.parentNode.insertBefore(chatButton, link.nextSibling);
+        }
+    });
+});
+</script>
+
 </body>
 </html>
