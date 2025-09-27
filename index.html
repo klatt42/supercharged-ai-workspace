@@ -2616,7 +2616,7 @@
 <!-- <script src="blue_text_js_fix.js"></script> -->
 <!-- <script src="corrected_emergency_services.js"></script> -->
 
-<!-- Emergency AI Assistant Button -->
+<!-- Emergency AI Assistant - Add before </body> on each page -->
 <div id="emergency-ai-button" style="
   position: fixed;
   bottom: 20px;
@@ -2638,7 +2638,6 @@
 
 <script>
 function openEmergencyChat() {
-  // Create an overlay chat interface
   const overlay = document.createElement('div');
   overlay.id = 'emergency-chat-overlay';
   overlay.style.cssText = `
@@ -2691,12 +2690,12 @@ function openEmergencyChat() {
   `;
   emergencyInfo.innerHTML = `
     <div style="font-weight: 600; color: #dc2626; margin-bottom: 10px;">EMERGENCY PHONE NUMBERS</div>
-    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
-      <div><strong>Virginia:</strong> <a href="tel:703-844-4204" style="color: #dc2626;">703-844-4204</a></div>
-      <div><strong>Maryland:</strong> <a href="tel:301-900-5171" style="color: #dc2626;">301-900-5171</a></div>
-      <div><strong>DC:</strong> <a href="tel:202-796-7422" style="color: #dc2626;">202-796-7422</a></div>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px; color: #1f2937;">
+      <div><strong style="color: #1f2937;">Virginia:</strong> <a href="tel:703-844-4204" style="color: #dc2626; font-weight: 600;">703-844-4204</a></div>
+      <div><strong style="color: #1f2937;">Maryland:</strong> <a href="tel:301-900-5171" style="color: #dc2626; font-weight: 600;">301-900-5171</a></div>
+      <div><strong style="color: #1f2937;">DC:</strong> <a href="tel:202-796-7422" style="color: #dc2626; font-weight: 600;">202-796-7422</a></div>
     </div>
-    <div style="margin-top: 10px; font-size: 14px; color: #7f1d1d;">⏱️ Response Time: 60-90 minutes</div>
+    <div style="margin-top: 10px; font-size: 14px; color: #1f2937; font-weight: 500;">⏱️ Response Time: 60-90 minutes</div>
   `;
 
   const chatContent = document.createElement('div');
@@ -2707,14 +2706,14 @@ function openEmergencyChat() {
     overflow-y: auto;
   `;
   chatContent.innerHTML = `
-    <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-      <strong>Hi! I'm your Emergency Restoration Assistant.</strong><br><br>
-      I'm here to help with:<br>
-      • Water damage emergencies<br>
-      • Fire and smoke damage<br>
-      • Mold remediation<br>
-      • Storm damage repair<br><br>
-      <strong>What type of emergency are you experiencing?</strong>
+    <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 15px; color: #1f2937; border: 1px solid #e5e7eb;">
+      <strong style="color: #1f2937;">Hi! I'm your Emergency Restoration Assistant.</strong><br><br>
+      <span style="color: #1f2937;">I'm here to help with:</span><br>
+      <span style="color: #1f2937;">• Water damage emergencies</span><br>
+      <span style="color: #1f2937;">• Fire and smoke damage</span><br>
+      <span style="color: #1f2937;">• Mold remediation</span><br>
+      <span style="color: #1f2937;">• Storm damage repair</span><br><br>
+      <strong style="color: #1f2937;">What type of emergency are you experiencing?</strong>
     </div>
     <div id="chat-messages"></div>
     <div style="display: flex; gap: 10px; margin-top: 15px;">
@@ -2730,7 +2729,6 @@ function openEmergencyChat() {
   overlay.appendChild(chatContainer);
   document.body.appendChild(overlay);
 
-  // Close on overlay click
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) {
       closeEmergencyChat();
@@ -2748,13 +2746,11 @@ function closeEmergencyChat() {
 function quickResponse(query) {
   const messagesDiv = document.getElementById('chat-messages');
 
-  // Add user message
   const userMsg = document.createElement('div');
   userMsg.style.cssText = 'background: #dc2626; color: white; padding: 10px; border-radius: 8px; margin-bottom: 10px; text-align: right;';
   userMsg.textContent = query;
   messagesDiv.appendChild(userMsg);
 
-  // Scroll after user message
   setTimeout(() => {
     const chatContentArea = document.getElementById('chat-content-area');
     if (chatContentArea) {
@@ -2765,7 +2761,6 @@ function quickResponse(query) {
     }
   }, 50);
 
-  // Add assistant response
   setTimeout(() => {
     const assistantMsg = document.createElement('div');
     assistantMsg.style.cssText = 'background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 10px; color: #1f2937; border: 1px solid #e5e7eb;';
@@ -2812,7 +2807,6 @@ function quickResponse(query) {
     assistantMsg.innerHTML = response;
     messagesDiv.appendChild(assistantMsg);
 
-    // Smooth scroll to the new message
     setTimeout(() => {
       const chatContentArea = document.getElementById('chat-content-area');
       if (chatContentArea) {
@@ -2822,7 +2816,6 @@ function quickResponse(query) {
         });
       }
 
-      // Also scroll the messages div
       messagesDiv.scrollTo({
         top: messagesDiv.scrollHeight,
         behavior: 'smooth'
@@ -2831,7 +2824,6 @@ function quickResponse(query) {
   }, 1000);
 }
 
-// Add hover effects
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.getElementById('emergency-ai-button');
 
@@ -2924,12 +2916,12 @@ function openEmergencyChat() {
   `;
   emergencyInfo.innerHTML = `
     <div style="font-weight: 600; color: #dc2626; margin-bottom: 10px;">EMERGENCY PHONE NUMBERS</div>
-    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
-      <div><strong>Virginia:</strong> <a href="tel:703-844-4204" style="color: #dc2626;">703-844-4204</a></div>
-      <div><strong>Maryland:</strong> <a href="tel:301-900-5171" style="color: #dc2626;">301-900-5171</a></div>
-      <div><strong>DC:</strong> <a href="tel:202-796-7422" style="color: #dc2626;">202-796-7422</a></div>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px; color: #1f2937;">
+      <div><strong style="color: #1f2937;">Virginia:</strong> <a href="tel:703-844-4204" style="color: #dc2626; font-weight: 600;">703-844-4204</a></div>
+      <div><strong style="color: #1f2937;">Maryland:</strong> <a href="tel:301-900-5171" style="color: #dc2626; font-weight: 600;">301-900-5171</a></div>
+      <div><strong style="color: #1f2937;">DC:</strong> <a href="tel:202-796-7422" style="color: #dc2626; font-weight: 600;">202-796-7422</a></div>
     </div>
-    <div style="margin-top: 10px; font-size: 14px; color: #7f1d1d;">⏱️ Response Time: 60-90 minutes</div>
+    <div style="margin-top: 10px; font-size: 14px; color: #1f2937; font-weight: 500;">⏱️ Response Time: 60-90 minutes</div>
   `;
 
   const chatContent = document.createElement('div');
@@ -2940,14 +2932,14 @@ function openEmergencyChat() {
     overflow-y: auto;
   `;
   chatContent.innerHTML = `
-    <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-      <strong>Hi! I'm your Emergency Restoration Assistant.</strong><br><br>
-      I'm here to help with:<br>
-      • Water damage emergencies<br>
-      • Fire and smoke damage<br>
-      • Mold remediation<br>
-      • Storm damage repair<br><br>
-      <strong>What type of emergency are you experiencing?</strong>
+    <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 15px; color: #1f2937; border: 1px solid #e5e7eb;">
+      <strong style="color: #1f2937;">Hi! I'm your Emergency Restoration Assistant.</strong><br><br>
+      <span style="color: #1f2937;">I'm here to help with:</span><br>
+      <span style="color: #1f2937;">• Water damage emergencies</span><br>
+      <span style="color: #1f2937;">• Fire and smoke damage</span><br>
+      <span style="color: #1f2937;">• Mold remediation</span><br>
+      <span style="color: #1f2937;">• Storm damage repair</span><br><br>
+      <strong style="color: #1f2937;">What type of emergency are you experiencing?</strong>
     </div>
     <div id="chat-messages"></div>
     <div style="display: flex; gap: 10px; margin-top: 15px;">
