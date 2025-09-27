@@ -244,36 +244,43 @@ a[href^="tel:"] {
   display: none !important;
 }
 
-/* FIX YELLOW TEXT VISIBILITY ISSUES */
+/* ELIMINATE YELLOW TEXT - REPLACE WITH HIGH CONTRAST RED */
 .small-text,
 .disclaimer-text,
 .update-text,
 *[style*="color: yellow"],
 *[style*="color: #ffeb3b"],
+*[style*="color: #ffd700"],
 .text-yellow {
-  color: #ffffff !important;
-  background: rgba(255, 193, 7, 0.2) !important;
+  color: #dc2626 !important; /* Red instead of yellow */
+  background: rgba(255,255,255,0.9) !important;
   padding: 4px 8px !important;
   border-radius: 4px !important;
-  font-size: 16px !important; /* Increase from small text */
-  font-weight: 600 !important;
-  border: 1px solid rgba(255, 193, 7, 0.5) !important;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  border: 2px solid #dc2626 !important;
+  text-shadow: none !important;
 }
 
-/* Specifically target any yellow informational text */
+/* Specifically target any yellow informational text - CONVERT TO RED */
 p[style*="color: yellow"],
 span[style*="color: yellow"],
-div[style*="color: yellow"] {
-  color: #ffffff !important;
-  background: #ffc107 !important;
+div[style*="color: yellow"],
+p[style*="color: #ffd700"],
+span[style*="color: #ffd700"],
+div[style*="color: #ffd700"],
+p[style*="color: #ffeb3b"],
+span[style*="color: #ffeb3b"],
+div[style*="color: #ffeb3b"] {
+  color: #dc2626 !important; /* Red instead of yellow */
+  background: rgba(255,255,255,0.9) !important;
   padding: 8px 12px !important;
   border-radius: 6px !important;
   font-size: 16px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   display: inline-block !important;
   margin: 4px 0 !important;
-  border: 2px solid #ffc107 !important;
+  border: 2px solid #dc2626 !important;
 }
 
 /* Emergency text should be highly visible */

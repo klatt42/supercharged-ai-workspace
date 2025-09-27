@@ -81,6 +81,35 @@
       background: rgba(255,255,255,0.95) !important;
       color: #1f2937 !important;
     }
+
+    /* ELIMINATE ALL YELLOW TEXT - REPLACE WITH HIGH CONTRAST */
+    *[style*="color: #ffd700"],
+    *[style*="color: yellow"],
+    *[style*="color: #ffeb3b"],
+    a[href^="tel:"],
+    .phone-number {
+      color: #dc2626 !important; /* Red for phone numbers and important text */
+      background: rgba(255,255,255,0.9) !important;
+      padding: 4px 8px !important;
+      border-radius: 4px !important;
+      font-weight: 700 !important;
+    }
+
+    /* Fix headings that might be yellow */
+    section h2 {
+      color: #dc2626 !important; /* Red instead of yellow */
+    }
+
+    section h3 {
+      color: #dc2626 !important; /* Red instead of yellow */
+    }
+
+    /* Fix any yellow emphasis text */
+    strong,
+    .emphasis,
+    .highlight {
+      color: #dc2626 !important; /* Red instead of yellow */
+    }
   </style>
 
   <!-- Schema Markup for Emergency Services -->
