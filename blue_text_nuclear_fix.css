@@ -379,6 +379,55 @@ h1, h2, h3 {
   }
 }
 
+/* KNOWLEDGE HUB CONTRAST FIXES */
+.community-knowledge-hub,
+.community-knowledge-hub *,
+.expert-insight,
+.expert-insight *,
+.homeowner-stories,
+.homeowner-stories *,
+.knowledge-content,
+.knowledge-content * {
+  color: #1f2937 !important; /* Dark text for light backgrounds */
+}
+
+.community-knowledge-hub h2,
+.community-knowledge-hub h3,
+.expert-insight h3,
+.homeowner-stories h3 {
+  color: #dc2626 !important; /* Red for headings */
+}
+
+.community-knowledge-hub strong,
+.expert-insight strong,
+.homeowner-stories strong {
+  color: #1f2937 !important; /* Dark text for strong elements */
+}
+
+.story-highlight {
+  color: #1f2937 !important; /* Dark text for testimonials */
+}
+
+.authority-message strong,
+div[style*="background: #fef3c7"] strong {
+  color: #1f2937 !important; /* Dark text in yellow boxes */
+}
+
+/* EMERGENCY CHAT WIDGET CONTRAST FIXES */
+#emergency-ai-button,
+.emergency-chat-overlay,
+.emergency-chat-overlay * {
+  color: inherit !important; /* Don't override chat widget colors */
+}
+
+div[style*="background: #ffffff"] {
+  color: #1f2937 !important; /* Dark text on white backgrounds */
+}
+
+div[style*="background: white"] {
+  color: #1f2937 !important; /* Dark text on white backgrounds */
+}
+
 /* HIGHLY VISIBLE NOTIFICATION STYLING */
 .regional-notification,
 .update-notice,
