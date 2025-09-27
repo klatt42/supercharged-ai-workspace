@@ -130,10 +130,10 @@ section {
 section h2 {
   font-size: clamp(24px, 4vw, 32px);
   font-weight: 800;
-  color: #dc2626;
+  color: #ffd700;
   margin-bottom: 20px;
-  text-shadow: none;
-  border-bottom: 2px solid rgba(220, 38, 38, 0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  border-bottom: 2px solid rgba(255,215,0,0.3);
   padding-bottom: 10px;
 }
 
@@ -153,7 +153,7 @@ section p {
 }
 
 section p strong {
-  color: #dc2626;
+  color: #ffd700;
   font-weight: 700;
 }
 
@@ -165,13 +165,13 @@ ul {
 }
 
 li {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.05);
   padding: 15px 20px;
   margin: 10px 0;
   border-radius: 10px;
-  border-left: 4px solid #dc2626;
+  border-left: 4px solid #ffd700;
   font-size: 16px;
-  color: #1f2937;
+  color: rgba(255,255,255,0.95);
   position: relative;
   transition: all 0.3s ease;
 }
@@ -260,22 +260,22 @@ li::before {
 
 /* AUTHORITY REVERSAL MESSAGING */
 .authority-message {
-  background: rgba(255,255,255,0.95);
-  border: 2px solid rgba(220, 38, 38, 0.3);
+  background: rgba(255,215,0,0.1);
+  border: 2px solid rgba(255,215,0,0.3);
   padding: 25px;
   border-radius: 12px;
   margin: 25px 0;
 }
 
 .authority-message h4 {
-  color: #dc2626;
+  color: #ffd700;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .authority-message p {
-  color: #1f2937;
+  color: rgba(255,255,255,0.95);
   font-size: 16px;
   line-height: 1.6;
 }
