@@ -1,472 +1,976 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Main Landing Page -->
+  <!-- Main Homepage -->
   <url>
     <loc>https://independent-restoration.com/</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
+
   <!-- Regional Hub Pages -->
   <url>
-    <loc>https://independent-restoration.com/maryland-restoration.html</loc>
+    <loc>https://independent-restoration.com/virginia-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
+  <url>
+    <loc>https://independent-restoration.com/maryland-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://independent-restoration.com/dc-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
+
+  <!-- County Restoration Pages -->
   <url>
-    <loc>https://independent-restoration.com/virginia-restoration.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Maryland Service Pages -->
-  <!-- Montgomery County -->
-  <url>
-    <loc>https://independent-restoration.com/montgomery-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/montgomery-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/fairfax-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/montgomery-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/loudoun-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/montgomery-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/prince-william-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
-  <!-- Annapolis -->
   <url>
-    <loc>https://independent-restoration.com/annapolis-water-damage.html</loc>
+    <loc>https://independent-restoration.com/anne-arundel-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/annapolis-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/calvert-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/annapolis-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/carroll-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/annapolis-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/charles-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
-  <!-- Frederick County -->
   <url>
-    <loc>https://independent-restoration.com/frederick-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/frederick-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/frederick-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/howard-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/frederick-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/montgomery-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/frederick-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/prince-georges-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
-  <!-- Washington County -->
   <url>
-    <loc>https://independent-restoration.com/washington-county-water-damage.html</loc>
+    <loc>https://independent-restoration.com/st-marys-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/washington-county-fire-damage.html</loc>
+    <loc>https://independent-restoration.com/washington-county-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/washington-county-mold-remediation.html</loc>
+    <loc>https://independent-restoration.com/capitol-hill-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/washington-county-storm-damage.html</loc>
+    <loc>https://independent-restoration.com/georgetown-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
-  <!-- Washington DC Service Pages -->
-  <!-- Georgetown -->
+
+  <!-- Service-Specific Pages - Water Damage (Priority 0.7) -->
   <url>
-    <loc>https://independent-restoration.com/georgetown-water-damage.html</loc>
+    <loc>https://independent-restoration.com/virginia-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/georgetown-fire-restoration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/georgetown-mold-removal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/georgetown-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Capitol Hill -->
-  <url>
-    <loc>https://independent-restoration.com/capitol-hill-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/capitol-hill-fire-restoration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/capitol-hill-mold-removal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/capitol-hill-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Dupont Circle -->
-  <url>
-    <loc>https://independent-restoration.com/dupont-circle-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/dupont-circle-fire-restoration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/dupont-circle-mold-removal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/dupont-circle-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Adams Morgan -->
-  <url>
-    <loc>https://independent-restoration.com/adams-morgan-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/adams-morgan-fire-restoration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/adams-morgan-mold-removal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/adams-morgan-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Foggy Bottom -->
-  <url>
-    <loc>https://independent-restoration.com/foggy-bottom-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/foggy-bottom-fire-restoration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/foggy-bottom-mold-removal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/foggy-bottom-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Northern Virginia Service Pages -->
-  <!-- Fairfax County -->
-  <url>
-    <loc>https://independent-restoration.com/fairfax-county-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/fairfax-county-fire-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/fairfax-county-mold-remediation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/fairfax-county-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Arlington County -->
-  <url>
-    <loc>https://independent-restoration.com/arlington-county-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/arlington-county-fire-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/arlington-county-mold-remediation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/arlington-county-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Loudoun County -->
-  <url>
-    <loc>https://independent-restoration.com/loudoun-county-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/loudoun-county-fire-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/loudoun-county-mold-remediation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/loudoun-county-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Prince William County -->
-  <url>
-    <loc>https://independent-restoration.com/prince-william-county-water-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/prince-william-county-fire-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/prince-william-county-mold-remediation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/prince-william-county-storm-damage.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Blog Pages -->
-  <url>
-    <loc>https://independent-restoration.com/blog-index.html</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/blog-post-1-emergency-authority-foundation.html</loc>
+    <loc>https://independent-restoration.com/maryland-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2024-08-24</lastmod>
+    <priority>0.7</priority>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/blog-post-2-prevention-authority-education.html</loc>
+    <loc>https://independent-restoration.com/dc-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2024-08-24</lastmod>
+    <priority>0.7</priority>
   </url>
-  
-  <url>
-    <loc>https://independent-restoration.com/blog-post-3-insurance-vs-homeowner-authority.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2024-08-24</lastmod>
-  </url>
-  
-  <!-- Additional Content Pages -->
   <url>
     <loc>https://independent-restoration.com/northern-va-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/northern-va-water-damage-faq.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2024-08-24</lastmod>
+    <priority>0.7</priority>
   </url>
-  
+  <url>
+    <loc>https://independent-restoration.com/fairfax-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/loudoun-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-william-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/anne-arundel-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/calvert-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/carroll-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/charles-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/frederick-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/howard-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/montgomery-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-georges-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/st-marys-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/washington-county-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/adams-morgan-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/capitol-hill-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dupont-circle-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/foggy-bottom-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/georgetown-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/annapolis-water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service-Specific Pages - Fire Damage (Priority 0.7) -->
+  <url>
+    <loc>https://independent-restoration.com/virginia-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/northern-va-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/arlington-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/fairfax-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/loudoun-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-william-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/anne-arundel-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/calvert-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/carroll-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/charles-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/frederick-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/howard-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/montgomery-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-georges-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/st-marys-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/washington-county-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/adams-morgan-fire-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/capitol-hill-fire-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dupont-circle-fire-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/foggy-bottom-fire-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/georgetown-fire-restoration.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/annapolis-fire-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service-Specific Pages - Mold Remediation (Priority 0.7) -->
+  <url>
+    <loc>https://independent-restoration.com/virginia-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/northern-va-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/arlington-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/fairfax-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/loudoun-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-william-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/anne-arundel-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/calvert-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/carroll-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/charles-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/frederick-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/howard-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/montgomery-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-georges-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/st-marys-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/washington-county-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/adams-morgan-mold-removal.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/capitol-hill-mold-removal.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dupont-circle-mold-removal.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/foggy-bottom-mold-removal.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/georgetown-mold-removal.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/annapolis-mold-remediation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service-Specific Pages - Storm Damage (Priority 0.7) -->
+  <url>
+    <loc>https://independent-restoration.com/virginia-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/northern-va-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://independent-restoration.com/independent-restoration-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
   <url>
-    <loc>https://independent-restoration.com/independent-restoration-geo-seo-hook-optimized.html</loc>
+    <loc>https://independent-restoration.com/arlington-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-08-24</lastmod>
   </url>
-  
+  <url>
+    <loc>https://independent-restoration.com/fairfax-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/loudoun-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-william-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/anne-arundel-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/calvert-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/carroll-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/charles-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/frederick-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/howard-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/montgomery-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-georges-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/st-marys-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/washington-county-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/adams-morgan-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/capitol-hill-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dupont-circle-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/foggy-bottom-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/georgetown-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/annapolis-storm-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Subdirectory Service Pages (Priority 0.7) -->
+  <url>
+    <loc>https://independent-restoration.com/virginia/services/water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland/services/water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc/services/water-damage.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/alexandria/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/arlington-water-damage/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/fairfax-mold-remediation/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/mclean-restoration/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/nova/fire-smoke/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/nova/storm-damage/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/nova/water-damage/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/reston-emergency-services/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/tysons-fire-damage/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/vienna-water-damage/index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Neighborhood Services Pages (Priority 0.7) -->
+  <url>
+    <loc>https://independent-restoration.com/adams-morgan-services.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/logan-circle-services.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/shaw-u-street-services.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dupont-circle-emergency.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/foggy-bottom-emergency.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/prince-georges-county-emergency-services.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Pages (Priority 0.6) -->
+  <url>
+    <loc>https://independent-restoration.com/blog-index.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-index-va.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-index-md.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-index-dc.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-post-1-emergency-authority-foundation.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-post-2-prevention-authority-education.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/blog-post-3-insurance-vs-homeowner-authority.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-water-damage-blog-post-1.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-water-damage-blog-post-2.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-water-damage-blog-post-3.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-water-damage-blog-post-1.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-water-damage-blog-post-2.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-water-damage-blog-post-3.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Forum Pages (Priority 0.6) -->
+  <url>
+    <loc>https://independent-restoration.com/restoration-forum.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/virginia-forum-content.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-forum-content.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/dc-forum-content.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ Pages (Priority 0.6) -->
+  <url>
+    <loc>https://independent-restoration.com/dc-water-damage-faq.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/maryland-water-damage-faq.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/northern-va-water-damage-faq.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal Pages (Priority 0.3) -->
+  <url>
+    <loc>https://independent-restoration.com/privacy-policy.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://independent-restoration.com/terms-of-use.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
