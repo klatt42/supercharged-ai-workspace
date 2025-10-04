@@ -124,12 +124,28 @@ section[style*="background: rgba(255,255,255"] *,
 .expert-insight,
 .expert-insight *,
 .homeowner-stories,
-.homeowner-stories *,
-ul li,
-ul li *,
-ol li,
-ol li * {
-  color: #1f2937 !important; /* Force dark text everywhere on light backgrounds */
+.homeowner-stories * {
+  color: #1f2937 !important; /* Force dark text on light backgrounds */
+}
+
+/* ONLY apply dark text to list items that are INSIDE light background containers */
+div[style*="background: white"] ul li,
+div[style*="background: white"] ul li *,
+div[style*="background: #ffffff"] ul li,
+div[style*="background: #ffffff"] ul li *,
+div[style*="background: #f8fafc"] ul li,
+div[style*="background: #f8fafc"] ul li *,
+section[style*="background: rgba(255,255,255"] ul li,
+section[style*="background: rgba(255,255,255"] ul li *,
+.expert-insight ul li,
+.expert-insight ul li *,
+.homeowner-stories ul li,
+.homeowner-stories ul li *,
+div[style*="background: white"] ol li,
+div[style*="background: white"] ol li *,
+div[style*="background: #ffffff"] ol li,
+div[style*="background: #ffffff"] ol li * {
+  color: #1f2937 !important; /* Force dark text ONLY on light backgrounds */
 }
 
 /* Target specific text content that might be blue */
